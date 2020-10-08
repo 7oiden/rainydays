@@ -1,0 +1,274 @@
+@font-face {
+  font-family: 'montserrat';
+  src: url();
+  font-family: 'roboto';
+  scr: url();
+  font-family: 'cenury gothic'
+  scr: url(); 
+}
+body {
+  background-color: #f5f5f5;
+  font-family: "montserrat", verdana, sans-serif;
+  font-size: 1.25rem;
+  color: #172940;
+  margin: 0;
+}
+header {
+  width: 1920px;
+  background-color: white;
+}
+#main {
+  background-image: url("../images/main_image.jpg");
+  background-repeat: no-repeat;
+  float: left;
+}
+footer {
+  width: 1920px;
+  float: left;
+  position: relative;
+  margin-left: 0;
+}
+header li {
+  display: inline-block;
+}
+.campaign {
+  color: #b05625;
+  text-align: center;
+  background-color: #f2b705a6;
+  padding-top: 10.5px;
+  padding-bottom: 10.5px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.campaign li:before {
+  content: url("../images/icons/Polygon2.png");
+}
+.menu {
+  background-color: #172940;
+  color: white;
+  padding-top: 17.5px;
+  padding-bottom: 17.5px;
+  padding-left: 170px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.logo {
+  max-width: 200px;
+  margin-left: 50px;
+  margin-top: 14px;
+  float: left;
+}
+.icons {
+  margin-top: 50px;
+  margin-bottom: 0;
+  margin-left: 300px;
+}
+nav.navigation  {
+  font-family: roboto;
+  font-size: 1rem;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  padding-right: 156px;
+}
+nav a:hover {
+  color: #f2b705;
+}
+.search-icon {
+  position: absolute;
+  top: 6px;
+  left: 8px;
+  width: 14px;
+}
+#search {
+  border: 2px solid #172940;
+  border-radius: 8px;
+  width: 491px;
+  outline: 0;
+  padding: 0;
+  font-family: "montserrat";
+  font-size: 20px;
+  padding-left: 26px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 700px;
+}
+h1 {
+  font-family: "balboa", sans-serif;
+  font-size: 3.125rem;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+h2 {
+  font-size: 1.5rem;
+  color: #b05625;
+  margin-top: 0;
+  margin-left: 65px;
+}
+h3 {
+  font-family: "century gothic", sans-serif;
+  font-size: 2rem;
+  margin: 0;
+  text-decoration: underline;
+}
+a.about {
+  color: #b05625;
+  font-size: 1rem;
+}
+h4 {
+  width: 1081px;
+  font-size: 1.875rem;
+  text-align: center;
+  margin-top: 71px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  background-color: white;
+  box-shadow: 0px 3px 6px;
+}
+h5 {
+  font-family: "century gothic", sans-serif;
+  font-size: 2.375rem;
+  background-color: white;
+  width: 450px;
+  padding: 10px 0px 0px 10px;
+  margin-bottom: 0;
+}
+#about {
+  margin: 0;
+  padding: 10px 0px 5px 0px;
+  color: #b05625;
+}
+.about {
+  margin: 0;  
+}
+.catcher {
+  float: left;
+  width: 600px;
+  margin-left: 269px;
+  margin-top: 67px;
+}
+.about-us {
+  float: left;
+  width: 430px;
+  margin-top: 67px;
+  margin-left: 500px;
+}
+section.categorys {
+  width: 1500px;
+  margin-left: 140px;
+  margin-top: 580px;
+  margin-bottom: 0;
+}
+.categorys {
+  color: black;
+  margin-top: 400px;
+  float: left;
+  margin-left: 32.5px;
+  margin-top: 26px;
+}
+section.news {
+  color: black;
+  float: left;
+}
+figure.news {
+  width: 460px;
+  margin-top: 0;
+  margin-left: 0;
+  float: left;
+}
+#news {  
+  background-color: white;
+  width: 450px;
+  padding: 0px 0px 10px 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 0;
+}
+.pitch {
+  font-family: "century gothic", sans-serif;
+  font-size: 1.5rem;
+}
+
+p.about {
+  font-family: "roboto";
+  font-size: 1.125rem;
+}
+.women,
+.men,
+.shop {
+  font-family: "montserrat";
+  font-size: 1.25rem;
+  font-weight: 600;
+  width: 240px;
+  height: 50px;
+  background-color: white;
+  color: _#172940;
+  border-radius: 8px;
+  border: none;
+}
+#shopmen {
+  position: relative;
+  left: 102px;
+  bottom: 110px;
+}
+#shopwomen {
+  position: relative;
+  left: 102px;
+  bottom: 110px;
+}
+form.newsletter {
+  font-family: "roboto";
+  font-weight: 1rem;
+  position: relative;
+  float: left;
+  margin-top: 100px;
+  margin-left: 693px;
+}
+#newsletter {
+  font-family: "montserrat";
+  font-weight: 1.25rem;
+  border: 2px solid #2f496a;
+  width: 389px;
+  outline: 0;
+  padding: 0;
+  padding-left: 26px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+#subscribe {
+  font-family: "montserrat";
+  font-weight: 1.25rem;
+  border: none;
+  height: 52px;
+  background-color: #2f496a;
+  color: white;
+}
+.support {
+  background-color: #172940;
+  color: white;
+  margin-bottom: 0;
+}
+.footer {
+  background-color: white;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+}
+figure.categorys {
+  width: 500px;
+  height: 333px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: 16px solid white;
+  border-bottom: 47px solid white;
+  margin-top: 26px;
+  text-align: center;
+  margin-left: 0;
+  float: left;
+}
+

@@ -1,10 +1,163 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>My first website</title>
+    <title>Rainydays Homepage</title>
+    <meta
+      name="description"
+      content="Homepage for Rainydays rainjackets webshop"
+    />
+    <link href="styles/styles.css" rel="stylesheet" />
   </head>
+
   <body>
-    <h1>Hello world!</h1>
-    <p>Welcome to my first website.</p>
+    <header>
+      <ul class="campaign">
+        <li>Now: -20% on your first order</li>
+        <li>Free shipping on orders +99.99$</li>
+        <li>Money back guarantee</li>
+      </ul>
+      <nav aria-label="navigation" class="navigation">
+        <img class="logo" src="images\RainyDays_Logo.png" width="190" alt="Rainydays logo">
+        <ul class="icons">
+        <li><form action="index.html">
+          <input type="image" src="images\icons\home.svg" />
+          <p>Home</p>
+        </li>
+        </form>
+        <li><form class="search">
+          <input id="search" type="text" placeholder="Search Products" />
+        </form>
+      </li>
+          <li>
+            <form action="basket.html">
+              <input type="image" src="images\icons\favorite.svg" />
+              <p>Favorites</p>
+            </form>
+          </li>
+          <li>
+            <form action="basket.html">
+              <input type="image" src="images\icons\profile.svg" />
+              <p>Profile</p>
+            </form>
+          </li>
+          <li>
+            <form action="basket.html">
+              <input type="image" src="images\icons\basket.svg" />
+              <p>Basket</p>
+            </form>
+          </li>
+        </ul>
+      </nav>
+      <nav aria-label="menu">
+        <ul class="menu">
+          <li><a href="products_overview.html">WOMEN</a></li>
+          <li><a href="products_overview.html">MEN</a></li>
+          <li><a href="products_overview.html">BESTSELLERS</a></li>
+          <li><a href="products_overview.html">SALE</a></li>
+          <li><a href="products_overview.html">NEWS</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="catcher">
+        <hgroup>
+          <h1>RAIN JACKETS PERFECT FOR <em>YOU</em></h1>
+          <h2>outdoor - hiking - casual -skiing</h2>
+        </hgroup>
+        <button class="women" type="button">WOMEN</button>
+        <button class="men" type="button">MEN</button>
+        <p class="pitch">
+          Our rainjackets provides quality, comfort & reliability wherever you are
+        </p>
+      </section>
+      <aside class="about-us">
+        <h3>ABOUT US</h3>
+        <p id="about">It all started a rainy autumn day in 2010</p>
+        <p class="about">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+        <a href="about.html" class="about">Read more</a>
+      </aside>
+      <section class="categorys">
+        <h4>LEARN MORE ABOUT OUR RAIN JACKETS</h4>
+        <figure class="categorys">
+          <img src="images/hiking.jpg" alt="hiker" />
+          <figcaption>HIKER</figcaption>
+        </figure>
+        <figure class="categorys">
+          <img src="images/outdoor.jpg" alt="woman in canoe at a lake" />
+          <figcaption>OUTDOOR</figcaption>
+        </figure>
+        <figure class="categorys">
+          <img src="images/skiing.jpg" alt="skiier viewing a mountainrange" />
+          <figcaption>SKIING</figcaption>
+        </figure>
+        <figure class="categorys">
+          <img src="images/casual.jpg" alt="woman in casual clothes" />
+          <figcaption>CASUAL</figcaption>
+        </figure>
+      </section>
+      <section class="news">
+          <h5>NEW ARRIVALS</h5>
+          <p id="news">Casual Rain Jackets for Men and Women</p>
+        <figure class="news">
+          <img
+            src="images/newwomen.jpg"
+            alt="woman outdoors in a yellow rain jacket"
+            id="women"
+          />
+          <button class="shop" id="shopwomen" type="button">SHOP NOW</button>
+          <img
+            src="images/newmen.jpg"
+            alt="man outdoors in a yellow rain jacket"
+            id="men"
+          />
+          <button class="shop" id="shopmen" type="button">SHOP NOW</button>
+        </figure>
+      </section>
+      
+      
+    </main>
+
+    <footer>
+      <section class="support">
+        <p>Follow us on:</p>
+        <ul>
+          <li>
+            <a><img src="images\icons\f_logo_RGB-White_58.png" /></a>
+          </li>
+          <li>Instagram</li>
+          <li>Twitter</li>
+          <li>Youtube</li>
+        </ul>
+        <p>About Rainydays:</p>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+        <p>Support:</p>
+        <ul>
+          <li><a href="support.html">FAQ</a></li>
+          <li><a href="support.html">Returns</a></li>
+          <li><a href="support.html">Size Chart</a></li>
+        </ul>
+        <p>Contact:</p>
+        <ul>
+          <li><a href="contact.html">Phone: 555 555 555</a></li>
+          <li><a href="contact.html">Email: support@rainydays.com</a></li>
+        </ul>
+      </section>
+      <section class="footer">
+        <ul>
+          <li>&#169;2020 - Rainydays S.A.S</li>
+          <li>Terms and conditions</li>
+          <li>Privacy</li>
+          <li>Warranty</li>
+        </ul>
+      </section>
+    </footer>
   </body>
 </html>

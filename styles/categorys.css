@@ -1,0 +1,220 @@
+@font-face {
+  font-family: "montserrat";
+  src: url();
+  font-family: "roboto";
+  scr: url();
+  font-family: "cenury gothic";
+  scr: url();
+}
+body {
+  background-color: #f5f5f5;
+  font-family: "roboto", verdana, sans-serif;
+  font-size: 1.125rem;
+  color: #172940;
+  margin: 0;
+}
+/* header 
+--------------------*/
+.campaign {
+  width: 1920px;
+  font-family: "montserrat";
+  font-size: 1.25rem;
+  color: #b05625;
+  text-align: center;
+  background-color: #f2b705;
+  padding-top: 10.5px;
+  padding-bottom: 10.5px;
+  margin: 0;
+  padding-left: 0;
+  float: left;
+}
+.campaign li:before {
+  content: url("../images/icons/Polygon2.png");
+  padding-right: 5px;
+}
+.campaign li {
+  padding-right: 50px;
+}
+.logo {
+  float: left;
+  margin-top: 14px;
+  margin-bottom: 12px;
+  margin-left: 0;
+}
+#search {
+  border: 2px solid #172940;
+  border-radius: 8px;
+  width: 491px;
+  outline: 0;
+  font-family: "montserrat";
+  font-size: 20px;
+  padding-left: 26px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  float: left;
+}
+div.icons {
+  display: inline-block;
+  padding: 0;
+  margin-left: 140px;
+}
+nav.navigation {
+  background-color: #fff;
+  width: 1920px;
+  font-size: 1rem;
+}
+.menu {
+  width: 1750px;
+  font-family: "monteserrat", verdana, sans-serif;
+  font-size: 1.25rem;
+  background-color: #172940;
+  color: white;
+  padding-left: 170px;
+  margin-bottom: 16px;
+  margin-top: 0;
+  float: left;
+}
+.menu-categorys {
+  display: inline-block;
+}
+
+div.breadcrumb {
+  margin-left: 140px;
+  margin-bottom: 0;
+  float: left;
+}
+ul.breadcrumb a {
+  padding-right: 20px;
+  text-decoration: none;
+}
+.current {
+  color: #172940;
+  font-weight: bold;
+}
+.previous {
+  color: #a1a1a1;
+}
+header li {
+  display: inline-block;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  padding-right: 156px;
+}
+nav a:hover {
+  color: #f2b705;
+}
+/* main 
+--------------------*/
+h1 {
+  font-family: "century gothic", verdana, sans-serif;
+  font-size: 1.875rem;
+}
+h2 {
+  font-family: "montserrat", verdana, sans-serif;
+  font-size: 1.25rem;
+  text-decoration: underline;
+}
+p {
+  width: 430px;
+}
+.shop {
+  position: relative;
+  left: 104px;
+  top: 50px;
+  font-family: "montserrat";
+  font-size: 1.25rem;
+  font-weight: 600;
+  width: 240px;
+  height: 50px;
+  background-color: #172940;
+  color: white;
+  border-radius: 8px;
+  border: none;
+}
+.content {
+  background-color: #f2f2f2;
+  width: 532px;
+  height: 812px;
+  margin-top: 0;
+  margin-left: 140px;
+  padding-top: 74px;
+  padding-right: 0;
+  padding-left: 84px;
+  float: left;
+  clear: left;
+}
+.image {
+  width: 1023px;
+  height: 812px;
+  margin-left: 0;
+  float: left;
+}
+.newsletter {
+  margin-top: 44px;
+  margin-right: 0;
+  float: left;
+}
+#newsletter {
+  width: 389px;
+  height: 46px;
+  border: solid 2px;
+  border-color: #536175;
+  border-radius: 0;
+  font-family: "montserrat";
+  font-size: 1.25rem;
+  padding-left: 26px;
+  margin-right: 0;
+}
+#subscribe {
+  font-family: "montserrat";
+  font-weight: 1.25rem;
+  height: 52px;
+  background-color: #2f496a;
+  border: none;
+  border-radius: 0;
+  color: white;
+  margin-left: 0;
+}
+/* footer 
+--------------------*/
+.support {
+  width: 1920px;
+  height: 191px;
+  background-color: #172940;
+  color: white;
+  float: left;
+  clear: left;
+}
+.footer {
+  width: 1920px;
+  background-color: white;
+  text-align: center;
+  padding-top: 0;
+  float: left;
+  margin: 0;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+}
+section.support {
+  width: 1780px;
+  columns: 4;
+  padding-left: 140px;
+  padding-right: 0;
+  margin: 0;
+}
+.support li {
+  list-style-type: none;
+  padding: 0;
+}
+.support ul {
+  padding-left: 0;
+}
+.footer li {
+  display: inline-block;
+  list-style-type: none;
+  padding-right: 50px;
+}
