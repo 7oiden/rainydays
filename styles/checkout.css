@@ -1,0 +1,89 @@
+.previous {
+  font-family: "montserrat";
+  font-size: 1.5rem;
+  font-weight: 600;
+  width: 310px;
+  background-color: #aab1bb;
+  border: none;
+  padding: 12px;
+  margin-top: 172px;
+  margin-left: 140px;
+  border-radius: 0;
+}
+.logo {
+  width: 348px;
+  margin: auto;
+  margin-top: -185px;
+}
+#logo {
+  width: 348px;
+}
+header {
+  background-color: #f5f5f5;
+}
+body {
+  width: 1920px;
+  background-color: #f5f5f5;
+  color: #172940;
+  font-family: "roboto";
+  font-size: 1rem;
+}
+main {
+  width: 1082px;
+  margin: auto;
+  background-color: white;
+}
+.label {
+  display: block;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 66px;
+}
+.form {
+  display: block;
+  width: 422px;
+  font-size: 1.125rem;
+  color: #c2c2c2;
+  border-radius: 0;
+  border: 2px solid #5361757d;
+  padding: 10px 10px 10px 15px;
+  margin-left: 66px;
+}
+.password {
+  display: block;
+  border: 2px solid #5361757d;
+  border-radius: 0;
+  width: 310px;
+  padding: 10px 10px 10px 15px;
+  margin-left: 66px;
+}
+.information p {
+  font-family: "century gothic";
+  font-size: 1.875rem;
+  font-weight: bold;
+  background-color: blueviolet;
+  margin: 0;
+  margin-left: 66px;
+  padding: 0;
+}
+h1,
+h2 {
+  width: 1062px;
+  font-family: "century gothic";
+  font-size: 1.875rem;
+  background-color: #5361757d;
+  padding: 14px 0px 14px 20px;
+  margin-bottom: 0;
+}
+.information {
+  width: 500px;
+  margin-top: 0;
+  padding: 0;
+  border: none;
+}
+.account {
+  width: 400px;
+  margin-top: 0;
+  padding: 0;
+  border: none;
+}

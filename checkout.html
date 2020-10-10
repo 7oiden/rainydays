@@ -6,12 +6,143 @@
       name="description"
       content="Homepage for Rainydays rainjackets webshop"
     />
-    <link href="styles/styles.css" rel="stylesheet" />
+    <link href="styles/checkout.css" rel="stylesheet" />
   </head>
 
   <body>
     <header>
-      <button></button>
+      <header>
+        <button class="previous" type="button">&lt Previous Page</button>
+        <figure class="logo">
+          <img src="images/rainydays_logo.png" id="logo" />
+        </figure>
+      </header>
     </header>
+
+    <main>
+      <section class="information">
+        <h1>2. My Information</h1>
+        <form action="login.php" method="GET">
+          <fieldset class="information">
+            <label for="email" class="label">E-mail</label>
+            <input
+              type="email"
+              name="email"
+              placeholder="your@email.com"
+              id="email"
+              class="form"
+            />
+            <label for="first-name" class="label">First Name</label>
+            <input
+              type="text"
+              name="first-name"
+              placeholder="First Name"
+              id="first-name"
+              class="form"
+            />
+            <label for="last-name" class="label">Last Name</label>
+            <input
+              type="text"
+              name="last-name"
+              placeholder="Last Name"
+              id="last-name"
+              class="form"
+            />
+            <label for="street-address" class="label">Street Address</label>
+            <input
+              type="text"
+              name="street-address"
+              placeholder="Street Address"
+              id="address"
+              class="form"
+            />
+            <label for="city" class="label">City</label>
+            <input
+              type="text"
+              name="city"
+              placeholder="City"
+              id="city"
+              class="form"
+            />
+            <label for="postal-code" class="label">Postal Code</label>
+            <input
+              type="number"
+              name="postal-code"
+              placeholder="Postal Code"
+              id="postal-code"
+              class="form"
+            />
+            <label for="phone" class="label">Phone Number</label>
+            <input
+              type="tel"
+              name="phone"
+              placeholder="Phone Number"
+              id="phone"
+              class="form"
+            />
+          </fieldset>
+        </form>
+        <fieldset class="account">
+          <form action="profile.php">
+            <input
+              type="checkbox"
+              name="newsletter"
+              value="Subscribe"
+              class="checkbox"
+            />
+            Subscribe to our Newsletter
+          </form>
+          <p>Optional:</p>
+          <form action="login.php">
+            <label for="choose" class="label">Choose password</label>
+            <input
+              type="password"
+              name="choose"
+              placeholder="********"
+              class="password"
+            />
+            <label for="confirm" class="label">Confirm password</label>
+            <input
+              type="password"
+              name="confirm"
+              placeholder="********"
+              class="password"
+            />
+          </form>
+          <form action="profile.php">
+            <input
+              type="checkbox"
+              name="account"
+              value="create"
+              class="checkbox"
+            />Create Account
+          </form>
+        </fieldset>
+      </section>
+
+      <section class="shipping">
+        <h2>3. Choose Shipping Method</h2>
+        <button class="shop" type="button" class="shipping">
+          <p>Standard shipping - 5.0</p>
+          <p>Delivery within 3-7 working days</p>
+        </button>
+        <button class="shop" type="button" class="shipping">
+          <p>Standard shipping - 5.0</p>
+          <p>Delivery within 3-7 working days</p>
+        </button>
+      </section>
+      <section class="payment">
+        <h2>4. Choose Payment Method</h2>
+        <button class="shop" type="button" class="shipping">
+          <p>CREDIT/DEBIT CARD</p>
+        </button>
+        <button class="shop" type="button" class="shipping">
+          <p>PAYPAL</p>
+        </button>
+        <button class="shop" type="button" class="payment">
+          <p>PAY LATER WITH KLARNA</p>
+        </button>
+      </section>
+    </main>
   </body>
 </html>

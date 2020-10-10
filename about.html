@@ -6,49 +6,90 @@
       name="description"
       content="Homepage for Rainydays rainjackets webshop"
     />
-    <link href="styles/styles.css" rel="stylesheet" />
+    <link href="styles/about.css" rel="stylesheet" />
   </head>
 
   <body>
     <header>
-      <img src="images/rainydays_logo.png" />
-      <button class="previous" type="button">Previous Page</button>
+      <button class="previous" type="button">&lt Previous Page</button>
+      <figure class="logo">
+        <img src="images/rainydays_logo.png" id="logo" />
+      </figure>
     </header>
 
     <main>
-      <article>
+      <section class="about-us">
         <h1>About Us</h1>
-        <h3>It all startet on a rainy autumn day in 2010</h3>
+        <p id="about-us">It all startet on a rainy autumn day in 2010</p>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
+          Nequi omnit quasit eost aut fugit ut estium susam fuga. Ficaepe
+          liatque porepera dolorporum que del et est et que et anis cum nos
+          volorpor aut a doluptatem dolupta temqui aut demolup tibuscitem. Ita
+          quia cori dolore plicide pore con ni ommolorrum quae optatent quam
+          dolorum facea sequam nam facipsum quo bearchi citiunt esendae vel
+          minus sunt, nit eatqui num estiisi nctios por mi, que volore voluptas
+          eum solo optatquam, aut fuga. Fuga. Hendit maxim hitatibus
         </p>
-
         <p>
           Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
           dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
           proident, sunt in culpa qui officia deserunt mollit anim id est
           laborum
         </p>
-
-        <h1>Contact</h1>
-        <p>
+        <h2>Contact</h2>
+        <p id="address">
           Rainydays S.A.S <br />
           Rainy Avenue, Brooklyn NY 55555 <br />
           United States
         </p>
         <p>
-          Phone: 555 555 555 <br />
-          e-mail: costumer@rainydays.com
+          <b>Phone:</b> <i>555 555 555</i> <br />
+          <b>E-mail:</b> <i>costumer@rainydays.com</i>
         </p>
-      </article>
-      <section>
-        <h1>Who are we:</h1>
       </section>
-      <article>
-        <h1>Why chose us:</h1>
+      <section class="who">
+        <h3>Who are we:</h3>
+        <div class="who-are-we">
+          <figure>
+            <img src="images\charles.png" alt="" />
+            <figcaption>Charles</figcaption>
+          </figure>
+          <figure>
+            <img src="images\Mark.png" alt="" />
+            <figcaption>Mark</figcaption>
+          </figure>
+          <figure>
+            <img src="images\George.png" alt="" />
+            <figcaption>George</figcaption>
+          </figure>
+          <figure>
+            <img src="images\William.png" alt="" />
+            <figcaption>William</figcaption>
+          </figure>
+          <figure>
+            <img src="images\Virginia.png" alt="" />
+            <figcaption>Virginia</figcaption>
+          </figure>
+          <figure>
+            <img src="images\Emily.png" alt="" />
+            <figcaption>Emily</figcaption>
+          </figure>
+          <figure>
+            <img src="images\Jane.png" alt="" />
+            <figcaption>Jane</figcaption>
+          </figure>
+          <figure>
+            <img src="images\Ernest.png" alt="" />
+            <figcaption>Ernest</figcaption>
+          </figure>
+          <figure>
+            <img src="images\Herman.png" alt="" />
+            <figcaption>Herman</figcaption>
+          </figure>
+        </div>
+      </section>
+      <section class="why-chose-us">
+        <h3>Why chose us:</h3>
         <ol>
           <li>Fast packing and shipping</li>
           <li>Our products are of high quality and are highly durable</li>
@@ -56,27 +97,75 @@
           <li>Money back guarantee if you are not satisfied with a product</li>
           <li>We are passonate about what we do</li>
         </ol>
-        <h1>Where are we located:</h1>
+        <h3>Where are we located:</h3>
         <iframe
           width="385"
           height="245"
           src="http://maps.google.co.uk/maps?Q=moma+new+york&amp;output=embed"
         ></iframe>
-      </article>
-      <form>
-        <p>Subscribe to our Newsletter</p>
-        <input type="text" name="email" />
-        <input type="image" scr="images\icons\newsletter.png" />
+      </section>
+      <form action="form-success.php" method="get" class="newsletter">
+        <label id="label" for="newsletter">Subscribe to our Newsletter:</label>
+        <input
+          id="newsletter"
+          type="text"
+          name="email"
+          placeholder="Your e-mail address"
+        />
+        <input id="subscribe" type="submit" name="subscribe" value="JOIN" />
       </form>
     </main>
 
     <footer>
-      <ul class="footer">
-        <li>2020 - Rainydays S.A.S</li>
-        <li>Terms and conditions</li>
-        <li>Privacy</li>
-        <li>Warranty</li>
-      </ul>
+      <section class="support">
+        <div class="support">
+          <p>Follow us on:</p>
+          <ul class="support">
+            <li>Facebook</li>
+            <li>Instagram</li>
+            <li>Twitter</li>
+            <li>Youtube</li>
+          </ul>
+        </div>
+        <div class="support">
+          <p>About Rainydays:</p>
+          <ul class="support">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="about.html">Contact Info</a></li>
+            <li><a href="about.html">Location</a></li>
+          </ul>
+        </div>
+        <div class="support">
+          <p>Support:</p>
+          <ul class="support">
+            <li><a href="support.html">FAQ</a></li>
+            <li><a href="support.html">Returns</a></li>
+            <li><a href="support.html">Size Chart</a></li>
+          </ul>
+        </div>
+        <div class="support">
+          <p>Contact:</p>
+          <ul class="support">
+            <li>
+              <a href="contact.html"><i>Phone: 555 555 555</i></a>
+            </li>
+            <li>
+              <a href="contact.html"><i>Email: support@rainydays.com</i></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="footer">
+        <ul>
+          <li>&#169;2020 - Rainydays S.A.S</li>
+          <li>&#124;</li>
+          <li>Terms and conditions</li>
+          <li>&#124;</li>
+          <li>Privacy</li>
+          <li>&#124;</li>
+          <li>Warranty</li>
+        </ul>
+      </section>
     </footer>
   </body>
 </html>
