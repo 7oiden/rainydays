@@ -23,7 +23,7 @@
       <section class="information">
         <h1>2. My Information</h1>
         <form action="login.php" method="GET">
-          <fieldset class="information">
+          <fieldset id="information">
             <label for="email" class="label">E-mail</label>
             <input
               type="email"
@@ -53,7 +53,7 @@
               type="text"
               name="street-address"
               placeholder="Street Address"
-              id="address"
+              id="street-address"
               class="form"
             />
             <label for="city" class="label">City</label>
@@ -82,26 +82,23 @@
             />
           </fieldset>
         </form>
-        <fieldset class="account">
-          <form action="profile.php">
-            <input
-              type="checkbox"
-              name="newsletter"
-              value="Subscribe"
-              class="checkbox"
-            />
+      </section>
+      <section class="account">
+        <fieldset id="account">
+          <form action="profile.php" class="checkbox">
+            <input type="checkbox" name="newsletter" value="Subscribe" />
             Subscribe to our Newsletter
           </form>
-          <p>Optional:</p>
+          <p id="optional">Optional:</p>
           <form action="login.php">
-            <label for="choose" class="label">Choose password</label>
+            <label for="choose" class="label_2">Choose password</label>
             <input
               type="password"
               name="choose"
               placeholder="********"
               class="password"
             />
-            <label for="confirm" class="label">Confirm password</label>
+            <label for="confirm" class="label_2">Confirm password</label>
             <input
               type="password"
               name="confirm"
@@ -109,40 +106,67 @@
               class="password"
             />
           </form>
-          <form action="profile.php">
-            <input
-              type="checkbox"
-              name="account"
-              value="create"
-              class="checkbox"
-            />Create Account
+          <form action="profile.php" class="checkbox">
+            <input type="checkbox" name="account" value="create" />Create
+            Account
           </form>
         </fieldset>
       </section>
 
       <section class="shipping">
         <h2>3. Choose Shipping Method</h2>
-        <button class="shop" type="button" class="shipping">
-          <p>Standard shipping - 5.0</p>
-          <p>Delivery within 3-7 working days</p>
+        <button class="shipping" type="button">
+          <p class="montserrat">Standard shipping - 5.0</p>
+          <p class="delivery">Delivery within 3-7 working days</p>
         </button>
-        <button class="shop" type="button" class="shipping">
-          <p>Standard shipping - 5.0</p>
-          <p>Delivery within 3-7 working days</p>
+        <button class="shipping" type="button">
+          <p class="montserrat">Standard shipping - 5.0</p>
+          <p class="delivery">Delivery within 3-7 working days</p>
         </button>
       </section>
       <section class="payment">
         <h2>4. Choose Payment Method</h2>
-        <button class="shop" type="button" class="shipping">
-          <p>CREDIT/DEBIT CARD</p>
+        <button class="payment" type="button">
+          <p class="montserrat">CREDIT/DEBIT CARD</p>
         </button>
-        <button class="shop" type="button" class="shipping">
-          <p>PAYPAL</p>
+        <button class="payment" type="button">
+          <p class="montserrat">PAYPAL</p>
         </button>
-        <button class="shop" type="button" class="payment">
-          <p>PAY LATER WITH KLARNA</p>
+        <button class="payment" type="button">
+          <p class="montserrat">PAY LATER WITH KLARNA</p>
         </button>
       </section>
+      <div class="wrapping">
+        <section id="summary">
+          <table class="summary">
+            <h3>ORDER SUMMARY</h3>
+            <tr>
+              <th scope="col">Products</th>
+              <th scope="col">Shipping Cost</th>
+              <th scope="col">Total Price</th>
+            </tr>
+            <tr>
+              <td>49.00 USD</td>
+              <td>5.00 USD</td>
+              <td>54.00 USD</td>
+            </tr>
+          </table>
+        </section>
+        <section id="address">
+          <h3>SHIPPING ADDRESS</h3>
+          <p class="address">Jane Doe</p>
+          <p class="address">Fifth Avenue 555</p>
+          <p class="address">55555 New York</p>
+        </section>
+        <form action="g.php">
+          <input
+            type="submit"
+            name="complete"
+            value="Complete Purchase"
+            class="confirm"
+          />
+        </form>
+      </div>
     </main>
   </body>
 </html>
