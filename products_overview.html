@@ -6,7 +6,7 @@
       name="description"
       content="Homepage for Rainydays rainjackets webshop"
     />
-    <link href="styles/styles.css" rel="stylesheet" />
+    <link href="styles/products_overview.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -16,27 +16,53 @@
         <li>Free shipping on orders +99.99$</li>
         <li>Money back guarantee</li>
       </ul>
-        <nav>
-             <ul>
-            <li><a href="products_overview.html">WOMEN</a></li>
-             <li><a href="products_overview.html">MEN</a></li>
-             <li><a href="products_overview.html">BESTSELLERS</a></li>
-             <li><a href="products_overview.html">SALE</a></li>
-             <li><a href="products_overview.html">NEW</a></li>
-            </ul>
-         </nav>
+
+      <nav aria-label="navigation" class="navigation">
+        <a href="index.html" class="home-icon">
+          <img src="images\icons\home.svg" alt="Home icon" />
+          <figcaption class="label">Home</figcaption></a
+        >
+        <figure class="logo">
+          <img
+            src="images\RainyDays_Logo.png"
+            width="190"
+            alt="Rainydays logo"
+          />
+        </figure>
+        <form class="search">
+          <input id="search" type="text" placeholder="Search Products" />
+          <img src="images\icons\search.svg" id="search-icon" />
+        </form>
+        <div class="icon-wrapping">
+          <a href="index.html" class="icons">
+            <img src="images\icons\favorite.svg" alt="Favorites icon" />
+            <figcaption class="label">Favorites</figcaption></a
+          >
+          <a href="index.html" class="icons">
+            <img src="images\icons\profile.svg" alt="Profile icon" />
+            <figcaption class="label">Profile</figcaption></a
+          >
+          <a href="index.html" class="icons">
+            <img src="images\icons\basket.svg" alt="Basket icon" />
+            <figcaption class="label">Basket</figcaption></a
+          >
+        </div>
+      </nav>
+      <nav>
+        <ul class="menu">
+          <li><a href="products_overview.html">WOMEN</a></li>
+          <li><a href="products_overview.html">MEN</a></li>
+          <li><a href="products_overview.html">BESTSELLERS</a></li>
+          <li><a href="products_overview.html">SALE</a></li>
+          <li><a href="products_overview.html">NEW</a></li>
+        </ul>
+      </nav>
     </header>
-
-
-
-
-
-  <footer>
-    <ul class="footer">
-      <li>2020 - Rainydays S.A.S</li>
-      <li>Terms and conditions</li>
-      <li>Privacy</li>
-      <li>Warranty</li>
-    </ul>
-  </footer>
+    <main>
+      <div class="breadcrumb">
+        <a href="index.html" class="previous"> Home</a>
+        <a href="hiking.html" class="current"> &gt; &nbsp; Products Overview</a>
+      </div>
+    </main>
+  </body>
 </html>

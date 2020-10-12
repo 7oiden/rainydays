@@ -1,0 +1,154 @@
+@font-face {
+  font-family: "montserrat";
+  src: url();
+  font-family: "roboto";
+  scr: url();
+  font-family: "cenury gothic";
+  scr: url();
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  max-width: 1920px;
+  background-color: #f5f5f5;
+  font-family: "roboto", verdana, sans-serif;
+  font-size: 1.125rem;
+  color: #172940;
+  margin: 0;
+}
+/* header 
+--------------------*/
+header {
+  width: 1920px;
+  background-color: white;
+  position: fixed;
+}
+.campaign {
+  width: 1920px;
+  font-family: "montserrat";
+  font-size: 1.25rem;
+  color: #b05625;
+  text-align: center;
+  background-color: #f2b705;
+  margin: 0;
+}
+.campaign li:before {
+  content: url("../images/icons/Polygon2.png");
+  padding-right: 5px;
+}
+.campaign li {
+  padding: 10.5px 25px 10.5px 25px;
+  display: inline-block;
+}
+.navigation {
+  overflow: hidden;
+}
+.icons {
+  display: inline-block;
+  padding-left: 40px;
+  color: #172940;
+}
+.home-icon {
+  float: left;
+  color: #172940;
+  margin-left: 140px;
+  margin-top: 40px;
+}
+.label {
+  font-size: 1rem;
+  position: relative;
+  top: -7px;
+  left: -5px;
+}
+.logo {
+  float: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 120px;
+}
+.search {
+  float: left;
+  margin-left: 400px;
+  margin-top: 40px;
+  position: relative;
+}
+#search {
+  border: 2px solid #172940;
+  border-radius: 8px;
+  width: 500px;
+  height: 50px;
+  outline: 0;
+  font-family: "montserrat";
+  font-size: 20px;
+  padding-left: 20px;
+}
+#search-icon {
+  position: absolute;
+  top: 7.5px;
+  right: 1px;
+}
+.icon-wrapping {
+  float: right;
+  margin-top: 40px;
+  margin-right: 140px;
+}
+.menu {
+  width: 1920px;
+  font-family: "monteserrat", verdana, sans-serif;
+  font-size: 1.25rem;
+  background-color: #172940;
+  padding-left: 165px;
+  margin-bottom: 0px;
+  margin-top: 0;
+}
+.menu li {
+  display: inline-block;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-right: 145px;
+}
+div a {
+  color: #172940;
+}
+.navigation a:hover {
+  text-decoration: underline;
+}
+.navigation a {
+  text-decoration: none;
+}
+.menu a {
+  text-decoration: none;
+  color: white;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.menu a:hover {
+  color: #f2b705;
+  text-decoration: underline;
+}
+.breadcrumb {
+  float: left;
+  margin-top: 250px;
+  margin-left: 140px;
+}
+.breadcrumb a {
+  display: inline-block;
+  margin-left: 20px;
+  text-decoration: none;
+}
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+.current {
+  font-weight: bold;
+  color: #536175;
+}
+.previous {
+  color: #a1a1a1;
+}

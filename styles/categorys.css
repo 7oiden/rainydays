@@ -15,6 +15,11 @@ body {
 }
 /* header 
 --------------------*/
+header {
+  width: 1920px;
+  background-color: white;
+  position: fixed;
+}
 .campaign {
   width: 1920px;
   font-family: "montserrat";
@@ -179,42 +184,48 @@ p {
 }
 /* footer 
 --------------------*/
+footer {
+  font-style: "montserrat";
+  font-size: 1.25rem;
+}
 .support {
-  width: 1920px;
-  height: 191px;
   background-color: #172940;
+  height: 191px;
   color: white;
-  float: left;
-  clear: left;
 }
 .footer {
   width: 1920px;
+  height: 68px;
   background-color: white;
   text-align: center;
-  padding-top: 0;
   float: left;
-  margin: 0;
 }
 footer a {
   color: white;
   text-decoration: none;
 }
 section.support {
-  width: 1780px;
-  columns: 4;
-  padding-left: 140px;
-  padding-right: 0;
-  margin: 0;
+  width: 1920px;
+  float: left;
 }
 .support li {
-  list-style-type: none;
   padding: 0;
-}
-.support ul {
-  padding-left: 0;
+  margin: 0;
+  font-weight: 300;
 }
 .footer li {
-  display: inline-block;
+  display: inline;
   list-style-type: none;
-  padding-right: 50px;
+}
+div.support {
+  float: left;
+  margin-left: 140px;
+  margin-right: 140px;
+  padding-top: 12px;
+}
+footer p {
+  font-weight: 500;
+}
+ul.support {
+  padding-left: 20px;
 }
