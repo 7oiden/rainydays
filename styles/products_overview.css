@@ -27,7 +27,7 @@ body {
 header {
   width: 1920px;
   background-color: white;
-  position: fixed;
+  /*position: fixed;*/
 }
 .campaign {
   width: 1920px;
@@ -132,14 +132,16 @@ div a {
   color: #f2b705;
   text-decoration: underline;
 }
-.breadcrumb {
+/* main
+--------------------*/
+div.breadcrumb {
   float: left;
-  margin-top: 250px;
-  margin-left: 140px;
+  margin: 20px 0px 20px 140px;
+  width: 1200px;
 }
 .breadcrumb a {
   display: inline-block;
-  margin-left: 20px;
+  margin-right: 20px;
   text-decoration: none;
 }
 .breadcrumb a:hover {
@@ -151,4 +153,156 @@ div a {
 }
 .previous {
   color: #a1a1a1;
+}
+section.products {
+  box-sizing: content-box;
+  width: 1200px;
+  clear: left;
+  margin-left: 140px;
+}
+figure.jacket {
+  background-color: white;
+  width: 350px;
+  height: 391px;
+  margin: 10px 20px 10px 0px;
+  color: #172940;
+  float: left;
+}
+#selected:hover {
+  display: block;
+  width: 350px;
+  height: 391px;
+  opacity: 0.75;
+}
+.jacket-image {
+  margin: 0;
+  float: left;
+  clear: left;
+  padding: 0px;
+}
+.rating {
+  list-style: none;
+  margin: 0;
+  padding-left: 30px;
+  float: left;
+}
+.rating li {
+  display: inline-block;
+}
+.jacket p {
+  margin-left: 30px;
+  width: 500px;
+  font-family: "montserrat";
+  font-size: 0.875rem;
+  color: #536175;
+  margin: 5px 30px 0px 30px;
+  float: left;
+  clear: left;
+}
+figcaption.title {
+  font-family: "century gothic";
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin: 0px 30px 40px 30px;
+  float: left;
+}
+.color {
+  font-family: "montserrat";
+  font-size: 0.875rem;
+  text-align: center;
+  color: #536175;
+  list-style: none;
+  padding-left: 0;
+  float: right;
+  margin: 20px 30px 30px 0px;
+}
+.color li {
+  padding-top: 10px;
+}
+.make-favorite {
+  float: left;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+.new {
+  width: 84px;
+  float: right;
+  margin-top: -32.5px;
+  margin-right: 20px;
+}
+section.bestsellers {
+  background-image: url("../images/mountain_peak.jpg");
+  background-repeat: no-repeat;
+  width: 525px;
+  height: 1213px;
+  float: right;
+  margin-right: 140px;
+  margin-top: 10px;
+}
+h1 {
+  font-family: "century gothic";
+  font-size: 1.8rem;
+  margin-left: 87.5px;
+  margin-top: 70px;
+  margin-bottom: 0;
+  text-decoration: underline;
+}
+.jacket.bestseller {
+  margin: 30px 87.5px 100px 87.5px;
+  border: 2px solid #f5f5f5;
+}
+.price {
+  float: right;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-right: 30px;
+  margin-top: -5px;
+}
+.load {
+  font-family: "montserrat";
+  font-size: 1.25rem;
+  background-color: #172940;
+  color: white;
+  border: none;
+  border-radius: 0;
+  padding: 13px 51px 13px 51px;
+  margin: 40px 0px 50px 370px;
+}
+.support-container {
+  font-family: "montserrat";
+  background-color: #172940;
+  color: white;
+  list-style: none;
+  display: flex;
+  margin-bottom: 0;
+}
+div.support {
+  flex: 1;
+  margin-left: 140px;
+}
+.support ul {
+  list-style: none;
+  padding-left: 0;
+}
+.support a {
+  font-weight: 300;
+  text-decoration: none;
+  color: white;
+}
+.support p {
+  font-weight: 500;
+  text-decoration: underline;
+}
+.footer {
+  width: 1920px;
+  background-color: white;
+  text-align: center;
+  margin-top: 0;
+}
+.footer li {
+  display: inline-block;
+  list-style: none;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
