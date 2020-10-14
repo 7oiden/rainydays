@@ -27,7 +27,8 @@ body {
 header {
   width: 1920px;
   background-color: white;
-  /*position: fixed;*/
+  position: fixed;
+  z-index: 100;
 }
 .campaign {
   width: 1920px;
@@ -134,6 +135,10 @@ div a {
 }
 /* main
 --------------------*/
+main {
+  position: relative;
+  top: 230px;
+}
 div.breadcrumb {
   float: left;
   margin: 20px 0px 20px 140px;
@@ -249,7 +254,6 @@ h1 {
 }
 .jacket.bestseller {
   margin: 30px 87.5px 100px 87.5px;
-  border: 2px solid #f5f5f5;
 }
 .price {
   float: right;
@@ -268,17 +272,23 @@ h1 {
   padding: 13px 51px 13px 51px;
   margin: 40px 0px 50px 370px;
 }
+.load:hover {
+  opacity: 0.75;
+}
+/* footer
+--------------------*/
+footer {
+  position: relative;
+  top: 230px;
+}
 .support-container {
   font-family: "montserrat";
   background-color: #172940;
   color: white;
   list-style: none;
   display: flex;
+  justify-content: space-evenly;
   margin-bottom: 0;
-}
-div.support {
-  flex: 1;
-  margin-left: 140px;
 }
 .support ul {
   list-style: none;
@@ -294,15 +304,12 @@ div.support {
   text-decoration: underline;
 }
 .footer {
-  width: 1920px;
+  display: flex;
+  justify-content: space-evenly;
   background-color: white;
-  text-align: center;
-  margin-top: 0;
 }
 .footer li {
   display: inline-block;
   list-style: none;
-  text-align: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-left: 20px;
 }
