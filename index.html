@@ -10,7 +10,54 @@
   </head>
 
   <body>
-    <header></header>
+    <header>
+      <ul class="campaign">
+        <li>Now: -20% on your first order</li>
+        <li>Free shipping on orders +99.99$</li>
+        <li>Money back guarantee</li>
+      </ul>
+
+      <nav aria-label="navigation" class="navigation">
+        <a href="index.html" class="home-icon">
+          <img src="images\icons\home.svg" alt="Home icon" />
+          <figcaption class="label">Home</figcaption></a
+        >
+        <figure class="logo">
+          <img
+            src="images\RainyDays_Logo.png"
+            width="190"
+            alt="Rainydays logo"
+          />
+        </figure>
+        <form class="search">
+          <input id="search" type="text" placeholder="Search Products" />
+          <img src="images\icons\search.svg" id="search-icon" />
+        </form>
+        <div class="icon-wrapping">
+          <a href="index.html" class="icons">
+            <img src="images\icons\favorite.svg" alt="Favorites icon" />
+            <figcaption class="label">Favorites</figcaption></a
+          >
+          <a href="index.html" class="icons">
+            <img src="images\icons\profile.svg" alt="Profile icon" />
+            <figcaption class="label">Profile</figcaption></a
+          >
+          <a href="index.html" class="icons">
+            <img src="images\icons\basket.svg" alt="Basket icon" />
+            <figcaption class="label">Basket</figcaption></a
+          >
+        </div>
+      </nav>
+      <nav>
+        <ul class="menu">
+          <li><a href="products_overview.html">WOMEN</a></li>
+          <li><a href="products_overview.html">MEN</a></li>
+          <li><a href="products_overview.html">BESTSELLERS</a></li>
+          <li><a href="products_overview.html">SALE</a></li>
+          <li><a href="products_overview.html">NEW</a></li>
+        </ul>
+      </nav>
+    </header>
 
     <main>
       <div class="main">
@@ -19,8 +66,10 @@
             <h1>RAIN JACKETS PERFECT FOR <em>YOU</em></h1>
             <h2>outdoor - hiking - casual -skiing</h2>
           </hgroup>
-          <button class="women" type="button">WOMEN</button>
-          <button class="men" type="button">MEN</button>
+          <div class="women-men">
+            <a href="products_overview.html"> <p class="button">WOMEN</p></a>
+            <a href="products_overview.html"> <p class="button">MEN</p></a>
+          </div>
           <p class="pitch">
             Our rainjackets provides quality, comfort & reliability<br />wherever
             you are
@@ -40,81 +89,201 @@
         </section>
       </div>
 
-      <section class="categorys">
-        <h4>LEARN MORE ABOUT OUR RAIN JACKETS</h4>
-        <div class="categorys">
-          <figure class="categorys">
-            <img src="images/hiking.jpg" alt="hiker" class="border" />
-            <figcaption>HIKER</figcaption>
-          </figure>
-          <figure class="categorys">
-            <img src="images/outdoor.jpg" alt="woman in canoe at a lake" />
-            <figcaption>OUTDOOR</figcaption>
-          </figure>
-          <figure class="categorys">
-            <img src="images/skiing.jpg" alt="skiier viewing a mountainrange" />
-            <figcaption>SKIING</figcaption>
-          </figure>
-          <figure class="categorys">
-            <img src="images/casual.jpg" alt="woman in casual clothes" />
-            <figcaption>CASUAL</figcaption>
-          </figure>
-        </div>
-      </section>
-      <section class="special-offers">
-        <h6>Find Insperation</h6>
-        <div class="instagram">
-          <figure class="instagram">
-            <img src="images\Instagram\instagram_1.jpg" alt="" />
-          </figure>
-          <figure class="instagram">
-            <img src="images\Instagram\instagram_2.jpg" alt="" />
-          </figure>
-          <figure class="instagram">
-            <img src="images\Instagram\instagram_9.jpg" alt="" />
-          </figure>
-          <figure class="instagram">
-            <img src="images\Instagram\instagram_4.jpg" alt="" />
-          </figure>
-          <figure class="instagram">
-            <img src="images\Instagram\instagram_5.jpg" alt="" />
-          </figure>
-          <figure class="instagram">
-            <img src="images\Instagram\instagram_6.jpg" alt="" />
-          </figure>
-          <figure class="instagram">
-            <img src="images\Instagram\instagram_7.jpg" alt="" />
-          </figure>
-          <figure class="instagram">
-            <img src="images\Instagram\instagram_8.jpg" alt="" />
-          </figure>
-        </div>
-        <div class="join-instagram">
-          <p>Join Us on Instagram</p>
-          <p class="yellow">#rainydays</p>
-        </div>
-      </section>
+      <div class="main-wrapper">
+        <section class="categorys">
+          <h4>LEARN MORE ABOUT OUR RAIN JACKETS</h4>
+          <div class="categorys">
+            <figure class="categorys">
+              <a href="products_overview.html">
+                <img src="images/hiking.jpg" alt="hiker" class="border" />
+                <figcaption>HIKER</figcaption>
+              </a>
+            </figure>
 
-      <section class="news">
-        <h5>NEW ARRIVALS</h5>
-        <p id="news">Casual Rain Jackets for Men and Women</p>
-        <figure class="news">
-          <img
-            src="images/newwomen.jpg"
-            alt="woman outdoors in a yellow rain jacket"
-            class="img-block"
-          />
-          <!--<button class="shop" id="shopwomen" type="button">SHOP NOW</button>-->
-          <img
-            src="images/newmen.jpg"
-            alt="man outdoors in a yellow rain jacket"
-            class="img-block"
-          />
-          <!--<button class="shop" id="shopmen" type="button">SHOP NOW</button>-->
-        </figure>
-      </section>
+            <figure class="categorys">
+              <a href="products_overview.html">
+                <img src="images/outdoor.jpg" alt="woman in canoe at a lake" />
+                <figcaption>OUTDOOR</figcaption>
+              </a>
+            </figure>
+            <figure class="categorys">
+              <a href="products_overview.html">
+                <img
+                  src="images/skiing.jpg"
+                  alt="skiier viewing a mountainrange"
+                />
+                <figcaption>SKIING</figcaption>
+              </a>
+            </figure>
+            <figure class="categorys">
+              <a href="products_overview.html">
+                <img src="images/casual.jpg" alt="woman in casual clothes" />
+                <figcaption>CASUAL</figcaption>
+              </a>
+            </figure>
+          </div>
+        </section>
+        <div class="special-offers">
+          <section class="instagram">
+            <h6 id="instagram">Find Insperation</h6>
+            <div class="instagram">
+              <figure class="instagram">
+                <img src="images\Instagram\instagram_1.jpg" alt="" />
+              </figure>
+              <figure class="instagram">
+                <img src="images\Instagram\instagram_2.jpg" alt="" />
+              </figure>
+              <figure class="instagram">
+                <img src="images\Instagram\instagram_9.jpg" alt="" />
+              </figure>
+              <figure class="instagram">
+                <img src="images\Instagram\instagram_4.jpg" alt="" />
+              </figure>
+              <figure class="instagram">
+                <img src="images\Instagram\instagram_5.jpg" alt="" />
+              </figure>
+              <figure class="instagram">
+                <img src="images\Instagram\instagram_6.jpg" alt="" />
+              </figure>
+              <figure class="instagram">
+                <img src="images\Instagram\instagram_7.jpg" alt="" />
+              </figure>
+              <figure class="instagram">
+                <img src="images\Instagram\instagram_8.jpg" alt="" />
+              </figure>
+            </div>
+            <div class="join-instagram">
+              <p>Join Us on Instagram</p>
+              <p class="yellow">#rainydays</p>
+            </div>
+          </section>
+          <div class="special-offer">
+            <h6 id="special">Autumn Offer</h6>
+            <figure class="special">
+              <img src="images\leaves.jpg" alt="" id="leaves" />
+            </figure>
+            <p>Get -20% on your first order</p>
+          </div>
+        </div>
+
+        <section class="news">
+          <h5>NEW ARRIVALS</h5>
+          <p id="news">Casual Rain Jackets for Men and Women</p>
+          <figure class="news">
+            <img
+              src="images/newwomen.jpg"
+              alt="woman outdoors in a yellow rain jacket"
+            />
+            <a href="products_overview.html" class="button">
+              <p class="button">SHOP NOW</p></a
+            >
+            <img
+              src="images/newmen.jpg"
+              alt="man outdoors in a yellow rain jacket"
+            />
+            <a href="products_overview.html" class="button">
+              <p class="button">SHOP NOW</p></a
+            >
+          </figure>
+        </section>
+      </div>
     </main>
-
-    <footer></footer>
+    <section class="bottom-items">
+      <div>
+        <form action="form-success.php" method="get" class="newsletter">
+          <label id="label" for="newsletter"
+            >Subscribe to our Newsletter:</label
+          >
+          <input
+            id="newsletter"
+            type="text"
+            name="email"
+            placeholder="Your e-mail address"
+          />
+          <input id="join" type="submit" name="subscribe" value="JOIN" />
+        </form>
+      </div>
+      <div class="large-buttons">
+        <a href="about.html">
+          <img src="images\icons\Contact.png" alt="contact icon"
+        /></a>
+        <a href=""> <img src="images\icons\Chat.png" alt="chat icon" /></a>
+      </div>
+    </section>
+    <footer>
+      <section class="support-container">
+        <div class="support">
+          <p>Follow us on:</p>
+          <ul>
+            <li class="social-media">
+              <img
+                src="images\icons\facebook.png"
+                alt="Facebook logo"
+                class="social-media"
+              />
+            </li>
+            <li class="social-media">
+              <img
+                src="images\icons\instagram.png"
+                alt="Instagram logo"
+                class="social-media"
+              />
+            </li>
+            <li class="social-media">
+              <img
+                src="images\icons\twitter.png"
+                alt="Twitter logo"
+                class="social-media"
+              />
+            </li>
+            <li class="social-media">
+              <img
+                src="images\icons\youtube.png"
+                alt="Youtube logo"
+                class="social-media"
+              />
+            </li>
+          </ul>
+        </div>
+        <div class="support">
+          <p>About Rainydays:</p>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="about.html">Contact Info</a></li>
+            <li><a href="about.html">Location</a></li>
+          </ul>
+        </div>
+        <div class="support">
+          <p>Support:</p>
+          <ul>
+            <li><a href="support.html">FAQ</a></li>
+            <li><a href="support.html">Returns</a></li>
+            <li><a href="support.html">Size Chart</a></li>
+          </ul>
+        </div>
+        <div class="support">
+          <p>Contact:</p>
+          <ul>
+            <li>
+              <a href="contact.html">Phone: <i>555 555 555</i></a>
+            </li>
+            <li>
+              <a href="contact.html">Email: <i>support@rainydays.com</i></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="footer">
+        <ul>
+          <li>&#169;2020 - Rainydays S.A.S</li>
+          <li>&#124;</li>
+          <li>Terms and conditions</li>
+          <li>&#124;</li>
+          <li>Privacy</li>
+          <li>&#124;</li>
+          <li>Warranty</li>
+        </ul>
+      </section>
+    </footer>
   </body>
 </html>

@@ -173,7 +173,7 @@ figure.jacket {
   color: #172940;
   float: left;
 }
-#selected:hover {
+figure.jacket a:hover {
   display: block;
   width: 350px;
   height: 391px;
