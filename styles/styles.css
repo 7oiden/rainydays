@@ -6,7 +6,7 @@
   font-family: 'cenury gothic'
   src: url(); */
 }
-/* global 
+/* global styles
 --------------------*/
 body {
   width: 1920px;
@@ -512,3 +512,8 @@ img.social-media {
   margin: 0;
   padding-right: 20px;
 }
+/*deskotop styles*/
+@media only screen and(min-width:720px) {
+}
+/* styles that change
+--------------------*/

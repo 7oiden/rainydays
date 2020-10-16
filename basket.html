@@ -6,21 +6,62 @@
       name="description"
       content="Homepage for Rainydays rainjackets webshop"
     />
-    <link href="styles/styles.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="styles/basket.css" rel="stylesheet" />
   </head>
 
-  <header>
-    <ul class="breadcrumb">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Women</a></li>
-      <li><a href="#">Rocky Mountains</a></li>
-      <li>Basket</li>
-    </ul>
-  </header>
-
   <body>
+    <header>
+      <ul class="campaign">
+        <li>Now: -20% on your first order</li>
+        <li>Free shipping on orders +99.99$</li>
+        <li>Money back guarantee</li>
+      </ul>
+
+      <nav aria-label="navigation" class="navigation">
+        <a href="index.html" class="home-icon">
+          <img src="images\icons\home.svg" alt="Home icon" />
+          <figcaption class="label">Home</figcaption></a
+        >
+        <figure class="logo">
+          <img
+            src="images\RainyDays_Logo.png"
+            width="190"
+            alt="Rainydays logo"
+          />
+        </figure>
+        <form class="search">
+          <input id="search" type="text" placeholder="Search Products" />
+          <img src="images\icons\search.svg" id="search-icon" />
+        </form>
+        <div class="icon-wrapping">
+          <a href="index.html" class="icons">
+            <img src="images\icons\favorite.svg" alt="Favorites icon" />
+            <figcaption class="label">Favorites</figcaption></a
+          >
+          <a href="index.html" class="icons">
+            <img src="images\icons\profile.svg" alt="Profile icon" />
+            <figcaption class="label">Profile</figcaption></a
+          >
+          <a href="index.html" class="icons">
+            <img src="images\icons\basket.svg" alt="Basket icon" />
+            <figcaption class="label">Basket</figcaption></a
+          >
+        </div>
+      </nav>
+      <nav>
+        <ul class="menu">
+          <li><a href="products_overview.html">WOMEN</a></li>
+          <li><a href="products_overview.html">MEN</a></li>
+          <li><a href="products_overview.html">BESTSELLERS</a></li>
+          <li><a href="products_overview.html">SALE</a></li>
+          <li><a href="products_overview.html">NEW</a></li>
+        </ul>
+      </nav>
+    </header>
+
     <main>
-      <section>
+      <section class="basket">
         <h1>1. Your Shopping Basket</h1>
         <table>
           <tr>
@@ -48,8 +89,9 @@
         <button type="button">Continue Shopping</button>
         <button type="button">Proceed to Checkout</button>
       </section>
-      <aside>
-        <h1>Already a Customer?</h1>
+
+      <section class="sign-in">
+        <h2>Already a Customer?</h2>
         <form action="" method="post">
           <label for="email">E-mail</label>
           <input type="text" name="username" required="required" /><br />
@@ -59,7 +101,7 @@
         <button type="button">SIGN IN</button>
         <p>Don't have an account?</p>
         <p>You can create one at <a href="checkout.html">checkout</a></p>
-      </aside>
+      </section>
     </main>
   </body>
 </html>
