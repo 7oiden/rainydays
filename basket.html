@@ -61,47 +61,77 @@
     </header>
 
     <main>
-      <section class="basket">
-        <h1>1. Your Shopping Basket</h1>
-        <table>
-          <tr>
-            <td>DESCRIPTION</td>
-            <td>PRICE</td>
-            <td>QUANTITY</td>
-            <td>TOTAL</td>
-          </tr>
-          <tr>
-            <td>
-              Rainydays - Rocky Mountains Jacket <br />Womens Size - M <br />
-              Color - blue
-            </td>
-            <td>49.00</td>
-            <td>1</td>
-            <td>49.00</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>49.00</td>
-          </tr>
-        </table>
-        <button type="button">Continue Shopping</button>
-        <button type="button">Proceed to Checkout</button>
-      </section>
+      <div class="breadcrumb">
+        <a href="index.html" class="previous"> Home</a>
+        <a href="products_overview.html" class="previous">
+          &gt; &nbsp; Products Overview</a
+        >
+        <a href="products_page" class="previous">
+          &gt; &nbsp; Rocky Mountains</a
+        >
+        <a href="hiking.html" class="current"> &gt; &nbsp; Basket</a>
+      </div>
+      <div class="content-wrapper">
+        <section class="basket">
+          <h1>1. Your Shopping Basket</h1>
+          <table>
+            <tr>
+              <th></th>
+              <th scope="col">DESCRIPTION</th>
+              <th scope="col">PRICE</th>
+              <th scope="col">QUANTITY</th>
+              <th scope="col">TOTAL</th>
+            </tr>
+            <tr>
+              <td><img id="jacket" src="images\blue.jpg" /></td>
+              <td>
+                Rainydays - Rocky Mountains Jacket <br />Womens Size - M <br />
+                Color - blue
+              </td>
+              <td>49.00 USD</td>
+              <td><p>1</p></td>
+              <td>49.00 USD</td>
+            </tr>
+            <tr>
+              <td class="no-border"></td>
+              <td class="no-border"></td>
+              <td class="no-border"></td>
+              <td class="no-border"></td>
+              <td class="no-border" id="total">49.00 USD</td>
+            </tr>
+          </table>
+          <div class="buttons">
+            <a href="products_overview.html" id="blue">Continue Shopping</a>
+            <a href="checkout.html" id="yellow">Proceed to Checkout</a>
+          </div>
+        </section>
 
-      <section class="sign-in">
-        <h2>Already a Customer?</h2>
-        <form action="" method="post">
-          <label for="email">E-mail</label>
-          <input type="text" name="username" required="required" /><br />
-          <label for="password">Password</label>
-          <input type="password" name="password" required="required" />
-        </form>
-        <button type="button">SIGN IN</button>
-        <p>Don't have an account?</p>
-        <p>You can create one at <a href="checkout.html">checkout</a></p>
-      </section>
+        <section class="sign-in">
+          <h2>Already a Customer?</h2>
+          <form action="" method="GET">
+            <label for="email">E-mail</label>
+            <input
+              type="text"
+              name="username"
+              required="required"
+              placeholder="your@email.com"
+            /><br />
+            <label for="password">Password</label>
+            <input
+              type="password"
+              name="password"
+              required="required"
+              placeholder="* * * * * * * *"
+            />
+          </form>
+          <a href="" id="p1">Forgot your password?</a>
+          <button id="sign-in" type="button">SIGN IN</button>
+          <p id="p2">Don't have an account?</p>
+          <p id="p3">
+            You can create one at <a href="checkout.html">checkout</a>
+          </p>
+        </section>
+      </div>
     </main>
   </body>
 </html>

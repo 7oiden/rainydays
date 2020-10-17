@@ -145,6 +145,30 @@ div a {
 
 /* main 
 --------------------*/
+.breadcrumb a {
+  display: inline-block;
+  margin-right: 20px;
+  text-decoration: none;
+}
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+.current {
+  font-weight: bold;
+  color: #536175;
+}
+.previous {
+  color: #a1a1a1;
+}
+.content-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
+div.buttons {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 300px;
+}
 h1,
 h2 {
   width: 100%;
@@ -152,15 +176,129 @@ h2 {
   font-size: 1.875rem;
   background-color: #5361757d;
   padding: 14px 0px 14px 20px;
-  margin-bottom: 0;
-  margin-top: 36px;
+  margin-bottom: 40px;
 }
 section.basket {
   background-color: white;
+  width: 1082px;
+  height: 780px;
+  padding-top: 10px;
+  margin-top: 70px;
   margin-left: 140px;
-  max-width: 1082px;
 }
 section.sign-in {
   background-color: white;
-  margin-left: 140px;
+  width: 525px;
+  height: 650px;
+  padding-top: 10px;
+  margin-top: 70px;
+  margin-right: 140px;
+}
+table {
+  text-align: left;
+  width: 90%;
+  margin-left: 25px;
+  border-spacing: 0;
+}
+th {
+  font-family: "montserrat";
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+table th,
+td {
+  border-bottom: 2px solid #707070;
+}
+tr > .no-border {
+  border: none;
+}
+td p {
+  border: 2px solid #707070;
+  text-align: center;
+  width: 70px;
+}
+#total {
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding-top: 20px;
+}
+#jacket {
+  width: 120px;
+}
+form input {
+  font-family: "roboto";
+  font-size: 1.125rem;
+  display: block;
+  width: 400px;
+  height: 50px;
+  border: 2px solid #5361757d;
+  color: #c2c2c2;
+  padding-left: 15px;
+  border-radius: 0;
+  margin-left: 62.5px;
+}
+form label {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-left: 62.5px;
+  color: #172940;
+}
+#sign-in {
+  font-family: "montserrat";
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-decoration: none;
+  width: 310px;
+  padding: 13px 40px;
+  background-color: #172940;
+  color: white;
+  border: none;
+  border-radius: 0;
+  margin-top: 35px;
+}
+.sign-in button {
+  display: block;
+  margin-left: 107.5px;
+  margin-bottom: 100px;
+  box-shadow: 0 3px 6px #00000029;
+}
+.sign-in p {
+  font-family: "montserrat";
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-align: center;
+}
+#p1 {
+  display: block;
+  font-family: "roboto";
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: right;
+  margin-right: 62.5px;
+  margin-top: 5px;
+  color: #c2c2c2;
+  text-decoration: none;
+}
+#p2 {
+  text-transform: uppercase;
+}
+.buttons a {
+  display: block;
+  font-family: "montserrat";
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-decoration: none;
+  width: 310px;
+  padding: 13px 0px;
+  box-shadow: 0 3px 6px #00000029;
+  text-transform: uppercase;
+  text-align: center;
+}
+#blue {
+  background-color: #172940;
+  color: white;
+}
+#yellow {
+  background-color: #f2b705;
+  color: #000000;
 }
