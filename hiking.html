@@ -12,146 +12,154 @@
 
   <body>
     <header>
-      <ul class="campaign">
-        <li>Now: -20% on your first order</li>
-        <li>Free shipping on orders +99.99$</li>
-        <li>Money back guarantee</li>
-      </ul>
-      <nav aria-label="navigation" class="navigation">
-        <div class="icons">
-          <div class="icons">
-            <a href="index.html" class="icons"
-              ><img src="images\icons\home.svg" alt="Home icon" />Home</a
-            >
-          </div>
-          <figure class="logo">
-            <img
-              src="images\RainyDays_Logo.png"
-              width="190"
-              alt="Rainydays logo"
-            />
-          </figure>
+      <div>
+        <ul class="campaign">
+          <li>Now: -20% on your first order</li>
+          <li>Free shipping on orders +99.99$</li>
+          <li>Money back guarantee</li>
+        </ul>
+      </div>
+
+      <nav aria-label="navigation" class="icons">
+        <div>
+          <a href="index.html" class="icons">
+            <img src="images\icons\home.svg" alt="Home icon" />
+            <figcaption class="label">Home</figcaption></a
+          >
         </div>
-        <div class="icons">
+        <!-- <figure class="logo">
+          <img
+            src="images\RainyDays_Logo.png"
+            width="190"
+            alt="Rainydays logo"
+          />
+        </figure> -->
+        <div>
           <form class="search">
             <input id="search" type="text" placeholder="Search Products" />
+            <label for="search" id="search-label"
+              ><img src="images\icons\search.svg"
+            /></label>
           </form>
+          <div></div>
         </div>
-        <div class="icons">
-          <ul class="icons">
-            <li class="icons">
-              <form action="basket.html">
-                <input
-                  type="image"
-                  src="images\icons\favorite.svg"
-                  name="home"
-                  id="home"
-                />
-                <label for="favorite">Favorite</label>
-              </form>
-            </li>
-            <li class="icons">
-              <form action="basket.html">
-                <input
-                  type="image"
-                  src="images\icons\profile.svg"
-                  name="profile"
-                  id="profile"
-                />
-                <label for="home">Profile</label>
-              </form>
-            </li>
-            <li class="icons">
-              <form action="basket.html">
-                <input
-                  type="image"
-                  src="images\icons\basket.svg"
-                  name="basket"
-                  id="basket"
-                />
-                <label for="home">Basket</label>
-              </form>
-            </li>
-          </ul>
+
+        <div>
+          <a href="index.html" class="icons">
+            <img src="images\icons\favorite.svg" alt="Favorites icon" />
+            <figcaption class="label">Favorites</figcaption></a
+          >
+          <a href="index.html" class="icons">
+            <img src="images\icons\profile.svg" alt="Profile icon" />
+            <figcaption class="label">Profile</figcaption></a
+          >
+          <a href="basket.html" class="icons">
+            <img src="images\icons\basket.svg" alt="Basket icon" />
+            <figcaption class="label">Basket</figcaption></a
+          >
         </div>
       </nav>
-      <nav aria-label="menu">
-        <div class="menu">
-          <ul class="menu-categorys">
-            <li><a href="products_overview.html">WOMEN</a></li>
-            <li><a href="products_overview.html">MEN</a></li>
-            <li><a href="products_overview.html">BESTSELLERS</a></li>
-            <li><a href="products_overview.html">SALE</a></li>
-            <li><a href="products_overview.html">NEWS</a></li>
-          </ul>
-        </div>
+      <nav class="menu">
+        <ul class="menu">
+          <li class="menu-item"><a href="products_overview.html">WOMEN</a></li>
+          <li class="menu-item"><a href="products_overview.html">MEN</a></li>
+          <li class="menu-item">
+            <a href="products_overview.html">BESTSELLERS</a>
+          </li>
+          <li class="menu-item"><a href="products_overview.html">SALE</a></li>
+          <li class="menu-item"><a href="products_overview.html">NEW</a></li>
+        </ul>
       </nav>
     </header>
 
     <main>
-      <div class="breadcrumb">
-        <ul class="breadcrumb">
-          <li><a href="index.html" class="previous"> > Home</a></li>
-          <li><a href="hiking.html" class="current"> > Hiking</a></li>
-        </ul>
-      </div>
-      <section class="content">
-        <h1>Our Hiking Collection</h1>
-        <h2>Perfect rain jackets for hiking and trekking</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum
-        </p>
-        <button class="shop" type="button">SHOP NOW</button>
+      <section class="content-wrapper">
+        <div class="content">
+          <h1>Our Hiking Collection</h1>
+          <h2>Perfect rain jackets for hiking and trekking</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum
+          </p>
+        </div>
+        <figure><img src="images\hiking2.jpg" alt="" /></figure>
       </section>
-      <section class="image">
-        <img src="images\hiking2.jpg" alt="hiker" />
-      </section>
-      <form action="form-success.php" method="get" class="newsletter">
-        <label for="email">Subscribe to our Newsletter</label>
-        <input
-          id="newsletter"
-          type="text"
-          name="email"
-          placeholder="Your e-mail address"
-        />
-        <input
-          id="subscribe"
-          type="submit"
-          name="subscribe"
-          value="Subscribe"
-        />
-      </form>
     </main>
+    <section class="bottom-items">
+      <div>
+        <form action="form-success.php" method="get" class="newsletter">
+          <label id="label" for="newsletter"
+            >Subscribe to our Newsletter:</label
+          >
+          <input
+            id="newsletter"
+            type="text"
+            name="email"
+            placeholder="Your e-mail address"
+          />
+          <input id="join" type="submit" name="subscribe" value="JOIN" />
+        </form>
+      </div>
+      <div class="large-buttons">
+        <a href="about.html">
+          <img src="images\icons\Contact.png" alt="contact icon"
+        /></a>
+        <a href=""> <img src="images\icons\Chat.png" alt="chat icon" /></a>
+      </div>
+    </section>
 
     <footer>
-      <section class="support">
+      <section class="support-container">
         <div class="support">
           <p>Follow us on:</p>
-          <ul class="support">
-            <li>Facebook</li>
-            <li>Instagram</li>
-            <li>Twitter</li>
-            <li>Youtube</li>
+          <ul>
+            <li class="social-media">
+              <img
+                src="images\icons\facebook.png"
+                alt="Facebook logo"
+                class="social-media"
+              />
+            </li>
+            <li class="social-media">
+              <img
+                src="images\icons\instagram.png"
+                alt="Instagram logo"
+                class="social-media"
+              />
+            </li>
+            <li class="social-media">
+              <img
+                src="images\icons\twitter.png"
+                alt="Twitter logo"
+                class="social-media"
+              />
+            </li>
+            <li class="social-media">
+              <img
+                src="images\icons\youtube.png"
+                alt="Youtube logo"
+                class="social-media"
+              />
+            </li>
           </ul>
         </div>
         <div class="support">
           <p>About Rainydays:</p>
-          <ul class="support">
+          <ul>
             <li><a href="about.html">About Us</a></li>
             <li><a href="about.html">Contact Info</a></li>
             <li><a href="about.html">Location</a></li>
@@ -159,7 +167,7 @@
         </div>
         <div class="support">
           <p>Support:</p>
-          <ul class="support">
+          <ul>
             <li><a href="support.html">FAQ</a></li>
             <li><a href="support.html">Returns</a></li>
             <li><a href="support.html">Size Chart</a></li>
@@ -167,12 +175,12 @@
         </div>
         <div class="support">
           <p>Contact:</p>
-          <ul class="support">
+          <ul>
             <li>
-              <a href="contact.html"><i>Phone: 555 555 555</i></a>
+              <a href="contact.html">Phone: <i>555 555 555</i></a>
             </li>
             <li>
-              <a href="contact.html"><i>Email: support@rainydays.com</i></a>
+              <a href="contact.html">Email: <i>support@rainydays.com</i></a>
             </li>
           </ul>
         </div>

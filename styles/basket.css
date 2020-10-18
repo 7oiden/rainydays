@@ -15,7 +15,7 @@ html {
   box-sizing: inherit;
 }
 body {
-  max-width: 1920px;
+  max-width: 100%;
   background-color: #f5f5f5;
   font-family: "roboto", verdana, sans-serif;
   font-size: 1.125rem;
@@ -26,8 +26,7 @@ body {
 --------------------*/
 header {
   box-sizing: border-box;
-  width: 1920px;
-  background-color: white;
+  width: 100%;
   /*position: fixed;*/
   z-index: 100;
   font-family: "roboto", verdana, sans-serif;
@@ -39,12 +38,15 @@ header {
 *:after {
   box-sizing: inherit;
 }
-.campaign {
-  width: 1920px;
+nav.icons {
+  background-color: white;
+}
+ul.campaign {
+  display: flex;
+  justify-content: space-evenly;
   font-family: "montserrat";
   font-size: 1.25rem;
   color: #b05625;
-  text-align: center;
   background-color: #f2b705;
   margin: 0;
 }
@@ -53,41 +55,37 @@ header {
   padding-right: 5px;
 }
 .campaign li {
-  padding: 10.5px 25px 10.5px 25px;
+  padding: 10px 0;
   display: inline-block;
 }
-.navigation {
-  overflow: hidden;
-}
-.icons {
-  display: inline-block;
-  padding-left: 40px;
-  color: #172940;
-}
-.home-icon {
-  float: left;
-  color: #172940;
-  margin-left: 140px;
-  margin-top: 40px;
-}
-.label {
-  font-size: 1rem;
+form.search {
   position: relative;
-  top: -7px;
-  left: -5px;
 }
-.logo {
-  float: left;
+a.icons {
+  display: inline-block;
+  color: #172940;
+  text-align: center;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 0 30px;
+}
+a.icons:hover {
+  text-decoration: underline;
+}
+a img {
+  position: relative;
+  top: 7px;
+}
+nav.icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 110px;
+}
+/*.logo {
   margin-top: 10px;
   margin-bottom: 10px;
-  margin-left: 120px;
-}
-.search {
-  float: left;
-  margin-left: 400px;
-  margin-top: 40px;
-  position: relative;
-}
+}*/
 #search {
   border: 2px solid #172940;
   border-radius: 8px;
@@ -97,40 +95,34 @@ header {
   font-family: "montserrat";
   font-size: 20px;
   padding-left: 20px;
+  position: relative;
 }
-#search-icon {
+#search-label {
   position: absolute;
-  top: 7.5px;
-  right: 1px;
+  top: 7px;
+  right: 10px;
 }
-.icon-wrapping {
-  float: right;
-  margin-top: 40px;
-  margin-right: 140px;
+nav.menu {
+  width: 100%;
+  background-color: #172940;
+  padding-left: 140px;
+  padding-right: 700px;
 }
-.menu {
-  width: 1920px;
+ul.menu {
+  display: flex;
+  justify-content: space-between;
   font-family: "monteserrat", verdana, sans-serif;
   font-size: 1.25rem;
-  background-color: #172940;
-  padding-left: 165px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
   margin-top: 0;
 }
 .menu li {
   display: inline-block;
-  padding-top: 18px;
-  padding-bottom: 18px;
-  padding-right: 145px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 div a {
   color: #172940;
-}
-.navigation a:hover {
-  text-decoration: underline;
-}
-.navigation a {
-  text-decoration: none;
 }
 .menu a {
   text-decoration: none;
@@ -142,9 +134,9 @@ div a {
   color: #f2b705;
   text-decoration: underline;
 }
-
-/* main 
---------------------*/
+div.breadcrumb {
+  margin: 20px 0px 20px 140px;
+}
 .breadcrumb a {
   display: inline-block;
   margin-right: 20px;
@@ -160,9 +152,11 @@ div a {
 .previous {
   color: #a1a1a1;
 }
+/* main 
+--------------------*/
 .content-wrapper {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 div.buttons {
   display: flex;
@@ -176,27 +170,29 @@ h2 {
   font-size: 1.875rem;
   background-color: #5361757d;
   padding: 14px 0px 14px 20px;
+}
+h1 {
   margin-bottom: 40px;
 }
 section.basket {
   background-color: white;
-  width: 1082px;
+  width: 55%;
   height: 780px;
+  margin-top: 20px;
   padding-top: 10px;
-  margin-top: 70px;
   margin-left: 140px;
 }
 section.sign-in {
   background-color: white;
-  width: 525px;
+  width: 25%;
   height: 650px;
   padding-top: 10px;
-  margin-top: 70px;
+  margin-top: 20px;
   margin-right: 140px;
 }
 table {
   text-align: left;
-  width: 90%;
+  width: 95%;
   margin-left: 25px;
   border-spacing: 0;
 }
@@ -229,26 +225,29 @@ form input {
   font-family: "roboto";
   font-size: 1.125rem;
   display: block;
-  width: 400px;
+  width: 80%;
   height: 50px;
   border: 2px solid #5361757d;
   color: #c2c2c2;
   padding-left: 15px;
   border-radius: 0;
-  margin-left: 62.5px;
+  margin-left: 40px;
 }
-form label {
+.sign-in label {
+  display: inline-block;
   font-size: 1rem;
   font-weight: 600;
-  margin-left: 62.5px;
   color: #172940;
+  margin-left: 40px;
+  margin-top: 25px;
+  margin-bottom: 5px;
 }
 #sign-in {
   font-family: "montserrat";
   font-size: 1.25rem;
   font-weight: 600;
   text-decoration: none;
-  width: 310px;
+  width: 60%;
   padding: 13px 40px;
   background-color: #172940;
   color: white;
@@ -256,17 +255,21 @@ form label {
   border-radius: 0;
   margin-top: 35px;
 }
+.sign-in div {
+  text-align: center;
+}
 .sign-in button {
-  display: block;
-  margin-left: 107.5px;
-  margin-bottom: 100px;
+  display: inline-block;
+  margin-bottom: 70px;
   box-shadow: 0 3px 6px #00000029;
+}
+.sign-in button:hover {
+  background-color: black;
 }
 .sign-in p {
   font-family: "montserrat";
   font-size: 1.25rem;
   font-weight: 600;
-  text-align: center;
 }
 #p1 {
   display: block;
@@ -274,7 +277,7 @@ form label {
   font-size: 1rem;
   font-weight: 400;
   text-align: right;
-  margin-right: 62.5px;
+  margin-right: 60px;
   margin-top: 5px;
   color: #c2c2c2;
   text-decoration: none;
@@ -288,7 +291,7 @@ form label {
   font-size: 1.25rem;
   font-weight: 600;
   text-decoration: none;
-  width: 310px;
+  width: 30%;
   padding: 13px 0px;
   box-shadow: 0 3px 6px #00000029;
   text-transform: uppercase;
@@ -301,4 +304,57 @@ form label {
 #yellow {
   background-color: #f2b705;
   color: #000000;
+}
+#blue:hover {
+  background-color: #172940bf;
+}
+#yellow:hover {
+  background-color: #f2b705bf;
+}
+/* footer
+--------------------*/
+footer {
+  position: relative;
+  top: 230px;
+}
+.support-container {
+  font-family: "montserrat";
+  background-color: #172940;
+  color: white;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 0;
+}
+.support ul {
+  list-style: none;
+  padding-left: 0;
+}
+.support a {
+  font-weight: 300;
+  text-decoration: none;
+  color: white;
+}
+.support p {
+  font-weight: 500;
+  text-decoration: underline;
+}
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: white;
+}
+.footer li {
+  display: inline-block;
+  list-style: none;
+  padding-left: 20px;
+}
+li.social-media {
+  display: inline-block;
+}
+img.social-media {
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  padding-right: 20px;
 }
