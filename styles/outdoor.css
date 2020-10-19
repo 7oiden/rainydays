@@ -18,11 +18,11 @@ body {
   background-color: white;
   font-family: "roboto", verdana, sans-serif;
   font-size: 1.125rem;
-  color: #172940;
+  color: black;
   margin: 0;
 }
 /* header 
---------------------*/
+  --------------------*/
 header {
   box-sizing: border-box;
   width: 100%;
@@ -80,9 +80,9 @@ nav.icons {
   height: 110px;
 }
 /*.logo {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}*/
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }*/
 #search {
   border: 2px solid #172940;
   border-radius: 8px;
@@ -150,14 +150,14 @@ div.breadcrumb {
   color: #a1a1a1;
 }
 /* main 
---------------------*/
+  --------------------*/
 main {
-  width: 100%;
+  margin-left: 140px;
 }
 h1 {
   font-family: "century gothic", verdana, sans-serif;
   font-size: 2rem;
-  margin-top: 40px;
+  padding-top: 100px;
   margin-bottom: 20px;
 }
 h2 {
@@ -171,19 +171,24 @@ h2 {
 p {
   margin-top: 5px;
   margin-right: 10px;
+  margin-bottom: 40px;
+}
+#light {
+  color: white;
+  margin-bottom: 150px;
 }
 section.content-wrapper {
-  display: flex;
-  justify-content: center;
   width: 100%;
+  background-image: url(../images/outdoor-2.jpg);
+  background-repeat: no-repeat;
+  margin: 0 auto 0 auto;
 }
 .content {
   width: 33%;
-  height: 682px;
-  background-color: #f5f5f5;
+  height: 1000px;
   margin-top: 0;
   padding-right: 100px;
-  padding-left: 100px;
+  margin-left: 100px;
 }
 figure {
   margin: 0;
@@ -262,7 +267,7 @@ p.button:hover {
   background-color: #172940bf;
 }
 /* footer 
---------------------*/
+  --------------------*/
 .support-container {
   width: 100%;
   font-family: "montserrat";

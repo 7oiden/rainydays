@@ -68,6 +68,14 @@ h1 {
 h2 {
   margin-top: 0;
 }
+/*form input[required="required"]:after {
+  color: red;
+  content: " *";
+}*/
+#divider {
+  display: flex;
+  justify-content: space-between;
+}
 section.information {
   display: flex;
   justify-content: space-evenly;
@@ -90,7 +98,16 @@ input.box {
   color: #172940;
   border-radius: 0;
   border: 2px solid #5361757d;
-  padding: 10px 10px 10px 15px;
+  padding: 10px 10px 10px 10px;
+}
+input.box-short {
+  display: block;
+  width: 100%;
+  font-size: 1.125rem;
+  color: #172940;
+  border-radius: 0;
+  border: 2px solid #5361757d;
+  padding: 10px 10px 10px 10px;
 }
 input.box:hover {
   border: 2px solid #536175;
@@ -167,6 +184,17 @@ button.payment {
   margin-left: 5%;
   margin-top: 15px;
   margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+img.shipping {
+  display: block;
+  margin-right: 5%;
+}
+img.payment {
+  display: block;
+  margin-right: 5%;
 }
 button.shipping:hover {
   background-color: #c2c2c2;
