@@ -1,72 +1,131 @@
-.previous {
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+}
+#previous {
+  position: relative;
+  top: 170px;
+  left: 140px;
   font-family: "montserrat";
   font-size: 1.5rem;
   font-weight: 600;
-  width: 310px;
   background-color: #aab1bb;
   border: none;
-  padding: 12px;
-  margin-top: 172px;
-  margin-left: 140px;
-  margin-bottom: 30px;
+  padding: 12px 30px;
   border-radius: 0;
+  text-decoration: none;
+  color: #172940;
+}
+#previous:hover {
+  background-color: #aab1bbbf;
 }
 .logo {
-  width: 348px;
-  margin: auto;
-  margin-top: -185px;
+  max-width: 348px;
+  margin: 40px auto 20px auto;
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
 #logo {
-  width: 348px;
-}
-header {
-  background-color: #f5f5f5;
+  max-width: 348px;
+  display: inline-block;
 }
 body {
-  width: 1920px;
+  width: 100%;
   background-color: #f5f5f5;
   color: #172940;
   font-family: "roboto";
   font-size: 1rem;
 }
 main {
-  width: 1082px;
+  width: 50%;
   margin: auto;
+  background-color: white;
+}
+#white-space {
+  width: 100%;
+  background-color: white;
+  height: 20px;
+}
+h1,
+h2 {
+  width: 100%;
+  font-family: "century gothic";
+  font-size: 1.875rem;
+  background-color: #5361757d;
+  padding: 14px 0px 14px 20px;
+  margin-bottom: 0;
+}
+h1 {
+  margin-top: 20px;
+}
+h2 {
+  margin-top: 0;
+}
+section.information {
+  display: flex;
+  justify-content: space-evenly;
+}
+fieldset.personalia {
+  width: 50%;
+  margin-top: 0;
+  padding: 0;
+  border: none;
+  margin-bottom: 70px;
+}
+fieldset.account {
+  border: none;
+  width: 30%;
+}
+input.box {
+  display: block;
+  width: 100%;
+  font-size: 1.125rem;
+  color: #172940;
+  border-radius: 0;
+  border: 2px solid #5361757d;
+  padding: 10px 10px 10px 15px;
+}
+input.box:hover {
+  border: 2px solid #536175;
+}
+input.box:focus {
+  background-color: #f5f5f5;
+}
+input.box:active {
+  border-radius: 0;
 }
 .label {
   display: block;
   font-weight: bold;
   margin-top: 20px;
-  margin-left: 66px;
 }
 .label_2 {
   display: block;
   font-weight: bold;
   margin-top: 20px;
 }
-.checkbox {
+form.checkbox-1 {
   font-family: "montserrat";
-  font-size: 1.25rem;
-  padding-top: 20px;
-  padding-bottom: 50px;
-}
-.form {
-  display: block;
-  width: 422px;
   font-size: 1.125rem;
-  color: #c2c2c2;
-  border-radius: 0;
-  border: 2px solid #5361757d;
-  padding: 10px 10px 10px 15px;
-  margin-left: 66px;
+  font-weight: 600;
+  padding-top: 40px;
+  padding-bottom: 100px;
 }
-.password {
-  display: block;
-  border: 2px solid #5361757d;
-  border-radius: 0;
-  width: 300px;
-  padding: 10px 10px 10px 15px;
+form.checkbox-2 {
+  font-family: "montserrat";
+  font-size: 1.125rem;
+  font-weight: 600;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
+
 #optional {
   font-family: "century gothic";
   font-size: 1.875rem;
@@ -75,86 +134,61 @@ main {
   margin: 0;
   padding: 0;
 }
-h1,
-h2 {
-  width: 1062px;
-  font-family: "century gothic";
-  font-size: 1.875rem;
-  background-color: #5361757d;
-  padding: 14px 0px 14px 20px;
-  margin-bottom: 0;
-  margin-top: 36px;
-}
+
 h3 {
   font-family: "montserrat";
   font-size: 1.25rem;
-  padding-top: 10px;
   margin-left: 15px;
   margin-bottom: 15px;
+  text-decoration: underline;
 }
-#information {
-  width: 400px;
-  margin-top: 0;
-  padding: 0;
-  border: none;
-}
-#account {
-  width: 300px;
-  margin-top: 0;
-  padding: 0;
-  border: none;
-  margin-right: 100px;
-}
-section.information {
-  float: left;
-  background-color: white;
-  margin-top: 20px;
-}
-section.account {
-  position: relative;
-  width: 300px;
-  height: 0px;
-  top: -500px;
-  left: 630px;
-  background-color: white;
-}
+
 section.shipping {
-  float: left;
-  clear: left;
-  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 300px;
 }
 section.payment {
-  float: left;
-  background-color: white;
-  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 400px;
 }
 button.shipping,
 button.payment {
-  width: 522px;
+  width: 50%;
   height: 70px;
   background-color: #f2f2f2;
-  border: 2px solid #536175;
+  border: 2px solid #5361757d;
   border-radius: 0;
   display: block;
   text-align: left;
-  margin-left: 66px;
-  margin-top: 51px;
+  margin-left: 5%;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 button.shipping:hover {
   background-color: #c2c2c2;
+  border: 2px solid #536175;
 }
 button.payment:hover {
   background-color: #c2c2c2;
+  border: 2px solid #536175;
 }
 button.shipping:focus {
   background-color: #f2b705a6;
-  border: 0;
+  border: 2px solid #536175;
   outline: 0;
 }
 button.payment:focus {
   background-color: #f2b705a6;
-  border: 0;
+  border: 2px solid #536175;
   outline: 0;
+}
+div.wrapping {
+  display: flex;
+  justify-content: flex-start;
 }
 .montserrat {
   font-family: "montserrat";
@@ -165,38 +199,45 @@ button.payment:focus {
 .delivery {
   margin: -5px 10px 10px 10px;
 }
-#summary {
-  width: 522px;
+section.summary {
+  width: 50%;
   background-color: #53617540;
-  float: left;
+  margin-left: 5%;
 }
-.summary {
-  margin-left: 25px;
+table.summary {
+  width: 90%;
+  font-size: 1.125rem;
+  border-spacing: 0;
+}
+section.address {
+  background-color: #53617540;
+  width: 25%;
+  margin-left: 10%;
   font-size: 1.125rem;
 }
-#address {
-  background-color: #53617540;
-  width: 311px;
-  float: left;
+.address p {
+  margin: 0 20px;
 }
-.address {
-  margin-left: 20px;
-  margin-top: 0;
-  margin-bottom: 0;
-  font-size: 1.125rem;
+
+#confirm:hover {
+  background: #f2b705a6;
 }
-.wrapping {
-  width: 1016px;
-  background-color: white;
-  float: left;
-  padding-top: 174px;
-  padding-left: 66px;
+table th {
+  border-bottom: 1px solid #707070;
+  padding-bottom: 5px;
 }
-#address {
-  margin-left: 100px;
-  padding-bottom: 28px;
+table td {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .confirm {
+  text-align: center;
+}
+#confirm {
+  display: inline-block;
+  width: 30%;
+  padding-top: 12px;
+  padding-bottom: 12px;
   font-family: "montserrat";
   font-size: 1.25rem;
   font-weight: 600;
@@ -204,22 +245,7 @@ button.payment:focus {
   background-color: #f2b705;
   border: none;
   border-radius: 0;
-  padding: 13px 36px 13px 36px;
-  margin-top: 70px;
-  margin-left: 300px;
-  margin-bottom: 70px;
-  float: left;
   box-shadow: 0px 3px 6px #00000029;
-}
-.confirm:hover {
-  background: #f2b705a6;
-}
-table th {
-  border-bottom: 1px solid #707070;
-  padding-right: 50px;
-  padding-bottom: 5px;
-}
-table td {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  margin-top: 70px;
+  margin-bottom: 70px;
 }

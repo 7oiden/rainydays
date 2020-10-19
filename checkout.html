@@ -13,7 +13,9 @@
   <body>
     <header>
       <header>
-        <button class="previous" type="button">&lt Previous Page</button>
+        <a href="basket.html" id="previous">	
+          	
+&#10094; &nbsp; Return to Basket</a>
         <figure class="logo">
           <img src="images/rainydays_logo.png" id="logo" />
         </figure>
@@ -21,17 +23,19 @@
     </header>
 
     <main>
+      <div id="white-space"></div>
+      <h1>2. My Information</h1>
       <section class="information">
-        <h1>2. My Information</h1>
-        <form action="login.php" method="GET">
-          <fieldset id="information">
+        <fieldset class="personalia">
+          <form action="login.php" method="GET">
             <label for="email" class="label">E-mail</label>
             <input
               type="email"
               name="email"
               placeholder="your@email.com"
               id="email"
-              class="form"
+              class="box"
+              required
             />
             <label for="first-name" class="label">First Name</label>
             <input
@@ -39,7 +43,7 @@
               name="first-name"
               placeholder="First Name"
               id="first-name"
-              class="form"
+              class="box"
             />
             <label for="last-name" class="label">Last Name</label>
             <input
@@ -47,7 +51,7 @@
               name="last-name"
               placeholder="Last Name"
               id="last-name"
-              class="form"
+              class="box"
             />
             <label for="street-address" class="label">Street Address</label>
             <input
@@ -55,7 +59,7 @@
               name="street-address"
               placeholder="Street Address"
               id="street-address"
-              class="form"
+              class="box"
             />
             <label for="city" class="label">City</label>
             <input
@@ -63,7 +67,7 @@
               name="city"
               placeholder="City"
               id="city"
-              class="form"
+              class="box"
             />
             <label for="postal-code" class="label">Postal Code</label>
             <input
@@ -71,7 +75,7 @@
               name="postal-code"
               placeholder="Postal Code"
               id="postal-code"
-              class="form"
+              class="box"
             />
             <label for="phone" class="label">Phone Number</label>
             <input
@@ -79,14 +83,13 @@
               name="phone"
               placeholder="Phone Number"
               id="phone"
-              class="form"
+              class="box"
             />
-          </fieldset>
-        </form>
-      </section>
-      <section class="account">
-        <fieldset id="account">
-          <form action="profile.php" class="checkbox">
+          </form>
+        </fieldset>
+
+        <fieldset class="account">
+          <form action="profile.php" class="checkbox-1">
             <input type="checkbox" name="newsletter" value="Subscribe" />
             Subscribe to our Newsletter
           </form>
@@ -96,26 +99,26 @@
             <input
               type="password"
               name="choose"
-              placeholder="********"
-              class="password"
+              placeholder="Password"
+              class="box"
             />
             <label for="confirm" class="label_2">Confirm password</label>
             <input
               type="password"
               name="confirm"
-              placeholder="********"
-              class="password"
+              placeholder="Password"
+              class="box"
             />
           </form>
-          <form action="profile.php" class="checkbox">
+          <form action="profile.php" class="checkbox-2">
             <input type="checkbox" name="account" value="create" />Create
             Account
           </form>
         </fieldset>
       </section>
 
+      <h2>3. Choose Shipping Method</h2>
       <section class="shipping">
-        <h2>3. Choose Shipping Method</h2>
         <button class="shipping" type="button">
           <p class="montserrat">Standard shipping - 5.0</p>
           <p class="delivery">Delivery within 3-7 working days</p>
@@ -125,8 +128,9 @@
           <p class="delivery">Delivery within 3-7 working days</p>
         </button>
       </section>
+
+      <h2>4. Choose Payment Method</h2>
       <section class="payment">
-        <h2>4. Choose Payment Method</h2>
         <button class="payment" type="button">
           <p class="montserrat">CREDIT/DEBIT CARD</p>
         </button>
@@ -138,9 +142,9 @@
         </button>
       </section>
       <div class="wrapping">
-        <section id="summary">
+        <section class="summary">
+          <h3>ORDER SUMMARY</h3>
           <table class="summary">
-            <h3>ORDER SUMMARY</h3>
             <tr>
               <th scope="col">Products</th>
               <th scope="col">Shipping Cost</th>
@@ -153,21 +157,20 @@
             </tr>
           </table>
         </section>
-        <section id="address">
+        <section class="address">
           <h3>SHIPPING ADDRESS</h3>
-          <p class="address">Jane Doe</p>
-          <p class="address">Fifth Avenue 555</p>
-          <p class="address">55555 New York</p>
+          <p>Jane Doe</p>
+          <p>Fifth Avenue 555</p>
+          <p>55555 New York</p>
         </section>
-        <form action="g.php">
+      </div>
+      <form action="g.php" class="confirm">
           <input
             type="submit"
             name="complete"
             value="Complete Purchase"
-            class="confirm"
+            id="confirm"
           />
-        </form>
-      </div>
     </main>
   </body>
 </html>
