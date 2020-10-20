@@ -18,25 +18,17 @@ body {
 /* header 
 --------------------*/
 header {
-  box-sizing: border-box;
-  background-color: white;
-  /*position: fixed;*/
   z-index: 100;
   font-family: "roboto", verdana, sans-serif;
   font-size: 1.125rem;
-  color: #172940;
-}
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-.campaign {
   width: 100%;
+}
+ul.campaign {
+  display: flex;
+  justify-content: center;
   font-family: "montserrat";
   font-size: 1.25rem;
   color: #b05625;
-  text-align: center;
   background-color: #f2b705;
   margin: 0;
 }
@@ -45,40 +37,48 @@ header {
   padding-right: 5px;
 }
 .campaign li {
-  padding: 10.5px 25px 10.5px 25px;
+  padding: 12px 30px;
   display: inline-block;
 }
-.navigation {
-  overflow: hidden;
+.sticky {
+  position: sticky;
+  top: 0;
+  background-color: white;
 }
-.icons {
-  display: inline-block;
-  padding-left: 40px;
-  color: #172940;
+nav.icons {
+  width: 100%;
 }
-.home-icon {
-  float: left;
-  color: #172940;
-  margin-left: 140px;
-  margin-top: 40px;
+.icon-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  align-items: center;
+  margin: 0 auto 0 auto;
 }
-.label {
-  font-size: 1rem;
+form.search {
   position: relative;
-  top: -7px;
-  left: -5px;
+}
+a.icons {
+  display: inline-block;
+  color: #172940;
+  text-align: center;
+  font-size: 1rem;
+  text-decoration: none;
+  padding-left: 30px;
+}
+#home-icon {
+  padding-left: 0;
 }
 .logo {
-  float: left;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 120px;
+  display: inline-block;
+  margin: 10px 0 10px 0;
 }
-.search {
-  float: left;
-  margin-left: 400px;
-  margin-top: 40px;
+a.icons:hover {
+  text-decoration: underline;
+}
+a img {
   position: relative;
+  top: 7px;
 }
 #search {
   border: 2px solid #172940;
@@ -89,46 +89,39 @@ header {
   font-family: "montserrat";
   font-size: 20px;
   padding-left: 20px;
+  position: relative;
 }
-#search-icon {
+#search-label {
   position: absolute;
-  top: 7.5px;
-  right: 1px;
+  top: 7px;
+  right: 10px;
 }
-.icon-wrapping {
-  float: right;
-  margin-top: 40px;
-  margin-right: 140px;
-}
-.menu {
+nav.menu {
   width: 100%;
+  background-color: #172940;
+}
+.menu-wrapper {
+  width: 67%;
+}
+ul.menu {
+  display: flex;
+  justify-content: space-evenly;
   font-family: "monteserrat", verdana, sans-serif;
   font-size: 1.25rem;
-  background-color: #172940;
-  padding-left: 165px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
   margin-top: 0;
 }
 .menu li {
   display: inline-block;
-  padding-top: 18px;
-  padding-bottom: 18px;
-  padding-right: 145px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 div a {
   color: #172940;
 }
-.navigation a:hover {
-  text-decoration: underline;
-}
-.navigation a {
-  text-decoration: none;
-}
 .menu a {
   text-decoration: none;
   color: white;
-  padding-right: 10px;
-  padding-left: 10px;
 }
 .menu a:hover {
   color: #f2b705;
@@ -165,7 +158,7 @@ div.main-wrapper {
 }
 section.categorys {
   grid-area: categorys;
-  margin-left: 140px;
+  margin-left: 7.5%;
   margin-top: 70px;
 }
 div.special-offers {
@@ -173,13 +166,13 @@ div.special-offers {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-left: 140px;
+  margin-left: 7.5%;
   margin-right: 96px;
   margin-top: 50px;
 }
 section.news {
   grid-area: news;
-  margin-right: 100px;
+  margin-right: 7.5%;
   margin-top: 45px;
 }
 
@@ -469,16 +462,20 @@ form.newsletter {
 /* footer 
 --------------------*/
 footer {
-  margin-top: 30px;
+  margin-top: 200px;
+}
+.support-wrapper {
+  width: 100%;
+  background-color: #172940;
 }
 .support-container {
   font-family: "montserrat";
-  background-color: #172940;
   color: white;
   list-style: none;
   display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 0;
+  justify-content: space-between;
+  width: 85%;
+  margin: 0 auto 0 auto;
 }
 .support ul {
   list-style: none;

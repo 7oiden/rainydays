@@ -20,56 +20,68 @@
         </ul>
       </div>
 
-      <nav aria-label="navigation" class="icons">
-        <div>
-          <a href="index.html" class="icons">
-            <img src="images\icons\home.svg" alt="Home icon" />
-            <figcaption class="label">Home</figcaption></a
-          >
-        </div>
-        <!-- <figure class="logo">
-          <img
-            src="images\RainyDays_Logo.png"
-            width="190"
-            alt="Rainydays logo"
-          />
-        </figure> -->
-        <div>
-          <form class="search">
-            <input id="search" type="text" placeholder="Search Products" />
-            <label for="search" id="search-label"
-              ><img src="images\icons\search.svg"
-            /></label>
-          </form>
-          <div></div>
-        </div>
-
-        <div>
-          <a href="index.html" class="icons">
-            <img src="images\icons\favorite.svg" alt="Favorites icon" />
-            <figcaption class="label">Favorites</figcaption></a
-          >
-          <a href="index.html" class="icons">
-            <img src="images\icons\profile.svg" alt="Profile icon" />
-            <figcaption class="label">Profile</figcaption></a
-          >
-          <a href="basket.html" class="icons">
-            <img src="images\icons\basket.svg" alt="Basket icon" />
-            <figcaption class="label">Basket</figcaption></a
-          >
-        </div>
-      </nav>
-      <nav class="menu">
-        <ul class="menu">
-          <li class="menu-item"><a href="products_overview.html">WOMEN</a></li>
-          <li class="menu-item"><a href="products_overview.html">MEN</a></li>
-          <li class="menu-item">
-            <a href="products_overview.html">BESTSELLERS</a>
-          </li>
-          <li class="menu-item"><a href="products_overview.html">SALE</a></li>
-          <li class="menu-item"><a href="products_overview.html">NEW</a></li>
-        </ul>
-      </nav>
+      <div class="sticky">
+        <nav aria-label="navigation" class="icons">
+          <div class="icon-wrapper">
+            <div>
+              <a href="index.html" class="icons" id="home-icon">
+                <img src="images\icons\home.svg" alt="Home icon" />
+                <figcaption class="label">Home</figcaption></a
+              >
+            </div>
+            <figure class="logo">
+              <img
+                src="images\RainyDays_Logo.png"
+                width="190"
+                alt="Rainydays logo"
+              />
+            </figure>
+            <div>
+              <form class="search">
+                <input id="search" type="text" placeholder="Search Products" />
+                <label for="search" id="search-label"
+                  ><img src="images\icons\search.svg"
+                /></label>
+              </form>
+            </div>
+            <div>
+              <a href="index.html" class="icons">
+                <img src="images\icons\favorite.svg" alt="Favorites icon" />
+                <figcaption class="label">Favorites</figcaption></a
+              >
+              <a href="index.html" class="icons">
+                <img src="images\icons\profile.svg" alt="Profile icon" />
+                <figcaption class="label">Profile</figcaption></a
+              >
+              <a href="basket.html" class="icons">
+                <img src="images\icons\basket.svg" alt="Basket icon" />
+                <figcaption class="label">Basket</figcaption></a
+              >
+            </div>
+          </div>
+        </nav>
+        <nav class="menu">
+          <div class="menu-wrapper">
+            <ul class="menu">
+              <li class="menu-item">
+                <a href="products_overview.html">WOMEN</a>
+              </li>
+              <li class="menu-item">
+                <a href="products_overview.html">MEN</a>
+              </li>
+              <li class="menu-item">
+                <a href="products_overview.html">BESTSELLERS</a>
+              </li>
+              <li class="menu-item">
+                <a href="products_overview.html">SALE</a>
+              </li>
+              <li class="menu-item">
+                <a href="products_overview.html">NEW</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
       <nav>
         <div class="breadcrumb">
           <a href="index.html" class="previous"> Home</a>
@@ -151,68 +163,70 @@
       </div>
     </main>
     <footer>
-      <section class="support-container">
-        <div class="support">
-          <p>Follow us on:</p>
-          <ul>
-            <li class="social-media">
-              <img
-                src="images\icons\facebook.png"
-                alt="Facebook logo"
-                class="social-media"
-              />
-            </li>
-            <li class="social-media">
-              <img
-                src="images\icons\instagram.png"
-                alt="Instagram logo"
-                class="social-media"
-              />
-            </li>
-            <li class="social-media">
-              <img
-                src="images\icons\twitter.png"
-                alt="Twitter logo"
-                class="social-media"
-              />
-            </li>
-            <li class="social-media">
-              <img
-                src="images\icons\youtube.png"
-                alt="Youtube logo"
-                class="social-media"
-              />
-            </li>
-          </ul>
-        </div>
-        <div class="support">
-          <p>About Rainydays:</p>
-          <ul>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="about.html">Contact Info</a></li>
-            <li><a href="about.html">Location</a></li>
-          </ul>
-        </div>
-        <div class="support">
-          <p>Support:</p>
-          <ul>
-            <li><a href="support.html">FAQ</a></li>
-            <li><a href="support.html">Returns</a></li>
-            <li><a href="support.html">Size Chart</a></li>
-          </ul>
-        </div>
-        <div class="support">
-          <p>Contact:</p>
-          <ul>
-            <li>
-              <a href="contact.html">Phone: <i>555 555 555</i></a>
-            </li>
-            <li>
-              <a href="contact.html">Email: <i>support@rainydays.com</i></a>
-            </li>
-          </ul>
-        </div>
-      </section>
+      <div class="support-wrapper">
+        <section class="support-container">
+          <div class="support">
+            <p>Follow us on:</p>
+            <ul>
+              <li class="social-media">
+                <img
+                  src="images\icons\facebook.png"
+                  alt="Facebook logo"
+                  class="social-media"
+                />
+              </li>
+              <li class="social-media">
+                <img
+                  src="images\icons\instagram.png"
+                  alt="Instagram logo"
+                  class="social-media"
+                />
+              </li>
+              <li class="social-media">
+                <img
+                  src="images\icons\twitter.png"
+                  alt="Twitter logo"
+                  class="social-media"
+                />
+              </li>
+              <li class="social-media">
+                <img
+                  src="images\icons\youtube.png"
+                  alt="Youtube logo"
+                  class="social-media"
+                />
+              </li>
+            </ul>
+          </div>
+          <div class="support">
+            <p>About Rainydays:</p>
+            <ul>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="about.html">Contact Info</a></li>
+              <li><a href="about.html">Location</a></li>
+            </ul>
+          </div>
+          <div class="support">
+            <p>Support:</p>
+            <ul>
+              <li><a href="support.html">FAQ</a></li>
+              <li><a href="support.html">Returns</a></li>
+              <li><a href="support.html">Size Chart</a></li>
+            </ul>
+          </div>
+          <div class="support">
+            <p>Contact:</p>
+            <ul>
+              <li>
+                <a href="contact.html">Phone: <i>555 555 555</i></a>
+              </li>
+              <li>
+                <a href="contact.html">Email: <i>support@rainydays.com</i></a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
       <section class="footer">
         <ul>
           <li>&#169;2020 - Rainydays S.A.S</li>

@@ -24,23 +24,14 @@ body {
 /* header 
   --------------------*/
 header {
-  box-sizing: border-box;
-  width: 100%;
-  background-color: white;
-  /*position: fixed;*/
   z-index: 100;
   font-family: "roboto", verdana, sans-serif;
   font-size: 1.125rem;
-  color: #172940;
-}
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
+  width: 100%;
 }
 ul.campaign {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   font-family: "montserrat";
   font-size: 1.25rem;
   color: #b05625;
@@ -52,8 +43,23 @@ ul.campaign {
   padding-right: 5px;
 }
 .campaign li {
-  padding: 10px 0;
+  padding: 12px 30px;
   display: inline-block;
+}
+.sticky {
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+nav.icons {
+  width: 100%;
+}
+.icon-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  align-items: center;
+  margin: 0 auto 0 auto;
 }
 form.search {
   position: relative;
@@ -64,7 +70,14 @@ a.icons {
   text-align: center;
   font-size: 1rem;
   text-decoration: none;
-  padding: 0 30px;
+  padding-left: 30px;
+}
+#home-icon {
+  padding-left: 0;
+}
+.logo {
+  display: inline-block;
+  margin: 10px 0 10px 0;
 }
 a.icons:hover {
   text-decoration: underline;
@@ -73,16 +86,6 @@ a img {
   position: relative;
   top: 7px;
 }
-nav.icons {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 110px;
-}
-/*.logo {
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }*/
 #search {
   border: 2px solid #172940;
   border-radius: 8px;
@@ -102,12 +105,13 @@ nav.icons {
 nav.menu {
   width: 100%;
   background-color: #172940;
-  padding-left: 140px;
-  padding-right: 700px;
+}
+.menu-wrapper {
+  width: 67%;
 }
 ul.menu {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   font-family: "monteserrat", verdana, sans-serif;
   font-size: 1.25rem;
   margin-bottom: 0;
@@ -124,15 +128,14 @@ div a {
 .menu a {
   text-decoration: none;
   color: white;
-  padding-right: 10px;
-  padding-left: 10px;
 }
 .menu a:hover {
   color: #f2b705;
   text-decoration: underline;
 }
 div.breadcrumb {
-  margin: 20px 0px 20px 140px;
+  margin: 0px 0px 40px 7.5%;
+  padding-top: 20px;
 }
 .breadcrumb a {
   display: inline-block;
@@ -268,15 +271,21 @@ p.button:hover {
 }
 /* footer 
   --------------------*/
-.support-container {
+footer {
+  margin-top: 200px;
+}
+.support-wrapper {
   width: 100%;
-  font-family: "montserrat";
   background-color: #172940;
+}
+.support-container {
+  font-family: "montserrat";
   color: white;
   list-style: none;
   display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 0;
+  justify-content: space-between;
+  width: 85%;
+  margin: 0 auto 0 auto;
 }
 .support ul {
   list-style: none;
@@ -290,7 +299,6 @@ p.button:hover {
 .support p {
   font-weight: 500;
   text-decoration: underline;
-  padding-top: 10px;
 }
 .footer {
   display: flex;
