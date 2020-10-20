@@ -163,12 +163,16 @@ div.main-wrapper {
   justify-content: space-between;
   width: 85%;
   margin: 0 auto 0 auto;
+  /*background-color: red;*/
 }
 section.categorys {
   margin-top: 70px;
+  /*background-color: green;*/
 }
 section.news {
   color: black;
+  margin-top: 70px;
+  /*background-color: lightblue;*/
 }
 .news img {
   display: block;
@@ -177,7 +181,7 @@ section.news {
 }
 div.categorys {
   display: grid;
-  grid-template-rows: auto auto;
+  grid-template-rows: auto auto auto;
   grid-template-columns: auto auto;
 }
 figure.categorys {
@@ -193,7 +197,6 @@ figure.categorys {
   border-color: white;
   text-align: center;
   box-shadow: 0 3px 6px #00000029;
-  background-color: lightblue;
   margin-left: 0;
   margin-right: 30px;
   margin-top: 0;
@@ -201,7 +204,7 @@ figure.categorys {
 figure.categorys a {
   text-decoration: none;
   position: relative;
-  top: -6.5px;
+  top: -7px;
 }
 figure.categorys a:hover {
   display: block;
@@ -250,8 +253,8 @@ h5 {
   font-family: "century gothic", sans-serif;
   font-size: 2.375rem;
   background-color: white;
-  margin-top: 70px;
   margin-bottom: 0;
+  margin-top: 0;
   padding-left: 20px;
   padding-top: 15px;
 }
@@ -303,9 +306,10 @@ p.yellow {
 section.instagram {
   margin-right: 30px;
   margin-top: 50px;
-  background-color: lightcoral;
+  /*background-color: lightcoral;*/
 }
 div.instagram {
+  text-align: center;
   height: 271px;
   display: grid;
   grid-template-rows: auto auto;
@@ -331,7 +335,7 @@ div.instagram {
 }
 figure.instagram {
   margin: 0;
-  padding: 0;
+  padding-top: 12px;
 }
 figure.special {
   margin: 0;
@@ -396,14 +400,14 @@ p.about {
   background: #ffffffbf;
 }
 #newsletter {
-  width: 390px;
+  width: 80%;
   height: 46px;
   border: solid 2px;
   border-color: #536175;
   border-radius: 0;
   font-family: "montserrat";
   font-size: 1.25rem;
-  padding-left: 26px;
+  padding-left: 15px;
 }
 #newsletter:hover {
   background-color: #f2f2f2;
@@ -413,12 +417,11 @@ p.about {
   font-family: "montserrat";
   font-size: 1.25rem;
   font-weight: 500;
-  width: 90px;
   height: 50px;
   border: none;
   border-radius: 0;
   color: white;
-  padding: 50;
+  padding: 12px 15px 12px 15px;
   margin-left: -6px;
 }
 #join:hover {
@@ -426,19 +429,21 @@ p.about {
 }
 #label {
   font-weight: bold;
-  position: relative;
   color: #536175;
-  top: -45px;
-  left: 310px;
 }
 section.bottom-items {
+  width: 100%;
+}
+div.bottom-items {
+  width: 85%;
+  margin: 0 auto 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  /*background-color: lightseagreen;*/
 }
 div.large-buttons {
   margin-top: 50px;
-  margin-right: 140px;
 }
 div.large-buttons a {
   padding-left: 70px;
@@ -446,13 +451,15 @@ div.large-buttons a {
 div.large-buttons a:hover {
   opacity: 0.75;
 }
-form.newsletter {
-  margin-bottom: 17.5px;
+div.newsletter {
+  width: 30%;
+  margin-left: 200px;
+  margin-bottom: 30px;
 }
 /* footer 
 --------------------*/
 footer {
-  margin-top: 200px;
+  margin-top: 50px;
 }
 .support-wrapper {
   width: 100%;
