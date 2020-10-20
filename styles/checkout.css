@@ -246,10 +246,6 @@ section.address {
 .address p {
   margin: 0 20px;
 }
-
-#confirm:hover {
-  background: #f2b705a6;
-}
 table th {
   border-bottom: 1px solid #707070;
   padding-bottom: 5px;
@@ -270,10 +266,15 @@ table td {
   font-size: 1.25rem;
   font-weight: 600;
   text-transform: uppercase;
-  background-color: #f2b705;
   border: none;
   border-radius: 0;
   box-shadow: 0px 3px 6px #00000029;
   margin-top: 70px;
   margin-bottom: 70px;
+  transition-property: background;
+  transition-duration: 0.5s;
+  background: #f2b705;
+}
+#confirm:hover {
+  background: #f2b705a6;
 }

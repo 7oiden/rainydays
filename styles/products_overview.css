@@ -266,15 +266,17 @@ h1 {
 .load {
   font-family: "montserrat";
   font-size: 1.25rem;
-  background-color: #172940;
   color: white;
   border: none;
   border-radius: 0;
   padding: 13px 51px 13px 51px;
   margin: 40px 0px 50px 370px;
+  transition-property: background;
+  transition-duration: 0.5s;
+  background: #172940;
 }
 .load:hover {
-  opacity: 0.75;
+  background: #172940bf;
 }
 /* footer
 --------------------*/
