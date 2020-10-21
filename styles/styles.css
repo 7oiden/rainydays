@@ -234,6 +234,11 @@ div.grid-wrapper {
   grid-template-rows: auto auto auto;
   grid-template-columns: auto auto;
 }
+div.instagram-wrapper {
+  margin-right: 30px;
+  margin-top: 50px;
+  /*background-color: lightcoral;*/
+}
 figure.categorys {
   display: block;
   width: 500px;
@@ -355,11 +360,6 @@ p.yellow {
   font-size: 1.5rem;
   color: #f2b705;
   margin-left: 230px;
-}
-section.image-wrapper {
-  margin-right: 30px;
-  margin-top: 50px;
-  /*background-color: lightcoral;*/
 }
 div.instagram {
   text-align: center;
