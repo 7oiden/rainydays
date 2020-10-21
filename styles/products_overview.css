@@ -11,7 +11,7 @@ html {
   box-sizing: inherit;
 }
 body {
-  max-width: 1920px;
+  max-width: 100%;
   background-color: #f5f5f5;
   font-family: "roboto", verdana, sans-serif;
   font-size: 1.125rem;
@@ -32,7 +32,7 @@ ul.campaign {
   font-family: "montserrat";
   font-size: 1.25rem;
   color: #b05625;
-  background-color: #f2b705;
+  background-color: #f2b705bf;
   margin: 0;
 }
 .campaign li:before {
@@ -130,16 +130,9 @@ div a {
   color: #f2b705;
   text-decoration: underline;
 }
-/* main
---------------------*/
-main {
-  position: relative;
-  top: 230px;
-}
 div.breadcrumb {
-  float: left;
-  margin: 20px 0px 20px 140px;
-  width: 1200px;
+  margin: 20px 0px 20px 7.5%;
+
 }
 .breadcrumb a {
   display: inline-block;
@@ -156,11 +149,31 @@ div.breadcrumb {
 .previous {
   color: #a1a1a1;
 }
+/* main
+--------------------*/
+main {
+  width: 100%;
+}
+div.wrapper {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto 0 auto;
+  /*background-color: #f2b705;*/
+}
 section.products {
   box-sizing: content-box;
-  width: 1200px;
-  clear: left;
-  margin-left: 140px;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: auto auto auto;
+  /*background-color: aqua;*/
+}
+section.bestsellers {
+  background-image: url("../images/mountain_peak.jpg");
+  background-repeat: no-repeat;
+  height: 1213px;
+  /*background-color: blueviolet;*/
+  margin-top: 10px;
 }
 figure.jacket {
   background-color: white;
@@ -168,12 +181,14 @@ figure.jacket {
   height: 391px;
   margin: 10px 20px 10px 0px;
   color: #172940;
-  float: left;
+  transition-property: opacity, box-shadow;
+  transition-duration: 0.5s;
+  opacity: 1;
+  box-shadow: 0 3px 6px #00000029;
 }
-figure.jacket a:hover {
+figure.jacket:hover {
   display: block;
-  width: 350px;
-  height: 391px;
+  box-shadow: none;
   opacity: 0.75;
 }
 .jacket-image {
@@ -232,15 +247,6 @@ figcaption.title {
   margin-top: -32.5px;
   margin-right: 20px;
 }
-section.bestsellers {
-  background-image: url("../images/mountain_peak.jpg");
-  background-repeat: no-repeat;
-  width: 525px;
-  height: 1213px;
-  float: right;
-  margin-right: 140px;
-  margin-top: 10px;
-}
 h1 {
   font-family: "century gothic";
   font-size: 1.8rem;
@@ -259,25 +265,27 @@ h1 {
   margin-right: 30px;
   margin-top: -5px;
 }
-.load {
+button.load {
   font-family: "montserrat";
   font-size: 1.25rem;
   color: white;
   border: none;
   border-radius: 0;
   padding: 13px 51px 13px 51px;
-  margin: 40px 0px 50px 370px;
-  transition-property: background;
+  transition-property: background-color;
   transition-duration: 0.5s;
   background: #172940;
+  position: relative;
+  top: 30px;
+  left: 520px;
 }
 .load:hover {
-  background: #172940bf;
+  background-color: #172940bf;
 }
 /* footer
 --------------------*/
 footer {
-  margin-top: 200px;
+  margin-top: 100px;
 }
 .support-wrapper {
   width: 100%;
