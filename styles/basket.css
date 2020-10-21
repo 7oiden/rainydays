@@ -1,10 +1,13 @@
 @font-face {
-  font-family: "montserrat";
-  src: url();
-  font-family: "roboto";
-  scr: url();
-  font-family: "cenury gothic";
-  scr: url();
+  font-family: 'cenury gothic'
+  src: url(../fonts/GOTHIC.TTF) format("TTF"); 
+}
+:root {
+  --white: #fff;
+  --dark-blue: #172940;
+  --dark-blue-transparent: #172940bf;
+  --blue-tranparent: #5361757d;
+  --montserrat: "montserrat";
 }
 html {
   box-sizing: border-box;
@@ -19,7 +22,7 @@ body {
   background-color: #f5f5f5;
   font-family: "roboto", verdana, sans-serif;
   font-size: 1.125rem;
-  color: #172940;
+  color: var(--dark-blue);
   margin: 0;
 }
 /* header 
@@ -33,7 +36,7 @@ header {
 ul.campaign {
   display: flex;
   justify-content: center;
-  font-family: "montserrat";
+  font-family: var(--montserrat);
   font-size: 1.25rem;
   color: #b05625;
   background-color: #f2b705;
@@ -50,7 +53,7 @@ ul.campaign {
 .sticky {
   position: sticky;
   top: 0;
-  background-color: white;
+  background-color: var(--white);
 }
 nav.icons {
   width: 100%;
@@ -64,7 +67,7 @@ nav.icons {
 }
 a.icons {
   display: inline-block;
-  color: #172940;
+  color: var(--dark-blue);
   text-align: center;
   font-size: 1rem;
   text-decoration: none;
@@ -102,7 +105,7 @@ form.search {
 }
 nav.menu {
   width: 100%;
-  background-color: #172940;
+  background-color: var(--dark-blue);
 }
 .menu-wrapper {
   width: 67%;
@@ -121,11 +124,11 @@ ul.menu {
   padding-bottom: 15px;
 }
 div a {
-  color: #172940;
+  color: var(--dark-blue);
 }
 .menu a {
   text-decoration: none;
-  color: white;
+  color: var(--white);
 }
 .menu a:hover {
   color: #f2b705;
@@ -178,13 +181,13 @@ h1 {
   margin-bottom: 40px;
 }
 section.basket {
-  background-color: white;
+  background-color: var(--white);
   width: 65%;
   min-height: 780px;
   padding-top: 10px;
 }
 section.sign-in {
-  background-color: white;
+  background-color: var(--white);
   width: 30%;
   height: 650px;
   padding-top: 10px;
@@ -236,7 +239,7 @@ form input {
   display: inline-block;
   font-size: 1rem;
   font-weight: 600;
-  color: #172940;
+  color: var(--dark-blue);
   margin-left: 40px;
   margin-top: 25px;
   margin-bottom: 5px;
@@ -248,16 +251,16 @@ form input {
   text-decoration: none;
   width: 60%;
   padding: 13px 40px;
-  color: white;
+  color: var(--white);
   border: none;
   border-radius: 0;
   margin-top: 35px;
   transition-property: background;
   transition-duration: 0.5s;
-  background: #172940;
+  background: var(--dark-blue);
 }
 #sign-in:hover {
-  background: #172940bf;
+  background: var(--dark-blue-transparent);
 }
 .sign-in div {
   text-align: center;
@@ -300,22 +303,22 @@ form input {
   text-align: center;
 }
 #blue {
-  transition-property: background;
+  transition-property: background-color;
   transition-duration: 0.5s;
-  background: #172940;
-  color: white;
+  background: var(--dark-blue);
+  color: var(--white);
 }
 #yellow {
-  transition-property: background;
+  transition-property: background-color;
   transition-duration: 0.5s;
   background: #f2b705;
   color: #000000;
 }
 #blue:hover {
-  background: #172940bf;
+  background-color: var(--dark-blue-transparent);
 }
 #yellow:hover {
-  background: #f2b705bf;
+  background-color: #f2b705bf;
 }
 /* footer
 --------------------*/
@@ -324,7 +327,7 @@ footer {
 }
 .support-wrapper {
   width: 100%;
-  background-color: #172940;
+  background-color: var(--dark-blue);
 }
 .support-container {
   font-family: "montserrat";
@@ -342,7 +345,7 @@ footer {
 .support a {
   font-weight: 300;
   text-decoration: none;
-  color: white;
+  color: var(--white);
 }
 .support p {
   font-weight: 500;
@@ -351,7 +354,7 @@ footer {
 .footer {
   display: flex;
   justify-content: space-evenly;
-  background-color: white;
+  background-color: var(--white);
 }
 .footer li {
   display: inline-block;

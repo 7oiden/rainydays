@@ -1,13 +1,11 @@
 @font-face {
-  /*font-family: 'montserrat';
-  src: url();
-  font-family: 'roboto';
-  scr: url();
   font-family: 'cenury gothic'
-  src: url(); */
+  src: url(../fonts/GOTHIC.TTF) format("TTF"); 
 }
 /* global styles
 --------------------*/
+:root {
+}
 body {
   width: 100%;
   font-family: "montserrat", verdana, sans-serif;
@@ -153,12 +151,11 @@ section.about-us {
   margin-top: 60px;
 }
 #about-subhl {
-  margin-top: 5px;
+  margin-top: 10px;
   margin-bottom: 5px;
   padding: 0;
   color: #b05625;
   font-weight: 600;
-  text-decoration: underline;
 }
 a.about {
   color: #b05625;
@@ -187,16 +184,17 @@ p.about {
   font-size: 1.25rem;
   font-weight: 600;
   width: 240px;
-  color: #172940;
+  color: black;
   border-radius: 8px;
   border: none;
   text-align: center;
   padding-top: 12px;
   padding-bottom: 12px;
-  transition-property: background;
+  transition-property: background-color;
   transition-duration: 0.5s;
-  background: white;
+  background-color: white;
   margin: 0 auto 0 auto;
+  box-shadow: 0 3px 6px #00000029;
 }
 .shop {
   display: block;
@@ -206,7 +204,7 @@ p.about {
   top: -100px;
 }
 .button:hover {
-  background: #ffffffbf;
+  background-color: #ffffffbf;
 }
 div.secondary-wrapper {
   display: flex;
@@ -260,16 +258,17 @@ figure.categorys a {
   text-decoration: none;
   position: relative;
   top: -7px;
-  transition-property: opacity;
+  transition-property: opacity, text-decoration;
   transition-duration: 0.5s;
   opacity: 1;
 }
 figure.categorys a:hover {
   display: block;
   opacity: 0.75;
+  text-decoration: underline;
 }
 figcaption {
-  margin-top: 12px;
+  margin-top: 15px;
 }
 .img-block {
   display: inline-block;
@@ -293,10 +292,11 @@ h2 {
   margin-top: 0;
   margin-left: 65px;
 }
-h3 {
+h3 /*about us*/ {
   font-family: "century gothic", sans-serif;
   font-size: 2rem;
   margin: 0;
+  text-decoration: underline;
 }
 h4 {
   font-size: 1.875rem;
@@ -305,7 +305,7 @@ h4 {
   padding-bottom: 17px;
   background-color: white;
   margin: 0px 30px 30px 0;
-  box-shadow: 0 3px 6px #00000029;
+  /*box-shadow: 0 3px 6px #00000029;*/
 }
 h5 {
   font-family: "century gothic", sans-serif;
