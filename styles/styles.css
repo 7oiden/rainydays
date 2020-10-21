@@ -29,7 +29,7 @@ ul.campaign {
   font-family: "montserrat";
   font-size: 1.25rem;
   color: #b05625;
-  background-color: #f2b705;
+  background-color: #f2b705bf;
   margin: 0;
 }
 .campaign li:before {
@@ -152,30 +152,35 @@ section.about-us {
   max-height: 300px;
   margin-top: 60px;
 }
-#about {
-  margin: 0;
+#about-subhl {
+  margin-top: 5px;
+  margin-bottom: 5px;
   padding: 0;
   color: #b05625;
-  font-style: italic;
+  font-weight: 600;
+  text-decoration: underline;
 }
-.about {
-  margin: 0;
+a.about {
+  color: #b05625;
+  font-size: 1.125rem;
 }
-.pitch {
+a.about:hover {
+  font-weight: bold;
+}
+p.pitch {
   font-family: "century gothic", sans-serif;
   font-size: 1.5rem;
 }
 p.about {
   font-family: "roboto";
   font-size: 1.125rem;
+  width: 380px;
+  margin: 0 0 10px 0;
 }
-.women-men a {
+.button-wrapper a {
   text-decoration: none;
   display: inline-block;
-  position: relative;
-  top: 50px;
-  left: -35px;
-  padding-right: 30px;
+  margin-left: 30px;
 }
 .button {
   font-family: "montserrat";
@@ -185,17 +190,20 @@ p.about {
   color: #172940;
   border-radius: 8px;
   border: none;
-  text-decoration: none;
   text-align: center;
-  margin: 0;
-  position: relative;
-  left: 55px;
-  top: -50px;
   padding-top: 12px;
   padding-bottom: 12px;
   transition-property: background;
   transition-duration: 0.5s;
   background: white;
+  margin: 0 auto 0 auto;
+}
+.shop {
+  display: block;
+  padding: 0;
+  text-decoration: none;
+  position: relative;
+  top: -100px;
 }
 .button:hover {
   background: #ffffffbf;
@@ -247,6 +255,9 @@ figure.categorys a {
   text-decoration: none;
   position: relative;
   top: -7px;
+  transition-property: opacity;
+  transition-duration: 0.5s;
+  opacity: 1;
 }
 figure.categorys a:hover {
   display: block;
@@ -260,6 +271,10 @@ figcaption {
 }
 figure.news {
   margin: 0;
+}
+#image-2 {
+  position: relative;
+  top: -50px;
 }
 h1 {
   font-family: "balboa", sans-serif;
@@ -277,10 +292,6 @@ h3 {
   font-family: "century gothic", sans-serif;
   font-size: 2rem;
   margin: 0;
-}
-a.about {
-  color: #b05625;
-  font-size: 1rem;
 }
 h4 {
   font-size: 1.875rem;
