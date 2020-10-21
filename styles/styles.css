@@ -133,7 +133,7 @@ main {
   background-color: #f2f2f2;
   width: 100%;
 }
-div.main {
+div.main-wrapper {
   width: 100%;
   height: 903px;
   background-image: url("../images/main_image.jpg");
@@ -152,34 +152,76 @@ section.about-us {
   max-height: 300px;
   margin-top: 60px;
 }
-div.special-wrapper {
-  width: 50%;
-  display: flex;
-  justify-content: center;
+#about {
+  margin: 0;
+  padding: 0;
+  color: #b05625;
+  font-style: italic;
 }
-
-div.main-wrapper {
+.about {
+  margin: 0;
+}
+.pitch {
+  font-family: "century gothic", sans-serif;
+  font-size: 1.5rem;
+}
+p.about {
+  font-family: "roboto";
+  font-size: 1.125rem;
+}
+.women-men a {
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  top: 50px;
+  left: -35px;
+  padding-right: 30px;
+}
+.button {
+  font-family: "montserrat";
+  font-size: 1.25rem;
+  font-weight: 600;
+  width: 240px;
+  color: #172940;
+  border-radius: 8px;
+  border: none;
+  text-decoration: none;
+  text-align: center;
+  margin: 0;
+  position: relative;
+  left: 55px;
+  top: -50px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  transition-property: background;
+  transition-duration: 0.5s;
+  background: white;
+}
+.button:hover {
+  background: #ffffffbf;
+}
+div.secondary-wrapper {
   display: flex;
   justify-content: space-between;
   width: 85%;
   margin: 0 auto 0 auto;
   /*background-color: red;*/
 }
-section.categorys {
+section.content-left {
   margin-top: 70px;
   /*background-color: green;*/
 }
-section.news {
+section.content-right {
   color: black;
   margin-top: 70px;
   /*background-color: lightblue;*/
 }
-.news img {
+.content-right img {
   display: block;
   margin: 0;
   padding: 0;
 }
-div.categorys {
+div.grid-wrapper {
   display: grid;
   grid-template-rows: auto auto auto;
   grid-template-columns: auto auto;
@@ -303,7 +345,7 @@ p.yellow {
   color: #f2b705;
   margin-left: 230px;
 }
-section.instagram {
+section.image-wrapper {
   margin-right: 30px;
   margin-top: 50px;
   /*background-color: lightcoral;*/
@@ -344,60 +386,12 @@ figure.special {
 #leaves {
   display: block;
 }
-#about {
-  margin: 0;
-  padding: 0;
-  color: #b05625;
-  font-style: italic;
-}
-.about {
-  margin: 0;
-}
 #news {
   max-width: 440px;
   background-color: white;
   margin: 0;
   padding-left: 20px;
   padding-bottom: 15px;
-}
-.pitch {
-  font-family: "century gothic", sans-serif;
-  font-size: 1.5rem;
-}
-p.about {
-  font-family: "roboto";
-  font-size: 1.125rem;
-}
-.women-men a {
-  text-decoration: none;
-  display: inline-block;
-  position: relative;
-  top: 50px;
-  left: -35px;
-  padding-right: 30px;
-}
-.button {
-  font-family: "montserrat";
-  font-size: 1.25rem;
-  font-weight: 600;
-  width: 240px;
-  color: #172940;
-  border-radius: 8px;
-  border: none;
-  text-decoration: none;
-  text-align: center;
-  margin: 0;
-  position: relative;
-  left: 55px;
-  top: -50px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  transition-property: background;
-  transition-duration: 0.5s;
-  background: white;
-}
-.button:hover {
-  background: #ffffffbf;
 }
 #newsletter {
   width: 80%;
