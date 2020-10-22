@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'cenury gothic'
-  src: url(../fonts/GOTHIC.TTF) format("TTF"); 
+  font-family: "cenury gothic";
+  src: url(../fonts/GOTHIC.TTF) format("TTF");
 }
 html {
   box-sizing: border-box;

@@ -255,12 +255,13 @@ form input {
   border: none;
   border-radius: 0;
   margin-top: 35px;
-  transition-property: background;
+  transition-property: background-color, box-shadow;
   transition-duration: 0.5s;
-  background: var(--dark-blue);
+  background-color: var(--dark-blue);
 }
 #sign-in:hover {
   background: var(--dark-blue-transparent);
+  box-shadow: none;
 }
 .sign-in div {
   text-align: center;
@@ -303,22 +304,25 @@ form input {
   text-align: center;
 }
 #blue {
-  transition-property: background-color;
+  transition-property: background-color, box-shadow;
   transition-duration: 0.5s;
   background: var(--dark-blue);
   color: var(--white);
 }
 #yellow {
-  transition-property: background-color;
+  transition-property: background-color, box-shadow;
   transition-duration: 0.5s;
   background: #f2b705;
   color: #000000;
 }
 #blue:hover {
   background-color: var(--dark-blue-transparent);
+  box-shadow: none;
+
 }
 #yellow:hover {
   background-color: #f2b705bf;
+  box-shadow: none;
 }
 /* footer
 --------------------*/

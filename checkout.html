@@ -66,7 +66,7 @@
               required="required"
             />
             <div id="divider">
-            <div><label for="city" class="label">City</label>
+            <div class="box-short1"><label for="city" class="label">City</label>
             <input
               type="text"
               name="city"
@@ -75,7 +75,7 @@
               class="box-short"
               required="required"
             /></div>
-            <div><label for="postal-code" class="label">Postal Code</label>
+            <div class="box-short2"><label for="postal-code" class="label">Postal Code</label>
             <input
               type="number"
               name="postal-code"
@@ -95,33 +95,36 @@
           </form>
         </fieldset>
 
-        <fieldset class="account">
-          <form action="profile.php" class="checkbox-1">
-            <input type="checkbox" name="newsletter" value="Subscribe" />
-            Subscribe to our Newsletter
+        <section class="account">
+          <form action="profile.php" class="custom-checkbox">
+            <input type="checkbox" name="newsletter" value="Subscribe" id="check1"/>
+            <label for="check1"> Subscribe to our Newsletter</label>
           </form>
-          <p id="optional">Optional:</p>
+          <fieldset class="account">
+            <legend>Optional</legend>
           <form action="login.php">
             <label for="choose" class="label_2">Choose password</label>
             <input
               type="password"
               name="choose"
-              placeholder="Password"
+              placeholder="* * * * * * * *"
               class="box"
             />
             <label for="confirm" class="label_2">Confirm password</label>
             <input
               type="password"
               name="confirm"
-              placeholder="Password"
+              placeholder="* * * * * * * *
+              "
               class="box"
             />
           </form>
-          <form action="profile.php" class="checkbox-2">
-            <input type="checkbox" name="account" value="create" />Create
-            Account
+          <form action="profile.php" class="custom-checkbox">
+            <input type="checkbox" name="account" value="create" id="check2"/>
+            <label for="check2">Create Account</label>
           </form>
         </fieldset>
+      </section>
       </section>
 
       <h2>3. Choose Shipping Method</h2>
