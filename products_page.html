@@ -9,6 +9,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://use.typekit.net/cgz4jxk.css" />
     <link rel="stylesheet" href="styles/products_page.css" />
+    <script
+      src="https://kit.fontawesome.com/fbd3401b24.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
@@ -101,7 +105,35 @@
       <div class="main-wrapper">
         <section class="product-card">
           <div class="column-wrapper">
-            <figure><img src="images\blue.jpg" alt="" /></figure>
+            <div class="left-column">
+              <figure class="product-image">
+                <span class="fa fa-angle-left"></span>
+                <img
+                  id="jacket"
+                  src="images\blue-large.jpg"
+                  alt="product photo of a blue Rocky Mountains rainjacket"
+                />
+                <span class="fa fa-angle-right"></span>
+              </figure>
+              <div class="circle-wrapper">
+                <span class="image-circle"></span
+                ><span class="image-circle"></span
+                ><span class="image-circle"></span>
+              </div>
+              <div class="rating-wrapper">
+                <ul class="list-inline rating">
+                  <li><span class="fa fa-star"> </span></li>
+                  <li><span class="fa fa-star"> </span></li>
+                  <li><span class="fa fa-star"> </span></li>
+                  <li><span class="fa fa-star"> </span></li>
+                  <li><span class="fa fa-star-half-empty"> </span></li>
+                </ul>
+                <!-- <div>
+                  <p>4.7</p>
+                  <p>5 reviews</p>
+                </div> -->
+              </div>
+            </div>
             <div class="right-column">
               <h2>Rainydays</h2>
               <h1>Rocky Mountains</h1>
@@ -110,7 +142,7 @@
                 <li>Lightweight and packable (400g)</li>
                 <li>Breathable</li>
               </ul>
-              <h3>Product description</h3>
+              <h3>Product description:</h3>
               <p>
                 Nequi omnit quasit eost aut fugit ut estium susam fuga. Ficaepe
                 liatque porepera dolorporum que del et est et que et anis cum
@@ -119,67 +151,113 @@
                 quae optatent quam dolorum facea sequam nam facipsum quo bearchi
                 citiunt esendae vel minus sunt, nit eatqui num estiisi nctios
                 por mi, que volore voluptas eum solo optatquam, aut fuga. Fuga.
-                Hendit maxim hitatibus
+                Hendit maxim hitatibus.
               </p>
-              <figure class="color-size">
-                <h4>Colors:</h4>
-                <ul class="list-inline">
-                  <li class="color blue"><span></span></li>
-                  <li class="color red"><span></span></li>
-                  <li class="color yellow"><span></span></li>
-                </ul>
+
+              <figure class="radio">
+                <h4>Color:</h4>
+                <form action="">
+                  <label>
+                    <input type="radio" name="color" value="blue" />
+                    <span></span>
+                  </label>
+                  <label>
+                    <input type="radio" name="color" value="red" />
+                    <span></span>
+                  </label>
+                  <label>
+                    <input type="radio" name="color" value="yellow" />
+                    <span></span>
+                  </label>
+                </form>
               </figure>
-              <figure class="color-size">
+              <figure class="radio">
                 <h4>Size:</h4>
-                <ul class="list-inline">
-                  <li class="size"><span>XS</span></li>
-                  <li class="size"><span>S</span></li>
-                  <li class="size"><span>M</span></li>
-                  <li class="size"><span>L</span></li>
-                  <li class="size"><span>XL</span></li>
-                </ul>
+                <form action="">
+                  <label>
+                    <input type="radio" name="size" value="xs" />
+                    <span></span>
+                  </label>
+                  <label>
+                    <input type="radio" name="size" value="s" />
+                    <span></span>
+                  </label>
+                  <label>
+                    <input type="radio" name="size" value="m" />
+                    <span></span>
+                  </label>
+                  <label>
+                    <input type="radio" name="size" value="l" />
+                    <span></span>
+                  </label>
+                  <label>
+                    <input type="radio" name="size" value="xl" />
+                    <span></span>
+                  </label>
+                </form>
               </figure>
             </div>
           </div>
           <div class="bottom-wrapper">
-            <div>
+            <div class="categorys">
               <h4>Suitable for:</h4>
-              <ul class="list-inline">
+              <ul class="list-symbol">
                 <li class="symbol">
                   <figure class="symbol">
-                    <img src="images\icons\citylife.svg" alt="" />
+                    <i class="fa fa-hiking"></i>
+                    <figcaption>Trekking</figcaption>
+                  </figure>
+                </li>
+                <li class="symbol">
+                  <figure class="symbol">
+                    <i class="fa fa-city"></i>
                     <figcaption>Citylife</figcaption>
                   </figure>
                 </li>
                 <li class="symbol">
                   <figure class="symbol">
-                    <img src="images\icons\citylife.svg" alt="" />
-                    <figcaption>Citylife</figcaption>
+                    <i class="fa fa-campground"></i>
+                    <figcaption>Camping</figcaption>
                   </figure>
                 </li>
                 <li class="symbol">
                   <figure class="symbol">
-                    <img src="images\icons\citylife.svg" alt="" />
-                    <figcaption>Citylife</figcaption>
+                    <i class="fa fa-mountain"></i>
+                    <figcaption>Hiking</figcaption>
                   </figure>
                 </li>
                 <li class="symbol">
                   <figure class="symbol">
-                    <img src="images\icons\citylife.svg" alt="" />
-                    <figcaption>Citylife</figcaption>
-                  </figure>
-                </li>
-                <li class="symbol">
-                  <figure class="symbol">
-                    <img src="images\icons\citylife.svg" alt="" />
-                    <figcaption>Citylife</figcaption>
+                    <i class="fa fa-canoe"></i>
+                    <figcaption>Canoeing</figcaption>
                   </figure>
                 </li>
               </ul>
             </div>
             <div>
-              <h5>49.00 USD</h5>
-              <button class="add-basket" type="button">Add to basket</button>
+              <div id="price-wrapper">
+                <div id="stock">
+                  <span id="circle"></span>
+                  <p>In stock</p>
+                </div>
+                <h5>$ 49.00</h5>
+              </div>
+              <div>
+                <form class="add-basket" action="GET">
+                  <label for="add-basket"
+                    ><img
+                      id="basket"
+                      src="../images/icons/basket_white.png"
+                      alt=""
+                  /></label>
+                  <input
+                    type="submit"
+                    name="add-basket"
+                    value="add to basket"
+                    id="add-basket"
+                  />
+                </form>
+              </div>
             </div>
           </div>
         </section>
