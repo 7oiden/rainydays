@@ -50,10 +50,10 @@ ul.campaign {
 .sticky {
   position: sticky;
   top: 0;
-  background-color: white;
 }
 nav.icons {
   width: 100%;
+  background-color: white;
 }
 .icon-wrapper {
   display: flex;
@@ -98,6 +98,9 @@ a img {
   padding-left: 20px;
   position: relative;
 }
+#search:hover {
+  background-color: #f2f2f2;
+}
 #search-label {
   position: absolute;
   top: 7px;
@@ -105,10 +108,15 @@ a img {
 }
 nav.menu {
   width: 100%;
+  height: 60px;
   background-color: #172940;
 }
 .menu-wrapper {
   width: 67%;
+}
+span.categorys {
+  border-bottom: 2px solid black;
+  font-weight: bold;
 }
 ul.menu {
   display: flex;
@@ -118,21 +126,64 @@ ul.menu {
   margin-bottom: 0;
   margin-top: 0;
 }
-.menu li {
+li.menu-item {
   display: inline-block;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 18px;
+}
+
+ul.dropdown {
+  padding-left: 0;
+  list-style: none;
+  margin-top: 18px;
+}
+.dropdown li {
+  margin: 0;
+  background-color: lightblue;
+  color: var(--dark-blue);
+  padding: 0px 20px 10px 20px;
+}
+li.categorys {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+.dropdown a {
+  text-decoration: none;
 }
 div a {
   color: #172940;
 }
-.menu a {
+a.main-menu {
   text-decoration: none;
   color: white;
+  transition-property: color;
+  transition-duration: 0.5s;
 }
-.menu a:hover {
+a.main-menu:hover {
   color: #f2b705;
-  text-decoration: underline;
+}
+/*sjekk*/
+li {
+  display: block;
+  transition-duration: 0.5s;
+}
+
+li:hover {
+  cursor: pointer;
+}
+ul li ul {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  transition-property: visibility, opacity, display;
+  transition-duration: 1s;
+  left: 0;
+  display: none;
+}
+ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
 }
 div.breadcrumb {
   margin: 20px 0px 20px 7.5%;
@@ -154,6 +205,9 @@ div.breadcrumb {
 }
 /* main
 --------------------*/
+main {
+  width: 100%;
+}
 .main-wrapper {
   width: 85%;
   display: flex;
@@ -164,13 +218,14 @@ section.product-card {
   height: 800px;
   flex: 2;
   margin-right: 15px;
+  margin-bottom: 70px;
 }
 .column-wrapper {
   display: flex;
   justify-content: space-around;
   /*background-color: lightblue;*/
 }
-.bottom-wrapper {
+div .last-wrapper {
   display: flex;
   justify-content: space-around;
   /*background-color: yellowgreen;*/
@@ -264,12 +319,6 @@ li p {
   font-weight: bold;
   padding-right: 5px;
   padding-left: 10px;
-}
-li a {
-  font-family: "montserrat";
-  font-size: 1rem;
-  color: #536175;
-  text-decoration: none;
 }
 li.size {
   font-family: "montserrat";
@@ -470,14 +519,120 @@ label > input[name="size"]:hover + ::before {
 label > input[name="size"]:checked + ::before {
   border-color: var(--dark-blue);
 }
+
+div.bottom-wrapper {
+  width: 85%;
+  margin: var(--center-align);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  /*background-color: aquamarine;*/
+}
+div.newsletter {
+  display: inline-block;
+  margin-left: 30%;
+  /*background-color: cornflowerblue;*/
+}
+div.large-buttons {
+  display: inline-block;
+  display: flex;
+}
+.contact {
+  height: 70px;
+  width: 70px;
+  background-color: #536175;
+  border-radius: 10px;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+.chat {
+  height: 70px;
+  width: 70px;
+  background-color: #b05625;
+  border-radius: 10px;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+a > .contact:hover {
+  background-color: #536175bf;
+}
+a > .chat:hover {
+  background-color: #b05625bf;
+}
+#contact {
+  height: 50px;
+  padding-top: 5px;
+}
+#chat {
+  height: 50px;
+  padding-top: 5px;
+}
+#margin {
+  margin-left: 70px;
+}
+.large-buttons a {
+  font-size: 1rem;
+  text-decoration: none;
+  text-align: center;
+  color: #f2f2f2;
+  transition-property: color;
+  transition-duration: 0.5s;
+}
+.large-buttons a:hover {
+  color: var(--dark-blue);
+}
+.label {
+  display: inline-block;
+  margin-top: 5px;
+}
+/*.newsletter {
+  background-color: tomato;
+}*/
+#newsletter {
+  height: 48px;
+  border: solid 2px;
+  border-color: #536175;
+  border-radius: 0;
+  font-family: "montserrat";
+  font-size: 1.25rem;
+  padding-left: 15px;
+}
+#newsletter:hover {
+  background-color: #f2f2f2;
+}
+#join {
+  background-color: #536175;
+  font-family: "montserrat";
+  font-size: 1.25rem;
+  font-weight: 500;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 40px;
+  padding: 12px 15px 12px 15px;
+  border: none;
+  border-radius: 0;
+  color: white;
+  margin-left: -5px;
+}
+#join:hover {
+  opacity: 0.75;
+}
+#label {
+  display: inline-block;
+  font-weight: bold;
+  color: #536175;
+  padding-bottom: 5px;
+}
+
 /* footer
 --------------------*/
 footer {
-  margin-top: 100px;
+  margin-top: 50px;
+  width: 100%;
 }
 .support-wrapper {
-  width: 100%;
   background-color: #172940;
+  margin-bottom: 0;
 }
 .support-container {
   font-family: "montserrat";
@@ -488,9 +643,15 @@ footer {
   width: 85%;
   margin: 0 auto 0 auto;
 }
+div.support {
+  width: 17%;
+  /*background-color: tomato;*/
+}
 .support ul {
   list-style: none;
   padding-left: 0;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
 .support a {
   font-weight: 300;
@@ -500,23 +661,43 @@ footer {
 .support p {
   font-weight: 500;
   text-decoration: underline;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
-.footer {
-  display: flex;
-  justify-content: space-evenly;
+section.footer {
   background-color: white;
+  margin-top: 0;
+}
+ul.footer {
+  display: flex;
+  justify-content: center;
 }
 .footer li {
   display: inline-block;
   list-style: none;
-  padding-left: 20px;
+  padding: 12px 0px 12px 20px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 li.social-media {
   display: inline-block;
 }
-img.social-media {
-  width: 30px;
-  height: 30px;
-  margin: 0;
-  padding-right: 20px;
+span.fa {
+  font-size: 2rem;
+  color: white;
+}
+#social-media {
+  display: flex;
+  justify-content: space-around;
+}
+ul.footer {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.small {
+  font-size: 1rem;
+  font-style: italic;
 }

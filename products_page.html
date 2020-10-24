@@ -31,7 +31,7 @@
             <div>
               <a href="index.html" class="icons" id="home-icon">
                 <img src="images\icons\home.svg" alt="Home icon" />
-                <figcaption class="label">Home</figcaption></a
+                <figcaption class="icon-label">Home</figcaption></a
               >
             </div>
             <figure class="logo">
@@ -52,15 +52,15 @@
             <div>
               <a href="index.html" class="icons">
                 <img src="images\icons\favorite.svg" alt="Favorites icon" />
-                <figcaption class="label">Favorites</figcaption></a
+                <figcaption class="icon-label">Favorites</figcaption></a
               >
               <a href="index.html" class="icons">
                 <img src="images\icons\profile.svg" alt="Profile icon" />
-                <figcaption class="label">Profile</figcaption></a
+                <figcaption class="icon-label">Profile</figcaption></a
               >
               <a href="basket.html" class="icons">
                 <img src="images\icons\basket.svg" alt="Basket icon" />
-                <figcaption class="label">Basket</figcaption></a
+                <figcaption class="icon-label">Basket</figcaption></a
               >
             </div>
           </div>
@@ -69,19 +69,56 @@
           <div class="menu-wrapper">
             <ul class="menu">
               <li class="menu-item">
-                <a href="products_overview.html">WOMEN</a>
+                <a class="main-menu" href="products_overview.html">WOMEN</a>
+                <ul class="dropdown">
+                  <li class="categorys"><span class="categorys">Womens Jackets</span></li>
+                  <li><a class="dropdown" href="">Hiking</a></li>
+                  <li><a class="dropdown" href="">Skiing</a></li>
+                  <li><a class="dropdown" href="">Outdoor</a></li>
+                  <li><a class="dropdown" href="">Casual</a></li>
+                  <li><a class="dropdown" href="">View All</a></li>
+                  <li></li>
+                  <li><a class="dropdown" href="">New Arrivals</a></li>
+                  <li><a class="dropdown" href="">Sale</a></li>
+                </ul>
               </li>
               <li class="menu-item">
-                <a href="products_overview.html">MEN</a>
+                <a class="main-menu" href="products_overview.html">MEN</a>
+                <ul class="dropdown">
+                  <li class="categorys"><span class="categorys">Mens Jackets</span></li>
+                  <li><a class="dropdown" href="">Hiking</a></li>
+                  <li><a class="dropdown" href="">Skiing</a></li>
+                  <li><a class="dropdown" href="">Outdoor</a></li>
+                  <li><a class="dropdown" href="">Casual</a></li>
+                  <li><a class="dropdown" href="">View All</a></li>
+                  <li></li>
+                  <li><a class="dropdown" href="">New Arrivals</a></li>
+                  <li><a class="dropdown" href="">Sale</a></li>
+                </ul>
               </li>
               <li class="menu-item">
-                <a href="products_overview.html">BESTSELLERS</a>
+                <a class="main-menu" href="products_overview.html">BESTSELLERS</a>
+                <ul class="dropdown">
+                  <li class="categorys"><span class="categorys">Our most popular</span></li>
+                  <li><a class="dropdown" href="">Men</a></li>
+                  <li><a class="dropdown" href="">Women</a></li>
+                </ul>
               </li>
               <li class="menu-item">
-                <a href="products_overview.html">SALE</a>
+                <a class="main-menu" href="products_overview.html">SALE</a>
+                <ul class="dropdown">
+                  <li class="categorys"><span class="categorys">Jackets on sale</span></li>
+                  <li><a class="dropdown" href="">Men</a></li>
+                  <li><a class="dropdown" href="">Women</a></li>
+                </ul>
               </li>
               <li class="menu-item">
-                <a href="products_overview.html">NEW</a>
+                <a class="main-menu" href="products_overview.html">NEW</a>
+                <ul class="dropdown">
+                  <li class="categorys"><span class="categorys">New Arrivals</span></li>
+                  <li><a class="dropdown" href="">Men</a></li>
+                  <li><a class="dropdown" href="">Women</a></li>
+                </ul>
               </li>
             </ul>
           </div>
@@ -198,7 +235,7 @@
               </figure>
             </div>
           </div>
-          <div class="bottom-wrapper">
+          <div class="last-wrapper">
             <div class="categorys">
               <h4>Suitable for:</h4>
               <ul class="list-symbol">
@@ -270,6 +307,46 @@
           />
         </div>
       </div>
+
+      <div class="bottom-wrapper">
+        <div class="newsletter">
+          <label id="label" for="newsletter"
+              >Subscribe to our Newsletter:</label
+            >
+          <form action="form-success.php" method="get" class="newsletter"> 
+            <input
+              id="newsletter"
+              type="text"
+              name="email"
+              placeholder="Your e-mail address"
+            />
+            <input id="join" type="submit" name="subscribe" value="JOIN" />
+          </form>
+        </div>
+
+        <div class="large-buttons">
+          <a href="about.html"
+            ><div class="contact">
+              <img
+                id="contact"
+                src="images\icons\mail-white.png"
+                alt="Contact icon"
+              />
+            </div>
+            <!-- <label class="label" for="contact">Contact info</label></a
+          > -->
+          <a id="margin" href=""
+            ><div class="chat">
+              <img
+                id="chat"
+                src="images\icons\chat-white.png"
+                alt="Live chat icon"
+              />
+            </div>
+            <!-- <label class="label" for="chat">Live Chat</label> -->
+          </a>
+        </div>
+      </div>
     </main>
 
     <footer>
@@ -277,34 +354,18 @@
         <section class="support-container">
           <div class="support">
             <p>Follow us on:</p>
-            <ul>
+            <ul id="social-media">
               <li class="social-media">
-                <img
-                  src="images\icons\facebook.png"
-                  alt="Facebook logo"
-                  class="social-media"
-                />
+               <a href="https://www.facebook.com/"><span class="fa fa-facebook-f"></span></a>
+              </li>
+              <li>
+              <a href="https://instagram.com/"><span class="fa fa-instagram"></span></a>
               </li>
               <li class="social-media">
-                <img
-                  src="images\icons\instagram.png"
-                  alt="Instagram logo"
-                  class="social-media"
-                />
+              <a href="https://twitter.com/"><span class="fa fa-twitter"></span></a>
               </li>
               <li class="social-media">
-                <img
-                  src="images\icons\twitter.png"
-                  alt="Twitter logo"
-                  class="social-media"
-                />
-              </li>
-              <li class="social-media">
-                <img
-                  src="images\icons\youtube.png"
-                  alt="Youtube logo"
-                  class="social-media"
-                />
+                <a href="https://youtube.com"><span class="fa fa-youtube"></span></a>
               </li>
             </ul>
           </div>
@@ -328,18 +389,18 @@
             <p>Contact:</p>
             <ul>
               <li>
-                <a href="contact.html">Phone: <i>555 555 555</i></a>
+                <a href="contact.html">Phone: <span class="small">&nbsp; 555 555 555</span></a>
               </li>
               <li>
-                <a href="contact.html">Email: <i>support@rainydays.com</i></a>
+                <a href="contact.html">Email: <span class="small">&nbsp; support@rainydays.com</span></a>
               </li>
             </ul>
           </div>
         </section>
       </div>
       <section class="footer">
-        <ul>
-          <li>&#169;2020 - Rainydays S.A.S</li>
+        <ul class="footer">
+          <li>&#169; 2020 - Rainydays S.A.S</li>
           <li>&#124;</li>
           <li>Terms and conditions</li>
           <li>&#124;</li>
