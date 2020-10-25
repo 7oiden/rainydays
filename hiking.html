@@ -1,87 +1,147 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Hiking Category</title>
+    <title>Outdoor Category</title>
     <meta
       name="description"
-      content="Homepage for Rainydays rainjackets webshop"
+      content="Hiking category page for Rainydays rainjackets webshop"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://use.typekit.net/cgz4jxk.css" />
-    <link rel="stylesheet" href="styles/hiking.css" />
+    <link href="styles/hiking.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/fbd3401b24.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
-  <body>
-    <header>
-      <div>
-        <ul class="campaign">
-          <li>Now: -20% on your first order</li>
-          <li>Free shipping on orders +99.99$</li>
-          <li>Money back guarantee</li>
-        </ul>
-      </div>
+  <header>
+    <div>
+      <ul class="campaign">
+        <li>Now: -20% on your first order</li>
+        <li>Free shipping on orders +99.99$</li>
+        <li>Money back guarantee</li>
+      </ul>
+    </div>
 
+    <div class="sticky">
       <nav aria-label="navigation" class="icons">
-        <div>
-          <a href="index.html" class="icons">
-            <img src="images\icons\home.svg" alt="Home icon" />
-            <figcaption class="label">Home</figcaption></a
-          >
+        <div class="icon-wrapper">
+          <div class="icons">
+            <a href="index.html" class="icons">
+              <figure class="icons">
+                <img src="images\icons\home.svg" alt="Home icon" />
+                <figcaption class="label">Home</figcaption>
+              </figure>
+            </a>
+          </div>
+          <figure class="logo">
+            <img
+              id="logo"
+              src="images\RainyDays_Logo.png"
+              alt="Rainydays logo"
+            />
+          </figure>
+          <div class="search">
+            <form class="search">
+              <input id="search" type="text" placeholder="Search Products" />
+              <label for="search" id="search-label"
+                ><img src="images\icons\search.svg"
+              /></label>
+            </form>
+          </div>
+          <div class="icons">
+            <a href="index.html" class="icons"
+              ><figure class="icons fpb">
+                <img src="images\icons\favorite.svg" alt="Favorites icon" />
+                <figcaption class="label">Favorites</figcaption>
+              </figure></a
+            >
+            <a href="index.html" class="icons"
+              ><figure class="icons fpb">
+                <img src="images\icons\profile.svg" alt="Profile icon" />
+                <figcaption class="label">Profile</figcaption>
+              </figure></a
+            >
+            <a href="basket.html" class="icons"
+              ><figure class="icons fpb">
+                <img src="images\icons\basket.svg" alt="Basket icon" />
+                <figcaption class="label">Basket</figcaption>
+              </figure></a
+            >
+          </div>
         </div>
-        <!-- <figure class="logo">
-          <img
-            src="images\RainyDays_Logo.png"
-            width="190"
-            alt="Rainydays logo"
-          />
-        </figure> -->
-        <div>
-          <form class="search">
-            <input id="search" type="text" placeholder="Search Products" />
-            <label for="search" id="search-label"
-              ><img src="images\icons\search.svg"
-            /></label>
-          </form>
-          <div></div>
-        </div>
+      </nav>
 
-        <div>
-          <a href="index.html" class="icons">
-            <img src="images\icons\favorite.svg" alt="Favorites icon" />
-            <figcaption class="label">Favorites</figcaption></a
-          >
-          <a href="index.html" class="icons">
-            <img src="images\icons\profile.svg" alt="Profile icon" />
-            <figcaption class="label">Profile</figcaption></a
-          >
-          <a href="basket.html" class="icons">
-            <img src="images\icons\basket.svg" alt="Basket icon" />
-            <figcaption class="label">Basket</figcaption></a
-          >
-        </div>
-      </nav>
-      <nav class="menu">
-        <ul class="menu">
-          <li class="menu-item"><a href="products_overview.html">WOMEN</a></li>
-          <li class="menu-item"><a href="products_overview.html">MEN</a></li>
-          <li class="menu-item">
-            <a href="products_overview.html">BESTSELLERS</a>
-          </li>
-          <li class="menu-item"><a href="products_overview.html">SALE</a></li>
-          <li class="menu-item"><a href="products_overview.html">NEW</a></li>
-        </ul>
-      </nav>
-      <nav>
-        <div class="breadcrumb">
-          <a href="index.html" class="previous"> Home</a>
-          <a href="hiking.html" class="current"> &gt; &nbsp; Hiking</a>
-        </div>
-      </nav>
-    </header>
+      <nav class="main-menu">
+        <div class="menu-wrapper">
+          <ul class="menu">
+            <li>
+              <a class="menu-item" href="products_overview.html">WOMEN</a>
+              <ul class="dropdown">
+                <li><a href="products_overview.html">Hiking</a></li>
+                <li><a href="products_overview.html">Outdoor</a></li>
+                <li><a href="products_overview.html">Skiing</a></li>
+                <li><a href="products_overview.html">Casual</a></li>
+                <li><a href="products_overview.html">View All</a></li>
+              </ul>
+            </li>
 
+            <li>
+              <a class="menu-item" href="products_overview.html">MEN</a>
+              <ul class="dropdown">
+                <li><a href="products_overview.html">Hiking</a></li>
+                <li><a href="products_overview.html">Outdoor</a></li>
+                <li><a href="products_overview.html">Skiing</a></li>
+                <li><a href="products_overview.html">Casual</a></li>
+                <li><a href="products_overview.html">View All</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a class="menu-item" href="products_overview.html">BESTSELLERS</a>
+              <ul class="dropdown">
+                <li><a href="products_overview.html">Women</a></li>
+                <li><a href="products_overview.html">Men</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a class="menu-item" href="products_overview.html">SALE</a>
+              <ul class="dropdown">
+                <li><a href="products_overview.html">Women</a></li>
+                <li><a href="products_overview.html">Men</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a class="menu-item" href="products_overview.html">NEWS</a>
+              <ul class="dropdown">
+                <li class="list-dropdown">
+                  <a href="products_overview.html">Women</a>
+                </li>
+                <li class="list-dropdown">
+                  <a href="products_overview.html">Men</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <nav>
+      <div class="breadcrumb">
+        <a href="index.html" class="previous"> Home</a>
+        <a href="Skiing.html" class="current">
+          &gt; &nbsp; Hiking Category</a>
+      </div>
+    </nav>
+  </header>
+
+  <body>
     <main>
-      <section class="content-wrapper">
-        <div class="content">
+      <div class="content-wrapper">
+        <section class="content">
           <h1>Our Hiking Collection</h1>
           <h2>Perfect rain jackets for hiking and trekking</h2>
           <p>
@@ -104,100 +164,115 @@
           <a href="products_overview.html" class="button"
             ><p class="button">SHOP NOW</p></a
           >
+        </section>
+      </div>
+
+      <div class="bottom-wrapper">
+        <div class="newsletter">
+          <label id="label" for="newsletter"
+              >Subscribe to our Newsletter:</label
+            >
+          <form action="form-success.php" method="get" class="newsletter"> 
+            <input
+              id="newsletter"
+              type="text"
+              name="email"
+              placeholder="Your e-mail address"
+            />
+            <input id="join" type="submit" name="subscribe" value="JOIN" />
+          </form>
         </div>
-        <figure><img src="images\hiking2.jpg" alt="" /></figure>
-      </section>
+
+        <div class="large-buttons">
+          <a href="about.html"
+            ><div class="contact">
+              <img
+                id="contact"
+                src="images\icons\mail-white.png"
+                alt="Contact icon"
+              />
+            </div>
+            <!-- <label class="label" for="contact">Contact info</label></a
+          > -->
+          <a id="margin" href=""
+            ><div class="chat">
+              <img
+                id="chat"
+                src="images\icons\chat-white.png"
+                alt="Live chat icon"
+              />
+            </div>
+            <!-- <label class="label" for="chat">Live Chat</label> -->
+          </a>
+        </div>
+      </div> 
     </main>
 
-    <section class="bottom-items">
-      <div>
-        <form action="form-success.php" method="get" class="newsletter">
-          <label id="label" for="newsletter"
-            >Subscribe to our Newsletter:</label
-          >
-          <input
-            id="newsletter"
-            type="text"
-            name="email"
-            placeholder="Your e-mail address"
-          />
-          <input id="join" type="submit" name="subscribe" value="JOIN" />
-        </form>
-      </div>
-      <div class="large-buttons">
-        <a href="about.html">
-          <img src="images\icons\Contact.png" alt="contact icon"
-        /></a>
-        <a href=""> <img src="images\icons\Chat.png" alt="chat icon" /></a>
-      </div>
-    </section>
-
     <footer>
-      <section class="support-container">
-        <div class="support">
-          <p>Follow us on:</p>
-          <ul>
-            <li class="social-media">
-              <img
-                src="images\icons\facebook.png"
-                alt="Facebook logo"
-                class="social-media"
-              />
-            </li>
-            <li class="social-media">
-              <img
-                src="images\icons\instagram.png"
-                alt="Instagram logo"
-                class="social-media"
-              />
-            </li>
-            <li class="social-media">
-              <img
-                src="images\icons\twitter.png"
-                alt="Twitter logo"
-                class="social-media"
-              />
-            </li>
-            <li class="social-media">
-              <img
-                src="images\icons\youtube.png"
-                alt="Youtube logo"
-                class="social-media"
-              />
-            </li>
-          </ul>
-        </div>
-        <div class="support">
-          <p>About Rainydays:</p>
-          <ul>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="about.html">Contact Info</a></li>
-            <li><a href="about.html">Location</a></li>
-          </ul>
-        </div>
-        <div class="support">
-          <p>Support:</p>
-          <ul>
-            <li><a href="support.html">FAQ</a></li>
-            <li><a href="support.html">Returns</a></li>
-            <li><a href="support.html">Size Chart</a></li>
-          </ul>
-        </div>
-        <div class="support">
-          <p>Contact:</p>
-          <ul>
-            <li>
-              <a href="contact.html">Phone: <i>555 555 555</i></a>
-            </li>
-            <li>
-              <a href="contact.html">Email: <i>support@rainydays.com</i></a>
-            </li>
-          </ul>
-        </div>
-      </section>
+      <div class="support-wrapper">
+        <section class="support-container">
+          <div class="support">
+            <p>Follow us on:</p>
+            <ul id="social-media">
+              <li class="social-media">
+                <a href="https://www.facebook.com/"
+                  ><span class="fa fa-facebook-f"></span
+                ></a>
+              </li>
+              <li>
+                <a href="https://instagram.com/"
+                  ><span class="fa fa-instagram"></span
+                ></a>
+              </li>
+              <li class="social-media">
+                <a href="https://twitter.com/"
+                  ><span class="fa fa-twitter"></span
+                ></a>
+              </li>
+              <li class="social-media">
+                <a href="https://youtube.com"
+                  ><span class="fa fa-youtube"></span
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="support">
+            <p>About Rainydays:</p>
+            <ul>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="about.html">Contact Info</a></li>
+              <li><a href="about.html">Location</a></li>
+            </ul>
+          </div>
+          <div class="support">
+            <p>Support:</p>
+            <ul>
+              <li><a href="support.html">FAQ</a></li>
+              <li><a href="support.html">Returns</a></li>
+              <li><a href="support.html">Size Chart</a></li>
+            </ul>
+          </div>
+          <div class="support">
+            <p>Contact:</p>
+            <ul>
+              <li>
+                <a href="contact.html"
+                  >Phone: <span class="small">&nbsp; 555 555 555</span></a
+                >
+              </li>
+              <li>
+                <a href="contact.html"
+                  >Email:
+                  <span class="small">&nbsp; support@rainydays.com</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
       <section class="footer">
-        <ul>
-          <li>&#169;2020 - Rainydays S.A.S</li>
+        <ul class="footer">
+          <li>&#169; 2020 - Rainydays S.A.S</li>
           <li>&#124;</li>
           <li>Terms and conditions</li>
           <li>&#124;</li>

@@ -56,65 +56,10 @@ div.content-wrapper {
   width: 85%;
   display: flex;
   justify-content: space-between;
+  height: 300px;
   margin: 0 auto 0 auto;
+  background-color: lightblue;
 }
-h1,
-h3 {
-  font-family: "century gothic";
-  font-size: 1.875rem;
-  color: #172940;
-  margin-top: 70px;
-  margin-bottom: 10px;
-}
-h2 {
-  font-family: "century gothic";
-  font-size: 1.875rem;
-  color: #172940;
-  margin: 0 0 10px 0;
-  padding: 0;
-}
-p {
-  margin-top: 5px;
-  margin-bottom: 30px;
-}
-section.about-us {
-  width: 30%;
-}
-section.why-chose-us {
-  width: 30%;
-  font-family: "roboto";
-}
-.image-wrapper {
-  display: grid;
-  grid-gap: 20px;
-  grid-template-rows: auto auto auto auto;
-  grid-template-columns: auto auto auto;
-}
-.image {
-  text-align: center;
-  margin: 0;
-}
-ol {
-  font-family: "montserrat";
-  font-size: 1.25rem;
-  padding-left: 20px;
-}
-.why-chose-us li {
-  padding: 10px;
-}
-#about-us {
-  font-family: "montserrat";
-  color: #172940;
-  font-size: 1.25rem;
-  font-weight: 600;
-  text-decoration: underline;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-#address {
-  font-weight: bold;
-}
-
 div.bottom-wrapper {
   width: 85%;
   margin: var(--center-align);

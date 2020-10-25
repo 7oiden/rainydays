@@ -1,89 +1,286 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Casual Category</title>
+    <title>Outdoor Category</title>
     <meta
       name="description"
-      content="Homepage for Rainydays rainjackets webshop"
+      content="casual category page for Rainydays rainjackets webshop"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="https://use.typekit.net/cgz4jxk.css">
-    <link  rel="stylesheet" href="styles/styles.css"/>
+    <link rel="stylesheet" href="https://use.typekit.net/cgz4jxk.css" />
+    <link href="styles/casual.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/fbd3401b24.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
-  <body>
-  
-    <header>
-      <ul class="breadcrumb">
-        <li><a href="#">Home</a></li>
-        <li>Casual</li>
+  <header>
+    <div>
+      <ul class="campaign">
+        <li>Now: -20% on your first order</li>
+        <li>Free shipping on orders +99.99$</li>
+        <li>Money back guarantee</li>
       </ul>
-    </header>
-  
-    <main>
-    <section>
-      <h1>Our Casual Collection</h1>
-      <h2>Perfect rain jackets for your everyday life</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum
-      </p>
-      <button class="shop" type="button">SHOP NOW</button>
-      <img src="images/casual.jpg" alt="woman in casual clothes" />
-    </section>
-  </main>
+    </div>
 
-    <footer>
-      <ul class="footer">
-        <li>2020 - Rainydays S.A.S</li>
-        <li>Terms and conditions</li>
-        <li>Privacy</li>
-        <li>Warranty</li>
-      </ul>
-      <div>
-        <section>
-          <h6>Follow us on:</h6>
-        </section>
-        <section>
-          <h6>About Rainydays:</h6>
-          <p>About Us</p>
-        </section>
-        <section>
-          <h6>Support:</h6>
-          <ul>
-            <li>FAQ</li>
-            <li>Returns</li>
-            <li>Size Chart</li>
+    <div class="sticky">
+      <nav aria-label="navigation" class="icons">
+        <div class="icon-wrapper">
+          <div class="icons">
+            <a href="index.html" class="icons">
+              <figure class="icons">
+                <img src="images\icons\home.svg" alt="Home icon" />
+                <figcaption class="label">Home</figcaption>
+              </figure>
+            </a>
+          </div>
+          <figure class="logo">
+            <img
+              id="logo"
+              src="images\RainyDays_Logo.png"
+              alt="Rainydays logo"
+            />
+          </figure>
+          <div class="search">
+            <form class="search">
+              <input id="search" type="text" placeholder="Search Products" />
+              <label for="search" id="search-label"
+                ><img src="images\icons\search.svg"
+              /></label>
+            </form>
+          </div>
+          <div class="icons">
+            <a href="index.html" class="icons"
+              ><figure class="icons fpb">
+                <img src="images\icons\favorite.svg" alt="Favorites icon" />
+                <figcaption class="label">Favorites</figcaption>
+              </figure></a
+            >
+            <a href="index.html" class="icons"
+              ><figure class="icons fpb">
+                <img src="images\icons\profile.svg" alt="Profile icon" />
+                <figcaption class="label">Profile</figcaption>
+              </figure></a
+            >
+            <a href="basket.html" class="icons"
+              ><figure class="icons fpb">
+                <img src="images\icons\basket.svg" alt="Basket icon" />
+                <figcaption class="label">Basket</figcaption>
+              </figure></a
+            >
+          </div>
+        </div>
+      </nav>
+
+      <nav class="main-menu">
+        <div class="menu-wrapper">
+          <ul class="menu">
+            <li>
+              <a class="menu-item" href="products_overview.html">WOMEN</a>
+              <ul class="dropdown">
+                <li><a href="products_overview.html">Hiking</a></li>
+                <li><a href="products_overview.html">Outdoor</a></li>
+                <li><a href="products_overview.html">Skiing</a></li>
+                <li><a href="products_overview.html">Casual</a></li>
+                <li><a href="products_overview.html">View All</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a class="menu-item" href="products_overview.html">MEN</a>
+              <ul class="dropdown">
+                <li><a href="products_overview.html">Hiking</a></li>
+                <li><a href="products_overview.html">Outdoor</a></li>
+                <li><a href="products_overview.html">Skiing</a></li>
+                <li><a href="products_overview.html">Casual</a></li>
+                <li><a href="products_overview.html">View All</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a class="menu-item" href="products_overview.html">BESTSELLERS</a>
+              <ul class="dropdown">
+                <li><a href="products_overview.html">Women</a></li>
+                <li><a href="products_overview.html">Men</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a class="menu-item" href="products_overview.html">SALE</a>
+              <ul class="dropdown">
+                <li><a href="products_overview.html">Women</a></li>
+                <li><a href="products_overview.html">Men</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a class="menu-item" href="products_overview.html">NEWS</a>
+              <ul class="dropdown">
+                <li class="list-dropdown">
+                  <a href="products_overview.html">Women</a>
+                </li>
+                <li class="list-dropdown">
+                  <a href="products_overview.html">Men</a>
+                </li>
+              </ul>
+            </li>
           </ul>
-        </section>
-        <section>
-          <h6>Contact:</h6>
-          <ul>
-            <li>Phone: 555 555 555</li>
-            <li>Email: support@rainydays.com</li>
-          </ul>
+        </div>
+      </nav>
+    </div>
+    <nav>
+      <div class="breadcrumb">
+        <a href="index.html" class="previous"> Home</a>
+        <a href="Skiing.html" class="current">
+          &gt; &nbsp; Casual Category</a>
+      </div>
+    </nav>
+  </header>
+
+  <body>
+    <main>
+      <div class="content-wrapper">
+        <section class="content">
+          <h1>Our Casual Collection</h1>
+          <h2>Perfect rain jackets for your everyday life</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident.
+          </p>
+          <a href="products_overview.html" class="button"
+            ><p class="button">SHOP NOW</p></a
+          >
         </section>
       </div>
+
+      <div class="bottom-wrapper">
+        <div class="newsletter">
+          <label id="label" for="newsletter"
+              >Subscribe to our Newsletter:</label
+            >
+          <form action="form-success.php" method="get" class="newsletter"> 
+            <input
+              id="newsletter"
+              type="text"
+              name="email"
+              placeholder="Your e-mail address"
+            />
+            <input id="join" type="submit" name="subscribe" value="JOIN" />
+          </form>
+        </div>
+
+        <div class="large-buttons">
+          <a href="about.html"
+            ><div class="contact">
+              <img
+                id="contact"
+                src="images\icons\mail-white.png"
+                alt="Contact icon"
+              />
+            </div>
+            <!-- <label class="label" for="contact">Contact info</label></a
+          > -->
+          <a id="margin" href=""
+            ><div class="chat">
+              <img
+                id="chat"
+                src="images\icons\chat-white.png"
+                alt="Live chat icon"
+              />
+            </div>
+            <!-- <label class="label" for="chat">Live Chat</label> -->
+          </a>
+        </div>
+      </div> 
+    </main>
+
+    <footer>
+      <div class="support-wrapper">
+        <section class="support-container">
+          <div class="support">
+            <p>Follow us on:</p>
+            <ul id="social-media">
+              <li class="social-media">
+                <a href="https://www.facebook.com/"
+                  ><span class="fa fa-facebook-f"></span
+                ></a>
+              </li>
+              <li>
+                <a href="https://instagram.com/"
+                  ><span class="fa fa-instagram"></span
+                ></a>
+              </li>
+              <li class="social-media">
+                <a href="https://twitter.com/"
+                  ><span class="fa fa-twitter"></span
+                ></a>
+              </li>
+              <li class="social-media">
+                <a href="https://youtube.com"
+                  ><span class="fa fa-youtube"></span
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="support">
+            <p>About Rainydays:</p>
+            <ul>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="about.html">Contact Info</a></li>
+              <li><a href="about.html">Location</a></li>
+            </ul>
+          </div>
+          <div class="support">
+            <p>Support:</p>
+            <ul>
+              <li><a href="support.html">FAQ</a></li>
+              <li><a href="support.html">Returns</a></li>
+              <li><a href="support.html">Size Chart</a></li>
+            </ul>
+          </div>
+          <div class="support">
+            <p>Contact:</p>
+            <ul>
+              <li>
+                <a href="contact.html"
+                  >Phone: <span class="small">&nbsp; 555 555 555</span></a
+                >
+              </li>
+              <li>
+                <a href="contact.html"
+                  >Email:
+                  <span class="small">&nbsp; support@rainydays.com</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+      <section class="footer">
+        <ul class="footer">
+          <li>&#169; 2020 - Rainydays S.A.S</li>
+          <li>&#124;</li>
+          <li>Terms and conditions</li>
+          <li>&#124;</li>
+          <li>Privacy</li>
+          <li>&#124;</li>
+          <li>Warranty</li>
+        </ul>
+      </section>
     </footer>
-    <ul class="footer">
-      <li>2020 - Rainydays S.A.S</li>
-      <li>Terms and conditions</li>
-      <li>Privacy</li>
-      <li>Warranty</li>
-    </ul>
-  </footer>
   </body>
+</html>

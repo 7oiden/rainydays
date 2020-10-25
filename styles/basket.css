@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'cenury gothic'
-  src: url(../fonts/GOTHIC.TTF) format("TTF"); 
+  font-family: "cenury gothic";
+  src: url(../fonts/GOTHIC.TTF) format("truetype");
 }
 :root {
   --white: #fff;
@@ -408,7 +408,6 @@ form input {
 #blue:hover {
   background-color: var(--dark-blue-transparent);
   box-shadow: none;
-
 }
 #yellow:hover {
   background-color: #f2b705bf;

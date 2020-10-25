@@ -1,6 +1,6 @@
 @font-face {
   font-family: "cenury gothic";
-  src: url(../fonts/GOTHIC.TTF) format("TTF");
+  src: url(../fonts/GOTHIC.TTF) format("truetype");
 }
 html {
   box-sizing: border-box;
@@ -238,7 +238,7 @@ div.breadcrumb {
 --------------------*/
 main {
   width: 100%;
-  padding-bottom: 70px;
+  padding-bottom: 40px;
 }
 div.wrapper {
   width: 85%;
@@ -527,6 +527,7 @@ div.support {
 }
 section.footer {
   margin-top: 0;
+  background-color: white;
 }
 ul.footer {
   display: flex;

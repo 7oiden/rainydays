@@ -4,16 +4,20 @@
     <title>Rainydays About Us</title>
     <meta
       name="description"
-      content="Homepage for Rainydays rainjackets webshop"
+      content="About page for Rainydays rainjackets webshop"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://use.typekit.net/cgz4jxk.css" />
     <link rel="stylesheet" href="styles/about.css" />
+    <script
+    src="https://kit.fontawesome.com/fbd3401b24.js"
+    crossorigin="anonymous"
+  ></script>
   </head>
 
   <body>
     <header>
-      <a href="basket.html" id="previous"> &#10094; &nbsp; Return to Basket</a>
+      <a href="index.html" id="previous"> &#10094; &nbsp; Previous Page</a>
       <figure class="logo">
         <img src="images/rainydays_logo.png" id="logo" />
       </figure>
@@ -110,26 +114,73 @@
           ></iframe>
         </section>
       </div>
+
+      <div class="bottom-wrapper">
+        <div class="newsletter">
+          <label id="label" for="newsletter"
+              >Subscribe to our Newsletter:</label
+            >
+          <form action="form-success.php" method="get" class="newsletter"> 
+            <input
+              id="newsletter"
+              type="text"
+              name="email"
+              placeholder="Your e-mail address"
+            />
+            <input id="join" type="submit" name="subscribe" value="JOIN" />
+          </form>
+        </div>
+        <div class="large-buttons">
+          <a href="about.html"
+            ><div class="contact">
+              <img
+                id="contact"
+                src="images\icons\mail-white.png"
+                alt="Contact icon"
+              />
+            </div>
+            <!-- <label class="label" for="contact">Contact info</label></a
+          > -->
+          <a id="margin" href=""
+            ><div class="chat">
+              <img
+                id="chat"
+                src="images\icons\chat-white.png"
+                alt="Live chat icon"
+              />
+            </div>
+            <!-- <label class="label" for="chat">Live Chat</label> -->
+          </a>
+        </div>
+      </div> 
     </main>
-    <form action="form-success.php" method="get" class="newsletter">
-      <label id="label" for="newsletter">Subscribe to our Newsletter:</label>
-      <input
-        id="newsletter"
-        type="text"
-        name="email"
-        placeholder="Your e-mail address"
-      />
-      <input id="subscribe" type="submit" name="subscribe" value="JOIN" />
-    </form>
-    <footer>
+  
+  <footer>
+    <div class="support-wrapper">
       <section class="support-container">
         <div class="support">
           <p>Follow us on:</p>
-          <ul>
-            <li>Facebook</li>
-            <li>Instagram</li>
-            <li>Twitter</li>
-            <li>Youtube</li>
+          <ul id="social-media">
+            <li class="social-media">
+              <a href="https://www.facebook.com/"
+                ><span class="fa fa-facebook-f"></span
+              ></a>
+            </li>
+            <li>
+              <a href="https://instagram.com/"
+                ><span class="fa fa-instagram"></span
+              ></a>
+            </li>
+            <li class="social-media">
+              <a href="https://twitter.com/"
+                ><span class="fa fa-twitter"></span
+              ></a>
+            </li>
+            <li class="social-media">
+              <a href="https://youtube.com"
+                ><span class="fa fa-youtube"></span
+              ></a>
+            </li>
           </ul>
         </div>
         <div class="support">
@@ -152,25 +203,31 @@
           <p>Contact:</p>
           <ul>
             <li>
-              <a href="contact.html">Phone: <i>555 555 555</i></a>
+              <a href="contact.html"
+                >Phone: <span class="small">&nbsp; 555 555 555</span></a
+              >
             </li>
             <li>
-              <a href="contact.html">Email: <i>support@rainydays.com</i></a>
+              <a href="contact.html"
+                >Email:
+                <span class="small">&nbsp; support@rainydays.com</span></a
+              >
             </li>
           </ul>
         </div>
       </section>
-      <section class="footer">
-        <ul>
-          <li>&#169;2020 - Rainydays S.A.S</li>
-          <li>&#124;</li>
-          <li>Terms and conditions</li>
-          <li>&#124;</li>
-          <li>Privacy</li>
-          <li>&#124;</li>
-          <li>Warranty</li>
-        </ul>
-      </section>
-    </footer>
-  </body>
+    </div>
+    <section class="footer">
+      <ul class="footer">
+        <li>&#169; 2020 - Rainydays S.A.S</li>
+        <li>&#124;</li>
+        <li>Terms and conditions</li>
+        <li>&#124;</li>
+        <li>Privacy</li>
+        <li>&#124;</li>
+        <li>Warranty</li>
+      </ul>
+    </section>
+  </footer>
+</body>
 </html>

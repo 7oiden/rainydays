@@ -1,79 +1,149 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Rainydays Support</title>
+    <title>Rainydays About Us</title>
     <meta
       name="description"
-      content="Homepage for Rainydays rainjackets webshop"
+      content="Support page for Rainydays rainjackets webshop"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://use.typekit.net/cgz4jxk.css" />
+    <link rel="stylesheet" href="styles/support.css" />
+    <script
+    src="https://kit.fontawesome.com/fbd3401b24.js"
+    crossorigin="anonymous"
+  ></script>
   </head>
 
   <body>
     <header>
-      <img src="images/rainydays_logo.png" alt="Rainydays logo" width="200px" />
-      <button class="previous" type="button">Previous Page</button>
+      <a href="index.html" id="previous"> &#10094; &nbsp; Previous page</a>
+      <figure class="logo">
+        <img src="images/rainydays_logo.png" id="logo" />
+      </figure>
     </header>
 
     <main>
-      <article>
-        <h1>How can we help you?</h1>
-        <h2>Frequently asked questions:</h2>
-        <ol>
-          <li>Question 1</li>
-          <li>Question 2</li>
-          <li>Question 3</li>
-          <li>Question 4</li>
-          <li>Question 5</li>
-          <li>Question 6</li>
-        </ol>
-      </article>
-      <article>
-        <h1>Returns</h1>
-        <h2>How can I return a Product:</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum
-        </p>
+      <div class="content-wrapper">
+        <section class="support">
+          
+        </section>
+      </div>
 
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum
-        </p>
-      </article>
-      <article>
-        <h1>Size Chart</h1>
-        <h2>How to measure your body:</h2>
-        <figure>
-          <figcaption>Size chart for women</figcaption>
-        </figure>
-        <figure>
-          <figcaption>Size chart for me</figcaption>
-        </figure>
-      </article>
-      <form>
-        <p>Subscribe to our Newsletter</p>
-        <input type="text" name="email" />
-        <input type="image" scr="images\icons\newsletter.png" />
-      </form>
+      <div class="bottom-wrapper">
+        <div class="newsletter">
+          <label id="label" for="newsletter"
+              >Subscribe to our Newsletter:</label
+            >
+          <form action="form-success.php" method="get" class="newsletter"> 
+            <input
+              id="newsletter"
+              type="text"
+              name="email"
+              placeholder="Your e-mail address"
+            />
+            <input id="join" type="submit" name="subscribe" value="JOIN" />
+          </form>
+        </div>
+
+        <div class="large-buttons">
+          <a href="about.html"
+            ><div class="contact">
+              <img
+                id="contact"
+                src="images\icons\mail-white.png"
+                alt="Contact icon"
+              />
+            </div>
+            <!-- <label class="label" for="contact">Contact info</label></a
+          > -->
+          <a id="margin" href=""
+            ><div class="chat">
+              <img
+                id="chat"
+                src="images\icons\chat-white.png"
+                alt="Live chat icon"
+              />
+            </div>
+            <!-- <label class="label" for="chat">Live Chat</label> -->
+          </a>
+        </div>
+      </div> 
     </main>
-    <footer>
+  
+  <footer>
+    <div class="support-wrapper">
+      <section class="support-container">
+        <div class="support">
+          <p>Follow us on:</p>
+          <ul id="social-media">
+            <li class="social-media">
+              <a href="https://www.facebook.com/"
+                ><span class="fa fa-facebook-f"></span
+              ></a>
+            </li>
+            <li>
+              <a href="https://instagram.com/"
+                ><span class="fa fa-instagram"></span
+              ></a>
+            </li>
+            <li class="social-media">
+              <a href="https://twitter.com/"
+                ><span class="fa fa-twitter"></span
+              ></a>
+            </li>
+            <li class="social-media">
+              <a href="https://youtube.com"
+                ><span class="fa fa-youtube"></span
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <div class="support">
+          <p>About Rainydays:</p>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="about.html">Contact Info</a></li>
+            <li><a href="about.html">Location</a></li>
+          </ul>
+        </div>
+        <div class="support">
+          <p>Support:</p>
+          <ul>
+            <li><a href="support.html">FAQ</a></li>
+            <li><a href="support.html">Returns</a></li>
+            <li><a href="support.html">Size Chart</a></li>
+          </ul>
+        </div>
+        <div class="support">
+          <p>Contact:</p>
+          <ul>
+            <li>
+              <a href="contact.html"
+                >Phone: <span class="small">&nbsp; 555 555 555</span></a
+              >
+            </li>
+            <li>
+              <a href="contact.html"
+                >Email:
+                <span class="small">&nbsp; support@rainydays.com</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <section class="footer">
       <ul class="footer">
-        <li>2020 - Rainydays S.A.S</li>
+        <li>&#169; 2020 - Rainydays S.A.S</li>
+        <li>&#124;</li>
         <li>Terms and conditions</li>
+        <li>&#124;</li>
         <li>Privacy</li>
+        <li>&#124;</li>
         <li>Warranty</li>
       </ul>
-    </footer>
-  </body>
+    </section>
+  </footer>
+</body>
 </html>
