@@ -9,6 +9,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://use.typekit.net/cgz4jxk.css">
     <link rel="stylesheet" href="styles/styles.css"/>
+    <script
+      src="https://kit.fontawesome.com/fbd3401b24.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
@@ -24,20 +28,21 @@
       <div class="sticky">
         <nav aria-label="navigation" class="icons">
           <div class="icon-wrapper">
-            <div>
-              <a href="index.html" class="icons" id="home-icon">
+            <div class="icons">
+              <a href="index.html" class="icons">
+                <figure class="icons">
                 <img src="images\icons\home.svg" alt="Home icon" />
-                <figcaption class="label">Home</figcaption></a
-              >
+                <figcaption class="label">Home</figcaption>
+                </figure>
+              </a>
             </div>
             <figure class="logo">
-              <img
+              <img id="logo"
                 src="images\RainyDays_Logo.png"
-                width="190"
                 alt="Rainydays logo"
               />
             </figure>
-            <div>
+            <div class="search">
               <form class="search">
                 <input id="search" type="text" placeholder="Search Products" />
                 <label for="search" id="search-label"
@@ -45,39 +50,74 @@
                 /></label>
               </form>
             </div>
-            <div>
-              <a href="index.html" class="icons">
+            <div class="icons">
+              <a href="index.html" class="icons"><figure class="icons fpb">
                 <img src="images\icons\favorite.svg" alt="Favorites icon" />
-                <figcaption class="label">Favorites</figcaption></a
+                <figcaption class="label">Favorites</figcaption></figure></a
               >
-              <a href="index.html" class="icons">
+              <a href="index.html" class="icons"><figure class="icons fpb">
                 <img src="images\icons\profile.svg" alt="Profile icon" />
-                <figcaption class="label">Profile</figcaption></a
+                <figcaption class="label">Profile</figcaption></figure></a
               >
-              <a href="basket.html" class="icons">
+              <a href="basket.html" class="icons"><figure class="icons fpb">
                 <img src="images\icons\basket.svg" alt="Basket icon" />
-                <figcaption class="label">Basket</figcaption></a
+                <figcaption class="label">Basket</figcaption></figure></a
               >
             </div>
           </div>
         </nav>
-        <nav class="menu">
+
+        <nav class="main-menu">
           <div class="menu-wrapper">
             <ul class="menu">
-              <li class="menu-item">
-                <a href="products_overview.html">WOMEN</a>
+              <li>
+                <a class="menu-item" href="products_overview.html">WOMEN</a>
+                <ul class="dropdown">
+                  <li><a href="products_overview.html">Hiking</a></li>
+                  <li><a href="products_overview.html">Outdoor</a></li>
+                  <li><a href="products_overview.html">Skiing</a></li>
+                  <li><a href="products_overview.html">Casual</a></li>
+                  <li><a href="products_overview.html">View All</a></li>
+                </ul>
               </li>
-              <li class="menu-item">
-                <a href="products_overview.html">MEN</a>
+  
+              <li>
+                <a class="menu-item" href="products_overview.html">MEN</a>
+                <ul class="dropdown">
+                  <li><a href="products_overview.html">Hiking</a></li>
+                  <li><a href="products_overview.html">Outdoor</a></li>
+                  <li><a href="products_overview.html">Skiing</a></li>
+                  <li><a href="products_overview.html">Casual</a></li>
+                  <li><a href="products_overview.html">View All</a></li>
+                </ul>
               </li>
-              <li class="menu-item">
-                <a href="products_overview.html">BESTSELLERS</a>
+  
+              <li>
+                <a class="menu-item" href="products_overview.html">BESTSELLERS</a>
+                <ul class="dropdown">
+                  <li><a href="products_overview.html">Women</a></li>
+                  <li><a href="products_overview.html">Men</a></li>
+                </ul>
               </li>
-              <li class="menu-item">
-                <a href="products_overview.html">SALE</a>
+  
+              <li>
+                <a class="menu-item" href="products_overview.html">SALE</a>
+                <ul class="dropdown">
+                  <li><a href="products_overview.html">Women</a></li>
+                  <li><a href="products_overview.html">Men</a></li>
+                </ul>
               </li>
-              <li class="menu-item">
-                <a href="products_overview.html">NEW</a>
+  
+              <li>
+                <a class="menu-item" href="products_overview.html">NEWS</a>
+                <ul class="dropdown">
+                  <li class="list-dropdown">
+                    <a href="products_overview.html">Women</a>
+                  </li>
+                  <li class="list-dropdown">
+                    <a href="products_overview.html">Men</a>
+                  </li>
+                </ul>
               </li>
             </ul>
           </div>
@@ -122,13 +162,13 @@
             <figure class="categorys">
               <a href="hiking.html">
                 <img src="images/hiking.jpg" alt="hiker" class="border" />
-                <figcaption class="un">HIKING</figcaption>
+                <figcaption class="category">HIKING</figcaption>
               </a>
             </figure>
             <figure class="categorys">
               <a href="outdoor.html">
                 <img src="images/outdoor.jpg" alt="woman in canoe at a lake" />
-                <figcaption>OUTDOOR</figcaption>
+                <figcaption class="category">OUTDOOR</figcaption>
               </a>
             </figure>
             <figure class="categorys">
@@ -137,13 +177,13 @@
                   src="images/skiing.jpg"
                   alt="skiier viewing a mountainrange"
                 />
-                <figcaption>SKIING</figcaption>
+                <figcaption class="category">SKIING</figcaption>
               </a>
             </figure>
             <figure class="categorys">
               <a href="casual.html">
                 <img src="images/casual.jpg" alt="woman in casual clothes" />
-                <figcaption>CASUAL</figcaption>
+                <figcaption class="category">CASUAL</figcaption>
               </a>
             </figure>
               <div class="instagram-wrapper">
@@ -216,66 +256,64 @@
         </section>
       </div>
 
-       
-    </main>
-    <section class="bottom-items">
-      <div class="bottom-items">
+      <div class="bottom-wrapper">
         <div class="newsletter">
-        <form action="form-success.php" method="get" class="newsletter">
           <label id="label" for="newsletter"
-            >Subscribe to our Newsletter:</label
-          >
-          <input
-            id="newsletter"
-            type="text"
-            name="email"
-            placeholder="Your e-mail address"
-          />
-          <input id="join" type="submit" name="subscribe" value="JOIN" />
-        </form>
-      </div>
-      
-      <div class="large-buttons">
-        <a href="about.html">
-          <img src="images\icons\Contact.png" alt="contact icon"
-        /></a>
-        <a href=""> <img src="images\icons\Chat.png" alt="chat icon" /></a>
-      </div>
-    </div>
-    </section>
+              >Subscribe to our Newsletter:</label
+            >
+          <form action="form-success.php" method="get" class="newsletter"> 
+            <input
+              id="newsletter"
+              type="text"
+              name="email"
+              placeholder="Your e-mail address"
+            />
+            <input id="join" type="submit" name="subscribe" value="JOIN" />
+          </form>
+        </div>
+
+        <div class="large-buttons">
+          <a href="about.html"
+            ><div class="contact">
+              <img
+                id="contact"
+                src="images\icons\mail-white.png"
+                alt="Contact icon"
+              />
+            </div>
+            <!-- <label class="label" for="contact">Contact info</label></a
+          > -->
+          <a id="margin" href=""
+            ><div class="chat">
+              <img
+                id="chat"
+                src="images\icons\chat-white.png"
+                alt="Live chat icon"
+              />
+            </div>
+            <!-- <label class="label" for="chat">Live Chat</label> -->
+          </a>
+        </div>
+      </div> 
+    </main>
+  
     <footer>
       <div class="support-wrapper">
         <section class="support-container">
           <div class="support">
             <p>Follow us on:</p>
-            <ul>
+            <ul id="social-media">
               <li class="social-media">
-                <img
-                  src="images\icons\facebook.png"
-                  alt="Facebook logo"
-                  class="social-media"
-                />
+               <a href="https://www.facebook.com/"><span class="fa fa-facebook-f"></span></a>
+              </li>
+              <li>
+              <a href="https://instagram.com/"><span class="fa fa-instagram"></span></a>
               </li>
               <li class="social-media">
-                <img
-                  src="images\icons\instagram.png"
-                  alt="Instagram logo"
-                  class="social-media"
-                />
+              <a href="https://twitter.com/"><span class="fa fa-twitter"></span></a>
               </li>
               <li class="social-media">
-                <img
-                  src="images\icons\twitter.png"
-                  alt="Twitter logo"
-                  class="social-media"
-                />
-              </li>
-              <li class="social-media">
-                <img
-                  src="images\icons\youtube.png"
-                  alt="Youtube logo"
-                  class="social-media"
-                />
+                <a href="https://youtube.com"><span class="fa fa-youtube"></span></a>
               </li>
             </ul>
           </div>
@@ -299,18 +337,18 @@
             <p>Contact:</p>
             <ul>
               <li>
-                <a href="contact.html">Phone: <i>555 555 555</i></a>
+                <a href="contact.html">Phone: <span class="small">&nbsp; 555 555 555</span></a>
               </li>
               <li>
-                <a href="contact.html">Email: <i>support@rainydays.com</i></a>
+                <a href="contact.html">Email: <span class="small">&nbsp; support@rainydays.com</span></a>
               </li>
             </ul>
           </div>
         </section>
       </div>
       <section class="footer">
-        <ul>
-          <li>&#169;2020 - Rainydays S.A.S</li>
+        <ul class="footer">
+          <li>&#169; 2020 - Rainydays S.A.S</li>
           <li>&#124;</li>
           <li>Terms and conditions</li>
           <li>&#124;</li>
