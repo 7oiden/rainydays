@@ -345,12 +345,12 @@ a > .chat:hover {
 }
 #contact {
   margin: 0 auto 0 auto;
-  height: 40px;
+  width: 40px;
   padding-top: 15px;
 }
 #chat {
   margin: 0 auto 0 auto;
-  height: 40px;
+  width: 40px;
   padding-top: 15px;
 }
 #margin {
