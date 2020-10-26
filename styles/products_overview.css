@@ -277,6 +277,15 @@ figure.jacket:hover {
   box-shadow: none;
   opacity: 0.75;
 }
+figure.bestseller {
+  border: 2px solid transparent;
+  transition: border;
+  transition-duration: 0.5s;
+}
+figure.bestseller:hover {
+  border: 2px solid black;
+  opacity: 0.9;
+}
 figure.jacket a {
   text-decoration: none;
 }
@@ -365,12 +374,12 @@ button.load {
   color: white;
   border: none;
   border-radius: 0;
-  padding: 13px 51px 13px 51px;
+  padding: 12px 50px 12px 50px;
   transition-property: background-color, box-shadow;
   transition-duration: 0.5s;
   background: #172940;
   position: relative;
-  top: 30px;
+  top: 50px;
   left: 520px;
   box-shadow: 0 3px 6px #00000029;
   margin-bottom: 70px;
