@@ -5,6 +5,8 @@
 :root {
   --center-align: 0 auto 0 auto;
   --dark-blue: #172940;
+  --red: #b05625;
+  --yellow: #f2b705;
 }
 html {
   box-sizing: border-box;
@@ -39,7 +41,8 @@ ul.campaign {
   justify-content: center;
   font-family: "montserrat";
   font-size: 1.25rem;
-  color: #b05625;
+  color: var(--dark-blue);
+  /* color: #b05625; */
   background-color: #f2b705bf;
   margin: 0;
 }
@@ -184,6 +187,7 @@ ul.dropdown {
 }
 li a {
   color: white;
+  display: block;
 }
 ul.dropdown > li:hover {
   background-color: #f2b705;
@@ -236,7 +240,8 @@ div.breadcrumb {
   font-weight: bold;
   color: #536175;
 }
-.previous {
+.previous,
+.angle {
   color: #a1a1a1;
 }
 /* main
@@ -303,7 +308,7 @@ figure.product-image {
   max-width: 340px;
 }
 span.image-circle {
-  background-color: #c2c2c2;
+  background-color: #f5f5f5;
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -538,6 +543,7 @@ input[value="yellow"] + ::before {
 }
 label > input[name="color"]:hover + ::before {
   opacity: 0.75;
+  border-color: #c2c2c2;
 }
 label > input[name="color"]:checked + ::before {
   border-color: #000;

@@ -2,6 +2,11 @@
   font-family: "cenury gothic";
   src: url(../fonts/GOTHIC.TTF) format("truetype");
 }
+:root {
+  --dark-blue: #172940;
+  --red: #b05625;
+  --yellow: #f2b705;
+}
 body {
   width: 100%;
   background-color: white;

@@ -6,6 +6,8 @@
   --white: #fff;
   --dark-blue: #172940;
   --dark-blue-transparent: #172940bf;
+  --red: #b05625;
+  --yellow: #f2b705;
   --blue-tranparent: #5361757d;
   --montserrat: "montserrat";
 }
@@ -41,7 +43,8 @@ ul.campaign {
   justify-content: center;
   font-family: "montserrat";
   font-size: 1.25rem;
-  color: #b05625;
+  color: var(--dark-blue);
+  /*color: #b05625;*/
   background-color: #f2b705bf;
   margin: 0;
 }
@@ -186,6 +189,7 @@ ul.dropdown {
 }
 li a {
   color: white;
+  display: block;
 }
 ul.dropdown > li:hover {
   background-color: #f2b705;
@@ -239,7 +243,8 @@ div.breadcrumb {
   font-weight: bold;
   color: #536175;
 }
-.previous {
+.previous,
+.angle {
   color: #a1a1a1;
 }
 /* main 
