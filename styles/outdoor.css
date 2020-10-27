@@ -58,6 +58,10 @@ ul.campaign {
   top: 0;
   background-color: white;
 }
+header {
+  display: inline;
+  z-index: 100;
+}
 nav.icons {
   width: 100%;
 }

@@ -50,6 +50,10 @@ ul.campaign {
   top: 0;
   background-color: white;
 }
+header {
+  display: inline;
+  z-index: 100;
+}
 nav.icons {
   width: 100%;
 }
@@ -287,13 +291,15 @@ p.about {
   background-color: white;
   margin: 0 auto 0 auto;
   box-shadow: 0 3px 6px #00000029;
+  z-index: 10;
+}
+.news a {
+  display: block;
 }
 .shop {
-  display: block;
+  display: inline-block;
   padding: 0;
   text-decoration: none;
-  position: relative;
-  top: -100px;
 }
 .button:hover {
   background-color: #ffffffbf;
@@ -352,13 +358,11 @@ figure.categorys a {
   text-decoration: none;
   width: 500px;
   height: 333px;
-  position: relative;
   transition-property: opacity, font-size;
   transition-duration: 0.5s;
   opacity: 1;
 }
 figure.categorys a:hover {
-  display: block;
   opacity: 0.75;
   font-size: 1.6rem;
 }
@@ -370,10 +374,6 @@ figcaption.category {
 }
 figure.news {
   margin: 0;
-}
-#image-2 {
-  position: relative;
-  top: -50px;
 }
 h1 {
   font-family: "balboa", sans-serif;
