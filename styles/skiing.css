@@ -57,6 +57,7 @@ ul.campaign {
   position: sticky;
   top: 0;
   background-color: white;
+  z-index: 999;
 }
 nav.icons {
   width: 100%;

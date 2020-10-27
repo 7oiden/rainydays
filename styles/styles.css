@@ -49,6 +49,7 @@ ul.campaign {
   position: sticky;
   top: 0;
   background-color: white;
+  z-index: 999;
 }
 header {
   display: inline;
@@ -300,6 +301,8 @@ p.about {
   display: inline-block;
   padding: 0;
   text-decoration: none;
+  position: relative;
+  top: -120px;
 }
 .button:hover {
   background-color: #ffffffbf;
