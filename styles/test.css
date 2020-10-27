@@ -114,26 +114,33 @@ ul.dropdown {
   display: none;
 }
 div.mobile-menu {
-  /* background-color: #f2b705; */
-  margin-left: 0;
-  padding-left: 0;
-  display: none;
-}
-ul.mobile-menu {
   font-family: "century gothic";
   font-size: 1.25rem;
   display: flex;
   flex-direction: column;
   list-style: none;
-  width: 200px;
   margin-top: 0;
   padding-left: 20px;
+  display: none;
 }
-ul.mobile-menu li {
+.mobile-menu a{
+  text-decoration: none;
+  display: block;
+  float: left;
+  clear: left;
+  margin-top: 10px;
+  margin-left: 5px;
+  padding: 5px;
+}
+.mobile-menu a:hover{
+  background-color: #f2b705;
+}
+/* ul.mobile-menu li {
   color: red;
   background-color: #fff;
-}
-.mobile-menu li a {
+} */
+/* .mobile-menu li a {
+  display: block;
   text-decoration: none;
   color: #172940;
   padding-left: 20px;
@@ -143,21 +150,20 @@ ul.mobile-menu li {
   border-left: 2px solid #f5f5f5;
   border-right: 2px solid #f5f5f5;
   box-shadow: 0 3px 6px #00000029;
-}
+} */
 /* styles that change
 --------------------*/
 
 @media only screen and (max-width: 720px) {
   .hamburger-label {
-    display: inline-block;
+    display: block;
   }
   li.menu-item {
     display: none;
   }
-  #hamburger-menu:checked ~ div.mobile-menu {
+  #hamburger-menu:checked ~ div{
     display: block;
   }
-  div.mobile-menu {
+  ul.mobile-menu {
     display: block;
-  }
 }

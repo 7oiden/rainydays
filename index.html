@@ -35,6 +35,7 @@
                 </figure>
               </a>
             </div>
+            <div class="mobile-wrapper">
             <figure class="logo">
               <img id="logo"
                 src="images\RainyDays_Logo.png"
@@ -49,6 +50,7 @@
                 /></label>
               </form>
             </div>
+          </div>
             <div class="icons">
               <a href="index.html" class="icons"><figure class="icons fpb">
                 <img src="images\icons\favorite.svg" alt="Favorites icon" />
@@ -69,6 +71,18 @@
           <div class="menu-wrapper">
             <ul class="menu">
               <li>
+                <label class="hamburger-label" for="hamburger-menu"
+                  ><i class="fa fa-bars"></i
+                ></label>
+                <input type="checkbox" id="hamburger-menu" />
+                <div class="mobile-menu">
+                  <a href="hiking.html">Hiking</a>
+                  <a href="outdoor.html">Outdoor</a>
+                  <a href="skiing.html">Skiing</a>
+                  <a href="casual.html">Casual</a>
+                </div>
+              </li>
+              <li class="menu-item">
                 <a class="menu-item" href="products_overview.html">WOMEN</a>
                 <ul class="dropdown">
                   <li><a href="hiking.html">Hiking</a></li>
@@ -78,7 +92,7 @@
                   <li><a href="products_overview.html">View All</a></li>
                 </ul>
               </li>
-              <li>
+              <li class="menu-item">
                 <a class="menu-item" href="products_overview.html">MEN</a>
                 <ul class="dropdown">
                   <li><a href="hiking.html">Hiking</a></li>
@@ -88,21 +102,21 @@
                   <li><a href="products_overview.html">View All</a></li>
                 </ul>
               </li>
-              <li>
+              <li class="menu-item">
                 <a class="menu-item" href="products_overview.html">BESTSELLERS</a>
                 <ul class="dropdown">
                   <li><a href="products_overview.html">Women</a></li>
                   <li><a href="products_overview.html">Men</a></li>
                 </ul>
               </li>
-              <li>
+              <li class="menu-item">
                 <a class="menu-item" href="products_overview.html">SALE</a>
                 <ul class="dropdown">
                   <li><a href="products_overview.html">Women</a></li>
                   <li><a href="products_overview.html">Men</a></li>
                 </ul>
               </li>
-              <li>
+              <li class="menu-item">
                 <a class="menu-item" href="products_overview.html">NEWS</a>
                 <ul class="dropdown">
                   <li class="list-dropdown">
@@ -226,7 +240,7 @@
           <h5>NEW ARRIVALS</h5>
           <p id="news">Casual Rain Jackets for Men and Women</p>
           <div class="news">
-            <figure class="news">
+            <figure class="news" id="image-1">
               <img
                 src="images/newwomen.jpg"
                 alt="woman outdoors in a yellow rain jacket with the hood up"
@@ -292,7 +306,7 @@
       <div class="support-wrapper">
         <section class="support-container">
           <div class="support">
-            <p>Follow us on:</p>
+            <p id="follow-us">Follow us on:</p>
             <ul id="social-media">
               <li class="social-media">
                <a href="https://www.facebook.com/"><span class="fa fa-facebook-f"></span></a>
@@ -340,12 +354,9 @@
       <section class="footer">
         <ul class="footer">
           <li>&#169; 2020 - Rainydays S.A.S</li>
-          <li>&#124;</li>
-          <li>Terms and conditions</li>
-          <li>&#124;</li>
-          <li>Privacy</li>
-          <li>&#124;</li>
-          <li>Warranty</li>
+          <li class="line">Terms and conditions</li>
+          <li class="line">Privacy</li>
+          <li class="line">Warranty</li>
         </ul>
       </section>
     </footer>
