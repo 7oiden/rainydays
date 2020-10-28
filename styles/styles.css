@@ -696,6 +696,7 @@ ul.footer {
   font-size: 1rem;
   font-style: italic;
 }
+/*new content*/
 .line::before {
   content: "|";
   padding-right: 20px;
