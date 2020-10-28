@@ -44,8 +44,6 @@ body * {
 .logo {
   max-width: 348px;
   margin: 40px auto 20px auto;
-  margin-top: 40px;
-  margin-bottom: 20px;
 }
 #logo {
   max-width: 348px;
@@ -126,7 +124,6 @@ div.bottom-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  margin-top: 50px;
   margin: 70px auto 0 auto;
   /*background-color: aquamarine;*/
 }
@@ -208,9 +205,6 @@ a > .chat:hover {
   font-family: "montserrat";
   font-size: 1.25rem;
   font-weight: 500;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-left: 40px;
   padding: 12px 15px 12px 15px;
   border: none;
   border-radius: 0;
@@ -274,6 +268,9 @@ ul.footer {
   display: flex;
   justify-content: center;
 }
+#copyright {
+  font-weight: bold;
+}
 .footer li {
   display: inline-block;
   list-style: none;
@@ -301,4 +298,116 @@ ul.footer {
 .small {
   font-size: 1rem;
   font-style: italic;
+}
+
+/* Styles that changes 
+..........................*/
+
+@media only screen and (max-width: 720px) {
+  .content-wrapper {
+    flex-direction: column;
+  }
+  .about-us,
+  .who-we-are,
+  .why-chose-us {
+    min-width: 300px;
+    margin-top: 0;
+    padding-top: 0;
+    /* background-color: lightcoral; */
+  }
+  .logo {
+    max-width: 200px;
+    margin-top: 0;
+  }
+  #logo {
+    max-width: 200px;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+  #previous {
+    width: 180px;
+    top: 190px;
+  }
+  h1 {
+    margin-top: 100px;
+  }
+  h3 {
+    margin-top: 20px;
+  }
+  #about-us {
+    font-size: 1.125rem;
+    text-decoration: none;
+  }
+  p {
+    font-size: 1rem;
+  }
+  iframe {
+    width: 300px;
+  }
+  .image img {
+    width: 100px;
+  }
+  .image figcaption {
+    font-size: 0.875rem;
+  }
+  .image-wrapper {
+    gap: 10px;
+  }
+  ol {
+    font-size: 1rem;
+    margin-top: 0;
+  }
+
+  .support-container {
+    flex-direction: column;
+  }
+  #social-media {
+    font-size: 1rem;
+    padding: 0;
+  }
+  #follow-us {
+    padding-top: 30px;
+  }
+  .support p {
+    font-size: 1.125rem;
+    /* background-color: chartreuse; */
+    min-width: 200px;
+    padding-top: 0;
+    margin-bottom: 0;
+  }
+  .support ul {
+    min-width: 250px;
+    /* background-color: blueviolet; */
+    margin-top: 10px;
+    font-size: 1rem;
+  }
+  ul.footer {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .footer li {
+    /* background-color: darkcyan; */
+    padding: 5px;
+    min-width: 100px;
+  }
+  .bottom-wrapper {
+    flex-direction: column;
+  }
+  div.newsletter {
+    margin: 0 auto 30px auto;
+  }
+  #newsletter {
+    width: 200px;
+    margin-bottom: 50px;
+  }
+  #margin {
+    margin-left: 50px;
+    margin-right: 20px;
+  }
 }
