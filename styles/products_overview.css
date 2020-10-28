@@ -365,10 +365,8 @@ figcaption.price {
 h1 {
   font-family: "century gothic";
   font-size: 1.8rem;
-  margin-left: 87.5px;
-  margin-top: 70px;
-  margin-bottom: 0;
-  text-decoration: underline;
+  margin-top: 30px;
+  margin-left: 20px;
 }
 /*sjekk*/
 .jacket.bestseller {
@@ -582,4 +580,33 @@ ul.footer {
 .small {
   font-size: 1rem;
   font-style: italic;
+}
+/* styles that change
+--------------------*/
+@media only screen and (max-width: 720px) {
+  div.wrapper {
+    flex-direction: column;
+    width: 100%;
+  }
+  section.products {
+    order: 2;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    grid-template-columns: auto;
+    width: 100%;
+    /*background-color: aqua;*/
+  }
+  section.bestsellers {
+    order: 1;
+    background-size: cover;
+    height: 1000px;
+    width: 100%;
+    /*background-color: blueviolet;*/
+  }
+  figure.jacket {
+    margin: 15px auto 15px auto;
+  }
+  ]
+  .jacket, .bestseller {
+    margin: 15px auto 15px auto;
+  }
 }
