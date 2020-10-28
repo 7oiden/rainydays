@@ -383,6 +383,9 @@ ul.footer {
     margin-top: 10px;
     font-size: 1rem;
   }
+  .support ul li {
+    padding-bottom: 10px;
+  }
   ul.footer {
     font-size: 1rem;
     display: flex;

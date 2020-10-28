@@ -53,15 +53,12 @@ body * {
   outline: none;
 }
 main {
-  width: 50%;
+  width: 70%;
   margin: auto;
   background-color: white;
   padding-bottom: 40px;
-}
-#white-space {
-  width: 100%;
-  background-color: white;
-  height: 20px;
+  display: flex;
+  flex-direction: column;
 }
 h1,
 h2 {
@@ -73,7 +70,8 @@ h2 {
   margin-bottom: 0;
 }
 h1 {
-  margin-top: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 h2 {
   margin-top: 0;
@@ -83,7 +81,7 @@ h2 {
   content: " *";
 }*/
 
-section.information {
+div.information {
   display: flex;
   justify-content: space-evenly;
 }
@@ -94,8 +92,8 @@ fieldset.personalia {
   margin-bottom: 70px;
   width: 40%;
 }
-section.account {
-  width: 40%;
+aside.account {
+  width: 30%;
 }
 fieldset.account {
   border: 3px solid #5361757d;
@@ -176,13 +174,13 @@ h3 {
   margin-bottom: 15px;
   text-decoration: underline;
 }
-section.shipping {
+div.shipping {
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 300px;
 }
-section.payment {
+div.payment {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -251,9 +249,10 @@ section.summary {
   margin-left: 5%;
 }
 table.summary {
-  width: 90%;
+  width: 85%;
   font-size: 1.125rem;
   border-spacing: 0;
+  margin-left: 20px;
 }
 section.address {
   background-color: #53617540;
@@ -267,10 +266,12 @@ section.address {
 table th {
   border-bottom: 1px solid #707070;
   padding-bottom: 5px;
+  padding-left: 0;
+  text-align: left;
 }
 table td {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  border-bottom: 1px solid #707070;
+  padding: 15px 0 10px 0;
 }
 .confirm {
   text-align: center;
@@ -319,8 +320,6 @@ input[type="checkbox"] {
   font-family: "montserrat";
   font-size: 1.25rem;
 }
-.buttons {
-}
 .buttons a {
   display: block;
   font-family: "montserrat";
@@ -343,4 +342,120 @@ input[type="checkbox"] {
 #yellow:hover {
   background-color: #f2b705bf;
   box-shadow: none;
+}
+
+/* Styles that changes 
+..........................*/
+
+@media only screen and (max-width: 720px) {
+  main {
+    width: 100%;
+  }
+  .logo {
+    max-width: 200px;
+    margin-top: 0;
+  }
+  #logo {
+    max-width: 200px;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+  #previous {
+    width: 250px;
+    top: 190px;
+    font-size: 1.125rem;
+  }
+  main {
+    margin-top: 100px;
+  }
+  div.information {
+    flex-direction: column;
+  }
+  fieldset.personalia {
+    margin: auto;
+    width: 85%;
+  }
+  aside.account {
+    margin: auto;
+    width: 85%;
+    margin-bottom: 70px;
+    /* background-color: lightgreen; */
+  }
+  /* fieldset.account {
+    display: block;
+    width: 85%;
+    background-color: lightcoral;
+  } */
+  input.box {
+    width: 100%;
+  }
+  #divider {
+    flex-direction: column;
+  }
+  div.box-short2 {
+    padding-left: 0;
+  }
+  h1,
+  h2 {
+    margin-bottom: 0;
+    font-size: 1.5rem;
+    padding: 10px 0px 10px 20px;
+  }
+  h1 {
+    margin-bottom: 20px;
+  }
+  h2 {
+    margin-top: 30px;
+  }
+  h3 {
+    font-size: 1.125rem;
+  }
+  #confirm,
+  #choose {
+    /* background-color: lime; */
+    width: 70%;
+  }
+  .custom-checkbox label {
+    font-size: 1.125rem;
+  }
+  button.shipping,
+  button.payment {
+    width: 85%;
+    margin: 15px auto 15px auto;
+  }
+  p.montserrat {
+    font-size: 1.125rem;
+  }
+  div.wrapping {
+    flex-direction: column;
+  }
+  section.summary {
+    width: 85%;
+    margin: auto;
+    margin-top: 30px;
+  }
+  table.summary {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+  section.address {
+    width: 85%;
+    margin: auto;
+    padding-bottom: 20px;
+  }
+  .address > p {
+    font-size: 1rem;
+  }
+  .buttons a {
+    font-size: 1.125rem;
+    width: 55%;
+  }
+  div.shipping {
+    height: 250px;
+  }
+  div.payment {
+    height: 350px;
+  }
 }
