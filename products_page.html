@@ -24,11 +24,10 @@
           <li>Money back guarantee</li>
         </ul>
       </div>
-
       <div class="sticky">
         <nav aria-label="navigation" class="icons">
           <div class="icon-wrapper">
-            <div class="icons">
+            <div class="icons home">
               <a href="index.html" class="icons">
                 <figure class="icons">
                   <img src="images\icons\home.svg" alt="Home icon" />
@@ -36,47 +35,71 @@
                 </figure>
               </a>
             </div>
-            <figure class="logo">
-              <img
-                id="logo"
-                src="images\RainyDays_Logo.png"
-                alt="Rainydays logo"
-              />
-            </figure>
-            <div class="search">
-              <form class="search">
-                <input id="search" type="text" placeholder="Search Products" />
-                <label for="search" id="search-label"
-                  ><img src="images\icons\search.svg"
-                /></label>
-              </form>
-            </div>
-            <div class="icons">
-              <a href="index.html" class="icons"
-                ><figure class="icons fpb">
-                  <img src="images\icons\favorite.svg" alt="Favorites icon" />
-                  <figcaption class="label">Favorites</figcaption>
-                </figure></a
-              >
-              <a href="index.html" class="icons"
-                ><figure class="icons fpb">
-                  <img src="images\icons\profile.svg" alt="Profile icon" />
-                  <figcaption class="label">Profile</figcaption>
-                </figure></a
-              >
-              <a href="basket.html" class="icons"
-                ><figure class="icons fpb">
-                  <img src="images\icons\basket.svg" alt="Basket icon" />
-                  <figcaption class="label">Basket</figcaption>
-                </figure></a
-              >
+            <div class="mobile-wrapper">
+              <figure class="logo">
+                <img
+                  id="logo"
+                  src="images\RainyDays_Logo.png"
+                  alt="Rainydays logo"
+                />
+              </figure>
+              <div class="search">
+                <form class="search">
+                  <input
+                    id="search"
+                    type="text"
+                    placeholder="Search Products"
+                  />
+                  <label for="search" id="search-label"
+                    ><img src="images\icons\search.svg"
+                  /></label>
+                </form>
+              </div>
+
+              <div class="icons">
+                <a href="index.html" class="icons" id="mobile-home">
+                  <figure class="icons">
+                    <img src="images\icons\home.svg" alt="Home icon" />
+                    <figcaption class="label">Home</figcaption>
+                  </figure>
+                </a>
+                <a href="index.html" class="icons"
+                  ><figure class="icons fpb">
+                    <img src="images\icons\favorite.svg" alt="Favorites icon" />
+                    <figcaption class="label">Favorites</figcaption>
+                  </figure></a
+                >
+                <a href="index.html" class="icons"
+                  ><figure class="icons fpb">
+                    <img src="images\icons\profile.svg" alt="Profile icon" />
+                    <figcaption class="label">Profile</figcaption>
+                  </figure></a
+                >
+                <a href="basket.html" class="icons"
+                  ><figure class="icons fpb">
+                    <img src="images\icons\basket.svg" alt="Basket icon" />
+                    <figcaption class="label">Basket</figcaption>
+                  </figure></a
+                >
+              </div>
             </div>
           </div>
         </nav>
-
         <nav class="main-menu">
           <div class="menu-wrapper">
             <ul class="menu">
+              <li>
+                <label class="hamburger-label" for="hamburger-menu"
+                  ><i class="fa fa-bars"></i
+                ></label>
+                <input type="checkbox" id="hamburger-menu" />
+                <div class="mobile-menu">
+                  <a href="hiking.html">Hiking</a>
+                  <a href="outdoor.html">Outdoor</a>
+                  <a href="skiing.html">Skiing</a>
+                  <a href="casual.html">Casual</a>
+                </div>
+              </li>
               <li>
                 <a class="menu-item" href="products_overview.html">WOMEN</a>
                 <ul class="dropdown">
@@ -87,9 +110,10 @@
                   <li><a href="products_overview.html">View All</a></li>
                 </ul>
               </li>
-
               <li>
-                <a class="menu-item" href="products_overview.html">MEN</a>
+                <a class="menu-item" id="men" href="products_overview.html"
+                  >MEN</a
+                >
                 <ul class="dropdown">
                   <li><a href="hiking.html">Hiking</a></li>
                   <li><a href="outdoor.html">Outdoor</a></li>
@@ -98,8 +122,7 @@
                   <li><a href="products_overview.html">View All</a></li>
                 </ul>
               </li>
-
-              <li>
+              <li class="menu-item">
                 <a class="menu-item" href="products_overview.html"
                   >BESTSELLERS</a
                 >
@@ -108,16 +131,14 @@
                   <li><a href="products_overview.html">Men</a></li>
                 </ul>
               </li>
-
-              <li>
+              <li class="menu-item">
                 <a class="menu-item" href="products_overview.html">SALE</a>
                 <ul class="dropdown">
                   <li><a href="products_overview.html">Women</a></li>
                   <li><a href="products_overview.html">Men</a></li>
                 </ul>
               </li>
-
-              <li>
+              <li class="menu-item">
                 <a class="menu-item" href="products_overview.html">NEWS</a>
                 <ul class="dropdown">
                   <li class="list-dropdown">
@@ -150,46 +171,55 @@
           <div class="column-wrapper">
             <div class="left-column">
               <figure class="product-image">
-                <span class="fa fa-angle-left"></span>
+                <!-- <span class="fa fa-angle-left"></span> -->
                 <img
                   id="jacket"
                   src="images\blue-large.jpg"
                   alt="product photo of a blue Rocky Mountains rainjacket"
                 />
-                <span class="fa fa-angle-right"></span>
+                <!-- <span class="fa fa-angle-right"></span> -->
               </figure>
-              <div class="circle-wrapper">
-                <span class="image-circle"></span
-                ><span class="image-circle"></span
-                ><span class="image-circle"></span>
+              <div class="small-image">
+                <figure>
+                  <img
+                    src="images\red.jpg"
+                    alt="product photo of a blue Rocky Mountains rainjacket"
+                  />
+                </figure>
+                <figure>
+                  <img
+                    src="images\yellow.jpg"
+                    alt="product photo of a blue Rocky Mountains rainjacket"
+                  />
+                </figure>
               </div>
               <div class="rating-wrapper">
                 <ul class="list-inline rating">
                   <li>
-                    <img src="images\icons\star-yellow.png" alt="yellow star" />
+                    <i class="fa fa-star"></i>
                   </li>
                   <li>
-                    <img src="images\icons\star-yellow.png" alt="yellow star" />
+                    <i class="fa fa-star"></i>
                   </li>
                   <li>
-                    <img src="images\icons\star-yellow.png" alt="yellow star" />
+                    <i class="fa fa-star"></i>
                   </li>
                   <li>
-                    <img src="images\icons\star-yellow.png" alt="yellow star" />
+                    <i class="fa fa-star"></i>
                   </li>
                   <li>
-                    <img
-                      src="images\icons\star_half-yellow.png"
-                      alt="half yellow star"
-                    />
+                    <i class="fa fa-star-half-alt"></i>
                   </li>
-                  <a href=""><p>4.7 (5 ratings)</p></a>
                 </ul>
+                <p><a href="">4.7 (5 ratings)</a></p>
               </div>
             </div>
+
             <div class="right-column">
-              <h2>Rainydays</h2>
-              <h1>Rocky Mountains</h1>
+              <hgroup>
+                <h2>Rainydays</h2>
+                <h1>Rocky Mountains</h1>
+              </hgroup>
               <ul class="description">
                 <li>100% waterproof and windproof</li>
                 <li>Lightweight and packable (400g)</li>
@@ -251,67 +281,17 @@
                   </label>
                 </form>
               </figure>
-            </div>
-          </div>
-          <div class="last-wrapper">
-            <div class="categorys">
-              <h4>Suitable for:</h4>
-              <ul class="list-symbol">
-                <li class="symbol">
-                  <figure class="symbol">
-                    <i class="fa fa-hiking"></i>
-                    <figcaption>Trekking</figcaption>
-                  </figure>
-                </li>
-                <li class="symbol">
-                  <figure class="symbol">
-                    <i class="fa fa-city"></i>
-                    <figcaption>Citylife</figcaption>
-                  </figure>
-                </li>
-                <li class="symbol">
-                  <figure class="symbol">
-                    <i class="fa fa-campground"></i>
-                    <figcaption>Camping</figcaption>
-                  </figure>
-                </li>
-                <li class="symbol">
-                  <figure class="symbol">
-                    <i class="fa fa-mountain"></i>
-                    <figcaption>Hiking</figcaption>
-                  </figure>
-                </li>
-                <li class="symbol">
-                  <figure class="symbol">
-                    <i class="fa fa-water"></i>
-                    <figcaption>Canoeing</figcaption>
-                  </figure>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <div id="price-wrapper">
-                <div id="stock">
-                  <span id="circle"></span>
-                  <p>In stock</p>
+              <div id="basket-container">
+                <div id="price-wrapper">
+                  <div id="stock">
+                    <span id="circle"></span>
+                    <p>In stock</p>
+                  </div>
+                  <h5>$ 49.00</h5>
                 </div>
-                <h5>$ 49.00</h5>
-              </div>
-              <div>
-                <form class="add-basket" action="GET">
-                  <label for="add-basket"
-                    ><img
-                      id="basket"
-                      src="../images/icons/basket_white.png"
-                      alt=""
-                  /></label>
-                  <input
-                    type="submit"
-                    name="add-basket"
-                    value="add to basket"
-                    id="add-basket"
-                  />
-                </form>
+                <div class="add-basket">
+                  <a href="products_overview.html" id="blue">add to basket</a>
+                </div>
               </div>
             </div>
           </div>
@@ -335,7 +315,7 @@
               id="newsletter"
               type="text"
               name="email"
-              placeholder="Your e-mail address"
+              placeholder="Your e-mail"
             />
             <input id="join" type="submit" name="subscribe" value="JOIN" />
           </form>
@@ -370,7 +350,7 @@
       <div class="support-wrapper">
         <section class="support-container">
           <div class="support">
-            <p>Follow us on:</p>
+            <p id="follow-us">Follow us on:</p>
             <ul id="social-media">
               <li class="social-media">
                 <a href="https://www.facebook.com/"
@@ -430,12 +410,9 @@
       </div>
       <section class="footer">
         <ul class="footer">
-          <li>&#169; 2020 - Rainydays S.A.S</li>
-          <li>&#124;</li>
+          <li id="copyright">&#169; 2020 - Rainydays S.A.S</li>
           <li>Terms and conditions</li>
-          <li>&#124;</li>
           <li>Privacy</li>
-          <li>&#124;</li>
           <li>Warranty</li>
         </ul>
       </section>
