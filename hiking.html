@@ -4,7 +4,7 @@
     <title>Hiking Category</title>
     <meta
       name="description"
-      content="Hiking category page for Rainydays rainjackets webshop"
+      content="Hiking cayegory page for Rainydays rainjackets webshop"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://use.typekit.net/cgz4jxk.css" />
@@ -16,18 +16,17 @@
   </head>
 
   <header>
-    <div>
+    <div class="campaign">
       <ul class="campaign">
         <li>Now: -20% on your first order</li>
         <li>Free shipping on orders +99.99$</li>
         <li>Money back guarantee</li>
       </ul>
     </div>
-
     <div class="sticky">
       <nav aria-label="navigation" class="icons">
         <div class="icon-wrapper">
-          <div class="icons">
+          <div class="icons home">
             <a href="index.html" class="icons">
               <figure class="icons">
                 <img src="images\icons\home.svg" alt="Home icon" />
@@ -35,47 +34,71 @@
               </figure>
             </a>
           </div>
-          <figure class="logo">
-            <img
-              id="logo"
-              src="images\RainyDays_Logo.png"
-              alt="Rainydays logo"
-            />
-          </figure>
-          <div class="search">
-            <form class="search">
-              <input id="search" type="text" placeholder="Search Products" />
-              <label for="search" id="search-label"
-                ><img src="images\icons\search.svg"
-              /></label>
-            </form>
-          </div>
-          <div class="icons">
-            <a href="index.html" class="icons"
-              ><figure class="icons fpb">
-                <img src="images\icons\favorite.svg" alt="Favorites icon" />
-                <figcaption class="label">Favorites</figcaption>
-              </figure></a
-            >
-            <a href="index.html" class="icons"
-              ><figure class="icons fpb">
-                <img src="images\icons\profile.svg" alt="Profile icon" />
-                <figcaption class="label">Profile</figcaption>
-              </figure></a
-            >
-            <a href="basket.html" class="icons"
-              ><figure class="icons fpb">
-                <img src="images\icons\basket.svg" alt="Basket icon" />
-                <figcaption class="label">Basket</figcaption>
-              </figure></a
-            >
+          <div class="mobile-wrapper">
+            <figure class="logo">
+              <img
+                id="logo"
+                src="images\RainyDays_Logo.png"
+                alt="Rainydays logo"
+              />
+            </figure>
+            <div class="search">
+              <form class="search">
+                <input
+                  id="search"
+                  type="text"
+                  placeholder="Search Products"
+                />
+                <label for="search" id="search-label"
+                  ><img src="images\icons\search.svg"
+                /></label>
+              </form>
+            </div>
+            <div class="icons">
+              <a href="index.html" class="icons" id="mobile-home">
+                <figure class="icons">
+                  <img src="images\icons\home.svg" alt="Home icon" />
+                  <figcaption class="label">Home</figcaption>
+                </figure>
+              </a>
+              <a href="index.html" class="icons"
+                ><figure class="icons fpb">
+                  <img src="images\icons\favorite.svg" alt="Favorites icon" />
+                  <figcaption class="label">Favorites</figcaption>
+                </figure></a
+              >
+              <a href="index.html" class="icons"
+                ><figure class="icons fpb">
+                  <img src="images\icons\profile.svg" alt="Profile icon" />
+                  <figcaption class="label">Profile</figcaption>
+                </figure></a
+              >
+              <a href="basket.html" class="icons"
+                ><figure class="icons fpb">
+                  <img src="images\icons\basket.svg" alt="Basket icon" />
+                  <figcaption class="label">Basket</figcaption>
+                </figure></a
+              >
+            </div>
           </div>
         </div>
       </nav>
-
+      
       <nav class="main-menu">
         <div class="menu-wrapper">
           <ul class="menu">
+            <li>
+              <label class="hamburger-label" for="hamburger-menu"
+                ><i class="fa fa-bars"></i
+              ></label>
+              <input type="checkbox" id="hamburger-menu" />
+              <div class="mobile-menu">
+                <a href="hiking.html">Hiking</a>
+                <a href="outdoor.html">Outdoor</a>
+                <a href="skiing.html">Skiing</a>
+                <a href="casual.html">Casual</a>
+              </div>
+            </li>
             <li>
               <a class="menu-item" href="products_overview.html">WOMEN</a>
               <ul class="dropdown">
@@ -86,9 +109,10 @@
                 <li><a href="products_overview.html">View All</a></li>
               </ul>
             </li>
-
             <li>
-              <a class="menu-item" href="products_overview.html">MEN</a>
+              <a class="menu-item" id="men" href="products_overview.html"
+                >MEN</a
+              >
               <ul class="dropdown">
                 <li><a href="hiking.html">Hiking</a></li>
                 <li><a href="outdoor.html">Outdoor</a></li>
@@ -97,24 +121,23 @@
                 <li><a href="products_overview.html">View All</a></li>
               </ul>
             </li>
-
-            <li>
-              <a class="menu-item" href="products_overview.html">BESTSELLERS</a>
+            <li class="menu-item">
+              <a class="menu-item" href="products_overview.html"
+                >BESTSELLERS</a
+              >
               <ul class="dropdown">
                 <li><a href="products_overview.html">Women</a></li>
                 <li><a href="products_overview.html">Men</a></li>
               </ul>
             </li>
-
-            <li>
+            <li class="menu-item">
               <a class="menu-item" href="products_overview.html">SALE</a>
               <ul class="dropdown">
                 <li><a href="products_overview.html">Women</a></li>
                 <li><a href="products_overview.html">Men</a></li>
               </ul>
             </li>
-
-            <li>
+            <li class="menu-item">
               <a class="menu-item" href="products_overview.html">NEWS</a>
               <ul class="dropdown">
                 <li class="list-dropdown">
@@ -131,19 +154,22 @@
     </div>
     <nav>
       <div class="breadcrumb">
-        <a href="index.html" class="previous">Home</a>
+        <a href="index.html" class="previous"> Home</a>
         <span class="angle">&gt; &nbsp;</span>
         <a href="hiking.html" class="current">Hiking Category</a>
       </div>
     </nav>
+  
   </header>
 
   <body>
     <main>
       <div class="content-wrapper">
         <section class="content">
+          <hgroup>
           <h1>Our Hiking Collection</h1>
           <h2>Perfect rain jackets for hiking and trekking</h2>
+        </hgroup>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -212,7 +238,7 @@
       <div class="support-wrapper">
         <section class="support-container">
           <div class="support">
-            <p>Follow us on:</p>
+            <p id="follow-us">Follow us on:</p>
             <ul id="social-media">
               <li class="social-media">
                 <a href="https://www.facebook.com/"
@@ -272,12 +298,9 @@
       </div>
       <section class="footer">
         <ul class="footer">
-          <li>&#169; 2020 - Rainydays S.A.S</li>
-          <li>&#124;</li>
+          <li id="copyright">&#169; 2020 - Rainydays S.A.S</li>
           <li>Terms and conditions</li>
-          <li>&#124;</li>
           <li>Privacy</li>
-          <li>&#124;</li>
           <li>Warranty</li>
         </ul>
       </section>

@@ -140,9 +140,10 @@ div.large-buttons {
 .contact {
   height: 70px;
   width: 70px;
-  background-color: #536175;
+  background-color: #172940;
   border-radius: 10px;
-  transition-property: background-color;
+  box-shadow: 0 3px 6px #00000029;
+  transition-property: background-color, box-shadow;
   transition-duration: 0.5s;
 }
 .chat {
@@ -150,14 +151,17 @@ div.large-buttons {
   width: 70px;
   background-color: #b05625;
   border-radius: 10px;
-  transition-property: background-color;
+  box-shadow: 0 3px 6px #00000029;
+  transition-property: background-color, box-shadow;
   transition-duration: 0.5s;
 }
 a > .contact:hover {
   background-color: #536175bf;
+  box-shadow: none;
 }
 a > .chat:hover {
   background-color: #b05625bf;
+  box-shadow: none;
 }
 #contact {
   margin: 0 auto 0 auto;
@@ -224,7 +228,7 @@ a > .chat:hover {
 /* footer 
 --------------------*/
 .support-wrapper {
-  background-color: #172940;
+  background-color: #2f496a;
   margin-bottom: 0;
 }
 .support-container {
@@ -304,6 +308,9 @@ ul.footer {
 ..........................*/
 
 @media only screen and (max-width: 720px) {
+  main {
+    padding-bottom: 0;
+  }
   .content-wrapper {
     flex-direction: column;
   }
@@ -359,10 +366,10 @@ ul.footer {
     font-size: 1rem;
     margin-top: 0;
   }
-
   .support-container {
     flex-direction: column;
   }
+
   #social-media {
     font-size: 1rem;
     padding: 0;
@@ -412,5 +419,21 @@ ul.footer {
   #margin {
     margin-left: 50px;
     margin-right: 20px;
+  }
+  div.newsletter {
+    order: 2;
+    margin: 0 auto 40px auto;
+    background-color: lightgreen;
+  }
+  .bottom-wrapper {
+    flex-direction: column;
+    /* background-color: olive; */
+  }
+  div.large-buttons {
+    order: 1;
+    width: 70%;
+    justify-content: space-between;
+    margin: 0 auto 40px auto;
+    /* background-color: mediumturquoise; */
   }
 }

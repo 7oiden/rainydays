@@ -37,8 +37,7 @@ ul.campaign {
   justify-content: center;
   font-family: "montserrat";
   font-size: 1.25rem;
-  color: var(--blue);
-  background-color: ;
+  color: var(--dark-blue);
   margin: 0;
 }
 .campaign li:before {
@@ -230,27 +229,6 @@ ul.dropdown {
   font-size: 1.125rem;
   font-weight: 500;
 }
-div.breadcrumb {
-  margin: 0px 0px 40px 7.5%;
-  padding-top: 20px;
-}
-.breadcrumb a {
-  display: inline-block;
-  margin-right: 20px;
-  text-decoration: none;
-}
-.breadcrumb a:hover {
-  text-decoration: underline;
-}
-.current {
-  font-weight: bold;
-  color: #536175;
-}
-.previous,
-.angle {
-  color: #a1a1a1;
-}
-
 /* main 
 --------------------*/
 main {
@@ -505,7 +483,6 @@ p.yellow {
   font-family: "montserrat";
   font-size: 1.5rem;
   color: #f2b705;
-  margin-left: 230px;
 }
 div.instagram {
   text-align: center;
@@ -577,7 +554,7 @@ div.large-buttons {
 .contact {
   height: 70px;
   width: 70px;
-  background-color: #536175;
+  background-color: #172940;
   border-radius: 10px;
   box-shadow: 0 3px 6px #00000029;
   transition-property: background-color;
@@ -669,7 +646,7 @@ a > .chat:hover {
 /* footer 
 --------------------*/
 .support-wrapper {
-  background-color: #172940;
+  background-color: #2f496a;
   margin-bottom: 0;
 }
 .support-container {
@@ -806,7 +783,7 @@ div.mobile-menu {
     background-color: #ffffffbf;
     border-radius: 8px;
     padding: 15px;
-    width: 85%;
+    width: 70%;
     margin: 400px auto 0 auto;
   }
   .button-wrapper {
@@ -931,6 +908,7 @@ div.mobile-menu {
   }
   figure.news img {
     width: 100%;
+    margin: 0;
   }
   #news {
     box-sizing: border-box;

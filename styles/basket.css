@@ -39,13 +39,15 @@ header {
   font-size: 1.125rem;
   width: 100%;
 }
+div.campaign {
+  background-color: #f2b705bf;
+}
 ul.campaign {
   display: flex;
   justify-content: center;
   font-family: "montserrat";
   font-size: 1.25rem;
   color: var(--blue);
-  background-color: #f2b705bf;
   margin: 0;
 }
 .campaign li:before {
@@ -441,7 +443,7 @@ form input {
 /* footer
 --------------------*/
 .support-wrapper {
-  background-color: #172940;
+  background-color: #2f496a;
   margin-bottom: 0;
 }
 .support-container {
@@ -566,15 +568,23 @@ div.mobile-menu {
   #mobile-home {
     display: inline;
   }
-  ul.campaign {
-    font-size: 0.875rem;
+  div.campaign {
     width: 100%;
   }
+  ul.campaign {
+    font-size: 0.75rem;
+    /* background-color: lightgreen; */
+    width: 85%;
+    margin: 0 auto 0 auto;
+  }
   .campaign li {
-    padding: 5px 0 5px 0;
-    float: left;
-    min-width: 150px;
+    padding: 10px 5px 10px 0;
     text-align: left;
+    margin: 0;
+    /* background-color: lightpink; */
+  }
+  .campaign li:before {
+    display: none;
   }
   figcaption.label {
     display: none;
@@ -598,7 +608,7 @@ div.mobile-menu {
   div.breadcrumb {
     font-size: 0.875rem;
     margin-bottom: 20px;
-    margin-left: 15px;
+    margin-left: 7.5%;
   }
   .breadcrumb a {
     padding: 0;
