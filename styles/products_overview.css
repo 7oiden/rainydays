@@ -678,7 +678,7 @@ div.mobile-menu {
       /* background-color: mediumvioletred; */
     }
   }
-  @media only screen and (max-width: 1360px) {
+  @media only screen and (max-width: 1320px) {
     section.bestsellers {
       width: 100%;
     }
@@ -687,6 +687,9 @@ div.mobile-menu {
       grid-template-columns: auto auto;
     }
     @media only screen and (max-width: 870px) {
+      figure.jacket {
+        width: 350px;
+      }
       main {
         padding-bottom: 0;
       }
@@ -757,14 +760,14 @@ div.mobile-menu {
       section.bestsellers {
         /* order: 1; */
         width: 100%;
-        height: 1000px;
+        height: 1100px;
         /* background-color: blueviolet; */
         margin-bottom: 100px;
       }
       div.bestsellers {
         width: 100%;
         flex-direction: column;
-        background-color: mediumspringgreen;
+        /* background-color: mediumspringgreen; */
       }
       figure.jacket {
         margin: 15px auto 15px auto;
