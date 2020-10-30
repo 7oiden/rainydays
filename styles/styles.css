@@ -324,7 +324,7 @@ p.about {
 }
 #button2 {
   position: relative;
-  top: -200px;
+  top: -120px;
 }
 .button:hover {
   background-color: #ffffffbf;
@@ -527,10 +527,10 @@ figure.special {
   padding-left: 20px;
   padding-bottom: 15px;
 }
-#image-2 {
+/* #image-2 {
   position: relative;
   top: -60px;
-}
+} */
 div.bottom-wrapper {
   width: 85%;
   margin: var(--center-align);
@@ -765,7 +765,46 @@ div.mobile-menu {
 
 /* styles that change
 --------------------*/
-
+@media only screen and (max-width: 1800px) {
+  div.secondary-wrapper {
+    flex-direction: column;
+    width: 100%;
+    /* background-color: lightcoral; */
+  }
+  .content-left {
+    width: 85%;
+    margin: var(--center);
+  }
+  .grid-wrapper {
+    /* background-color: yellowgreen; */
+  }
+  figure.categorys {
+    margin: 30px auto 15px auto;
+  }
+  h4 {
+    margin: var(--center);
+  }
+  .h5 {
+    width: 920px;
+    margin: var(--center);
+    background-color: white;
+  }
+  #news {
+    width: 100%;
+  }
+  #image-2 {
+    top: 0;
+  }
+  .content-right {
+    width: 85%;
+    margin: var(--center);
+  }
+  div.news {
+    display: flex;
+    justify-content: center;
+    background-image: url(../images/rain.jpg);
+    background-color: violet;
+  }
 @media only screen and (max-width: 720px) {
   main {
     padding-bottom: 0;
@@ -798,11 +837,6 @@ div.mobile-menu {
     margin-top: 20px;
     padding-left: 10%;
     padding-right: 10%;
-  }
-  div.secondary-wrapper {
-    flex-direction: column;
-    width: 100%;
-    /* background-color: lightcoral; */
   }
   div.grid-wrapper {
     width: 100%;
