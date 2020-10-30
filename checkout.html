@@ -101,14 +101,14 @@
           </fieldset>
 
           <aside class="account">
-            <form action="profile.php" class="custom-checkbox">
+            <form action="profile.php" class="custom-checkbox" id="subscribe">
               <input
                 type="checkbox"
                 name="newsletter"
                 value="Subscribe"
                 id="check1"
               />
-              <label for="check1"> Subscribe to our Newsletter</label>
+              <label for="check1"> Subscribe to our </br>Newsletter</label>
             </form>
             <fieldset class="account">
               <legend>Optional</legend>
@@ -131,16 +131,20 @@
                   id="confirm"
                 />
               </form>
-              <form action="profile.php" class="custom-checkbox">
-                <input
-                  type="checkbox"
-                  name="account"
-                  value="create"
-                  id="check2"
-                />
-                <label for="check2">Create Account</label>
-              </form>
             </fieldset>
+            <form
+              action="profile.php"
+              class="custom-checkbox"
+              id="create-account"
+            >
+              <input
+                type="checkbox"
+                name="account"
+                value="create"
+                id="check2"
+              />
+              <label for="check2">Create Account</label>
+            </form>
           </aside>
         </div>
       </section>
