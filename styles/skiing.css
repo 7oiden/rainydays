@@ -549,8 +549,20 @@ div.mobile-menu {
 }
 /* styles that change
 --------------------*/
+@media only screen and (max-width: 1200px) {
+  /* ----------HEADER---------- */
+  ul.campaign {
+    font-size: 1rem;
+  }
+  .campaign li:before {
+    display: none;
+  }
+  .campaign li {
+  margin-right: 10px;
+  margin-left: 10px;
+}
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 767px) {
   /* .sticky {
     position: static;
   } */
@@ -634,9 +646,6 @@ div.mobile-menu {
     text-align: left;
     margin: 0;
     /* background-color: lightpink; */
-  }
-  .campaign li:before {
-    display: none;
   }
   figcaption.label {
     display: none;
