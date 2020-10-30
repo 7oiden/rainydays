@@ -865,6 +865,7 @@ ul.footer {
   }
   section.product-card {
     height: 850px;
+  }
 }
 @media only screen and (max-width: 960px) {
   body {
@@ -914,6 +915,8 @@ ul.footer {
   }
 }
 @media only screen and (max-width: 767px) {
+  /* --------------MAIN SECTION--------------
+  --------------------------------------- */
   main {
     padding-bottom: 0;
   }
@@ -923,161 +926,6 @@ ul.footer {
   .tablet-wrapper {
     margin-top: 0;
   }
-  #mobile-home {
-    display: inline;
-  }
-  div.campaign {
-    width: 100%;
-  }
-  ul.campaign {
-    font-size: 0.75rem;
-    /* background-color: lightgreen; */
-    width: 85%;
-    margin: 0 auto 0 auto;
-  }
-  .campaign li {
-    padding: 10px 5px 10px 0;
-    text-align: left;
-    margin: 0;
-    /* background-color: lightpink; */
-  }
-  .campaign li:before {
-    display: none;
-  }
-  figcaption.label {
-    display: none;
-  }
-  .hamburger-label {
-    display: block;
-  }
-  li.menu-item {
-    display: none;
-  }
-  .dropdown li {
-    display: none;
-  }
-  #hamburger-menu:checked ~ div {
-    display: block;
-  }
-  ul.mobile-menu {
-    display: block;
-  }
-  div.breadcrumb {
-    font-size: 0.875rem;
-    margin-bottom: 20px;
-    margin-left: 7.5%;
-  }
-  .breadcrumb a {
-    padding: 0;
-    margin: 0;
-  }
-  .breadcrumb span {
-    padding-left: 5px;
-    margin: 0;
-  }
-  footer {
-    margin-top: 0;
-  }
-  .support-container {
-    flex-direction: column;
-  }
-  #social-media {
-    font-size: 1rem;
-    padding: 0;
-  }
-  #follow-us {
-    padding-top: 30px;
-  }
-  footer {
-    background-color: mediumorchid;
-  }
-  .support p {
-    font-size: 1.125rem;
-    /* background-color: chartreuse; */
-    min-width: 200px;
-    padding-top: 0;
-    margin-bottom: 0;
-  }
-  .support ul {
-    min-width: 250px;
-    /* background-color: blueviolet; */
-    margin-top: 10px;
-    font-size: 1rem;
-  }
-  .support ul li {
-    padding-bottom: 10px;
-  }
-  ul.footer {
-    font-size: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
-  }
-  .footer li {
-    /* background-color: darkcyan; */
-    padding: 5px;
-    min-width: 100px;
-  }
-  #bold {
-    margin-top: 10px;
-  }
-  .menu-item {
-    margin-left: 20px;
-    color: var(--yellow);
-  }
-  #men {
-    margin-left: 20px;
-  }
-  div.home {
-    display: none;
-  }
-  .icon-wrapper {
-    width: 100%;
-    /* background-color: lightgreen; */
-  }
-  .mobile-wrapper {
-    flex-direction: column;
-    margin: 0 auto 0 auto;
-    width: 85%;
-    background-color: white;
-    align-items: center;
-  }
-  div.icons {
-    order: 2;
-    width: 100%;
-    margin: 0;
-    padding: 10px 0 5px 0;
-    /* background-color: lightcyan; */
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-between;
-    /* border-top: 2px solid var(--dark-blue);
-    border-bottom: 2px solid var(--dark-blue); */
-  }
-  figure.logo {
-    order: 1;
-    margin-top: 20px;
-  }
-  div.search {
-    order: 3;
-    margin-top: 10px;
-    margin-right: 0;
-    margin-left: 0;
-    width: 100%;
-    /* background-color: lightpink; */
-  }
-  #search {
-    border-radius: 0;
-    /* background-color: lightskyblue; */
-    margin: 0 0 20px 0;
-    width: 100%;
-  }
-  div.home {
-    display: none;
-  }
   div.left-column {
     flex-direction: column;
   }
@@ -1085,21 +933,6 @@ ul.footer {
   div.last-wrapper {
     padding: 0;
     margin: 0;
-  }
-  /* .categorys {
-    width: 100%;
-    padding-left: 20px;
-    margin: 0;
-  } */
-  .bottom-wrapper {
-    flex-direction: column;
-  }
-  div.newsletter {
-    margin: 0 auto 30px auto;
-  }
-  #newsletter {
-    width: 200px;
-    margin-bottom: 50px;
   }
   #margin {
     margin-left: 50px;
@@ -1124,37 +957,7 @@ ul.footer {
   .column-wrapper {
     flex-direction: column;
   }
-  .fa {
-    font-size: 1.5rem;
-    color: black;
-  }
-  .fa-bars {
-    color: white;
-  }
-  span {
-    font-family: "century gothic";
-    font-size: 1rem;
-    font-weight: 500;
-    margin-top: 10px;
-    margin-left: 10px;
-  }
   #basket-container {
     margin-top: 50px;
-  }
-  div.newsletter {
-    order: 2;
-    margin: 0 auto 40px auto;
-    background-color: lightgreen;
-  }
-  .bottom-wrapper {
-    flex-direction: column;
-    /* background-color: olive; */
-  }
-  div.large-buttons {
-    order: 1;
-    width: 70%;
-    justify-content: space-between;
-    margin: 0 auto 40px auto;
-    /* background-color: mediumturquoise; */
   }
 }
