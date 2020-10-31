@@ -491,7 +491,6 @@ ul.footer {
   div.newsletter {
     order: 2;
     margin: 0 auto 40px auto;
-    background-color: lightgreen;
   }
   .bottom-wrapper {
     flex-direction: column;

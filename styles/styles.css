@@ -808,6 +808,7 @@ div.mobile-menu {
   #search {
     min-width: 400px;
   }
+}
 @media only screen and (max-width: 1250px) {
   .main-container {
     flex-direction: column;
@@ -1214,7 +1215,6 @@ div.mobile-menu {
   div.newsletter {
     order: 2;
     margin: 0 auto 40px auto;
-    background-color: lightgreen;
   }
   .bottom-wrapper {
     flex-direction: column;

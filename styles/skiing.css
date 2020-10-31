@@ -282,6 +282,7 @@ p {
 }
 div.content-wrapper {
   width: 85%;
+  height: 1000px;
   display: flex;
   background-image: url(../images/skiing-large.jpg);
   background-repeat: no-repeat;
@@ -289,8 +290,8 @@ div.content-wrapper {
   margin: var(--center-align);
 }
 section.content {
-  width: 40%;
-  height: 800px;
+  width: 50%;
+  height: 1000px;
   margin-top: 0;
   padding-left: 5%;
   padding-right: 5%;
@@ -657,6 +658,18 @@ div.mobile-menu {
   #mobile-home {
     display: inline;
   }
+  /*------------MAIN--------------*/
+  div.content-wrapper {
+    height: 800px;
+  }
+  section.content {
+    width: 100%;
+    height: 800px;
+    margin-top: 0;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #ffffff99;
+  }
 }
 @media only screen and (max-width: 767px) {
   /* .sticky {
@@ -722,14 +735,7 @@ div.mobile-menu {
     margin: 0;
   }
   /*------------MAIN-------------*/
-  section.content {
-    width: 100%;
-    height: 800px;
-    margin-top: 0;
-    padding-left: 5%;
-    padding-right: 5%;
-    background-color: #ffffff99;
-  }
+
   h1 {
     font-size: 1.875rem;
     margin-top: 0;
