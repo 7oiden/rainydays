@@ -110,6 +110,7 @@ figcaption.label {
   top: -5px;
   margin-top: 0;
   padding-top: 0;
+  color: #000;
 }
 .icons img {
   height: 40px;
@@ -127,8 +128,8 @@ a.icons:hover {
   text-decoration: underline;
 }
 #search {
-  border: 2px solid #172940;
-  border-radius: 8px;
+  border: 2px solid #000;
+  border-radius: 0;
   min-width: 500px;
   outline: 0;
   font-family: "montserrat";
@@ -231,7 +232,7 @@ ul li ul li {
 ul.dropdown {
   font-family: "century gothic";
   font-size: 1.125rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 div.breadcrumb {
   margin: 0px 0px 40px 7.5%;
@@ -954,7 +955,6 @@ div.mobile-menu {
   div.newsletter {
     order: 2;
     margin: 0 auto 40px auto;
-    background-color: lightgreen;
   }
   .bottom-wrapper {
     flex-direction: column;

@@ -111,6 +111,7 @@ figcaption.label {
   top: -5px;
   margin-top: 0;
   padding-top: 0;
+  color: #000;
 }
 .icons img {
   height: 40px;
@@ -131,8 +132,8 @@ a.icons:hover {
   background-color: turquoise;
 } */
 #search {
-  border: 2px solid #172940;
-  border-radius: none;
+  border: 2px solid #000;
+  border-radius: 0;
   min-width: 500px;
   outline: 0;
   font-family: "montserrat";
@@ -235,7 +236,7 @@ ul li ul li {
 ul.dropdown {
   font-family: "century gothic";
   font-size: 1.125rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 div.breadcrumb {
   margin: 0px 0px 40px 7.5%;
