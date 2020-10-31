@@ -516,11 +516,13 @@ figure.instagram {
   padding-top: 12px;
 }
 figure.special {
-  margin: 0;
+  margin: 0 auto 0 auto;
   padding: 0;
+  background-color: var(--blue);
 }
 #leaves {
   display: block;
+  margin: 0 auto 0 auto;
 }
 #news {
   max-width: 440px;
@@ -804,6 +806,11 @@ div.mobile-menu {
     /* background-color: violet; */
   }
 }
+@media only screen and (max-width: 1600px) {
+  div.main-wrapper {
+    background-image: url("../images/main_image-medium.jpg");
+}
+
 @media only screen and (max-width: 1400px) {
   /* -----------HEADER------------*/
   #search {
@@ -897,6 +904,9 @@ div.mobile-menu {
   }
 }
 @media only screen and (max-width: 1100px) {
+  div.main-wrapper {
+    background-image: url("../images/main_image-small.jpg");
+  }
   .h5 {
     width: 100%;
   }
