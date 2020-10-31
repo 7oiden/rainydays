@@ -652,7 +652,7 @@ div.mobile-menu {
     /* background-color: mediumseagreen; */
   }
   div.buttons {
-    background-color: mediumpurple;
+    /* background-color: mediumpurple; */
     width: 50%;
     flex-direction: column;
     margin-bottom: 0;
@@ -724,6 +724,9 @@ div.mobile-menu {
     padding-bottom: 0;
   }
   /* -----------HEADER------------*/
+  #search {
+    min-width: 300px;
+  }
   #logo {
     margin-left: 0;
   }

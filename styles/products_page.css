@@ -1061,6 +1061,9 @@ div.mobile-menu {
       padding-bottom: 0;
     }
     /* -----------HEADER------------*/
+    #search {
+      min-width: 300px;
+    }
     #logo {
       margin-left: 0;
     }

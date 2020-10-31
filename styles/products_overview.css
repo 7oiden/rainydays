@@ -404,7 +404,7 @@ h1 {
 button.load {
   font-family: "montserrat";
   font-size: 1.25rem;
-  width: 350px;
+  min-width: 300px;
   color: white;
   border: none;
   border-radius: 0;
@@ -797,6 +797,9 @@ div.mobile-menu {
 }
 @media only screen and (max-width: 870px) {
   /*--------HEADER-------*/
+  #search {
+    min-width: 300px;
+  }
   #logo {
     margin-left: 0;
   }

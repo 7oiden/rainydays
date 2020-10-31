@@ -970,6 +970,9 @@ div.mobile-menu {
 }
 @media only screen and (max-width: 767px) {
   /* -----------HEADER------------*/
+  #search {
+    min-width: 300px;
+  }
   #logo {
     margin-left: 0;
   }
@@ -1069,13 +1072,13 @@ div.mobile-menu {
     flex-direction: column;
   }
   figure.categorys {
-    width: 350px;
-    height: 234px;
+    width: 340px;
+    height: 228px;
     margin: 20px auto 20px auto;
   }
   figure.categorys a {
-    width: 350px;
-    height: 234px;
+    width: 340px;
+    height: 228px;
   }
   .categorys a img {
     width: 100%;

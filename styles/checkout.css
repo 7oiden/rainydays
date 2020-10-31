@@ -109,11 +109,15 @@ legend {
   padding: 0;
 }
 #subscribe {
-  /* background-color: mediumaquamarine; */
-  width: 300px;
+  width: 200px;
+}
+#subscribe label {
+  width: 200px;
 }
 #create-account {
-  /* background-color: magenta; */
+  width: 200px;
+}
+#create-account label {
   width: 200px;
 }
 input.box {
@@ -393,98 +397,101 @@ div.buttons {
   .address > p {
     font-size: 1rem;
   }
-  @media only screen and (max-width: 767px) {
-    main {
-      width: 100%;
-      padding-bottom: 0;
-    }
-    .logo {
-      max-width: 200px;
-      margin-top: 0;
-    }
-    #logo {
-      max-width: 200px;
-    }
-    div.information {
-      flex-direction: column;
-    }
-    fieldset.personalia {
-      margin: auto;
-      width: 85%;
-    }
-    aside.account {
-      margin: auto;
-      width: 85%;
-      margin-bottom: 70px;
-      /* background-color: lightgreen; */
-    }
-    /* fieldset.account {
+  div.buttons {
+    margin-bottom: 70px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  main {
+    width: 100%;
+    padding-bottom: 0;
+  }
+  .logo {
+    max-width: 200px;
+    margin-top: 0;
+  }
+  #logo {
+    max-width: 200px;
+  }
+  div.information {
+    flex-direction: column;
+  }
+  fieldset.personalia {
+    margin: auto;
+    width: 85%;
+  }
+  aside.account {
+    margin: auto;
+    width: 85%;
+    margin-bottom: 70px;
+    /* background-color: lightgreen; */
+  }
+  /* fieldset.account {
     display: block;
     margin-right: 50px;
     background-color: lightcoral;
   } */
-    input.box {
-      width: 100%;
-    }
-    #divider {
-      flex-direction: column;
-    }
-    div.box-short2 {
-      padding-left: 0;
-    }
-    h1,
-    h2 {
-      margin-bottom: 0;
-      font-size: 1.5rem;
-      padding: 10px 0px 10px 20px;
-    }
-    h1 {
-      margin-bottom: 20px;
-    }
-    h2 {
-      margin-top: 30px;
-    }
+  input.box {
+    width: 100%;
+  }
+  #divider {
+    flex-direction: column;
+  }
+  div.box-short2 {
+    padding-left: 0;
+  }
+  h1,
+  h2 {
+    margin-bottom: 0;
+    font-size: 1.5rem;
+    padding: 10px 0px 10px 20px;
+  }
+  h1 {
+    margin-bottom: 20px;
+  }
+  h2 {
+    margin-top: 30px;
+  }
 
-    legend {
-      font-size: 1.5rem;
-    }
-    #confirm,
-    #choose {
-      /* background-color: lime; */
-      width: 70%;
-    }
-    .custom-checkbox label {
-      font-size: 1.125rem;
-    }
-    button.shipping,
-    button.payment {
-      width: 85%;
-      margin: 15px auto 15px auto;
-    }
-    p.montserrat {
-      font-size: 1.125rem;
-    }
-    div.wrapping {
-      flex-direction: column;
-    }
-    section.summary {
-      width: 85%;
-      margin: auto;
-      margin-top: 30px;
-    }
-    section.address {
-      width: 85%;
-      margin: auto;
-      padding-bottom: 20px;
-    }
-    .buttons a {
-      font-size: 1.125rem;
-    }
-    div.shipping {
-      height: 250px;
-    }
-    div.payment {
-      height: 350px;
-    }
+  legend {
+    font-size: 1.5rem;
+  }
+  #confirm,
+  #choose {
+    /* background-color: lime; */
+    width: 70%;
+  }
+  .custom-checkbox label {
+    font-size: 1.125rem;
+  }
+  button.shipping,
+  button.payment {
+    width: 85%;
+    margin: 15px auto 15px auto;
+  }
+  p.montserrat {
+    font-size: 1.125rem;
+  }
+  div.wrapping {
+    flex-direction: column;
+  }
+  section.summary {
+    width: 85%;
+    margin: auto;
+    margin-top: 30px;
+  }
+  section.address {
+    width: 85%;
+    margin: auto;
+    padding-bottom: 20px;
+  }
+  .buttons a {
+    font-size: 1.125rem;
+  }
+  div.shipping {
+    height: 250px;
+  }
+  div.payment {
+    height: 350px;
   }
 }

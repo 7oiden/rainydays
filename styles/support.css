@@ -97,7 +97,13 @@ div.bottom-wrapper {
   margin: 70px auto 0 auto;
   /*background-color: aquamarine;*/
 }
-h1,
+h1 {
+  font-family: "century gothic";
+  font-size: 1.875rem;
+  color: #172940;
+  margin-top: 70px;
+  margin-bottom: 10px;
+}
 h2 {
   font-family: "century gothic";
   font-size: 1.875rem;
@@ -332,7 +338,9 @@ ul.footer {
   #logo {
     max-width: 250px;
   }
-  h1,
+  h1 {
+    font-size: 1.75rem;
+  }
   h2 {
     font-size: 1.75rem;
   }
