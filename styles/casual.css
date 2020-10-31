@@ -130,8 +130,7 @@ a.icons:hover {
 #search {
   border: 2px solid #172940;
   border-radius: 8px;
-  min-width: 300px;
-  max-width: 500px;
+  min-width: 500px;
   outline: 0;
   font-family: "montserrat";
   font-size: 20px;

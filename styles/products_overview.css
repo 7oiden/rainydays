@@ -75,7 +75,7 @@ nav.icons {
   /*background-color: blueviolet;*/
 }
 .mobile-wrapper {
-  width: 85%;
+  width: 90%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -129,8 +129,7 @@ a.icons:hover {
 #search {
   border: 2px solid #172940;
   border-radius: 8px;
-  min-width: 300px;
-  max-width: 500px;
+  min-width: 500px;
   outline: 0;
   font-family: "montserrat";
   font-size: 20px;
@@ -676,6 +675,12 @@ div.mobile-menu {
     /* background-color: mediumvioletred; */
   }
 }
+@media only screen and (max-width: 1400px) {
+  /* -----------HEADER------------*/
+  #search {
+    min-width: 400px;
+  }
+}
 @media only screen and (max-width: 1320px) {
   section.bestsellers {
     width: 100%;
@@ -686,6 +691,32 @@ div.mobile-menu {
   }
 }
 @media only screen and (max-width: 1200px) {
+  /* ----------HEADER---------- */
+  ul.campaign {
+    font-size: 1rem;
+  }
+  .campaign li:before {
+    display: none;
+  }
+  #logo {
+    height: 90px;
+  }
+  figure.logo {
+    height: 90px;
+  }
+  .campaign li {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  div.home {
+    display: none;
+  }
+  .mobile-wrapper {
+    width: 100%;
+  }
+  #search {
+    min-width: 350px;
+  }
   /* -----FOOTER----------- */
   ul.footer {
     font-size: 1rem;
@@ -709,50 +740,16 @@ div.mobile-menu {
     font-size: 0.875rem;
   }
 }
-@media only screen and (max-width: 870px) {
-  figure.jacket {
-    width: 350px;
-  }
-  main {
-    padding-bottom: 0;
-  }
-  div.wrapper {
-    flex-direction: column;
-    width: 100%;
-  }
-  #mobile-home {
-    display: inline;
-  }
-  div.campaign {
-    width: 100%;
-  }
-  ul.campaign {
-    font-size: 0.75rem;
-    /* background-color: lightgreen; */
-    width: 85%;
-    margin: 0 auto 0 auto;
-  }
-  .campaign li {
-    padding: 10px 5px 10px 0;
-    text-align: left;
-    margin: 0;
-    /* background-color: lightpink; */
-  }
-  .campaign li:before {
-    display: none;
-  }
-  /* -------ICON NAV----------- */
-  div.home {
-    display: none;
-  }
+@media only screen and (max-width: 1000px) {
+  /* -----------HEADER------------*/
   .icon-wrapper {
     width: 100%;
     /* background-color: lightgreen; */
   }
   .mobile-wrapper {
     flex-direction: column;
-    margin: 0 auto 0 auto;
     width: 85%;
+    margin: 0 auto 0 auto;
     background-color: white;
     align-items: center;
   }
@@ -771,7 +768,11 @@ div.mobile-menu {
   }
   figure.logo {
     order: 1;
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+  figcaption.label {
+    display: none;
   }
   div.search {
     order: 3;
@@ -790,8 +791,37 @@ div.mobile-menu {
   div.home {
     display: none;
   }
-  figcaption.label {
-    display: none;
+  #mobile-home {
+    display: inline;
+  }
+}
+@media only screen and (max-width: 870px) {
+  /*--------HEADER-------*/
+  #logo {
+    margin-left: 0;
+  }
+  div.campaign {
+    width: 100%;
+  }
+  ul.campaign {
+    font-size: 0.75rem;
+    /* background-color: lightgreen; */
+    width: 85%;
+    margin: 0 auto 0 auto;
+  }
+  .campaign li {
+    padding: 10px 5px 10px 0;
+    text-align: left;
+    margin: 0;
+    margin-right: 10px;
+    /* background-color: lightpink; */
+  }
+  .menu-item {
+    margin-left: 20px;
+    color: var(--yellow);
+  }
+  #men {
+    margin-left: 20px;
   }
   .hamburger-label {
     display: block;
@@ -820,6 +850,18 @@ div.mobile-menu {
   .breadcrumb span {
     padding-left: 5px;
     margin: 0;
+  }
+
+  /* --------MAIN-------------- */
+  figure.jacket {
+    width: 350px;
+  }
+  main {
+    padding-bottom: 0;
+  }
+  div.wrapper {
+    flex-direction: column;
+    width: 100%;
   }
   section.products {
     /* order: 2; */
