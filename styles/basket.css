@@ -654,13 +654,25 @@ div.mobile-menu {
       margin: 0;
       /* background-color: lightpink; */
     }
+    div.breadcrumb {
+      font-size: 0.875rem;
+      margin-bottom: 20px;
+      margin-left: 7.5%;
+    }
+    .breadcrumb a {
+      padding: 0;
+      margin: 0;
+    }
+    .breadcrumb span {
+      padding-left: 5px;
+      margin: 0;
+    }
     .campaign li:before {
       display: none;
     }
     figcaption.label {
       display: none;
     }
-
     .hamburger-label {
       display: block;
     }

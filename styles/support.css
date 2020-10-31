@@ -319,27 +319,27 @@ ul.footer {
 @media only screen and (max-width: 1200px) {
   /* -----FOOTER----------- */
   ul.footer {
-   font-size: 1rem;
- }
- #social-media {
-   display: grid;
-   grid-template-rows: auto auto;
-   grid-template-columns: auto auto;
-   justify-content: flex-start;
-   gap: 25px;
- }
- .support p {
-   font-size: 1.125rem;
-   /* background-color: chartreuse; */
-   margin-bottom: 0;
- }
- .support ul {
-   font-size: 1rem;
- }
- .small {
-   font-size: 0.875rem;
- }
-
+    font-size: 1rem;
+  }
+  #social-media {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+    justify-content: flex-start;
+    gap: 25px;
+  }
+  .support p {
+    font-size: 1.125rem;
+    /* background-color: chartreuse; */
+    margin-bottom: 0;
+  }
+  .support ul {
+    font-size: 1rem;
+  }
+  .small {
+    font-size: 0.875rem;
+  }
+}
 @media only screen and (max-width: 767px) {
   main {
     padding-bottom: 0;
@@ -378,9 +378,19 @@ ul.footer {
     font-size: 1rem;
     max-width: 300px;
   }
-
+  #margin {
+    margin-left: 50px;
+    margin-right: 20px;
+  }
+  .chart-wrapper {
+    flex-direction: column;
+  }
+  /* FOOTER mobile styles */
   .support-container {
     flex-direction: column;
+  }
+  #logo {
+    margin-left: 0;
   }
   #social-media {
     font-size: 1rem;
@@ -389,24 +399,17 @@ ul.footer {
   #follow-us {
     padding-top: 30px;
   }
-  .support p {
-    font-size: 1.125rem;
-    /* background-color: chartreuse; */
-    min-width: 200px;
-    padding-top: 0;
-    margin-bottom: 0;
-  }
   .support ul {
-    min-width: 250px;
     /* background-color: blueviolet; */
     margin-top: 10px;
-    font-size: 1rem;
+  }
+  .support p {
+    padding-top: 0;
   }
   .support ul li {
     padding-bottom: 10px;
   }
   ul.footer {
-    font-size: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -431,9 +434,6 @@ ul.footer {
   #margin {
     margin-left: 50px;
     margin-right: 20px;
-  }
-  .chart-wrapper {
-    flex-direction: column;
   }
   div.newsletter {
     order: 2;
