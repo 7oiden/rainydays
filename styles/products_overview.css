@@ -6,6 +6,7 @@
   --dark-blue: #172940;
   --red: #b05625;
   --yellow: #f2b705;
+  --center: 0 auto 0 auto;
 }
 html {
   box-sizing: border-box;
@@ -136,12 +137,6 @@ a.icons:hover {
   font-size: 20px;
   padding: 12px 0 12px 15px;
   margin-bottom: 30px;
-  /* position: relative; */
-}
-#search-label {
-  position: absolute;
-  top: 7px;
-  right: 10px;
 }
 nav.main-menu {
   font-family: "montserrat";
@@ -276,12 +271,12 @@ section.products {
   /* overflow: hidden; */
 }
 section.bestsellers {
-  /* background-color: mediumvioletred; */
   width: 500px;
+  /* height: 1265px; */
   background-image: url("../images/mountain_peak.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  margin-top: 10px;
+  margin-top: 18px;
 }
 div.bestsellers {
   width: 100%;
@@ -402,6 +397,12 @@ h1 {
 .button-container {
   width: 355px;
 }
+.load-wrapper {
+  width: 85%;
+  margin: var(--center);
+  text-align: center;
+  /* background-color: turquoise; */
+}
 button.load {
   font-family: "montserrat";
   font-size: 1.25rem;
@@ -414,7 +415,7 @@ button.load {
   transition-duration: 0.5s;
   background-color: #172940;
   box-shadow: 0 3px 6px #00000029;
-  margin: 70px 0 70px 7.5%;
+  margin: 70px 0 70px 0;
 }
 .load:hover {
   background-color: #172940bf;

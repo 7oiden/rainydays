@@ -128,25 +128,16 @@ figcaption.label {
 a.icons:hover {
   text-decoration: underline;
 }
-/* div.search {
-  background-color: turquoise;
-} */
 #search {
   border: 2px solid #000;
   border-radius: 0;
   min-width: 500px;
   outline: 0;
   font-family: "montserrat";
-  font-size: 20px;
+  font-size: 1.25rem;
   padding: 12px 0 12px 15px;
   margin-bottom: 30px;
-  /* position: relative; */
 }
-/* #search-label {
-  position: absolute;
-  top: 7px;
-  right: 10px;
-} */
 nav.main-menu {
   font-family: "montserrat";
   font-size: 1.25rem;

@@ -128,10 +128,9 @@ a.icons:hover {
   min-width: 500px;
   outline: 0;
   font-family: "montserrat";
-  font-size: 20px;
+  font-size: 1.25rem;
   padding: 12px 0 12px 15px;
   margin-bottom: 30px;
-  /* position: relative; */
 }
 #search-label {
   position: absolute;
@@ -809,8 +808,8 @@ div.mobile-menu {
 @media only screen and (max-width: 1600px) {
   div.main-wrapper {
     background-image: url("../images/main_image-medium.jpg");
+  }
 }
-
 @media only screen and (max-width: 1400px) {
   /* -----------HEADER------------*/
   #search {
@@ -827,8 +826,7 @@ div.mobile-menu {
     border-radius: 8px;
     padding: 20px;
     width: 50%;
-    margin: 200px 0 0 7.5%;
-    overflow: hidden;
+    margin: 300px 0 0 5%;
   }
   p.about {
     /* width: 90%; */
