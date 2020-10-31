@@ -329,7 +329,7 @@ div.bottom-wrapper {
 }
 div.newsletter {
   display: inline-block;
-  margin-left: 30%;
+  margin-left: 10%;
   /*background-color: cornflowerblue;*/
 }
 div.large-buttons {
@@ -431,6 +431,7 @@ a > .chat:hover {
 /* footer 
   --------------------*/
 .support-wrapper {
+  width: 100%;
   background-color: #2f496a;
   margin-bottom: 0;
 }
@@ -443,16 +444,16 @@ a > .chat:hover {
   width: 85%;
   margin: 0 auto 0 auto;
 }
-div.support {
-  width: 17%;
-  /*background-color: tomato;*/
-}
+
 .support ul {
   font-family: "century gothic";
   font-size: 1.125rem;
   padding-left: 20px;
   margin-top: 20px;
   margin-bottom: 40px;
+}
+.support ul li {
+  padding-top: 5px;
 }
 .support a {
   font-weight: 300;
@@ -481,9 +482,8 @@ ul.footer {
 .footer li {
   display: inline-block;
   list-style: none;
-  padding: 12px 0px 12px 20px;
-  margin-top: 0;
-  margin-bottom: 0;
+  padding: 12px 20px 12px 20px;
+  margin: 0;
 }
 li.social-media {
   display: inline-block;
@@ -493,7 +493,7 @@ span.fa {
   color: white;
 }
 #social-media {
-  width: 220px;
+  width: 200px;
   display: flex;
   justify-content: space-between;
   list-style: none;
@@ -503,14 +503,9 @@ ul.footer {
   margin-bottom: 0;
 }
 .small {
+  display: inline-block;
   font-size: 1rem;
   font-style: italic;
-}
-/*SJEKK*/
-
-.line::before {
-  content: "|";
-  padding-right: 20px;
 }
 .hamburger-label {
   color: fff;
@@ -549,6 +544,29 @@ div.mobile-menu {
 }
 /* styles that change
 --------------------*/
+@media only screen and (max-width: 1200px) {
+  /* -----FOOTER----------- */
+  ul.footer {
+   font-size: 1rem;
+ }
+ #social-media {
+   display: grid;
+   grid-template-rows: auto auto;
+   grid-template-columns: auto auto;
+   justify-content: flex-start;
+   gap: 25px;
+ }
+ .support p {
+   font-size: 1.125rem;
+   /* background-color: chartreuse; */
+   margin-bottom: 0;
+ }
+ .support ul {
+   font-size: 1rem;
+ }
+ .small {
+   font-size: 0.875rem;
+ }
 
 @media only screen and (max-width: 767px) {
   /* .sticky {

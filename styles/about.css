@@ -129,7 +129,7 @@ div.bottom-wrapper {
 }
 div.newsletter {
   display: inline-block;
-  margin-left: 30%;
+  margin-left: 10%;
   /*background-color: cornflowerblue;*/
 }
 div.large-buttons {
@@ -282,10 +282,6 @@ ul.footer {
   padding: 12px 20px 12px 20px;
   margin: 0;
 }
-/* .footer li::before {
-  content: "|";
-  margin-right: 10px;
-} */
 li.social-media {
   display: inline-block;
 }
