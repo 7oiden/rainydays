@@ -1081,13 +1081,13 @@ div.mobile-menu {
     flex-direction: column;
   }
   figure.categorys {
-    width: 340px;
-    height: 228px;
+    width: 400px;
+    height: 268px;
     margin: 20px auto 20px auto;
   }
   figure.categorys a {
-    width: 340px;
-    height: 228px;
+    width: 400px;
+    height: 268px;
   }
   .categorys a img {
     width: 100%;
@@ -1238,5 +1238,15 @@ div.mobile-menu {
     justify-content: space-between;
     margin: 0 auto 40px auto;
     /* background-color: mediumturquoise; */
+  }
+}
+@media only screen and (max-width: 500px) {
+  figure.categorys {
+    width: 300px;
+    height: 201px;
+  }
+  figure.categorys a {
+    width: 300px;
+    height: 201px;
   }
 }
