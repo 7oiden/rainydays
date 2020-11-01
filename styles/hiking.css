@@ -87,9 +87,6 @@ nav.icons {
 div.icons {
   margin-bottom: 20px;
 }
-form.search {
-  position: relative;
-}
 a.icons {
   display: inline-block;
   color: #172940;
@@ -129,6 +126,9 @@ figcaption.label {
 a.icons:hover {
   text-decoration: underline;
 }
+form.search {
+  position: relative;
+}
 #search {
   border: 2px solid #000;
   border-radius: 0;
@@ -138,6 +138,11 @@ a.icons:hover {
   font-size: 1.25rem;
   padding: 12px 0 12px 15px;
   margin-bottom: 30px;
+}
+#search-label {
+  position: absolute;
+  top: 7px;
+  right: 10px;
 }
 nav.main-menu {
   font-family: "montserrat";

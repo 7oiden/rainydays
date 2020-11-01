@@ -129,6 +129,9 @@ figcaption.label {
 a.icons:hover {
   text-decoration: underline;
 }
+form.search {
+  position: relative;
+}
 #search {
   border: 2px solid #000;
   border-radius: 0;
@@ -138,13 +141,12 @@ a.icons:hover {
   font-size: 1.25rem;
   padding: 12px 0 12px 15px;
   margin-bottom: 30px;
-  /* position: relative; */
 }
-/* #search-label {
+#search-label {
   position: absolute;
   top: 7px;
   right: 10px;
-} */
+}
 nav.main-menu {
   font-family: "montserrat";
   font-size: 1.25rem;

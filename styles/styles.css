@@ -78,9 +78,6 @@ nav.icons {
 div.icons {
   margin-bottom: 20px;
 }
-form.search {
-  position: relative;
-}
 a.icons {
   display: inline-block;
   color: #172940;
@@ -119,6 +116,9 @@ figcaption.label {
 }
 a.icons:hover {
   text-decoration: underline;
+}
+form.search {
+  position: relative;
 }
 #search {
   box-sizing: border-box;
