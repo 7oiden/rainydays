@@ -57,7 +57,6 @@ div.content-wrapper {
   display: flex;
   justify-content: space-between;
   margin: 0 auto 0 auto;
-  /*background-color: lightblue;*/
 }
 .returns {
   margin-right: 30px;
@@ -95,7 +94,6 @@ div.bottom-wrapper {
   align-items: flex-end;
   margin-top: 50px;
   margin: 70px auto 0 auto;
-  /*background-color: aquamarine;*/
 }
 h1 {
   font-family: "century gothic";
@@ -146,7 +144,6 @@ ul li ul li {
 div.newsletter {
   display: inline-block;
   margin-left: 10%;
-  /*background-color: cornflowerblue;*/
 }
 div.large-buttons {
   display: inline-block;
@@ -207,9 +204,6 @@ a > .chat:hover {
   display: inline-block;
   margin-top: 5px;
 }
-/*.newsletter {
-  background-color: tomato;
-}*/
 #newsletter {
   box-sizing: border-box;
   height: 48px;
@@ -326,6 +320,8 @@ ul.footer {
 /* Styles that changes 
 ..........................*/
 @media only screen and (max-width: 1800px) {
+  /* main 
+--------------------*/
   .content-wrapper {
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -335,9 +331,13 @@ ul.footer {
   }
 }
 @media only screen and (max-width: 1400px) {
+  /* header 
+--------------------*/
   #logo {
     max-width: 250px;
   }
+  /* main 
+--------------------*/
   h1 {
     font-size: 1.75rem;
   }
@@ -346,11 +346,14 @@ ul.footer {
   }
 }
 @media only screen and (max-width: 1200px) {
+  /* header 
+--------------------*/
   #logo {
     max-width: 200px;
     margin-left: 70px;
   }
-  /* -----FOOTER----------- */
+  /* footer 
+--------------------*/
   ul.footer {
     font-size: 1rem;
   }
@@ -363,7 +366,6 @@ ul.footer {
   }
   .support p {
     font-size: 1.125rem;
-    /* background-color: chartreuse; */
     margin-bottom: 0;
   }
   .support ul {
@@ -374,6 +376,8 @@ ul.footer {
   }
 }
 @media only screen and (max-width: 850px) {
+  /* header 
+--------------------*/
   .logo {
     max-width: 200px;
     margin-top: 0;
@@ -386,11 +390,33 @@ ul.footer {
     width: 180px;
     top: 190px;
   }
+  /* main 
+--------------------*/
   h1 {
     margin-top: 100px;
   }
 }
 @media only screen and (max-width: 767px) {
+  /* header 
+--------------------*/
+  .logo {
+    max-width: 200px;
+    margin-top: 0;
+  }
+  #logo {
+    max-width: 200px;
+    margin-left: 0;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+  #previous {
+    width: 180px;
+    top: 190px;
+  }
+  /* main 
+--------------------*/
   main {
     padding-bottom: 0;
   }
@@ -401,22 +427,6 @@ ul.footer {
     width: 300px;
     margin-top: 0;
     padding-top: 0;
-    /* background-color: lightcoral; */
-  }
-  .logo {
-    max-width: 200px;
-    margin-top: 0;
-  }
-  #logo {
-    max-width: 200px;
-  }
-  header {
-    display: flex;
-    flex-direction: column;
-  }
-  #previous {
-    width: 180px;
-    top: 190px;
   }
   h1 {
     margin-top: 100px;
@@ -427,49 +437,6 @@ ul.footer {
   p {
     font-size: 1rem;
     max-width: 300px;
-  }
-  #margin {
-    margin-left: 50px;
-    margin-right: 20px;
-  }
-  .chart-wrapper {
-    flex-direction: column;
-  }
-  /* FOOTER mobile styles */
-  .support-container {
-    flex-direction: column;
-  }
-  #logo {
-    margin-left: 0;
-  }
-  #social-media {
-    font-size: 1rem;
-    padding: 0;
-  }
-  #follow-us {
-    padding-top: 30px;
-  }
-  .support ul {
-    /* background-color: blueviolet; */
-    margin-top: 10px;
-  }
-  .support p {
-    padding-top: 0;
-  }
-  .support ul li {
-    padding-bottom: 10px;
-  }
-  ul.footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
-  }
-  .footer li {
-    /* background-color: darkcyan; */
-    padding: 5px;
-    min-width: 100px;
   }
   .bottom-wrapper {
     flex-direction: column;
@@ -491,13 +458,43 @@ ul.footer {
   }
   .bottom-wrapper {
     flex-direction: column;
-    /* background-color: olive; */
   }
   div.large-buttons {
     order: 1;
     width: 70%;
     justify-content: space-between;
     margin: 0 auto 40px auto;
-    /* background-color: mediumturquoise; */
+  }
+  /* footer 
+--------------------*/
+  .support-container {
+    flex-direction: column;
+  }
+  #social-media {
+    font-size: 1rem;
+    padding: 0;
+  }
+  #follow-us {
+    padding-top: 30px;
+  }
+  .support ul {
+    margin-top: 10px;
+  }
+  .support p {
+    padding-top: 0;
+  }
+  .support ul li {
+    padding-bottom: 10px;
+  }
+  ul.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .footer li {
+    padding: 5px;
+    min-width: 100px;
   }
 }

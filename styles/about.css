@@ -125,12 +125,10 @@ div.bottom-wrapper {
   justify-content: space-between;
   align-items: flex-end;
   margin: 70px auto 0 auto;
-  /*background-color: aquamarine;*/
 }
 div.newsletter {
   display: inline-block;
   margin-left: 10%;
-  /*background-color: cornflowerblue;*/
 }
 div.large-buttons {
   display: inline-block;
@@ -191,9 +189,6 @@ a > .chat:hover {
   display: inline-block;
   margin-top: 5px;
 }
-/*.newsletter {
-  background-color: tomato;
-}*/
 #newsletter {
   box-sizing: border-box;
   height: 48px;
@@ -241,7 +236,6 @@ a > .chat:hover {
   width: 85%;
   margin: 0 auto 0 auto;
 }
-
 .support ul {
   font-family: "century gothic";
   font-size: 1.125rem;
@@ -304,10 +298,11 @@ ul.footer {
   font-size: 1rem;
   font-style: italic;
 }
-
 /* Styles that changes 
 ..........................*/
 @media only screen and (max-width: 1700px) {
+  /* main 
+--------------------*/
   .image img {
     width: 125px;
   }
@@ -330,9 +325,13 @@ ul.footer {
   }
 }
 @media only screen and (max-width: 1400px) {
+  /* header 
+--------------------*/
   #logo {
     max-width: 250px;
   }
+  /* main 
+--------------------*/
   ol {
     font-size: 1.125rem;
     margin-top: 0;
@@ -350,13 +349,14 @@ ul.footer {
   }
 }
 @media only screen and (max-width: 1200px) {
-  /* div.content-wrapper {
-        flex-wrap: wrap;
-      } */
+  /* header 
+--------------------*/
   #logo {
     max-width: 200px;
     margin-left: 70px;
   }
+  /* main 
+--------------------*/
   .image-wrapper {
     display: grid;
     grid-gap: 20px;
@@ -373,7 +373,8 @@ ul.footer {
   iframe {
     width: 250px;
   }
-  /* -----FOOTER----------- */
+  /* footer 
+--------------------*/
   ul.footer {
     font-size: 1rem;
   }
@@ -453,7 +454,6 @@ ul.footer {
     padding-top: 30px;
   }
   .support ul {
-    /* background-color: blueviolet; */
     margin-top: 10px;
   }
   .support p {
@@ -470,7 +470,6 @@ ul.footer {
     padding-bottom: 15px;
   }
   .footer li {
-    /* background-color: darkcyan; */
     padding: 5px;
     min-width: 100px;
   }
@@ -494,17 +493,17 @@ ul.footer {
   }
   .bottom-wrapper {
     flex-direction: column;
-    /* background-color: olive; */
   }
   div.large-buttons {
     order: 1;
     width: 70%;
     justify-content: space-between;
     margin: 0 auto 40px auto;
-    /* background-color: mediumturquoise; */
   }
 }
 @media only screen and (max-width: 450px) {
+  /* main
+--------------------*/
   .about-us,
   .who-we-are,
   .why-chose-us {
