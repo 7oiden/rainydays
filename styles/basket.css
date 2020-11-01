@@ -64,6 +64,9 @@ ul.campaign {
   background-color: white;
   z-index: 999;
 }
+nav.icons {
+  background-color: white;
+}
 header {
   display: inline;
 }
@@ -145,6 +148,7 @@ nav.main-menu {
   font-weight: 500;
   width: 100%;
   background-color: #172940;
+  z-index: 999;
 }
 div.menu-wrapper {
   width: 70%;
@@ -652,6 +656,14 @@ div.mobile-menu {
 @media only screen and (max-width: 1000px) {
   /* header 
 --------------------*/
+  .sticky {
+    display: inline;
+    position: static;
+  }
+  nav.main-menu {
+    position: sticky;
+    top: 0;
+  }
   .icon-wrapper {
     width: 100%;
   }

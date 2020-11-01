@@ -18,7 +18,7 @@ html {
   box-sizing: inherit;
 }
 body {
-  background-color: white;
+  background-color: #f5f5f5;
   font-family: "roboto", verdana, sans-serif;
   font-size: 1.125rem;
   color: black;
@@ -59,6 +59,9 @@ ul.campaign {
   top: 0;
   background-color: white;
   z-index: 999;
+}
+nav.icons {
+  background-color: white;
 }
 header {
   display: inline;
@@ -142,6 +145,7 @@ nav.main-menu {
   font-weight: 500;
   width: 100%;
   background-color: #172940;
+  z-index: 999;
 }
 div.menu-wrapper {
   width: 70%;
@@ -363,6 +367,10 @@ div.large-buttons {
   display: flex;
   justify-content: space-between;
 }
+.large-buttons a {
+  font-size: 1rem;
+  text-align: center;
+}
 .contact {
   height: 70px;
   width: 70px;
@@ -402,17 +410,6 @@ a > .chat:hover {
 #margin {
   margin-left: 70px;
 }
-.large-buttons a {
-  font-size: 1rem;
-  text-decoration: none;
-  text-align: center;
-  color: #f2f2f2;
-  transition-property: color;
-  transition-duration: 0.5s;
-}
-.large-buttons a:hover {
-  color: var(--dark-blue);
-}
 .label {
   display: inline-block;
   margin-top: 5px;
@@ -421,14 +418,14 @@ a > .chat:hover {
   box-sizing: border-box;
   height: 48px;
   border: solid 2px;
-  border-color: #536175;
+  border-color: #2f496a;
   border-radius: 0;
   font-family: "montserrat";
   font-size: 1.25rem;
   padding-left: 15px;
 }
 #join {
-  background-color: #536175;
+  background-color: #2f496a;
   font-family: "montserrat";
   font-size: 1.25rem;
   font-weight: 500;
@@ -594,6 +591,14 @@ ul.footer {
 @media only screen and (max-width: 1000px) {
   /* header 
   --------------------*/
+  .sticky {
+    display: inline;
+    position: static;
+  }
+  nav.main-menu {
+    position: sticky;
+    top: 0;
+  }
   .icon-wrapper {
     width: 100%;
   }
@@ -658,9 +663,6 @@ ul.footer {
 @media only screen and (max-width: 767px) {
   /* header 
   --------------------*/
-  /* .sticky {
-    position: static;
-  } */
   #search {
     min-width: 300px;
   }
