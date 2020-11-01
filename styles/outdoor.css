@@ -73,7 +73,6 @@ nav.icons {
   width: 85%;
   align-items: flex-end;
   margin: 0 auto 0 auto;
-  /*background-color: blueviolet;*/
 }
 .mobile-wrapper {
   width: 90%;
@@ -81,7 +80,6 @@ nav.icons {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
-  /* background-color: aqua; */
 }
 div.icons {
   margin-bottom: 20px;
@@ -128,9 +126,6 @@ figcaption.label {
 a.icons:hover {
   text-decoration: underline;
 }
-/* div.search {
-  background-color: turquoise;
-} */
 #search {
   border: 2px solid #000;
   border-radius: 0;
@@ -232,6 +227,41 @@ ul.dropdown {
   font-size: 1.125rem;
   font-weight: 600;
 }
+.hamburger-label {
+  color: fff;
+  font-size: 1.25rem;
+  cursor: pointer;
+  float: left;
+  color: white;
+  margin-left: 30px;
+  display: none;
+}
+#hamburger-menu {
+  display: none;
+}
+div.mobile-menu {
+  font-family: "century gothic";
+  font-size: 1.125rem;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin-top: 0;
+  padding-left: 20px;
+  display: none;
+}
+.mobile-menu a {
+  text-decoration: none;
+  display: block;
+  float: left;
+  clear: left;
+  margin-top: 10px;
+  margin-left: 5px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.mobile-menu a:hover {
+  background-color: #f2b705;
+}
 div.breadcrumb {
   margin: 0px 0px 40px 7.5%;
   padding-top: 20px;
@@ -324,12 +354,10 @@ div.bottom-wrapper {
   align-items: flex-end;
   margin-top: 50px;
   margin: 70px auto 0 auto;
-  /*background-color: aquamarine;*/
 }
 div.newsletter {
   display: inline-block;
   margin-left: 10%;
-  /*background-color: cornflowerblue;*/
 }
 div.large-buttons {
   display: inline-block;
@@ -390,9 +418,6 @@ a > .chat:hover {
   display: inline-block;
   margin-top: 5px;
 }
-/*.newsletter {
-  background-color: tomato;
-}*/
 #newsletter {
   box-sizing: border-box;
   height: 48px;
@@ -443,7 +468,6 @@ a > .chat:hover {
   width: 85%;
   margin: 0 auto 0 auto;
 }
-
 .support ul {
   font-family: "century gothic";
   font-size: 1.125rem;
@@ -506,51 +530,18 @@ ul.footer {
   font-size: 1rem;
   font-style: italic;
 }
-.hamburger-label {
-  color: fff;
-  font-size: 1.25rem;
-  cursor: pointer;
-  float: left;
-  color: white;
-  margin-left: 30px;
-  display: none;
-}
-#hamburger-menu {
-  display: none;
-}
-div.mobile-menu {
-  font-family: "century gothic";
-  font-size: 1.125rem;
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-  margin-top: 0;
-  padding-left: 20px;
-  display: none;
-}
-.mobile-menu a {
-  text-decoration: none;
-  display: block;
-  float: left;
-  clear: left;
-  margin-top: 10px;
-  margin-left: 5px;
-  padding: 5px 10px;
-  border-radius: 5px;
-}
-.mobile-menu a:hover {
-  background-color: #f2b705;
-}
 /* styles that change
 --------------------*/
 @media only screen and (max-width: 1400px) {
-  /* -----------HEADER------------*/
+  /* header 
+  --------------------*/
   #search {
     min-width: 400px;
   }
 }
 @media only screen and (max-width: 1200px) {
-  /* ----------HEADER---------- */
+  /* header 
+  --------------------*/
   ul.campaign {
     font-size: 1rem;
   }
@@ -576,8 +567,8 @@ div.mobile-menu {
   #search {
     min-width: 350px;
   }
-
-  /* -----FOOTER----------- */
+  /* footer 
+  --------------------*/
   ul.footer {
     font-size: 1rem;
   }
@@ -601,10 +592,10 @@ div.mobile-menu {
   }
 }
 @media only screen and (max-width: 1000px) {
-  /* -----------HEADER------------*/
+  /* header 
+  --------------------*/
   .icon-wrapper {
     width: 100%;
-    /* background-color: lightgreen; */
   }
   .mobile-wrapper {
     flex-direction: column;
@@ -618,13 +609,10 @@ div.mobile-menu {
     width: 100%;
     margin: 0;
     padding: 10px 0 5px 0;
-    /* background-color: lightcyan; */
     display: flex;
     flex-direction: row;
     width: 100%;
     justify-content: space-between;
-    /* border-top: 2px solid var(--dark-blue);
-    border-bottom: 2px solid var(--dark-blue); */
   }
   figure.logo {
     order: 1;
@@ -640,11 +628,9 @@ div.mobile-menu {
     margin-right: 0;
     margin-left: 0;
     width: 100%;
-    /* background-color: lightpink; */
   }
   #search {
     border-radius: 0;
-    /* background-color: lightskyblue; */
     margin: 0 0 20px 0;
     width: 100%;
   }
@@ -654,7 +640,8 @@ div.mobile-menu {
   #mobile-home {
     display: inline;
   }
-  /*------------MAIN--------------*/
+  /* main 
+  --------------------*/
   div.content-wrapper {
     height: 800px;
   }
@@ -669,14 +656,11 @@ div.mobile-menu {
   }
 }
 @media only screen and (max-width: 767px) {
+  /* header 
+  --------------------*/
   /* .sticky {
     position: static;
   } */
-  main {
-    padding-bottom: 0;
-  }
-
-  /* -----------HEADER------------*/
   #search {
     min-width: 300px;
   }
@@ -734,8 +718,11 @@ div.mobile-menu {
     padding-left: 5px;
     margin: 0;
   }
-  /*------------MAIN-------------*/
-
+  /* main 
+  --------------------*/
+  main {
+    padding-bottom: 0;
+  }
   h1 {
     font-size: 1.875rem;
     margin-top: 0;
@@ -753,9 +740,35 @@ div.mobile-menu {
   div.main-wrapper {
     background-image: url("../images/main_image-vertical.jpg");
   }
-  /* background-color: mediumorchid; */
-
-  /* FOOTER mobile styles */
+  .bottom-wrapper {
+    flex-direction: column;
+  }
+  div.newsletter {
+    margin: 0 auto 30px auto;
+  }
+  #newsletter {
+    width: 200px;
+    margin-bottom: 50px;
+  }
+  #margin {
+    margin-left: 50px;
+    margin-right: 20px;
+  }
+  div.newsletter {
+    order: 2;
+    margin: 0 auto 40px auto;
+  }
+  .bottom-wrapper {
+    flex-direction: column;
+  }
+  div.large-buttons {
+    order: 1;
+    width: 70%;
+    justify-content: space-between;
+    margin: 0 auto 40px auto;
+  }
+  /* footer 
+  --------------------*/
   .support-container {
     flex-direction: column;
   }
@@ -787,35 +800,5 @@ div.mobile-menu {
     /* background-color: darkcyan; */
     padding: 5px;
     min-width: 100px;
-  }
-  .bottom-wrapper {
-    flex-direction: column;
-  }
-  div.newsletter {
-    margin: 0 auto 30px auto;
-  }
-  #newsletter {
-    width: 200px;
-    margin-bottom: 50px;
-  }
-  #margin {
-    margin-left: 50px;
-    margin-right: 20px;
-  }
-  div.newsletter {
-    order: 2;
-    margin: 0 auto 40px auto;
-    /* background-color: lightgreen; */
-  }
-  .bottom-wrapper {
-    flex-direction: column;
-    /* background-color: olive; */
-  }
-  div.large-buttons {
-    order: 1;
-    width: 70%;
-    justify-content: space-between;
-    margin: 0 auto 40px auto;
-    /* background-color: mediumturquoise; */
   }
 }
