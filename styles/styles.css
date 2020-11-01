@@ -433,6 +433,7 @@ figcaption.category {
 }
 figure.news {
   margin: 0;
+  box-shadow: 0 3px 6px #00000029;
 }
 h1 {
   font-family: "balboa", sans-serif;
@@ -545,7 +546,7 @@ figure.instagram {
 figure.special {
   margin: 0 auto 0 auto;
   padding: 0;
-  background-color: var(--blue);
+  background-color: #fff;
 }
 #leaves {
   display: block;
@@ -553,6 +554,7 @@ figure.special {
 }
 div.h5 {
   background-color: #fff;
+  box-shadow: 0 3px 6px #00000029;
 }
 #news {
   max-width: 440px;
@@ -731,11 +733,6 @@ span.fa {
 ul.footer {
   margin-top: 0;
   margin-bottom: 0;
-}
-.small {
-  display: inline-block;
-  font-size: 1rem;
-  font-style: italic;
 }
 /* styles that change
 --------------------*/
@@ -1222,6 +1219,9 @@ ul.footer {
 @media only screen and (max-width: 500px) {
   /* main 
 --------------------*/
+  div.main-wrapper {
+    background-image: url("../images/main_image-vertical-small.jpg");
+  }
   figure.categorys {
     width: 300px;
     height: 201px;
