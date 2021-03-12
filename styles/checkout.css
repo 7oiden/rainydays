@@ -103,7 +103,6 @@ input[type="checkbox"] {
 }
 .custom-checkbox input + label {
   display: inline-block;
-  width: 400px;
   height: 35px;
   cursor: pointer;
   background-image: url(../images/icons/unchecked.svg);
@@ -156,7 +155,8 @@ input.box {
   transition-property: border;
   transition-duration: 0.5s;
 }
-#divider {
+
+.divider {
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -186,6 +186,12 @@ input.box:focus {
 }
 input.box:active {
   border-radius: 0;
+}
+input.box-short:hover {
+border: 2px solid #536175;
+}
+input.box-short:focus {
+  background-color: #f5f5f5;
 }
 .label {
   display: block;
@@ -225,7 +231,7 @@ div.payment {
 }
 button.shipping,
 button.payment {
-  width: 50%;
+  width: 30%;
   height: 70px;
   background-color: #f2f2f2;
   border: 2px solid #5361757d;
@@ -240,6 +246,7 @@ button.payment {
   align-items: center;
   transition-property: background-color, border;
   transition-duration: 0.5s, 0s;
+  cursor: pointer;
 }
 img.shipping {
   display: block;
@@ -326,6 +333,7 @@ div.buttons {
   box-shadow: 0 3px 6px #00000029;
   text-transform: uppercase;
   margin: 70px auto 20px auto;
+  border-radius: 5px;
 }
 #yellow {
   transition-property: background-color, box-shadow;
@@ -336,6 +344,15 @@ div.buttons {
 #yellow:hover {
   background-color: #f2b705bf;
   box-shadow: none;
+}
+.error-message {
+  /* visibility: hidden; */
+  font-size: 1rem;
+  color: #be3e35;
+  margin-top: 5px;
+}
+.error-message:before {
+  content: "*";
 }
 /* Styles that changes 
 ..........................*/
