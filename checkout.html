@@ -39,15 +39,7 @@
         <div class="information">
           <fieldset class="personalia">
             <form action="login.php" method="GET">
-              <label for="email" class="label">E-mail</label>
-              <input
-                type="email"
-                name="email"
-                placeholder="your@email.com"
-                id="email"
-                class="box"
-                required="required"
-              />
+              
               <label for="first-name" class="label">First Name</label>
               <input
                 type="text"
@@ -107,6 +99,18 @@
                 id="phone"
                 class="box"
               />
+              <label for="email" class="label">E-mail</label>
+              <input
+                type="email"
+                name="email"
+                placeholder="your@email.com"
+                id="email"
+                class="box"
+                required="required"
+              />
+              <div class="error-message" id="email-error">
+            Please enter a valid e-mail adress
+          </div>
             </form>
           </fieldset>
           <aside class="account">
