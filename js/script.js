@@ -6,7 +6,6 @@ const email = document.querySelector("#email");
 const label = document.querySelector("#label");
 const container = document.querySelector(".label-container");
 
-
 function validateForm(event) {
   event.preventDefault();
 

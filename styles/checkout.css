@@ -146,57 +146,53 @@ legend {
 input.box {
   display: inline-block;
   width: 100%;
+  max-width: 350px;
   font-size: 1.125rem;
   color: #172940;
+  background-color: #f5f5f5;
   border-radius: 0;
   border: 2px solid #5361757d;
   padding: 10px 10px 10px 10px;
-  margin: 0 auto 0 auto;
+  margin: 0 auto;
   transition-property: border;
   transition-duration: 0.5s;
 }
-
-.divider {
+/* .divider {
   display: flex;
   justify-content: space-between;
   width: 100%;
-}
-div.box-short1 {
+} */
+/* div.box-short1 {
   display: inline-block;
   padding-right: 10px;
 }
 div.box-short2 {
   display: inline-block;
   padding-left: 10px;
-}
+} */
 input.box-short {
   font-size: 1.125rem;
   color: #172940;
+  background-color: #f5f5f5;
   border-radius: 0;
   border: 2px solid #5361757d;
   padding: 10px 10px 10px 10px;
   transition-property: border;
   transition-duration: 0.5s;
 }
-input.box:hover {
-  border: 2px solid #536175;
-}
 input.box:focus {
-  background-color: #f5f5f5;
-}
-input.box:active {
-  border-radius: 0;
-}
-input.box-short:hover {
-border: 2px solid #536175;
+  background-color: #fff;
+  border: 2px solid #172940;
 }
 input.box-short:focus {
-  background-color: #f5f5f5;
+  background-color: #fff;
+  border: 2px solid #172940;
 }
 .label {
   display: block;
   font-weight: bold;
   margin-top: 20px;
+  margin-bottom: 3px;
 }
 .label_2 {
   display: block;
@@ -345,11 +341,19 @@ div.buttons {
   background-color: #f2b705bf;
   box-shadow: none;
 }
+.success {
+  margin-left: 20px;
+  margin-bottom: 30px;
+}
+#success:before {
+  content: "\2714";
+  font-size: 2rem;
+}
 .error-message {
-  /* visibility: hidden; */
   font-size: 1rem;
-  color: #be3e35;
+  color: red;
   margin-top: 5px;
+  display: none;
 }
 .error-message:before {
   content: "*";

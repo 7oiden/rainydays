@@ -10,15 +10,20 @@
     <link rel="stylesheet" href="https://use.typekit.net/cgz4jxk.css" />
     <link rel="stylesheet" href="styles/checkout.css" />
     <script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:2269204,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 2269204, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
         a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
   </head>
 
   <body>
@@ -38,8 +43,7 @@
         <h1>2. My Information</h1>
         <div class="information">
           <fieldset class="personalia">
-            <form action="login.php" method="GET">
-              
+            <form id="personalia">
               <label for="first-name" class="label">First Name</label>
               <input
                 type="text"
@@ -47,8 +51,10 @@
                 placeholder="First Name"
                 id="first-name"
                 class="box"
-                required="required"
               />
+              <div class="error-message" id="firstname-error">
+                Your first name must be at least 3 characters
+              </div>
               <label for="last-name" class="label">Last Name</label>
               <input
                 type="text"
@@ -56,8 +62,10 @@
                 placeholder="Last Name"
                 id="last-name"
                 class="box"
-                required="required"
               />
+              <div class="error-message" id="lastname-error">
+                Your last name must be at least 5 characters
+              </div>
               <label for="street-address" class="label">Street Address</label>
               <input
                 type="text"
@@ -65,52 +73,63 @@
                 placeholder="Street Address"
                 id="street-address"
                 class="box"
-                required="required"
               />
-              <div id="divider">
-                <div class="box-short1">
-                  <label for="city" class="label">City</label>
-                  <input
-                    type="text"
-                    name="city"
-                    placeholder="City"
-                    id="city"
-                    class="box-short"
-                    required="required"
-                  />
-                </div>
-                <div class="box-short2">
-                  <label for="postal-code" class="label">Postal Code</label>
-                  <input
-                    type="number"
-                    name="postal-code"
-                    placeholder="Postal Code"
-                    id="postal-code"
-                    class="box-short"
-                    required="required"
-                  />
-                </div>
+              <div class="error-message" id="address-error">
+                Your address must be at least 5 characters
               </div>
-              <label for="phone" class="label">Phone Number</label>
+              <div class="box">
+                <label for="city" class="label">City</label>
+                <input
+                  type="text"
+                  name="city"
+                  placeholder="City"
+                  id="city"
+                  class="box"
+                />
+              </div>
+              <div class="error-message" id="city-error">
+                Your city must be at least 3 characters
+              </div>
+              <div class="box-short2">
+                <label for="postal-code" class="label"
+                  >Postal Code (5 digits)</label
+                >
+                <input
+                  type="text"
+                  name="postal-code"
+                  placeholder="Postal Code"
+                  id="postal-code"
+                  class="box-short"
+                />
+              </div>
+              <div class="error-message" id="postalcode-error">
+                Please enter a 5 digit postal code
+              </div>
+              <label for="phone" class="label">Phone Number (Optional)</label>
               <input
                 type="tel"
                 name="phone"
-                placeholder="Phone Number"
+                placeholder="8 digits"
                 id="phone"
                 class="box"
               />
+              <div class="error-message" id="phone-error">
+                Please enter a valid phone number
+              </div>
               <label for="email" class="label">E-mail</label>
               <input
-                type="email"
+                type="text"
                 name="email"
                 placeholder="your@email.com"
                 id="email"
                 class="box"
-                required="required"
               />
               <div class="error-message" id="email-error">
-            Please enter a valid e-mail adress
-          </div>
+                Please enter a valid e-mail adress
+              </div>
+              <button id="submit" type="submit" name="submit" value="submit">
+                SUBMIT
+              </button>
             </form>
           </fieldset>
           <aside class="account">
@@ -232,5 +251,6 @@
         </div>
       </section>
     </main>
+    <script src="js/checkout.js"></script>
   </body>
 </html>
