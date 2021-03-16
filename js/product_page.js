@@ -11,8 +11,10 @@ function hideOnScroll() {
     logo.style.display = "block";
     homeIcon.style.display = "none";
   }
+//   if ((scrolledY > 100) && (reviews.style.display === "block")) {
+//       reviews.style.zIndex = "1";
+// }
 }
-
 window.addEventListener("scroll", hideOnScroll);
 
 const link = document.querySelector("#review-link");
@@ -41,18 +43,64 @@ function addToBasket() {
 
 button.addEventListener("click", addToBasket);
 
-const proceed = document.querySelector(".basket");
-const basket = document.querySelector("#basket-icon");
+const basket = document.querySelector(".basket");
+const basketIcon = document.querySelector("#basket-icon");
 
 function basketPreview() {
-  if (proceed.style.display === "block") {
-    proceed.style.display = "none";
+  if (basket.style.display === "block") {
+    basket.style.display = "none";
   } else {
-    proceed.style.display = "block";
+    basket.style.display = "block";
   }
-  if (counter.style.display === "none") {
-    proceed.classList.remove;
+  if (profile.style.display === "block") {
+    profile.style.display = "none";
+  }
+  if (favorites.style.display === "block") {
+    favorites.style.display = "none";
+  }
+  //   if (counter.style.display === "none") {
+  //     proceed.classList.remove;
+  //   }
+}
+
+basketIcon.addEventListener("click", basketPreview);
+
+const profile = document.querySelector(".profile");
+const profileIcon = document.querySelector("#profile-icon");
+
+function profilePreview() {
+  if (profile.style.display === "block") {
+    profile.style.display = "none";
+  } else {
+    profile.style.display = "block";
+  }
+
+  if (basket.style.display === "block") {
+    basket.style.display = "none";
+  }
+  if (favorites.style.display === "block") {
+    favorites.style.display = "none";
   }
 }
 
-basket.addEventListener("click", basketPreview);
+profileIcon.addEventListener("click", profilePreview);
+
+const favorites = document.querySelector(".favorites");
+const favoritesIcon = document.querySelector("#favorites-icon");
+
+function favoritesPreview() {
+  if (favorites.style.display === "block") {
+    favorites.style.display = "none";
+  } else {
+    favorites.style.display = "block";
+  }
+
+  if (basket.style.display === "block") {
+    basket.style.display = "none";
+  }
+  if (profile.style.display === "block") {
+    profile.style.display = "none";
+  }
+}
+
+favoritesIcon.addEventListener("click", favoritesPreview);

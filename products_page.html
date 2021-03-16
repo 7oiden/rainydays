@@ -74,28 +74,64 @@
                   <figcaption class="label">Home</figcaption>
                 </figure>
               </a>
-              <a href="index.html" class="icons"
+              <a class="icons" id="favorites-icon"
                 ><figure class="icons fpb">
                   <img src="images\icons\favorite.svg" alt="Favorites icon" />
                   <figcaption class="label">Favorites</figcaption>
                 </figure></a
               >
-              <a href="index.html" class="icons"
+              <a class="icons" id="profile-icon"
                 ><figure class="icons fpb">
                   <img src="images\icons\profile.svg" alt="Profile icon" />
                   <figcaption class="label">Profile</figcaption>
                 </figure></a
               >
-              <a href="#" class="icons" id="basket-icon"
+              <a class="icons" id="basket-icon"
                 ><figure class="icons fpb">
                   <img src="images\icons\basket.svg" alt="Basket icon" />
                   <figcaption class="label">Basket</figcaption>
                 </figure></a
               >
               <div id="counter">1</div>
-              
+
+              <!-- icon dropdowns -->
+              <div class="favorites">
+                <div id="triangle-favorites"></div>
+                <h6>Favorites</h6>
+                <p class="p2">You don't have any favorites in your list yet.</p>
+              </div>
+              <div class="profile">
+                <div id="triangle-profile"></div>
+                <h6>Sign In</h6>
+                <form action="#" method="GET" class="sign-in">
+                  <label for="email">E-mail</label>
+                  <input
+                    type="text"
+                    name="username"
+                    required="required"
+                    placeholder="your@email.com"
+                    id="email"
+                  />
+                  <label for="password">Password</label>
+                  <input
+                    type="password"
+                    name="password"
+                    required="required"
+                    placeholder="* * * * * * * *"
+                    id="password"
+                  />
+                </form>
+                <div>
+                  <a href="" id="p1">Forgot your password?</a>
+                  <button id="sign-in" type="button">SIGN IN</button>
+                  <p class="p2">
+                    If you don't have an account, you can create on at checkout
+                  </p>
+                </div>
+              </div>
+
               <div class="basket">
-                <div id="triangle"></div>
+                <div id="triangle-basket"></div>
                 <h6>Basket preview</h6>
                 <div class="preview-wrapper">
                   <figure class="jacket-preview">
@@ -124,9 +160,7 @@
                     </table>
                   </div>
                 </div>
-                <a href="basket.html" id="proceed-basket"
-                  >Proceed to checkout</a
-                >
+                <a href="basket.html" id="proceed-basket">Proceed to Basket</a>
               </div>
             </div>
           </div>
@@ -385,6 +419,7 @@
               </li>
               <li>
                 <div class="customer-review">
+                  
                   <figure><img src="images\Ernest.png" alt="" /></figure>
                   <div class="review-comment">
                     <div class="star-wrapper">
@@ -414,7 +449,8 @@
               </li>
               <li>
                 <div class="customer-review">
-                  <figure><img src="images\Virginia.png" alt="" /></figure>
+                  
+                  <!-- <figure><img src="images\Virginia.png" alt="" /></figure>
                   <div class="review-comment">
                     <div class="star-wrapper">
                       <figure>
@@ -438,7 +474,7 @@
                       Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                       Architecto, similique? Temporibus adipisci.
                     </p>
-                  </div>
+                  </div> -->
                 </div>
               </li>
               <li>
@@ -504,6 +540,7 @@
                 </div>
               </li>
             </ul>
+            <div id="triangle-reviews"></div>
           </div>
         </section>
         <div class="image">
