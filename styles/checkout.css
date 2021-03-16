@@ -25,7 +25,7 @@ body * {
 --------------------*/
 #previous {
   position: relative;
-  top: 170px;
+  top: 100px;
   left: 7.5%;
   font-family: "montserrat";
   font-size: 1.25rem;
@@ -45,19 +45,17 @@ body * {
   box-shadow: none;
 }
 .logo {
-  max-width: 300px;
-  margin: 40px auto 20px auto;
-  margin-top: 40px;
-  margin-bottom: 20px;
+  max-width: 200px;
+  margin: 20px auto 20px auto;
 }
 #logo {
-  max-width: 300px;
+  max-width: 200px;
   display: inline-block;
 }
 /* Main 
 --------------------*/
 main {
-  width: 70%;
+  width: 60%;
   margin: auto;
   background-color: white;
   padding-bottom: 40px;
@@ -70,11 +68,11 @@ h2 {
   font-family: "century gothic";
   font-size: 1.875rem;
   background-color: #5361757d;
-  padding: 14px 0px 14px 20px;
+  padding: 14px 0px 14px 40px;
   margin-bottom: 0;
 }
 h1 {
-  margin-top: 40px;
+  margin-top: 30px;
   margin-bottom: 40px;
 }
 h2 {
@@ -93,10 +91,11 @@ fieldset.personalia {
   padding: 0;
   border: none;
   margin-bottom: 70px;
-  width: 40%;
+  width: 500px;
 }
 aside.account {
-  width: 30%;
+  width: 33%;
+  margin-right: 50px;;
 }
 input[type="checkbox"] {
   display: none;
@@ -120,7 +119,7 @@ input[type="checkbox"] {
 }
 fieldset.account {
   border: 3px solid #5361757d;
-  margin-top: 50px;
+  margin-top: 70px;
   padding-bottom: 50px;
   padding: 10px 50px 50px 50px
 }

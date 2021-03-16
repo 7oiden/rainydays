@@ -682,16 +682,16 @@ a > .chat:hover {
   box-sizing: border-box;
   height: 48px;
   min-width: 400px;
-  border: solid 2px;
-  border-color: #172940bf;
+  border: solid 3px;
+  border-color: #172940;
   border-radius: 0;
   font-family: "montserrat";
   font-size: 1.25rem;
   padding-left: 15px;
-  background-color: "fff";
+  background-color: #fff;
 }
 #email:focus {
-  border-color: #172940;
+  border-color: var(--yellow);
 }
 #join {
   background-color: #172940;

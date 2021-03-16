@@ -16,7 +16,7 @@ function validateForm(event) {
   }
   if (validateEmail(email.value)) {
     label.style.display = "none";
-    container.innerHTML = `<label id="success" for="newsletter">Subscription was successfull!</label>`;
+    container.innerHTML = `<label id="success" for="newsletter">Subscription successfull!</label>`;
   }
 }
 

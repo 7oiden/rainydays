@@ -219,32 +219,40 @@
         </section>
         <section class="sign-in">
           <h2>Already a Customer?</h2>
-          <form action="#" method="GET" class="sign-in">
-            <label for="email">E-mail</label>
-            <input
-              type="text"
-              name="username"
-              required="required"
-              placeholder="your@email.com"
-              id="email"
-            />
-            <label for="password">Password</label>
-            <input
-              type="password"
-              name="password"
-              required="required"
-              placeholder="* * * * * * * *"
-              id="password"
-            />
-          </form>
-          <div>
-            <a href="" id="p1">Forgot your password?</a>
+          <div class="form-wrapper">
+            <form action="#" method="GET" class="sign-in">
+              <label for="choose" class="label_2">E-mail</label>
+              <input
+                type="text"
+                name="choose"
+                class="box password"
+                id="choose-password"
+                placeholder="your@email.com"
+              />
+              <div class="error-message" id="enter-email-error">
+                Please enter a valid e-mail address
+              </div>
+              <label for="confirm" class="label_2">Password</label>
+              <input
+                type="password"
+                name="confirm"
+                class="box password"
+                id="confirm-password"
+                placeholder="Your password"
+              />
+              <div class="error-message" id="enter-password-error">
+                Password or/and e-mail is inncorrect
+              </div>
+            </form>
+            <div>
+              <a href="" id="p1">Forgot your password?</a>
 
-            <button id="sign-in" type="button">SIGN IN</button>
-            <p id="p2">Don't have an account?</p>
-            <p id="p3">
-              You can create one at <a href="checkout.html">checkout</a>
-            </p>
+              <button id="sign-in" type="button">SIGN IN</button>
+
+              <p id="p3">
+                If you don't have an account, you can create one at checkout
+              </p>
+            </div>
           </div>
         </section>
       </div>

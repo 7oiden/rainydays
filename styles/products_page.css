@@ -997,7 +997,7 @@ a > .chat:hover {
   border-left: 20px solid #5361757d;
   border-right: 5px solid #5361757d;
   border-bottom: 5px solid #5361757d;
-  border-radius: 0 0 15px 15px;
+  border-radius: 15px 0 15px 15px;
 }
 .reviews ul {
   list-style: none;
