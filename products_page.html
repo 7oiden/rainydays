@@ -42,15 +42,8 @@
       <div class="sticky">
         <nav aria-label="icons" class="icons">
           <div class="icon-wrapper">
-            <div class="icons home">
-              <a href="index.html" class="icons">
-                <figure class="icons">
-                  <img src="images\icons\home.svg" alt="Home icon" />
-                  <figcaption class="label">Home</figcaption>
-                </figure>
-              </a>
-            </div>
-            <div class="mobile-wrapper">
+            <!-- <div class="mobile-wrapper"> -->
+            <a href="index.html" id="logo-wrapping">
               <figure class="logo">
                 <img
                   id="logo"
@@ -58,47 +51,86 @@
                   alt="Rainydays logo"
                 />
               </figure>
-              <div class="search">
-                <form class="search">
-                  <input
-                    id="search"
-                    type="text"
-                    placeholder="Search Products"
-                  />
-                  <label for="search" id="search-label"
-                    ><img src="images\icons\search.svg"
-                  /></label>
-                </form>
-              </div>
-              <div class="icons">
-                <a href="index.html" class="icons" id="mobile-home">
-                  <figure class="icons">
-                    <img src="images\icons\home.svg" alt="Home icon" />
-                    <figcaption class="label">Home</figcaption>
+            </a>
+            <a href="index.html" class="icons" id="home-wrapping">
+              <figure class="icons" id="home-icon">
+                <img src="images\icons\home.svg" alt="Home icon" />
+                <figcaption class="label">Home</figcaption>
+              </figure>
+            </a>
+            <div class="search">
+              <form class="search">
+                <input id="search" type="text" placeholder="Search Products" />
+                <label for="search" id="search-label"
+                  ><img src="images\icons\search.svg"
+                /></label>
+              </form>
+            </div>
+
+            <div class="icons">
+              <a href="index.html" class="icons" id="mobile-home">
+                <figure class="icons">
+                  <img src="images\icons\home.svg" alt="Home icon" />
+                  <figcaption class="label">Home</figcaption>
+                </figure>
+              </a>
+              <a href="index.html" class="icons"
+                ><figure class="icons fpb">
+                  <img src="images\icons\favorite.svg" alt="Favorites icon" />
+                  <figcaption class="label">Favorites</figcaption>
+                </figure></a
+              >
+              <a href="index.html" class="icons"
+                ><figure class="icons fpb">
+                  <img src="images\icons\profile.svg" alt="Profile icon" />
+                  <figcaption class="label">Profile</figcaption>
+                </figure></a
+              >
+              <a href="#" class="icons" id="basket-icon"
+                ><figure class="icons fpb">
+                  <img src="images\icons\basket.svg" alt="Basket icon" />
+                  <figcaption class="label">Basket</figcaption>
+                </figure></a
+              >
+              <div id="counter">1</div>
+              
+              <div class="basket">
+                <div id="triangle"></div>
+                <h6>Basket preview</h6>
+                <div class="preview-wrapper">
+                  <figure class="jacket-preview">
+                    <img src="images\blue.jpg" alt="" />
                   </figure>
-                </a>
-                <a href="index.html" class="icons"
-                  ><figure class="icons fpb">
-                    <img src="images\icons\favorite.svg" alt="Favorites icon" />
-                    <figcaption class="label">Favorites</figcaption>
-                  </figure></a
-                >
-                <a href="index.html" class="icons"
-                  ><figure class="icons fpb">
-                    <img src="images\icons\profile.svg" alt="Profile icon" />
-                    <figcaption class="label">Profile</figcaption>
-                  </figure></a
-                >
-                <a href="basket.html" class="icons"
-                  ><figure class="icons fpb">
-                    <img src="images\icons\basket.svg" alt="Basket icon" />
-                    <figcaption class="label">Basket</figcaption>
-                    <div id="counter">1</div>
-                  </figure></a
+                  <div class="preview-info">
+                    <p id="preview-heading">Rocky Mountains</p>
+                    <p>by Rainy Days</p>
+                    <table class="summary">
+                      <tr>
+                        <th scope="row">Size:</th>
+                        <td>M</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Color:</th>
+                        <td>Blue</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Items:</th>
+                        <td>1</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Cost:</th>
+                        <td>49$</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+                <a href="basket.html" id="proceed-basket"
+                  >Proceed to checkout</a
                 >
               </div>
             </div>
           </div>
+          <!-- </div> -->
         </nav>
         <nav aria-label="menu" class="main-menu">
           <div class="menu-wrapper">
@@ -172,10 +204,11 @@
         <div class="breadcrumb">
           <a href="index.html" class="previous"> Home</a>
           <span class="angle">&gt; &nbsp;</span>
-          <a href="products_overview.html" class="previous">
-            Products Overview</a
-          ><span class="angle">&gt; &nbsp;</span>
-          <a href="products_page.html" class="current"> Rocky Mountains</a>
+          <a href="products_overview.html" class="previous"
+            >Products Overview</a
+          >
+          <span class="angle">&gt; &nbsp;</span>
+          <a href="Skiing.html" class="current">Rocky Mountains</a>
         </div>
       </nav>
     </header>
@@ -208,24 +241,26 @@
                   </figure>
                 </div>
                 <div class="rating-wrapper">
-                  <ul class="list-inline rating">
-                    <li>
-                      <i class="fa fa-star"></i>
-                    </li>
-                    <li>
-                      <i class="fa fa-star"></i>
-                    </li>
-                    <li>
-                      <i class="fa fa-star"></i>
-                    </li>
-                    <li>
-                      <i class="fa fa-star"></i>
-                    </li>
-                    <li>
-                      <i class="fa fa-star-half-alt"></i>
-                    </li>
-                  </ul>
-                  <p id="rating"><a href="#">4.7 (5 ratings)</a></p>
+                  <a href="#" id="review-link">
+                    <ul class="list-inline rating">
+                      <li>
+                        <i class="fa fa-star"></i>
+                      </li>
+                      <li>
+                        <i class="fa fa-star"></i>
+                      </li>
+                      <li>
+                        <i class="fa fa-star"></i>
+                      </li>
+                      <li>
+                        <i class="fa fa-star"></i>
+                      </li>
+                      <li>
+                        <i class="fa fa-star-half-alt"></i>
+                      </li>
+                    </ul>
+                    <p id="rating">4.7 (5 ratings)</p>
+                  </a>
                 </div>
               </div>
             </div>
@@ -315,6 +350,161 @@
               </div>
             </div>
           </div>
+
+          <div class="reviews">
+            <h6>Costumer Reviews</h6>
+            <ul>
+              <li>
+                <div class="customer-review">
+                  <figure><img src="images\William.png" alt="" /></figure>
+                  <div class="review-comment">
+                    <div class="star-wrapper">
+                      <figure>
+                        <img src="images\icons\star-yellow.png" alt="" />
+                      </figure>
+                      <figure>
+                        <img src="images\icons\star-yellow.png" alt="" />
+                      </figure>
+                      <figure>
+                        <img src="images\icons\star-yellow.png" alt="" />
+                      </figure>
+                      <figure>
+                        <img src="images\icons\star-yellow.png" alt="" />
+                      </figure>
+                      <figure>
+                        <img src="images\icons\star-yellow.png" alt="" />
+                      </figure>
+                    </div>
+                    <p class="review-heading">Great product!</p>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Architecto, similique? Temporibus adipisci.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="customer-review">
+                  <figure><img src="images\Ernest.png" alt="" /></figure>
+                  <div class="review-comment">
+                    <div class="star-wrapper">
+                      <figure>
+                        <img src="images\icons\star-yellow.png" alt="" />
+                      </figure>
+                      <figure>
+                        <img src="images\icons\star-yellow.png" alt="" />
+                      </figure>
+                      <figure>
+                        <img src="images\icons\star-yellow.png" alt="" />
+                      </figure>
+                      <figure>
+                        <img src="images\icons\star-yellow.png" alt="" />
+                      </figure>
+                      <figure>
+                        <img src="images\icons\star-yellow.png" alt="" />
+                      </figure>
+                    </div>
+                    <p class="review-heading">Highly recommended</p>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Architecto, similique? Temporibus adipisci.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="customer-review">
+                  <figure><img src="images\Virginia.png" alt="" /></figure>
+                  <div class="review-comment">
+                    <div class="star-wrapper">
+                      <figure>
+                        <img src="images\icons\star-yellow.png" alt="" />
+                      </figure>
+                      <figure>
+                        <img src="images\icons\star-yellow.png" alt="" />
+                      </figure>
+                      <figure>
+                        <img src="images\icons\star-yellow.png" alt="" />
+                      </figure>
+                      <figure>
+                        <img src="images\icons\star-yellow.png" alt="" />
+                      </figure>
+                      <figure>
+                        <img src="images\icons\star-yellow.png" alt="" />
+                      </figure>
+                    </div>
+                    <p class="review-heading">My new favorite rain jacket</p>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Architecto, similique? Temporibus adipisci.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="customer-review">
+                  <figure><img src="images\Emily.png" alt="" /></figure>
+                  <div class="review-comment">
+                    <div class="star-wrapper">
+                      <figure>
+                        <img src="images\icons\star-yellow.png" alt="" />
+                      </figure>
+                      <figure>
+                        <img src="images\icons\star-yellow.png" alt="" />
+                      </figure>
+                      <figure>
+                        <img src="images\icons\star-yellow.png" alt="" />
+                      </figure>
+                      <figure>
+                        <img src="images\icons\star-yellow.png" alt="" />
+                      </figure>
+                      <figure>
+                        <img src="images\icons\star-yellow.png" alt="" />
+                      </figure>
+                    </div>
+                    <p class="review-heading">
+                      I never go on a hike without it
+                    </p>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Architecto, similique? Temporibus adipisci.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="customer-review">
+                <div class="customer-review">
+                  <figure><img src="images\Herman.png" alt="" /></figure>
+                  <div class="review-comment">
+                    <div class="star-wrapper">
+                      <figure>
+                        <img src="images\icons\star-yellow.png" alt="" />
+                      </figure>
+                      <figure>
+                        <img src="images\icons\star-yellow.png" alt="" />
+                      </figure>
+                      <figure>
+                        <img src="images\icons\star-yellow.png" alt="" />
+                      </figure>
+                      <figure>
+                        <img src="images\icons\star-yellow.png" alt="" />
+                      </figure>
+                      <figure>
+                        <img src="images\icons\star-yellow.png" alt="" />
+                      </figure>
+                    </div>
+                    <p class="review-heading">
+                      Rainy Days keeps their promise.
+                    </p>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Architecto, similique? Temporibus adipisci.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
         </section>
         <div class="image">
           <img
@@ -360,71 +550,6 @@
             </div>
           </a>
         </div>
-      </div>
-      <div class="reviews">
-        <h6>Costumer Reviews</h6>
-        <ul>
-          <li>
-            <div class="customer-review">
-              <figure><img src="images\William.png" alt="" /></figure>
-              <div class="review-comment">
-                <p>Great Product!</p>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Architecto, similique? Temporibus adipisci.
-                </p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="customer-review">
-              <figure><img src="images\Ernest.png" alt="" /></figure>
-              <div class="review-comment">
-              <p>Great Product!</p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Architecto, similique? Temporibus adipisci.
-              </p>
-            </div>
-            </div>
-          </li>
-          <li>
-            <div class="customer-review">
-              <figure><img src="images\Virginia.png" alt="" /></figure>
-              <div class="review-comment">
-              <p>Great Product!</p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Architecto, similique? Temporibus adipisci.
-              </p>
-            </div>
-            </div>
-          </li>
-          <li>
-            <div class="customer-review">
-              <figure><img src="images\Emily.png" alt="" /></figure>
-              <div class="review-comment">
-              <p>Great Product!</p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Architecto, similique? Temporibus adipisci.
-              </p>
-            </div>
-            </div>
-          </li>
-          <li class="customer-review">
-            <div class="customer-review">
-              <figure><img src="images\Herman.png" alt="" /></figure>
-              <div class="review-comment">
-              <p>Great Product!</p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Architecto, similique? Temporibus adipisci.
-              </p>
-            </div>
-            </div>
-          </li>
-        </ul>
       </div>
     </main>
 
@@ -490,5 +615,6 @@
         </ul>
       </section>
     </footer>
+    <script src="js/product_page.js"></script>
   </body>
 </html>
