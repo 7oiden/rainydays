@@ -43,15 +43,8 @@
       <div class="sticky">
         <nav aria-label="icons" class="icons">
           <div class="icon-wrapper">
-            <div class="icons home">
-              <a href="index.html" class="icons">
-                <figure class="icons">
-                  <img src="images\icons\home.svg" alt="Home icon" />
-                  <figcaption class="label">Home</figcaption>
-                </figure>
-              </a>
-            </div>
-            <div class="mobile-wrapper">
+            <!-- <div class="mobile-wrapper"> -->
+              <a href="index.html" id="logo-wrapping">
               <figure class="logo">
                 <img
                   id="logo"
@@ -59,6 +52,13 @@
                   alt="Rainydays logo"
                 />
               </figure>
+              </a>
+              <a href="index.html" class="icons" id="home-wrapping">
+              <figure class="icons" id="home-icon">
+                  <img src="images\icons\home.svg" alt="Home icon" />
+                  <figcaption class="label">Home</figcaption>
+                </figure>
+              </a>
               <div class="search">
                 <form class="search">
                   <input
@@ -95,11 +95,13 @@
                   ><figure class="icons fpb">
                     <img src="images\icons\basket.svg" alt="Basket icon" />
                     <figcaption class="label">Basket</figcaption>
+                    
                   </figure></a
                 >
+                <div id="counter">1</div>
               </div>
             </div>
-          </div>
+          <!-- </div> -->
         </nav>
         <nav aria-label="menu" class="main-menu">
           <div class="menu-wrapper">

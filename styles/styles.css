@@ -65,22 +65,28 @@ nav.icons {
   display: flex;
   justify-content: space-between;
   width: 85%;
-  align-items: flex-end;
+  align-items: center;
   margin: 0 auto 0 auto;
+  /* background-color: violet; */
 }
-.mobile-wrapper {
+/* .mobile-wrapper {
   width: 90%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
-}
-div.icons {
+} */
+/* div.icons {
   margin-bottom: 20px;
+} */
+div.icons {
+  position: relative;
+}
+#home-wrapping {
+  display: none;
 }
 a.icons {
   display: inline-block;
-  color: #172940;
   font-size: 1rem;
   text-decoration: none;
 }
@@ -95,7 +101,7 @@ figure.icons {
 figure.fpb {
   padding-left: 30px;
 }
-figcaption.label {
+.label {
   position: relative;
   top: -5px;
   margin-top: 0;
@@ -109,8 +115,8 @@ figcaption.label {
   margin: 10px;
 }
 #logo {
-  display: inline-block;
-  height: 100px;
+  display: block;
+  height: 110px;
   margin: 0;
   padding: 0;
 }
@@ -122,24 +128,52 @@ form.search {
 }
 #search {
   box-sizing: border-box;
-  border: 2px solid #000;
+  background-color: #f5f5f5;
+  border: 3px solid #f2b705;
   border-radius: 0;
   min-width: 500px;
   outline: 0;
   font-family: "montserrat";
   font-size: 1.25rem;
   padding: 12px 0 12px 15px;
-  margin-bottom: 30px;
-}
-#search:hover {
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 #search:focus {
-  background-color: #f5f5f5;
+  background-color: #fff;
+  border: 3px solid #000;
 }
 #search-label {
   position: absolute;
-  top: 7px;
+  top: 22px;
   right: 10px;
+}
+#counter {
+  animation: shake-animation 5s ease;
+  transform-origin: 50% 50%;
+  color: #fff;
+  font-weight: bold;
+  position: absolute;
+  top: 5px;
+  left: 245px;
+  background-color: #b05625;
+  text-align: center;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  z-index: 999999999;
+  display: inline-block;
+}
+
+@keyframes shake-animation {
+   0% { transform:translate(0,0) }
+  1.78571% { transform:translate(5px,0) }
+  3.57143% { transform:translate(0,0) }
+  5.35714% { transform:translate(5px,0) }
+  7.14286% { transform:translate(0,0) }
+  8.92857% { transform:translate(5px,0) }
+  10.71429% { transform:translate(0,0) }
+  100% { transform:translate(0,0) }
 }
 nav.main-menu {
   font-family: "montserrat";

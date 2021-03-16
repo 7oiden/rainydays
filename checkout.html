@@ -64,7 +64,7 @@
                 class="box"
               />
               <div class="error-message" id="lastname-error">
-                Your last name must be at least 5 characters
+                Your last name must be at least 3 characters
               </div>
               <label for="street-address" class="label">Street Address</label>
               <input
@@ -127,44 +127,61 @@
               <div class="error-message" id="email-error">
                 Please enter a valid e-mail adress
               </div>
+              <div class="success"></div>
               <button id="submit" type="submit" name="submit" value="submit">
                 SUBMIT
               </button>
             </form>
           </fieldset>
           <aside class="account">
-            <form action="profile.php" class="custom-checkbox" id="subscribe">
-              <input
-                type="checkbox"
-                name="newsletter"
-                value="Subscribe"
-                id="check1"
-              />
-              <label for="check1"> Subscribe to our Newsletter</label>
-            </form>
             <fieldset class="account">
               <legend>Optional</legend>
-              <form action="login.php">
-                <label for="choose" class="label_2">Choose password</label>
+              <form id="password-field">
+                <label for="choose" class="label_2"
+                  >Choose password (Minimum 8 characters)</label
+                >
                 <input
                   type="password"
                   name="choose"
-                  placeholder="* * * * * * * *"
                   class="box password"
-                  id="choose"
+                  id="choose-password"
+                  placeholder="Choose password"
                 />
+                <div class="error-message" id="choose-password-error">
+                  Password must be at least 8 characters
+                </div>
                 <label for="confirm" class="label_2">Confirm password</label>
                 <input
                   type="password"
                   name="confirm"
-                  placeholder="* * * * * * * *
-              "
                   class="box password"
-                  id="confirm"
+                  id="confirm-password"
+                  placeholder="Confirm password"
                 />
+                <div class="error-message" id="confirm-password-error">
+                  Passwords do not match
+                </div>
+                <div
+                  action="profile.php"
+                  class="custom-checkbox"
+                  id="subscribe"
+                >
+                  <input
+                    type="checkbox"
+                    name="newsletter"
+                    value="Subscribe"
+                    id="check1"
+                  />
+                  <label for="check1"> Subscribe to our Newsletter</label>
+                </div>
+                <div id="password-success"></div>
+                <button id="create-account" type="button">
+                  CREATE ACCOUNT
+                </button>
               </form>
             </fieldset>
-            <form
+
+            <!-- <form
               action="profile.php"
               class="custom-checkbox"
               id="create-account"
@@ -176,7 +193,8 @@
                 id="check2"
               />
               <label for="check2">Create Account</label>
-            </form>
+              
+            </form> -->
           </aside>
         </div>
       </section>
