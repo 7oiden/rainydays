@@ -34,8 +34,8 @@
     <header>
       <div class="campaign">
         <ul class="campaign">
-          <li>Now: -20% on your first order</li>
-          <li>Free shipping on orders +99.99$</li>
+          <li>Shop now: high quality rainjackets</li>
+          <li>Special offer: -20% on your first order</li>
           <li>Money back guarantee</li>
         </ul>
       </div>
@@ -659,19 +659,27 @@
       </div>
       <div class="bottom-wrapper">
         <div class="newsletter">
-          <label id="label" for="newsletter"
-            >Subscribe to our Newsletter:</label
-          >
-          <form action="form-success.php" method="get" class="newsletter">
+          <div class="label-container">
+            <label id="label" for="newsletter"
+              >Subscribe to our Newsletter:</label
+            >
+          </div>
+          <form method="get" class="newsletter">
             <input
-              id="newsletter"
+              id="emails"
               type="text"
               name="email"
-              placeholder="Your e-mail"
+              placeholder="your@email.com"
             />
-            <input id="join" type="submit" name="subscribe" value="JOIN" />
+            <button id="join" type="submit" name="subscribe" value="JOIN">
+              JOIN
+            </button>
           </form>
+          <div class="error-message" id="email-error">
+            Please enter a valid e-mail adress
+          </div>
         </div>
+
         <div class="large-buttons">
           <a href="about.html"
             ><div class="contact">
@@ -682,6 +690,8 @@
               />
             </div>
           </a>
+          <!-- <label class="label" for="contact">Contact info</label></a
+          > -->
           <a id="margin" href=""
             ><div class="chat">
               <img
@@ -690,6 +700,7 @@
                 alt="Live chat icon"
               />
             </div>
+            <!-- <label class="label" for="chat">Live Chat</label> -->
           </a>
         </div>
       </div>
@@ -756,5 +767,6 @@
         </ul>
       </section>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

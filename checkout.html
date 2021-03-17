@@ -44,7 +44,7 @@
         <div class="information">
           <fieldset class="personalia">
             <form id="personalia">
-              <label for="first-name" class="label">First Name</label>
+              <label for="first-name" class="label" id="first-label">First Name</label>
               <input
                 type="text"
                 name="first-name"
@@ -127,10 +127,11 @@
               <div class="error-message" id="email-error">
                 Please enter a valid e-mail adress
               </div>
-              <div class="success"></div>
+              
               <button id="submit" type="submit" name="submit" value="submit">
-                SUBMIT
+                CONFIRM INPUT
               </button>
+              <div class="success"></div>
             </form>
           </fieldset>
           <aside class="account">
@@ -174,10 +175,10 @@
                   />
                   <label for="check1"> Subscribe to our Newsletter</label>
                 </div>
-                <div id="password-success"></div>
                 <button id="create-account" type="button">
                   CREATE ACCOUNT
                 </button>
+                <div id="password-success"></div>
               </form>
             </fieldset>
 
@@ -265,7 +266,7 @@
           </section>
         </div>
         <div class="buttons">
-          <a href="checkout_complete.html" id="yellow">Confirm Purchase</a>
+          <a href="checkout_complete.html" id="confirm-purchase">Confirm Purchase</a>
         </div>
       </section>
     </main>

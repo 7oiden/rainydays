@@ -1,21 +1,21 @@
-const logo = document.querySelector("#logo-wrapping");
-const homeIcon = document.querySelector("#home-wrapping");
+// const logo = document.querySelector("#logo-wrapping");
+// const homeIcon = document.querySelector("#home-wrapping");
 
-function hideOnScroll() {
-  const scrolledY = window.scrollY;
+// function hideOnScroll() {
+//   const scrolledY = window.scrollY;
 
-  if (scrolledY > 100) {
-    logo.style.display = "none";
-    homeIcon.style.display = "block";
-  } else {
-    logo.style.display = "block";
-    homeIcon.style.display = "none";
-  }
-//   if ((scrolledY > 100) && (reviews.style.display === "block")) {
-//       reviews.style.zIndex = "1";
+//   if (scrolledY > 100) {
+//     logo.style.display = "none";
+//     homeIcon.style.display = "block";
+//   } else {
+//     logo.style.display = "block";
+//     homeIcon.style.display = "none";
+//   }
+//   //   if ((scrolledY > 100) && (reviews.style.display === "block")) {
+//   //       reviews.style.zIndex = "1";
+//   // }
 // }
-}
-window.addEventListener("scroll", hideOnScroll);
+// window.addEventListener("scroll", hideOnScroll);
 
 const link = document.querySelector("#review-link");
 const reviews = document.querySelector(".reviews");
@@ -105,14 +105,16 @@ function favoritesPreview() {
 
 favoritesIcon.addEventListener("click", favoritesPreview);
 
-
 //Profile
 
 const email = document.querySelector("#email");
 const password = document.querySelector("#password");
 const form = document.querySelector("#login");
-const loginSuccess = document.querySelector("#login-message");
+const loginSuccess = document.querySelector(".successful-login");
 const inputBox = document.querySelector(".input-box");
+const loginContainer = document.querySelector(".form-wrapper");
+const signOut = document.querySelector("#sign-out");
+const profileContainer = document.querySelector(".profile");
 
 const emailError = document.querySelector("#enter-email-error");
 const passwordError = document.querySelector("#enter-password-error");
@@ -152,9 +154,11 @@ function validateLogin(event) {
     validateEmail(email.value) === true &&
     checkLength(password.value, 7) === true
   ) {
-    loginSuccess.innerHTML = `<p id="p2">Welcome back <em>Jane!</em> You are now logged in!</p>`;
+    loginSuccess.style.display = "block";
+    loginContainer.style.display = "none";
+    profileContainer.style.height = "350px";
   } else {
-    loginSuccess.innerHTML = "";
+    loginSuccess.style.display = "none";
   }
 }
 
@@ -193,3 +197,13 @@ function checkInput() {
 email.addEventListener("keyup", checkInput);
 password.addEventListener("keyup", checkInput);
 
+function logout() {
+  console.log("hi");
+  if (loginSuccess.style.display === "block") {
+    loginSuccess.style.display = "none";
+    loginContainer.style.display = "block";
+    profileContainer.style.height = "550px";
+  }
+}
+
+signOut.addEventListener("click", logout);

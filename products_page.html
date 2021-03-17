@@ -34,8 +34,8 @@
     <header>
       <div class="campaign">
         <ul class="campaign">
-          <li>Now: -20% on your first order</li>
-          <li>Free shipping on orders +99.99$</li>
+          <li>Shop now: high quality rainjackets</li>
+          <li>Special offer: -20% on your first order</li>
           <li>Money back guarantee</li>
         </ul>
       </div>
@@ -105,39 +105,49 @@
                 <div id="triangle-profile"></div>
                 <h6>Sign In</h6>
                 <div class="form-wrapper">
-                <form class="sign-in" id="login">
-                  <label for="email" class="label_2">E-mail</label>
-                  <input
-                    type="text"
-                    name="email"
-                    class="input-box"
-                    id="email"
-                    placeholder="your@email.com"
-                  />
-                  <div class="error-message" id="enter-email-error">
-                    Please enter a valid e-mail address
+                  <form class="sign-in" id="login">
+                    <label for="email" class="label_2">E-mail</label>
+                    <input
+                      type="text"
+                      name="email"
+                      class="input-box"
+                      id="email"
+                      placeholder="your@email.com"
+                    />
+                    <div class="error-messages" id="enter-email-error">
+                      Please enter a valid e-mail address
+                    </div>
+                    <label for="password" class="label_2" id="password-label"
+                      >Password</label
+                    >
+                    <input
+                      type="password"
+                      name="password"
+                      class="input-box"
+                      id="password"
+                      placeholder="Your password"
+                    />
+                    <div class="error-messages" id="enter-password-error">
+                      Password or/and e-mail is incorrect
+                    </div>
+                    <a href="" id="p1">Forgot your password?</a>
+                    <button id="sign-in" type="submit" name="submit">
+                      SIGN IN
+                    </button>
+                  </form>
+                  <div>
+                    <p class="p2">
+                      If you don't have an account, you can create on at
+                      checkout
+                    </p>
                   </div>
-                  <label for="password" class="label_2" id="password-label">Password</label>
-                  <input
-                    type="password"
-                    name="password"
-                    class="input-box"
-                    id="password"
-                    placeholder="Your password"
-                  />
-                  <div class="error-message" id="enter-password-error">
-                    Password or/and e-mail is incorrect
-                  </div>
-                  <a href="" id="p1">Forgot your password?</a>
-                  <button id="sign-in" type="submit" name="submit">
-                    SIGN IN
-                  </button>
-                </form>
-                <div>
-                  <p class="p2">
-                    If you don't have an account, you can create on at checkout
-                  </p>
                 </div>
+                <div class="successful-login">
+                  <p class="p2">Welcome back <em>Jane Doe!</em></p>
+                  <p class="p3">
+                      You have no previous orders
+                    </p>
+                  <a id="sign-out">SIGN OUT</a>
                 </div>
               </div>
 
@@ -161,17 +171,17 @@
                         <td>Blue</td>
                       </tr>
                       <tr>
-                        <th scope="row">Items:</th>
+                        <th scope="row">Quantity:</th>
                         <td>1</td>
                       </tr>
                       <tr>
-                        <th scope="row">Cost:</th>
+                        <th scope="row">Price:</th>
                         <td>49$</td>
                       </tr>
                     </table>
                   </div>
                 </div>
-                <a href="basket.html" id="proceed-basket">Proceed to Basket</a>
+                <a href="basket.html" id="proceed-basket">PROCEED TO BASKET</a>
               </div>
             </div>
           </div>
@@ -563,20 +573,29 @@
         </div>
       </div>
       <div class="bottom-wrapper">
+
         <div class="newsletter">
-          <label id="label" for="newsletter"
-            >Subscribe to our Newsletter:</label
-          >
-          <form action="form-success.php" method="get" class="newsletter">
+          <div class="label-container">
+            <label id="label" for="newsletter"
+              >Subscribe to our Newsletter:</label
+            >
+          </div>
+          <form method="get" class="newsletter">
             <input
-              id="newsletter"
+              id="emails"
               type="text"
               name="email"
-              placeholder="Your e-mail"
+              placeholder="your@email.com"
             />
-            <input id="join" type="submit" name="subscribe" value="JOIN" />
+            <button id="join" type="submit" name="subscribe" value="JOIN">
+              JOIN
+            </button>
           </form>
+          <div class="error-message" id="email-error">
+            Please enter a valid e-mail adress
+          </div>
         </div>
+
         <div class="large-buttons">
           <a href="about.html"
             ><div class="contact">
@@ -587,6 +606,8 @@
               />
             </div>
           </a>
+          <!-- <label class="label" for="contact">Contact info</label></a
+          > -->
           <a id="margin" href=""
             ><div class="chat">
               <img
@@ -595,6 +616,7 @@
                 alt="Live chat icon"
               />
             </div>
+            <!-- <label class="label" for="chat">Live Chat</label> -->
           </a>
         </div>
       </div>
@@ -662,6 +684,7 @@
         </ul>
       </section>
     </footer>
+    <script src="js/script.js"></script>
     <script src="js/product_page.js"></script>
   </body>
 </html>

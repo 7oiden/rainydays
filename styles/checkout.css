@@ -13,7 +13,7 @@ html {
 body {
   width: 100%;
   margin: 0;
-  background-color: #f5f5f5;
+  background-color: #e6e6e6;
   color: #172940;
   font-family: "roboto";
   font-size: 1rem;
@@ -46,7 +46,7 @@ body * {
 }
 .logo {
   max-width: 200px;
-  margin: 20px auto 20px auto;
+  margin: 0 auto 20px auto;
 }
 #logo {
   max-width: 200px;
@@ -117,6 +117,22 @@ input[type="checkbox"] {
   font-family: "montserrat";
   font-size: 1.25rem;
 }
+#submit {
+  font-family: "montserrat";
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #aab1bb;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #172940;
+  margin-top: 30px;
+  box-shadow: 0 3px 6px #00000029;
+  transition-property: background-color, box-shadow;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
 fieldset.account {
   border: 3px solid #5361757d;
   margin-top: 70px;
@@ -185,6 +201,9 @@ input.box-short:focus {
   font-weight: bold;
   margin-top: 20px;
   margin-bottom: 3px;
+}
+#first-label {
+  margin-top: 0;
 }
 .label_2 {
   display: block;
@@ -346,19 +365,23 @@ div.buttons {
   margin: 70px auto 20px auto;
   border-radius: 5px;
 }
-#yellow {
+#confirm-purchase {
   transition-property: background-color, box-shadow;
   transition-duration: 0.5s;
   background: #f2b705;
   color: #000;
+  cursor: pointer;
 }
-#yellow:hover {
+#confirm-purchase:hover {
   background-color: #f2b705bf;
   box-shadow: none;
 }
 .success {
   margin-left: 20px;
   margin-bottom: 30px;
+}
+#success {
+  color: green
 }
 #success:before {
   content: "\2714";

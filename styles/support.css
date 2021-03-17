@@ -31,17 +31,18 @@ body * {
   box-shadow: 0 3px 6px #00000029;
   transition-property: background-color, box-shadow;
   transition-duration: 0.5s;
+  cursor: pointer;
 }
 #previous:hover {
   background-color: #aab1bbbf;
   box-shadow: none;
 }
 .logo {
-  max-width: 348px;
+  max-width: 300px;
   margin: 20px auto 20px auto;
 }
 #logo {
-  max-width: 348px;
+  max-width: 300px;
   display: inline-block;
 }
 /* main 
@@ -84,6 +85,7 @@ ul.faq {
   margin-left: 0;
   padding-left: 20px;
 }
+/* bottom wrapper */
 div.bottom-wrapper {
   width: 85%;
   margin: var(--center-align);
@@ -93,55 +95,9 @@ div.bottom-wrapper {
   margin-top: 50px;
   margin: 70px auto 0 auto;
 }
-h1 {
-  font-family: "century gothic";
-  font-size: 1.875rem;
-  color: #172940;
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
-h2 {
-  font-family: "century gothic";
-  font-size: 1.875rem;
-  color: #172940;
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
-h3 {
-  font-family: "montserrat";
-  font-size: 1.25rem;
-  font-weight: 400;
-  color: #172940;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-bottom: 0;
-  text-decoration: underline;
-}
-.returns h3,
-.size-chart h3 {
-  margin-bottom: 5px;
-}
-h4 {
-  margin: 20px 0 10px 0;
-  padding: 0;
-}
-p {
-  color: #536175;
-  margin-top: 5px;
-}
-ul li ul {
-  margin-left: 0;
-  padding-left: 0;
-}
-ul li ul li {
-  font-family: "roboto";
-  color: #536175;
-  font-size: 1rem;
-  list-style: none;
-}
 div.newsletter {
   display: inline-block;
-  margin-left: 10%;
+  margin: 0 auto
 }
 div.large-buttons {
   display: inline-block;
@@ -158,7 +114,7 @@ div.large-buttons {
   background-color: #172940;
   border-radius: 10px;
   box-shadow: 0 3px 6px #00000029;
-  transition-property: background-color, box-shadow;
+  transition-property: background-color;
   transition-duration: 0.5s;
 }
 .chat {
@@ -191,43 +147,67 @@ a > .chat:hover {
 #margin {
   margin-left: 70px;
 }
-.label {
-  display: inline-block;
-  margin-top: 5px;
-}
-#newsletter {
+/* newsletter */
+#email {
   box-sizing: border-box;
   height: 48px;
-  border: solid 2px;
-  border-color: #2f496a;
+  min-width: 400px;
+  border: solid 3px;
+  border-color: #172940;
   border-radius: 0;
   font-family: "montserrat";
   font-size: 1.25rem;
   padding-left: 15px;
+  background-color: #fff;
+}
+#email:focus {
+  border-color: var(--yellow);
 }
 #join {
-  background-color: #2f496a;
+  background-color: #172940;
   font-family: "montserrat";
   font-size: 1.25rem;
   font-weight: 500;
   padding-top: 12px;
   padding-bottom: 12px;
   padding-left: 40px;
-  padding: 12px 15px 12px 15px;
+  padding: 12px 20px 12px 20px;
   border: none;
-  border-radius: 0;
+  border-radius: 0 5px 5px 0;
   color: white;
   margin-left: -7px;
   cursor: pointer;
+  transition-property: background-color;
+  transition-duration: 0.5s;
 }
 #join:hover {
-  opacity: 0.75;
+  background-color: #172940bf;
 }
 #label {
   display: inline-block;
   font-weight: bold;
-  color: #536175;
-  padding-bottom: 5px;
+  color: #172940;
+  padding-bottom: 8px;
+}
+.error-message {
+  visibility: hidden;
+  font-size: 1rem;
+  color: #be3e35;
+  margin-top: 5px;
+}
+.error-message:before {
+  content: "*";
+}
+#success {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: green;
+  position: relative;
+  top: -8px;
+}
+#success:before {
+  content: "\2714";
+  font-size: 2rem;
 }
 /* footer 
 --------------------*/

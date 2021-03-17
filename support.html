@@ -14,20 +14,31 @@
       crossorigin="anonymous"
     ></script>
     <script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:2269204,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 2269204, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
         a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+
+    <script>
+      function goBack() {
+        window.history.back();
+      }
+    </script>
   </head>
 
   <body>
     <header>
-      <a href="index.html" id="previous"> &#10094; &nbsp; Previous page</a>
+      <a id="previous" onclick="goBack()"> &#10094; &nbsp; Previous page</a>
       <figure class="logo">
         <img src="images/rainydays_logo.png" id="logo" />
       </figure>
@@ -143,6 +154,7 @@
           </div>
         </section>
       </div>
+
       <div class="bottom-wrapper">
         <div class="newsletter">
           <label id="label" for="newsletter"
@@ -159,7 +171,7 @@
           </form>
         </div>
         <div class="large-buttons">
-          <a href="about.html"
+          <a href="#"
             ><div class="contact">
               <img
                 id="contact"
@@ -168,8 +180,6 @@
               />
             </div>
           </a>
-          <!-- <label class="label" for="contact">Contact info</label></a
-          > -->
           <a id="margin" href=""
             ><div class="chat">
               <img
@@ -178,7 +188,6 @@
                 alt="Live chat icon"
               />
             </div>
-            <!-- <label class="label" for="chat">Live Chat</label> -->
           </a>
         </div>
       </div>
@@ -246,5 +255,6 @@
         </ul>
       </section>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

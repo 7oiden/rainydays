@@ -304,7 +304,7 @@ div.mobile-menu {
 /* main 
 --------------------*/
 main {
-  background-color: #f5f5f5;
+  background-color: #e6e6e6;
   width: 100%;
   padding-bottom: 40px;
 }
@@ -617,6 +617,8 @@ div.h5 {
   position: relative;
   top: -60px;
 } */
+
+/* bottom wrapper */
 div.bottom-wrapper {
   width: 85%;
   margin: var(--center-align);
@@ -678,7 +680,8 @@ a > .chat:hover {
 #margin {
   margin-left: 70px;
 }
-#email {
+/* newsletter */
+#emails {
   box-sizing: border-box;
   height: 48px;
   min-width: 400px;
@@ -690,7 +693,7 @@ a > .chat:hover {
   padding-left: 15px;
   background-color: #fff;
 }
-#email:focus {
+#emails:focus {
   border-color: var(--yellow);
 }
 #join {

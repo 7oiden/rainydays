@@ -1,6 +1,8 @@
 const form = document.querySelector("#personalia");
 const passwordForm = document.querySelector("#password-field");
 
+const confirm = document.querySelector("#submit");
+
 // const formFields = document.querySelector("form").elements;
 
 const firstName = document.querySelector("#first-name");
@@ -30,9 +32,9 @@ const passwordSuccess = document.querySelector("#password-success");
 
 const createAccount = document.querySelector("#create-account");
 
-// const button = document.querySelector(".submit");
+// const confirmPurchase = document.querySelector("#confirm-purchase");
 
-console.log(formFields);
+// const button = document.querySelector(".submit");
 
 function checkInput() {
   // const code = parseInt(postalCode.value);
@@ -83,20 +85,6 @@ function checkInput() {
     email.style.backgroundColor = "#fff";
     email.style.borderColor = "#5361757d";
   }
-
-  if (
-    checkLength(firstName.value, 2) &&
-    checkLength(lastName.value, 2) &&
-    checkLength(address.value, 4) &&
-    checkLength(city.value, 2) &&
-    postalCode.value.trim().length === 5 &&
-    validateEmail(email.value) === true
-  ) {
-    success.innerHTML = `<p id="success">Input verified, you may now move on to choose shipping method</p>`;
-  } else {
-    success.innerHTML = "";
-  }
-
   if (checkLength(choosePassword.value, 7)) {
     choosePassword.style.backgroundColor = "#10BD0040";
     choosePasswordError.style.display = "none";
@@ -117,10 +105,19 @@ function checkInput() {
     confirmPassword.style.backgroundColor = "#fff";
     confirmPassword.style.borderColor = "#5361757d";
   }
+  if (
+    checkLength(firstName.value, 2) &&
+    checkLength(lastName.value, 2) &&
+    checkLength(address.value, 4) &&
+    checkLength(city.value, 2) &&
+    postalCode.value.trim().length === 5 &&
+    validateEmail(email.value) === true
+  ) {
+    return true;
+  }
 }
 
 // function checkPassword() {}
-
 
 firstName.addEventListener("keyup", checkInput);
 lastName.addEventListener("keyup", checkInput);
@@ -174,8 +171,6 @@ function validateForm(event) {
     postalCode.style.backgroundColor = "#D9210040";
     postalCode.style.borderColor = "red";
   }
-
-
   if (validateEmail(email.value) === true) {
     emailError.style.display = "none";
   } else {
@@ -183,7 +178,13 @@ function validateForm(event) {
     email.style.backgroundColor = "#D9210040";
     email.style.borderColor = "red";
   }
+  if (checkInput() === true) {
+    confirm.style.display = "none";
+    success.innerHTML = `<p id="success">Input saved successfully</p>`;
+  }
 }
+
+form.addEventListener("submit", validateForm);
 
 function validatePassword(event) {
   event.preventDefault();
@@ -213,8 +214,6 @@ function validatePassword(event) {
     confirmPassword.style.borderColor = "red";
   }
 }
-
-form.addEventListener("submit", validateForm);
 
 createAccount.addEventListener("click", validatePassword);
 
