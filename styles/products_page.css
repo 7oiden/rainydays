@@ -206,6 +206,10 @@ form.search {
 }
 
 /* profile preview */
+.form-wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
 #triangle-profile {
   width: 0;
   height: 0;
@@ -218,7 +222,7 @@ form.search {
 .profile {
   background-color: #fff;
   width: 400px;
-  height: 500px;
+  height: 550px;
   position: absolute;
   border-radius: 0 0 15px 15px;
   top: 73px;
@@ -230,13 +234,19 @@ form.search {
   font-family: "roboto";
   font-size: 1.125rem;
   display: block;
-  width: 80%;
+  width: 100%;
   height: 50px;
   border: 2px solid #5361757d;
-  color: #c2c2c2;
+  background-color: #f5f5f5;
+  color: var(--dark-blue);
   padding-left: 15px;
   border-radius: 0;
-  margin-left: 40px;
+  transition-property: background-color, border;
+  transition-duration: 0.5s;
+}
+.sign-in input:focus {
+  background-color: #fff;
+  border: 2px solid #172940;
 }
 #email {
   max-width: 400px;
@@ -249,8 +259,10 @@ form.search {
   font-size: 1rem;
   font-weight: 600;
   color: var(--dark-blue);
-  margin-left: 40px;
   margin-bottom: 5px;
+}
+#password-label {
+  margin-top: 20px;;
 }
 #sign-in {
   font-family: "montserrat";
@@ -275,9 +287,6 @@ form.search {
   background: #172940bf;
   box-shadow: none;
 }
-.sign-in div {
-  text-align: center;
-}
 .sign-in button {
   display: inline-block;
   margin-bottom: 70px;
@@ -289,15 +298,17 @@ form.search {
   font-weight: 600;
 }
 #p1 {
-  display: block;
+  display: inline-block;
   font-family: "roboto";
   font-size: 1rem;
   font-weight: 400;
-  text-align: left;
-  margin-left: 40px;
-  margin-top: 5px;
-  color: #c2c2c2;
-  text-decoration: none;
+  margin-top: 10px;
+  color: #536175;
+  transition-property: color;
+  transition-duration: 0.5s;
+}
+#p1:hover {
+  color: var(--dark-blue)
 }
 .p2 {
   width: 300px;
@@ -670,8 +681,7 @@ h1 {
   font-size: 1.875rem;
   font-weight: 600;
   margin-top: 30px;
-  margin-bottom: 0;
-  
+  margin-bottom: 0; 
 }
 h2 {
   font-family: "montserrat";
@@ -1012,7 +1022,7 @@ h6 {
   font-size: 1.875rem;
   background-color: #5361757d;
   padding: 14px 0px 14px 20px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   margin-top: 0;
 }
 .customer-review {
@@ -1067,6 +1077,15 @@ position: absolute;
 bottom: 50px;
  right: 520px;
   z-index: 999;
+}
+.error-message {
+  font-size: 1rem;
+  color: red;
+  margin-top: 5px;
+  display: none;
+}
+.error-message:before {
+  content: "*";
 }
 /* footer
 --------------------*/

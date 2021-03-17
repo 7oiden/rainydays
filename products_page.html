@@ -100,33 +100,44 @@
                 <h6>Favorites</h6>
                 <p class="p2">You don't have any favorites in your list yet.</p>
               </div>
+
               <div class="profile">
                 <div id="triangle-profile"></div>
                 <h6>Sign In</h6>
-                <form action="#" method="GET" class="sign-in">
-                  <label for="email">E-mail</label>
+                <div class="form-wrapper">
+                <form class="sign-in" id="login">
+                  <label for="email" class="label_2">E-mail</label>
                   <input
                     type="text"
-                    name="username"
-                    required="required"
-                    placeholder="your@email.com"
+                    name="email"
+                    class="input-box"
                     id="email"
+                    placeholder="your@email.com"
                   />
-                  <label for="password">Password</label>
+                  <div class="error-message" id="enter-email-error">
+                    Please enter a valid e-mail address
+                  </div>
+                  <label for="password" class="label_2" id="password-label">Password</label>
                   <input
                     type="password"
                     name="password"
-                    required="required"
-                    placeholder="* * * * * * * *"
+                    class="input-box"
                     id="password"
+                    placeholder="Your password"
                   />
+                  <div class="error-message" id="enter-password-error">
+                    Password or/and e-mail is incorrect
+                  </div>
+                  <a href="" id="p1">Forgot your password?</a>
+                  <button id="sign-in" type="submit" name="submit">
+                    SIGN IN
+                  </button>
                 </form>
                 <div>
-                  <a href="" id="p1">Forgot your password?</a>
-                  <button id="sign-in" type="button">SIGN IN</button>
                   <p class="p2">
                     If you don't have an account, you can create on at checkout
                   </p>
+                </div>
                 </div>
               </div>
 

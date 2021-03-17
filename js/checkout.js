@@ -1,7 +1,7 @@
 const form = document.querySelector("#personalia");
 const passwordForm = document.querySelector("#password-field");
 
-const formFields = document.querySelector("form").elements;
+// const formFields = document.querySelector("form").elements;
 
 const firstName = document.querySelector("#first-name");
 const lastName = document.querySelector("#last-name");
@@ -43,7 +43,7 @@ function checkInput() {
   } else {
     firstName.style.backgroundColor = "#fff";
     firstName.style.borderColor = "#5361757d";
-  } 
+  }
 
   if (checkLength(lastName.value, 2)) {
     lastName.style.backgroundColor = "#10BD0040";
@@ -119,8 +119,7 @@ function checkInput() {
   }
 }
 
-function checkPassword() {}
-
+// function checkPassword() {}
 
 
 firstName.addEventListener("keyup", checkInput);
