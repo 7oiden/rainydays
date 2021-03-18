@@ -33,23 +33,16 @@
   <header>
     <div class="campaign">
       <ul class="campaign">
-        <li>Now: -20% on your first order</li>
-        <li>Free shipping on orders +99.99$</li>
-        <li>Money back guarantee</li>
+        <li><strong>Shop now:</strong> high quality rainjackets</li>
+        <li id="mobile-hide">Special offer: -20% on your first order</li>
+        <li id="mobile-hide">Money back guarantee</li>
       </ul>
     </div>
     <div class="sticky">
       <nav aria-label="icons" class="icons">
         <div class="icon-wrapper">
-          <div class="icons home">
-            <a href="index.html" class="icons">
-              <figure class="icons">
-                <img src="images\icons\home.svg" alt="Home icon" />
-                <figcaption class="label">Home</figcaption>
-              </figure>
-            </a>
-          </div>
-          <div class="mobile-wrapper">
+          <!-- <div class="mobile-wrapper"> -->
+          <a href="index.html" id="logo-wrapping">
             <figure class="logo">
               <img
                 id="logo"
@@ -57,42 +50,143 @@
                 alt="Rainydays logo"
               />
             </figure>
-            <div class="search">
-              <form class="search">
-                <input id="search" type="text" placeholder="Search Products" />
-                <label for="search" id="search-label"
-                  ><img src="images\icons\search.svg"
-                /></label>
-              </form>
+          </a>
+          <a href="index.html" class="icons" id="home-wrapping">
+            <figure class="icons" id="home-icon">
+              <img src="images\icons\home.svg" alt="Home icon" />
+              <figcaption class="label">Home</figcaption>
+            </figure>
+          </a>
+          <div class="search">
+            <form class="search">
+              <input id="search" type="text" placeholder="Search Products" />
+              <label for="search" id="search-label"
+                ><img src="images\icons\search.svg"
+              /></label>
+            </form>
+          </div>
+
+          <div class="icons">
+            <a href="index.html" class="icons" id="mobile-home">
+              <figure class="icons">
+                <img src="images\icons\home.svg" alt="Home icon" />
+                <figcaption class="label">Home</figcaption>
+              </figure>
+            </a>
+            <a class="icons" id="favorites-icon"
+              ><figure class="icons fpb">
+                <img src="images\icons\favorite.svg" alt="Favorites icon" />
+                <figcaption class="label">Favorites</figcaption>
+              </figure></a
+            >
+            <a class="icons" id="profile-icon"
+              ><figure class="icons fpb">
+                <img src="images\icons\profile.svg" alt="Profile icon" />
+                <figcaption class="label">Profile</figcaption>
+              </figure></a
+            >
+            <a class="icons" id="basket-icon"
+              ><figure class="icons fpb">
+                <img src="images\icons\basket.svg" alt="Basket icon" />
+                <figcaption class="label">Basket</figcaption>
+              </figure></a
+            >
+            <div id="counter">1</div>
+
+            <!-- icon dropdowns -->
+            <div class="favorites">
+              <div id="triangle-favorites"></div>
+              <h6>Favorites</h6>
+              <p class="p2">You don't have any favorites in your list yet.</p>
             </div>
-            <div class="icons">
-              <a href="index.html" class="icons" id="mobile-home">
-                <figure class="icons">
-                  <img src="images\icons\home.svg" alt="Home icon" />
-                  <figcaption class="label">Home</figcaption>
+
+            <div class="profile">
+              <div id="triangle-profile"></div>
+              <h6>Sign In</h6>
+              <div class="form-wrapper">
+                <form class="sign-in" id="login">
+                  <label for="email" class="label_2">E-mail</label>
+                  <input
+                    type="text"
+                    name="email"
+                    class="input-box"
+                    id="email"
+                    placeholder="your@email.com"
+                  />
+                  <div class="error-messages" id="enter-email-error">
+                    Please enter a valid e-mail address
+                  </div>
+                  <label for="password" class="label_2" id="password-label"
+                    >Password</label
+                  >
+                  <input
+                    type="password"
+                    name="password"
+                    class="input-box"
+                    id="password"
+                    placeholder="Your password"
+                  />
+                  <div class="error-messages" id="enter-password-error">
+                    Password or/and e-mail is incorrect
+                  </div>
+                  <a href="" id="p1">Forgot your password?</a>
+                  <button id="sign-in" type="submit" name="submit">
+                    SIGN IN
+                  </button>
+                </form>
+                <div>
+                  <p class="p2">
+                    If you don't have an account, you can create on at checkout
+                  </p>
+                </div>
+              </div>
+              <div class="successful-login">
+                <p class="p2">Welcome back <em>Jane Doe!</em></p>
+                <p class="p3">You have no previous orders</p>
+                <a id="sign-out">SIGN OUT</a>
+              </div>
+            </div>
+
+            <div class="basket">
+              <div id="triangle-basket"></div>
+              <h6>Basket preview</h6>
+              <div class="preview-wrapper">
+                <figure class="jacket-preview">
+                  <img src="images\blue.jpg" alt="" />
                 </figure>
-              </a>
-              <a href="index.html" class="icons"
-                ><figure class="icons fpb">
-                  <img src="images\icons\favorite.svg" alt="Favorites icon" />
-                  <figcaption class="label">Favorites</figcaption>
-                </figure></a
-              >
-              <a href="index.html" class="icons"
-                ><figure class="icons fpb">
-                  <img src="images\icons\profile.svg" alt="Profile icon" />
-                  <figcaption class="label">Profile</figcaption>
-                </figure></a
-              >
-              <a href="basket.html" class="icons"
-                ><figure class="icons fpb">
-                  <img src="images\icons\basket.svg" alt="Basket icon" />
-                  <figcaption class="label">Basket</figcaption>
-                </figure></a
+                <div class="preview-info">
+                  <p id="preview-heading">Rocky Mountains</p>
+                  <p>by Rainy Days</p>
+                  <table class="summary">
+                    <tr>
+                      <th scope="row">Size:</th>
+                      <td>M</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Color:</th>
+                      <td>Blue</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Quantity:</th>
+                      <td>1</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Price:</th>
+                      <td>49$</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <div class="empty-basket">
+                <p class="p2">You don't have any items in your basket yet.</p>
+              </div>
+              <a href="basket.html" id="proceed-basket"
+                ><button id="proceed-button">PROCEED TO BASKET</button></a
               >
             </div>
           </div>
         </div>
+        <!-- </div> -->
       </nav>
       <nav aria-label="menu" class="main-menu">
         <div class="menu-wrapper">
@@ -103,18 +197,18 @@
               ></label>
               <input type="checkbox" id="hamburger-menu" />
               <div class="mobile-menu">
-                <a href="Skiing.html">Skiing</a>
+                <a href="hiking.html">Hiking</a>
                 <a href="outdoor.html">Outdoor</a>
-                <a href="Skiing.html">Hiking</a>
+                <a href="skiing.html">Skiing</a>
                 <a href="casual.html">Casual</a>
               </div>
             </li>
             <li>
               <a class="menu-item" href="products_overview.html">WOMEN</a>
               <ul class="dropdown">
-                <li><a href="Skiing.html">Skiing</a></li>
+                <li><a href="hiking.html">Hiking</a></li>
                 <li><a href="outdoor.html">Outdoor</a></li>
-                <li><a href="Skiing.html">Hiking</a></li>
+                <li><a href="skiing.html">Skiing</a></li>
                 <li><a href="casual.html">Casual</a></li>
                 <li><a href="products_overview.html">View All</a></li>
               </ul>
@@ -124,9 +218,9 @@
                 >MEN</a
               >
               <ul class="dropdown">
-                <li><a href="Skiing.html">Skiing</a></li>
+                <li><a href="hiking.html">Hiking</a></li>
                 <li><a href="outdoor.html">Outdoor</a></li>
-                <li><a href="Skiing.html">Hiking</a></li>
+                <li><a href="skiing.html">Skiing</a></li>
                 <li><a href="casual.html">Casual</a></li>
                 <li><a href="products_overview.html">View All</a></li>
               </ul>
@@ -164,7 +258,9 @@
       <div class="breadcrumb">
         <a href="index.html" class="previous"> Home</a>
         <span class="angle">&gt; &nbsp;</span>
-        <a href="Skiing.html" class="current">Skiing Category</a>
+        <a href="products_overview.html" class="previous">Products Overview</a>
+        <span class="angle">&gt; &nbsp;</span>
+        <a href="Skiing.html" class="current">Rocky Mountains</a>
       </div>
     </nav>
   </header>
@@ -311,5 +407,6 @@
       </section>
     </footer>
     <script src="js/script.js"></script>
+    <script src="js/header.js"></script>
   </body>
 </html>
