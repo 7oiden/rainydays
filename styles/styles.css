@@ -166,14 +166,30 @@ form.search {
 }
 
 @keyframes shake-animation {
-   0% { transform:translate(0,0) }
-  1.78571% { transform:translate(5px,0) }
-  3.57143% { transform:translate(0,0) }
-  5.35714% { transform:translate(5px,0) }
-  7.14286% { transform:translate(0,0) }
-  8.92857% { transform:translate(5px,0) }
-  10.71429% { transform:translate(0,0) }
-  100% { transform:translate(0,0) }
+  0% {
+    transform: translate(0, 0);
+  }
+  1.78571% {
+    transform: translate(5px, 0);
+  }
+  3.57143% {
+    transform: translate(0, 0);
+  }
+  5.35714% {
+    transform: translate(5px, 0);
+  }
+  7.14286% {
+    transform: translate(0, 0);
+  }
+  8.92857% {
+    transform: translate(5px, 0);
+  }
+  10.71429% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
 }
 nav.main-menu {
   font-family: "montserrat";
@@ -630,7 +646,7 @@ div.bottom-wrapper {
 }
 div.newsletter {
   display: inline-block;
-  margin: 0 auto
+  margin: 0 auto;
 }
 div.large-buttons {
   display: inline-block;
@@ -684,7 +700,7 @@ a > .chat:hover {
 #emails {
   box-sizing: border-box;
   height: 48px;
-  min-width: 400px;
+  max-width: 400px;
   border: solid 3px;
   border-color: #172940;
   border-radius: 0;

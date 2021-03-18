@@ -41,6 +41,9 @@ function hideOnScroll() {
     logo.style.display = "block";
     homeIcon.style.display = "none";
   }
+  if (window.innerWidth <1000) {
+    homeIcon.style.display = "none";
+  }
 }
 
 window.addEventListener("scroll", hideOnScroll);

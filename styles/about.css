@@ -119,17 +119,19 @@ ol {
   font-weight: bold;
 }
 
+/* bottom wrapper */
 div.bottom-wrapper {
   width: 85%;
   margin: var(--center-align);
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  margin-top: 50px;
   margin: 70px auto 0 auto;
 }
 div.newsletter {
   display: inline-block;
-  margin-left: 10%;
+  margin: 0 auto;
 }
 div.large-buttons {
   display: inline-block;
@@ -146,7 +148,7 @@ div.large-buttons {
   background-color: #172940;
   border-radius: 10px;
   box-shadow: 0 3px 6px #00000029;
-  transition-property: background-color, box-shadow;
+  transition-property: background-color;
   transition-duration: 0.5s;
 }
 .chat {
@@ -179,40 +181,67 @@ a > .chat:hover {
 #margin {
   margin-left: 70px;
 }
-.label {
-  display: inline-block;
-  margin-top: 5px;
-}
-#newsletter {
+/* newsletter */
+#emails {
   box-sizing: border-box;
   height: 48px;
-  border: solid 2px;
-  border-color: #2f496a;
+  max-width: 400px;
+  border: solid 3px;
+  border-color: #172940;
   border-radius: 0;
   font-family: "montserrat";
   font-size: 1.25rem;
   padding-left: 15px;
+  background-color: #fff;
+}
+#emails:focus {
+  border-color: var(--yellow);
 }
 #join {
-  background-color: #2f496a;
+  background-color: #172940;
   font-family: "montserrat";
   font-size: 1.25rem;
   font-weight: 500;
-  padding: 12px 15px 12px 15px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 40px;
+  padding: 12px 20px 12px 20px;
   border: none;
-  border-radius: 0;
+  border-radius: 0 5px 5px 0;
   color: white;
   margin-left: -7px;
   cursor: pointer;
+  transition-property: background-color;
+  transition-duration: 0.5s;
 }
 #join:hover {
-  opacity: 0.75;
+  background-color: #172940bf;
 }
 #label {
   display: inline-block;
   font-weight: bold;
-  color: #536175;
-  padding-bottom: 5px;
+  color: #172940;
+  padding-bottom: 8px;
+}
+.error-message {
+  visibility: hidden;
+  font-size: 1rem;
+  color: #be3e35;
+  margin-top: 5px;
+}
+.error-message:before {
+  content: "*";
+}
+#success {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: green;
+  position: relative;
+  top: -8px;
+}
+#success:before {
+  content: "\2714";
+  font-size: 2rem;
 }
 /* footer 
 --------------------*/
@@ -427,6 +456,26 @@ ul.footer {
   .image-wrapper {
     gap: 10px;
   }
+  /* bottom wrapper */
+  .bottom-wrapper {
+    flex-direction: column;
+  }
+  form.newsletter {
+    width: 100%;
+  }
+  #emails {
+    width: 210px;
+  }
+  div.newsletter {
+    order: 2;
+    margin: 0 auto 0 auto;
+  }
+  div.large-buttons {
+    order: 1;
+    width: 70%;
+    justify-content: space-between;
+    margin: 0 auto 40px auto;
+  }
 
   /* footer mobile styles */
   .support-container {
@@ -461,33 +510,6 @@ ul.footer {
   .footer li {
     padding: 5px;
     min-width: 100px;
-  }
-  .bottom-wrapper {
-    flex-direction: column;
-  }
-  div.newsletter {
-    margin: 0 auto 30px auto;
-  }
-  #newsletter {
-    width: 200px;
-    margin-bottom: 50px;
-  }
-  #margin {
-    margin-left: 50px;
-    margin-right: 20px;
-  }
-  div.newsletter {
-    order: 2;
-    margin: 0 auto 40px auto;
-  }
-  .bottom-wrapper {
-    flex-direction: column;
-  }
-  div.large-buttons {
-    order: 1;
-    width: 70%;
-    justify-content: space-between;
-    margin: 0 auto 40px auto;
   }
 }
 @media only screen and (max-width: 450px) {

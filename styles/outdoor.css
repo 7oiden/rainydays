@@ -371,7 +371,7 @@ div.bottom-wrapper {
 }
 div.newsletter {
   display: inline-block;
-  margin: 0 auto
+  margin: 0 auto;
 }
 div.large-buttons {
   display: inline-block;
@@ -425,7 +425,7 @@ a > .chat:hover {
 #emails {
   box-sizing: border-box;
   height: 48px;
-  min-width: 400px;
+  max-width: 400px;
   border: solid 3px;
   border-color: #172940;
   border-radius: 0;
@@ -434,7 +434,7 @@ a > .chat:hover {
   padding-left: 15px;
   background-color: #fff;
 }
-#email:focus {
+#emails:focus {
   border-color: var(--yellow);
 }
 #join {
@@ -774,26 +774,19 @@ ul.footer {
   div.main-wrapper {
     background-image: url("../images/main_image-vertical.jpg");
   }
+  /* bottom wrapper */
   .bottom-wrapper {
     flex-direction: column;
   }
-  div.newsletter {
-    margin: 0 auto 30px auto;
+  form.newsletter {
+    width: 100%;
   }
-  #newsletter {
-    width: 200px;
-    margin-bottom: 50px;
-  }
-  #margin {
-    margin-left: 50px;
-    margin-right: 20px;
+  #emails {
+    width: 210px;
   }
   div.newsletter {
     order: 2;
-    margin: 0 auto 40px auto;
-  }
-  .bottom-wrapper {
-    flex-direction: column;
+    margin: 0 auto 0 auto;
   }
   div.large-buttons {
     order: 1;

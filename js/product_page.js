@@ -222,3 +222,19 @@ function logout() {
 
 signOut.addEventListener("click", logout);
 
+
+//toggle mobile class
+
+const iconWrapper = document.querySelector(".icon-wrapper");
+
+function mobileWrapper() {
+  if (window.innerWidth < "1000") {
+    iconWrapper.classList.add("mobile-wrapper")
+    iconWrapper.classList.remove("icon-wrapper");
+  } else {
+    iconWrapper.classList.remove("mobile-wrapper");
+    iconWrapper.classList.add("icon-wrapper");
+  }
+}
+
+window.addEventListener("resize", mobileWrapper)
