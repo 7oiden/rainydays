@@ -1243,6 +1243,39 @@ ul.footer {
     padding-left: 5px;
     margin: 0;
   }
+  /* new styles */
+  .favorites,
+  .profile,
+  .basket {
+    position: absolute;
+    width: 360px;
+    left: -55px;
+    top: 50px;
+  }
+  #triangle-favorites {
+    left: 95px;
+  }
+  #triangle-profile {
+    left: 165px;
+  }
+  #triangle-basket {
+    left: 235px;
+  }
+  #mobile-hide {
+    display: none;
+  }
+  .campaign li:before {
+    display: inline-block;
+  }
+  .reviews {
+    width: 360px;
+    bottom: 580px;
+    right: 200px;
+    z-index: 999999;
+  }
+  #triangle-reviews {
+    display: none;
+  }
   /* main
 --------------------*/
   figure.jacket {

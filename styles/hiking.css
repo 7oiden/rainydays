@@ -319,7 +319,6 @@ form.search {
   padding: 12px 40px;
   color: #fff;
   border: none;
-  border-radius: 0;
   margin: 35px 0 35px 70px;
   transition-property: background-color, box-shadow;
   transition-duration: 0.5s;
@@ -382,7 +381,6 @@ form.search {
   padding: 12px 40px;
   color: #fff;
   border: none;
-  border-radius: 0;
   margin: 30px auto 30px 50px;
   transition-property: background-color, box-shadow;
   transition-duration: 0.5s;
@@ -1108,6 +1106,39 @@ ul.footer {
   .breadcrumb span {
     padding-left: 5px;
     margin: 0;
+  }
+  /* new styles */
+  .favorites,
+  .profile,
+  .basket {
+    position: absolute;
+    width: 360px;
+    left: -55px;
+    top: 50px;
+  }
+  #triangle-favorites {
+    left: 95px;
+  }
+  #triangle-profile {
+    left: 165px;
+  }
+  #triangle-basket {
+    left: 235px;
+  }
+  #mobile-hide {
+    display: none;
+  }
+  .campaign li:before {
+    display: inline-block;
+  }
+  .reviews {
+    width: 360px;
+    bottom: 580px;
+    right: 200px;
+    z-index: 999999;
+  }
+  #triangle-reviews {
+    display: none;
   }
   /* main
   --------------------*/

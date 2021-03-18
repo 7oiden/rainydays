@@ -1570,6 +1570,9 @@ ul.footer {
   #mobile-hide {
     display: none;
   }
+  .campaign li:before {
+    display: inline-block;
+  }
   .reviews {
     width: 360px;
     bottom: 580px;

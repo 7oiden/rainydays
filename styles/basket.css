@@ -95,7 +95,7 @@ nav.icons {
   width: 100%;
   background-color: #fff;
 }
-#favorites-icon, #profile-icon, #basket-icon {
+#favorites-icon, #profile-icon, #basket-icon, #mobile-home {
   visibility: hidden;
 }
 .icon-wrapper {
@@ -377,7 +377,7 @@ h1 {
 section.main-basket {
   background-color: var(--white);
   width: 65%;
-  min-height: 700px;
+  max-height: 700px;
   padding-top: 10px;
 }
 section.sign-in {
@@ -385,11 +385,12 @@ section.sign-in {
   width: 30%;
   height: 600px;
   padding-top: 10px;
+  border-radius: 0 0 25px 25px;
 }
 table {
   text-align: left;
   width: 95%;
-  margin-left: 25px;
+  padding: 10px;
   border-spacing: 0;
 }
 th {
@@ -506,14 +507,14 @@ td p {
 #p1:hover {
   color: var(--dark-blue);
 }
-#p3 {
+/* #p3 {
   font-weight: 500;
   margin-top: 0;
   padding-top: 0;
   font-size: 1.25rem;
   padding-left: 10px;
   padding-right: 10px;
-}
+} */
 div.buttons {
   display: flex;
   justify-content: space-between;
@@ -562,6 +563,13 @@ div.buttons {
 }
 .error-message:before {
   content: "*";
+}
+#p3 {
+  font-family: "roboto";
+  font-weight: 500;
+  margin: 0 auto;
+  font-size: 1.125rem;
+  padding: 0;
 }
 /* footer
 --------------------*/
@@ -637,8 +645,12 @@ ul.footer {
   margin-bottom: 0;
 }
 
-/* Styles that changes 
-..........................*/
+/* Styles that changes ..........................*/
+@media only screen and (max-width: 1600px) {
+section.sign-in {
+  /* width: 33%; */
+}
+}
 @media only screen and (max-width: 1400px) {
   /* header 
 --------------------*/
@@ -709,13 +721,12 @@ ul.footer {
     width: 100%;
     min-height: 600px;
   }
-  section.sign-in {
+  /* section.sign-in {
     width: 100%;
     margin: 0;
     height: 650px;
-  }
+  } */
   div.buttons {
-    width: 50%;
     flex-direction: column;
     margin-bottom: 0;
   }
@@ -851,6 +862,42 @@ ul.footer {
     padding-left: 5px;
     margin: 0;
   }
+  /* new styles */
+  .favorites,
+  .profile,
+  .basket {
+    position: absolute;
+    width: 360px;
+    left: -55px;
+    top: 50px;
+  }
+  #triangle-favorites {
+    left: 95px;
+  }
+  #triangle-profile {
+    left: 165px;
+  }
+  #triangle-basket {
+    left: 235px;
+  }
+  #mobile-hide {
+    display: none;
+  }
+  .campaign li:before {
+    display: inline-block;
+  }
+  .reviews {
+    width: 360px;
+    bottom: 580px;
+    right: 200px;
+    z-index: 999999;
+  }
+  #triangle-reviews {
+    display: none;
+  }
+  #favorites-icon, #profile-icon, #basket-icon, #mobile-home {
+  display: none;
+}
   /* main 
 --------------------*/
   main {
@@ -861,16 +908,22 @@ ul.footer {
     width: 100%;
     margin-bottom: 0;
   }
+  section.main-basket {
+    width: 100%;
+    height: 550px;
+  }
+  .form-wrapper {
+    width: 90%;
+  }
   h1,
   h2 {
     font-size: 1.5rem;
   }
   div.buttons {
-    width: 75%;
+    margin: 0 auto;
   }
   .buttons a {
     font-size: 1.125rem;
-    margin-top: 50px;
   }
   #jacket {
     display: none;
@@ -879,13 +932,11 @@ ul.footer {
     margin-bottom: 10px;
   }
   section.sign-in {
+    width: 100%;
     height: 550px;
   }
   #sign-in {
     margin-bottom: 30px;
-  }
-  .sign-in input {
-    width: 75%;
   }
   .basket {
     width: 90%;
@@ -898,6 +949,12 @@ ul.footer {
   .basket tr td {
     font-size: 1rem;
   }
+  table {
+  font: 1rem;
+}
+th {
+  font-size: 1rem;
+}
   /* footer 
 --------------------*/
   .support-container {
