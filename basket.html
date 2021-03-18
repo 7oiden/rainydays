@@ -92,103 +92,13 @@
                   <figcaption class="label">Basket</figcaption>
                 </figure></a
               >
-              <div id="counter">1</div>
+  
 
               <!-- icon dropdowns -->
-              <div class="favorites">
-                <div id="triangle-favorites"></div>
-                <h6>Favorites</h6>
-                <p class="p2">You don't have any favorites in your list yet.</p>
-              </div>
+             
 
-              <div class="profile">
-                <div id="triangle-profile"></div>
-                <h6>Sign In</h6>
-                <div class="form-wrapper">
-                  <form class="sign-in" id="login">
-                    <label for="email" class="label_2">E-mail</label>
-                    <input
-                      type="text"
-                      name="email"
-                      class="input-box"
-                      id="email"
-                      placeholder="your@email.com"
-                    />
-                    <div class="error-messages" id="enter-email-error">
-                      Please enter a valid e-mail address
-                    </div>
-                    <label for="password" class="label_2" id="password-label"
-                      >Password</label
-                    >
-                    <input
-                      type="password"
-                      name="password"
-                      class="input-box"
-                      id="password"
-                      placeholder="Your password"
-                    />
-                    <div class="error-messages" id="enter-password-error">
-                      Password or/and e-mail is incorrect
-                    </div>
-                    <a href="" id="p1">Forgot your password?</a>
-                    <button id="sign-in" type="submit" name="submit">
-                      SIGN IN
-                    </button>
-                  </form>
-                  <div>
-                    <p class="p2">
-                      If you don't have an account, you can create on at
-                      checkout
-                    </p>
-                  </div>
-                </div>
-                <div class="successful-login">
-                  <p class="p2">Welcome back <em>Jane Doe!</em></p>
-                  <p class="p3">You have no previous orders</p>
-                  <a id="sign-out">SIGN OUT</a>
-                </div>
-              </div>
-
-              <div class="basket">
-                <div id="triangle-basket"></div>
-                <h6>Basket preview</h6>
-                <div class="preview-wrapper">
-                  <figure class="jacket-preview">
-                    <img src="images\blue.jpg" alt="" />
-                  </figure>
-                  <div class="preview-info">
-                    <p id="preview-heading">Rocky Mountains</p>
-                    <p>by Rainy Days</p>
-                    <table class="summary">
-                      <tr>
-                        <th scope="row">Size:</th>
-                        <td>M</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Color:</th>
-                        <td>Blue</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Quantity:</th>
-                        <td>1</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Price:</th>
-                        <td>49$</td>
-                      </tr>
-                    </table>
-                  </div>
-                </div>
-                <div class="empty-basket">
-                  <p class="p2">You don't have any items in your basket yet.</p>
-                </div>
-                <a href="basket.html" id="proceed-basket"
-                  ><button id="proceed-button">PROCEED TO BASKET</button></a
-                >
-              </div>
-            </div>
+        
           </div>
-          <!-- </div> -->
         </nav>
         <nav aria-label="menu" class="main-menu">
           <div class="menu-wrapper">
@@ -270,11 +180,13 @@
         </div>
       </nav>
     </header>
+
+
     <main>
       <div class="content-wrapper">
-        <section class="basket">
+        <section class="main-basket">
           <h1>1. Your Shopping Basket</h1>
-          <table class="basket">
+          <table class="main-basket">
             <tr>
               <th></th>
               <th scope="col">DESCRIPTION</th>
@@ -345,6 +257,7 @@
       </div>
     </main>
 
+ 
     <footer>
       <div class="support-wrapper">
         <section class="support-container">
@@ -407,7 +320,8 @@
         </ul>
       </section>
     </footer>
-    <script src="js/script.js"></script>
-    <script src="js/header.js"></script>
+    <!-- <script src="js/script.js"></script> -->
+    <!-- <script src="js/header.js"></script> -->
+    <script src="js/basket.js"></script>
   </body>
 </html>

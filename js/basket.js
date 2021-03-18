@@ -82,3 +82,39 @@ function checkInput() {
 
 email.addEventListener("keyup", checkInput);
 password.addEventListener("keyup", checkInput);
+
+const logo = document.querySelector("#logo-wrapping");
+const homeIcon = document.querySelector("#home-wrapping");
+
+function hideOnScroll() {
+  const scrolledY = window.scrollY;
+
+  if (scrolledY > 100) {
+    logo.style.display = "none";
+    homeIcon.style.display = "block";
+  } else {
+    logo.style.display = "block";
+    homeIcon.style.display = "none";
+  }
+  if (window.innerWidth < 1000) {
+    homeIcon.style.display = "none";
+  }
+}
+
+window.addEventListener("scroll", hideOnScroll);
+
+//toggle mobile class
+
+const iconWrapper = document.querySelector(".icon-wrapper");
+
+function mobileWrapper() {
+  if (window.innerWidth < "1000") {
+    iconWrapper.classList.add("mobile-wrapper");
+    iconWrapper.classList.remove("icon-wrapper");
+  } else {
+    iconWrapper.classList.remove("mobile-wrapper");
+    iconWrapper.classList.add("icon-wrapper");
+  }
+}
+
+window.addEventListener("resize", mobileWrapper);

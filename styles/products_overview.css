@@ -1170,6 +1170,16 @@ ul.footer {
   #mobile-home {
     display: inline;
   }
+  /* new styles */
+  .basket {
+    top: 55px;
+    right: 0;
+  }
+  #search-label {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+  }
 }
 @media only screen and (max-width: 870px) {
   /* header
