@@ -144,9 +144,7 @@
                 </div>
                 <div class="successful-login">
                   <p class="p2">Welcome back <em>Jane Doe!</em></p>
-                  <p class="p3">
-                      You have no previous orders
-                    </p>
+                  <p class="p3">You have no previous orders</p>
                   <a id="sign-out">SIGN OUT</a>
                 </div>
               </div>
@@ -181,7 +179,12 @@
                     </table>
                   </div>
                 </div>
-                <a href="basket.html" id="proceed-basket">PROCEED TO BASKET</a>
+                <div class="empty-basket">
+                  <p class="p2">You don't have any items in your basket yet.</p>
+                </div>
+                <a href="basket.html" id="proceed-basket"
+                  ><button id="proceed-button">PROCEED TO BASKET</button></a
+                >
               </div>
             </div>
           </div>
@@ -573,7 +576,6 @@
         </div>
       </div>
       <div class="bottom-wrapper">
-
         <div class="newsletter">
           <div class="label-container">
             <label id="label" for="newsletter"

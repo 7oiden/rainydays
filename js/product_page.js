@@ -45,6 +45,12 @@ button.addEventListener("click", addToBasket);
 
 const basket = document.querySelector(".basket");
 const basketIcon = document.querySelector("#basket-icon");
+const fullBasket = document.querySelector(".preview-wrapper");
+const emptyBasket = document.querySelector(".empty-basket");
+const proceedButton = document.querySelector("#proceed-button");
+
+
+
 
 function basketPreview() {
   if (basket.style.display === "block") {
@@ -58,9 +64,17 @@ function basketPreview() {
   if (favorites.style.display === "block") {
     favorites.style.display = "none";
   }
-  //   if (counter.style.display === "none") {
-  //     proceed.classList.remove;
-  //   }
+  if (counter.style.display === "block") {
+    fullBasket.style.display = "flex";
+    emptyBasket.style.display = "none";
+    basket.style.height = "450px";
+    proceedButton.disabled = false;
+  } else {
+    fullBasket.style.display = "none";
+    emptyBasket.style.display = "block"
+    basket.style.height = "300px"
+    proceedButton.disabled = true;
+  }
 }
 
 basketIcon.addEventListener("click", basketPreview);
@@ -207,3 +221,4 @@ function logout() {
 }
 
 signOut.addEventListener("click", logout);
+

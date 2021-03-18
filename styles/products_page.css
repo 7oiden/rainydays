@@ -338,7 +338,7 @@ form.search {
   width: 80%;
   margin: 0 auto;
   font-size: 1.125rem;
-  padding: 15px 0;
+  padding: 0;
 }
 .p3 {
 margin-top: 0;
@@ -403,7 +403,7 @@ padding-top: 0;
   box-shadow: 0 3px 6px #00000029, 0 3px -6px #00000029;
 }
 .preview-wrapper {
-  display: flex;
+  display: none;
 }
 #preview-heading {
   font-family: century gothic;
@@ -434,7 +434,7 @@ td {
   font-weight: bold;
   color: var(--dark-blue)
 }
-#proceed-basket {
+#proceed-basket button {
   display: inline-block;
   font-family: "montserrat";
   font-size: 1.25rem;
@@ -450,10 +450,15 @@ td {
   border-radius: 5px;
   margin: 50px auto 35px 55px;
   box-shadow: 0 3px 6px #00000029;
+  cursor: pointer;
 }
-#proceed-basket:hover {
+#proceed-basket button:hover {
   background: #172940bf;
   box-shadow: none;
+}
+#proceed-basket button:disabled, button[disabled] {
+   background-color: #cccccc;
+  color: #666666;
 }
 
 /* basket preview end */
