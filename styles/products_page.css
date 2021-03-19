@@ -1380,10 +1380,10 @@ ul.footer {
   }
   /* header
 --------------------*/
-  /* .sticky {
+  .sticky {
     display: inline;
     position: static;
-  } */
+  }
   nav.main-menu {
     position: sticky;
     top: 0;

@@ -190,14 +190,6 @@ function mobileWrapper() {
 
 window.addEventListener("load", mobileWrapper);
 
+window.addEventListener("resize", mobileWrapper);
 
 
-// const windowWidth = (window).width();
-
-// if (windowWidth <= 1000) {
-//   iconWrapper.classList.add("mobile-wrapper");
-//   iconWrapper.classList.remove("icon-wrapper");
-// } else {
-//   iconWrapper.classList.remove("mobile-wrapper");
-//   iconWrapper.classList.add("icon-wrapper");
-// }
