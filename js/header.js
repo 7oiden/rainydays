@@ -175,7 +175,6 @@ function logout() {
 signOut.addEventListener("click", logout);
 
 //toggle mobile class
-
 const iconWrapper = document.querySelector(".icon-wrapper");
 
 function mobileWrapper() {
@@ -189,7 +188,25 @@ function mobileWrapper() {
 }
 
 window.addEventListener("load", mobileWrapper);
-
 window.addEventListener("resize", mobileWrapper);
 
+//hide logo on scroll
+const logo = document.querySelector("#logo-wrapping");
+const homeIcon = document.querySelector("#home-wrapping");
 
+function hideOnScroll() {
+  const scrolledY = window.scrollY;
+
+  if (scrolledY > 100) {
+    logo.style.display = "none";
+    homeIcon.style.display = "block";
+  } else {
+    logo.style.display = "block";
+    homeIcon.style.display = "none";
+  }
+  // if (window.innerWidth < 1000) {
+  //   homeIcon.style.display = "none";
+  // }
+}
+
+window.addEventListener("scroll", hideOnScroll);

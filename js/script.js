@@ -28,22 +28,4 @@ function validateEmails(emails) {
   return patternMatches;
 }
 
-const logo = document.querySelector("#logo-wrapping");
-const homeIcon = document.querySelector("#home-wrapping");
 
-function hideOnScroll() {
-  const scrolledY = window.scrollY;
-
-  if (scrolledY > 100) {
-    logo.style.display = "none";
-    homeIcon.style.display = "block";
-  } else {
-    logo.style.display = "block";
-    homeIcon.style.display = "none";
-  }
-  if (window.innerWidth <1000) {
-    homeIcon.style.display = "none";
-  }
-}
-
-window.addEventListener("scroll", hideOnScroll);
