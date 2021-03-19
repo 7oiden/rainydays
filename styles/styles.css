@@ -657,14 +657,14 @@ a.about {
   margin-left: 10%;
   transition-property: background-color, box-shadow;
   transition-duration: 0.5s;
-  background-color: #ffffff80;
+  background-color: #ffffff66;
   box-shadow: none;
   border-radius: 8px;
   padding: 20px;
   text-decoration: none;
 }
 a.about:hover {
-  background-color: #ffffff;
+  background-color: #ffffffbf;
   box-shadow: 0 3px 6px #00000029;
 }
 p.pitch {
@@ -836,7 +836,7 @@ h5 {
   padding-left: 20px;
   padding-top: 15px;
 }
-/* h6 {
+#instagram {
   box-sizing: border-box;
   font-family: "century gothic";
   text-align: center;
@@ -849,7 +849,8 @@ h5 {
   margin-top: 0;
   padding-top: 25px;
   padding-bottom: 25px;
-} */
+  border-radius: 25px 25px 0 0;
+}
 #special {
   font-size: 3rem;
   background-color: #2f496a;
@@ -857,17 +858,19 @@ h5 {
   color: #f2b705;
   padding-top: 15px;
   padding-bottom: 15px;
+  border-radius: 25px 25px 0 0;
 }
 div.join-instagram {
   box-sizing: border-box;
   font-family: "century gothic";
   font-size: 1.875rem;
-  background-color: black;
+  background-color: #000;
   font-weight: 400;
   color: white;
   text-align: center;
   padding-top: 10px;
   padding-bottom: 15px;
+  border-radius: 0 0 25px 25px;
 }
 .join-instagram p {
   font-size: 1.5rem;
@@ -902,7 +905,7 @@ div.instagram {
   text-align: center;
   margin-top: 0;
   padding-top: 30px;
-  padding-bottom: 30px;
+  border-radius: 0 0 25px 25px;
 }
 figure.instagram {
   margin: 0;

@@ -180,7 +180,7 @@ function validateForm(event) {
   }
   if (checkInput() === true) {
     confirm.style.display = "none";
-    success.innerHTML = `<p id="success">Input saved successfully</p>`;
+    success.innerHTML = `<p id="success">Input saved successfully! You may now move on to the next step</p>`;
   }
 }
 
