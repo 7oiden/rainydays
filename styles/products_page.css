@@ -811,7 +811,7 @@ h5 {
 }
 p {
   font-size: 1.125rem;
-  color: #536175;
+  color: var(--dark-blue);
   margin-top: 5px;
   margin-bottom: 20px;
 }
