@@ -1,21 +1,4 @@
-// const logo = document.querySelector("#logo-wrapping");
-// const homeIcon = document.querySelector("#home-wrapping");
-
-// function hideOnScroll() {
-//   const scrolledY = window.scrollY;
-
-//   if (scrolledY > 100) {
-//     logo.style.display = "none";
-//     homeIcon.style.display = "block";
-//   } else {
-//     logo.style.display = "block";
-//     homeIcon.style.display = "none";
-//   }
-//   //   if ((scrolledY > 100) && (reviews.style.display === "block")) {
-//   //       reviews.style.zIndex = "1";
-//   // }
-// }
-// window.addEventListener("scroll", hideOnScroll);
+// review overlay
 
 const link = document.querySelector("#review-link");
 const reviews = document.querySelector(".reviews");
@@ -30,8 +13,24 @@ function openReviews() {
 
 link.addEventListener("click", openReviews);
 
+
+reviews.onclick = function () {
+  reviews.style.display = "none";
+};
+
+
+// function closeReviews() {
+//   if (openReviews() === true) {
+//     reviews.style.display = "none";
+//   }
+// }
+
+// reviews.addEventListener("click", closeReviews);
+
 const button = document.querySelector("#basket-button");
 const counter = document.querySelector("#counter");
+
+//add to basket counter
 
 function addToBasket() {
   if (counter.style.display === "block") {

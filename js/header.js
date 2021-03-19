@@ -179,7 +179,7 @@ signOut.addEventListener("click", logout);
 const iconWrapper = document.querySelector(".icon-wrapper");
 
 function mobileWrapper() {
-  if (window.innerWidth < "1000") {
+  if (window.innerWidth <= "1000") {
     iconWrapper.classList.add("mobile-wrapper");
     iconWrapper.classList.remove("icon-wrapper");
   } else {
@@ -188,4 +188,16 @@ function mobileWrapper() {
   }
 }
 
-window.addEventListener("resize", mobileWrapper);
+window.addEventListener("load", mobileWrapper);
+
+
+
+// const windowWidth = (window).width();
+
+// if (windowWidth <= 1000) {
+//   iconWrapper.classList.add("mobile-wrapper");
+//   iconWrapper.classList.remove("icon-wrapper");
+// } else {
+//   iconWrapper.classList.remove("mobile-wrapper");
+//   iconWrapper.classList.add("icon-wrapper");
+// }
