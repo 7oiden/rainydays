@@ -673,7 +673,6 @@ p {
 }
 div.content-wrapper {
   width: 85%;
-  height: 700px;
   display: flex;
   background-image: url(../images/casual-large.jpg);
   background-repeat: no-repeat;
@@ -683,7 +682,6 @@ div.content-wrapper {
 }
 section.content {
   width: 50%;
-  height: 700px;
   padding-left: 5%;
   padding-right: 5%;
   background-color: #ffffff99;
@@ -696,17 +694,17 @@ p.button {
   font-family: "montserrat";
   font-size: 1.25rem;
   font-weight: 500;
-  width: 240px;
   background-color: #172940;
   color: white;
   border-radius: 8px;
   border: none;
-  padding: 12px 40px;
+  padding: 12px 50px;
   text-align: center;
-  margin: 80px auto;
+  margin: 50px 0 70px 60px;
   box-shadow: var(--shadow);
   transition: background-color, box-shadow;
   transition-duration: 0.5s;
+  display: inline-block;
 }
 p.button:hover {
   background-color: #172940bf;
