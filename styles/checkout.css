@@ -91,7 +91,6 @@ fieldset.personalia {
   padding: 0;
   border: none;
   margin-bottom: 70px;
-  width: 500px;
 }
 aside.account {
   width: 33%;
@@ -398,6 +397,20 @@ div.buttons {
 }
 /* Styles that changes 
 ..........................*/
+@media only screen and (max-width: 1600px) {
+div.information {
+    flex-direction: column;
+  }
+  fieldset.personalia {
+    margin: 0 auto;
+  }
+  aside.account {
+  margin: 0 auto;
+  width: 50%;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+}
 @media only screen and (max-width: 1023px) {
   /* header 
 --------------------*/
@@ -420,7 +433,7 @@ div.buttons {
   /* Main 
 --------------------*/
   main {
-    width: 90%;
+    width: 100%;
     margin-top: 100px;
     padding-bottom: 0;
   }
@@ -447,20 +460,19 @@ div.buttons {
   }
   #logo {
     max-width: 200px;
+  
   }
   /* Main 
 --------------------*/
-  div.information {
-    flex-direction: column;
-  }
+  
   fieldset.personalia {
     margin: auto;
     width: 85%;
   }
   aside.account {
     margin: auto;
-    width: 85%;
-    margin-bottom: 70px;
+    width: 100%;
+    margin-bottom: 20px;
   }
   input.box {
     width: 100%;
@@ -536,4 +548,7 @@ div.buttons {
   h3 {
     font-size: 1rem;
   }
+  #previous {
+    left: 5%;
+}
 }

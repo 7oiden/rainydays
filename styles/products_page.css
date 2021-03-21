@@ -458,8 +458,11 @@ td {
   font-weight: bold;
   color: var(--dark-blue);
 }
+#proceed-basket {
+  text-decoration: none;
+}
 #proceed-basket button {
-  display: inline-block;
+  display: block;
   font-family: "montserrat";
   font-size: 1.25rem;
   font-weight: 500;
@@ -472,7 +475,7 @@ td {
   transition-duration: 0.5s;
   background-color: #172940;
   border-radius: 5px;
-  margin: 50px auto 35px 55px;
+  margin: 50px auto 35px auto;
   box-shadow: 0 3px 6px #00000029;
   cursor: pointer;
 }
@@ -675,6 +678,7 @@ div.image {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 .right-column {
   max-width: 520px;
@@ -704,6 +708,8 @@ figure.product-image {
 }
 .rating-wrapper {
   position: absolute;
+  height: 100px;
+  left: 140px
 }
 #rating {
   color: var(--dark-blue);
@@ -1134,7 +1140,7 @@ a > .chat:hover {
   padding-bottom: 12px;
   position: relative;
   bottom: 573px;
-  right: -200px;
+  right: -300px;
   z-index: 1;
   border-left: 20px solid #5361757d;
   border-right: 5px solid #5361757d;
@@ -1163,7 +1169,6 @@ h6 {
 .customer-review figure {
   height: 75px;
   width: 75px;
-
   border-radius: 50%;
 }
 .customer-review figure img {
@@ -1573,15 +1578,42 @@ ul.footer {
   .campaign li:before {
     display: inline-block;
   }
+  .rating-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  left: 0;
+}
   .reviews {
-    width: 360px;
-    bottom: 580px;
-    right: 200px;
+    width: 100%;
+    bottom: 600px;
+    right: 18px;
     z-index: 999999;
+    padding-right: 12px;
   }
   #triangle-reviews {
     display: none;
   }
+.customer-review figure {
+  height: 60px;
+  width: 60px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.customer-review figure img {
+  height: 60px;
+  width: 60px;
+}
+.star-wrapper figure {
+  width: 25px;
+  height: 25px;
+  margin: 0;
+}
+.star-wrapper figure img {
+  width: 25px;
+  height: 25px;
+ 
+}
   /* main
 --------------------*/
   main {
@@ -1614,7 +1646,7 @@ ul.footer {
   }
   section.product-card {
     width: 100%;
-    height: 1050px;
+    height: 1070px;
     margin: 0;
   }
   .column-wrapper {
@@ -1624,7 +1656,7 @@ ul.footer {
     margin-top: 20px;
   }
   h1 {
-    margin-top: 60px;
+    margin-top: 0;
   }
 
   /* bottom wrapper */

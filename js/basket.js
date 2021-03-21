@@ -10,8 +10,7 @@ const passwordError = document.querySelector("#enter-password-error");
 function validateLogin(event) {
   event.preventDefault();
 
-  console.log("hi");
-
+ 
   if (checkLength(password.value, 7) === true) {
     passwordError.style.display = "none";
     password.style.backgroundColor = "#f5f5f5";
@@ -103,7 +102,7 @@ function hideOnScroll() {
 
 window.addEventListener("scroll", hideOnScroll);
 
-//toggle mobile class
+// toggle mobile class
 
 const iconWrapper = document.querySelector(".icon-wrapper");
 

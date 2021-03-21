@@ -95,7 +95,10 @@ nav.icons {
   width: 100%;
   background-color: #fff;
 }
-#favorites-icon, #profile-icon, #basket-icon, #mobile-home {
+#favorites-icon,
+#profile-icon,
+#basket-icon,
+#mobile-home {
   visibility: hidden;
 }
 .icon-wrapper {
@@ -186,10 +189,6 @@ form.search {
   top: 22px;
   right: 10px;
 }
-
-
-
-
 
 /* basket preview end */
 nav.main-menu {
@@ -382,7 +381,7 @@ section.main-basket {
 }
 section.sign-in {
   background-color: var(--white);
-  width: 30%;
+  width: 27%;
   height: 600px;
   padding-top: 10px;
   border-radius: 0 0 25px 25px;
@@ -467,13 +466,11 @@ td p {
   font-size: 1.25rem;
   font-weight: 500;
   text-decoration: none;
-  width: 60%;
-  max-width: 300px;
-  padding: 12px 40px;
+  padding: 12px 50px;
   color: var(--white);
   border: none;
   border-radius: 0;
-  margin: 30px auto 30px 50px;
+  margin: 30px auto 30px auto;
   transition-property: background-color, box-shadow;
   transition-duration: 0.5s;
   background-color: var(--dark-blue);
@@ -500,6 +497,7 @@ td p {
   font-size: 1rem;
   font-weight: 400;
   margin-top: 10px;
+  margin-right: 50px;
   color: #536175;
   transition-property: color;
   transition-duration: 0.5s;
@@ -518,8 +516,8 @@ td p {
 div.buttons {
   display: flex;
   justify-content: space-between;
-  margin-right: 120px;
-  margin-left: 120px;
+  margin-right: 10%;
+  margin-left: 10%;
 }
 .buttons a {
   display: inline-block;
@@ -528,8 +526,7 @@ div.buttons {
   font-weight: 500;
   text-decoration: none;
   text-align: center;
-  max-width: 350px;
-  margin-top: 130px;
+  margin-top: 110px;
   padding: 12px 20px;
   box-shadow: 0 3px 6px #00000029;
   text-transform: uppercase;
@@ -540,12 +537,14 @@ div.buttons {
   transition-duration: 0.5s;
   background: var(--dark-blue);
   color: var(--white);
+  margin-right: 20px;
 }
 #yellow {
   transition-property: background-color, box-shadow;
   transition-duration: 0.5s;
   background: #f2b705;
   color: #000000;
+  margin-left: 20px;
 }
 #blue:hover {
   background-color: var(--dark-blue-transparent);
@@ -648,9 +647,9 @@ ul.footer {
 
 /* Styles that changes ..........................*/
 @media only screen and (max-width: 1600px) {
-section.sign-in {
-  /* width: 33%; */
-}
+  section.sign-in {
+    width: 33%;
+  }
 }
 @media only screen and (max-width: 1400px) {
   /* header 
@@ -687,6 +686,21 @@ section.sign-in {
   #search {
     min-width: 350px;
   }
+  /*main*/
+  .content-wrapper {
+    flex-direction: column;
+    width: 85%;
+    margin-bottom: 0;
+  }
+  section.main-basket {
+    width: 100%;
+    min-height: 620px;
+  }
+   section.sign-in {
+    width: 50%;
+    margin: 0;
+    margin: 20px auto 0 auto;
+  } 
   /* footer 
 --------------------*/
   ul.footer {
@@ -713,20 +727,6 @@ section.sign-in {
 @media only screen and (max-width: 1023px) {
   /* main 
 --------------------*/
-  .content-wrapper {
-    flex-direction: column;
-    width: 85%;
-    margin-bottom: 0;
-  }
-  section.basket {
-    width: 100%;
-    min-height: 600px;
-  }
-  /* section.sign-in {
-    width: 100%;
-    margin: 0;
-    height: 650px;
-  } */
   div.buttons {
     flex-direction: column;
     margin-bottom: 0;
@@ -735,13 +735,19 @@ section.sign-in {
     text-align: center;
     margin-top: 50px;
     margin: 50px auto 0 auto;
-    width: 85%;
+    width: 50%;
+  }
+  #blue {
+    margin: 40px auto;
+  }
+  #yellow {
+    margin: 0 auto;
   }
 }
 @media only screen and (max-width: 1000px) {
   /* header 
 --------------------*/
- .sticky {
+  .sticky {
     display: inline;
     position: static;
   }
@@ -804,6 +810,9 @@ section.sign-in {
     top: 8px;
     right: 10px;
   }
+  /*main*/
+  section.sign-in {
+    width: 60%;
 }
 @media only screen and (max-width: 767px) {
   /* header 
@@ -898,9 +907,12 @@ section.sign-in {
   #triangle-reviews {
     display: none;
   }
-  #favorites-icon, #profile-icon, #basket-icon, #mobile-home {
-  display: none;
-}
+  #favorites-icon,
+  #profile-icon,
+  #basket-icon,
+  #mobile-home {
+    display: none;
+  }
   /* main 
 --------------------*/
   main {
@@ -953,11 +965,11 @@ section.sign-in {
     font-size: 1rem;
   }
   table {
-  font: 1rem;
-}
-th {
-  font-size: 1rem;
-}
+    font: 1rem;
+  }
+  th {
+    font-size: 1rem;
+  }
   /* footer 
 --------------------*/
   .support-container {

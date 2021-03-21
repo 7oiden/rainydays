@@ -452,8 +452,11 @@ td {
   font-weight: bold;
   color: var(--dark-blue);
 }
+#proceed-basket {
+  text-decoration: none;
+}
 #proceed-basket button {
-  display: inline-block;
+  display: block;
   font-family: "montserrat";
   font-size: 1.25rem;
   font-weight: 500;
@@ -466,7 +469,7 @@ td {
   transition-duration: 0.5s;
   background-color: #172940;
   border-radius: 5px;
-  margin: 50px auto 35px 55px;
+  margin: 50px auto 35px auto;
   box-shadow: 0 3px 6px #00000029;
   cursor: pointer;
 }
@@ -820,7 +823,6 @@ figure.news {
 #jacket-image {
   width: 150px;
   border-radius: 25px;
-  
 }
 #jacket-image img {
   width: 200px;
@@ -899,6 +901,9 @@ h4 {
   background-color: white;
   margin: 0px 30px 30px 0;
   box-shadow: 0 3px 6px #00000029;
+}
+hgroup a {
+  text-decoration: none;
 }
 .new-arrivals-wrapper {
   background-color: #fff;
@@ -1581,7 +1586,6 @@ ul.footer {
   section.eye-catcher {
     margin-top: 60px;
   }
-
   a.about {
     margin: 400px auto 0 auto;
     padding: 10px;
@@ -1613,7 +1617,6 @@ ul.footer {
   .content-left {
     width: 100%;
   }
-
   figure.categorys {
     width: 400px;
     height: 268px;
@@ -1649,7 +1652,11 @@ ul.footer {
     padding-left: 10px;
     padding-right: 10px;
   }
-
+  h5 {
+    font-size: 1.875rem;
+    text-align: center;
+    padding-left: 0;
+  }
   /* h5 {
     box-sizing: border-box;
     font-size: 1.875rem;
@@ -1665,13 +1672,12 @@ ul.footer {
   #news {
     margin-left: 20px;
   } */
-  h6 {
-    width: 85%;
+
+  /* h6 {
     font-size: 1.875rem;
     padding: 12px 0 12px 0;
     margin: 0 auto 0 auto;
-    border: 2px solid black;
-  }
+  } */
   /* div.instagram-wrapper {
     width: 100%;
   }
@@ -1705,7 +1711,18 @@ ul.footer {
     width: 85%;
     margin: 0 auto 0 auto;
   } */
-
+  .popular-products {
+    flex-direction: column;
+    margin: 20px 20px 0 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  #review-header {
+    margin-top: 20px;
+  }
+  .review-comment p {
+    font-size: 1rem;
+  }
   /* bottom wrapper */
   .bottom-wrapper {
     flex-direction: column;
@@ -1726,19 +1743,7 @@ ul.footer {
     justify-content: space-between;
     margin: 0 auto 40px auto;
   }
-  .popular-products {
-    flex-direction: column;
-    margin: 0;
-    margin-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  #review-header {
-    margin-top: 20px;
-  }
-  .review-comment p { 
-    font-size: 1rem;
-  }
+
   /* footer 
 --------------------*/
   .support-container {

@@ -456,8 +456,11 @@ td {
   font-weight: bold;
   color: var(--dark-blue);
 }
+#proceed-basket {
+  text-decoration: none;
+}
 #proceed-basket button {
-  display: inline-block;
+  display: block;
   font-family: "montserrat";
   font-size: 1.25rem;
   font-weight: 500;
@@ -470,7 +473,7 @@ td {
   transition-duration: 0.5s;
   background-color: #172940;
   border-radius: 5px;
-  margin: 50px auto 35px 55px;
+  margin: 50px auto 35px auto;
   box-shadow: 0 3px 6px #00000029;
   cursor: pointer;
 }
