@@ -700,7 +700,7 @@ p.button {
   border: none;
   padding: 12px 50px;
   text-align: center;
- margin: 50px 0 120px 60px;
+  margin: 50px 0 120px 60px;
   box-shadow: var(--shadow);
   transition: background-color, box-shadow;
   transition-duration: 0.5s;
@@ -1183,6 +1183,9 @@ ul.footer {
     width: 70%;
     justify-content: space-between;
     margin: 0 auto 40px auto;
+  }
+  p.button {
+    margin: 10px 0 0 25px;
   }
   /* footer 
   --------------------*/

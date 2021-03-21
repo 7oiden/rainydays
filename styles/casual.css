@@ -1184,6 +1184,9 @@ ul.footer {
     justify-content: space-between;
     margin: 0 auto 40px auto;
   }
+  p.button {
+    margin: 10px 0 0 25px;
+  }
   /* footer 
   --------------------*/
   .support-container {
