@@ -56,16 +56,31 @@ async function fetchProducts() {
       console.log(results[i].id);
 
       productContainer.innerHTML += `
-    
-       <a href="products_page.html?id=${results[i].id}" id="selected">
-       <div class="jacket">
-       <figure class="jacket-image"><img src="${results[i]["images"][0]["src"]}" class="jacket-image" alt=""></figure>
+       <a href="products_page.html?id=${results[i].id}" id="selected" class="jacket">
+       <div>
+       <figure class="jacket-image"><img src="${results[i]["images"][0]["src"]}" class="jacket-image" alt=""></figure>  
        <h2 class="title">${results[i].name}</h2>
+       <p class="brand">${results[i]["categories"][0]["name"]}</p>
+       <ul class="short-description">${results[i].short_description}</ul>
+       <div class="end-wrapper">
+       <div id="stock">
+       <span id="circle" class="green"></span>
+       <p id="in-stock"></p>
+        </div>    
        <h3 class="title">$${results[i].prices.price}</h3>
         </div>
+        </div>
        </a>
-      
        `;
+
+      const inStockCircle = document.querySelector("#circle");
+      //   const inStock = document.querySelector("#in-stock");
+
+      console.log(results[i].is_in_stock);
+
+      if (results[i].is_in_stock === false) {
+        inStockCircle.classList.add("red");
+      }
     }
   } catch (error) {
     console.log(error);

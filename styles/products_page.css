@@ -903,7 +903,7 @@ div.add-basket {
   height: 20px;
   padding: 0;
 }
-#stock p {
+#in-stock {
   display: inline-block;
   font-size: 0.875rem;
   color: black;

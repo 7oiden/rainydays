@@ -53,6 +53,8 @@ const inStockCircle = document.querySelector("#circle");
 const inStock = document.querySelector("#in-stock");
 const detailImage = document.querySelector(".product-image");
 const reviewCount = document.querySelector("#review-count");
+const breadcrumbName = document.querySelector(".current");
+
 
 const queryString = document.location.search;
 
@@ -101,6 +103,7 @@ function createHtml(details, img) {
   detailPrice.innerHTML = `$${details.prices.price}`;
   detailImage.innerHTML = `<img src="${img}">`;
   reviewCount.innerHTML = `(${details.review_count} Ratings)`;
+  breadcrumbName.innerHTML = `${details.name}`
 
   if (details.is_in_stock === true) {
     inStock.innerHTML = `In stock`;
