@@ -52,6 +52,7 @@ const detailPrice = document.querySelector("#price");
 const inStockCircle = document.querySelector("#circle");
 const inStock = document.querySelector("#in-stock");
 const detailImage = document.querySelector(".product-image");
+const reviewCount = document.querySelector("#review-count");
 
 const queryString = document.location.search;
 
@@ -99,7 +100,7 @@ function createHtml(details, img) {
   detailDescription.innerHTML = `${details.description}`;
   detailPrice.innerHTML = `$${details.prices.price}`;
   detailImage.innerHTML = `<img src="${img}">`;
-  
+  reviewCount.innerHTML = `(${details.review_count} Ratings)`;
 
   if (details.is_in_stock === true) {
     inStock.innerHTML = `In stock`;

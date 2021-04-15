@@ -678,7 +678,7 @@ div.bestsellers {
   flex-direction: column;
   margin: 0 auto 0 auto;
 }
-figure.jacket {
+.jacket {
   background-color: white;
   width: 350px;
   height: 390px;
@@ -745,7 +745,7 @@ margin-left: 30px;
   float: left;
   clear: left;
 }
-figcaption.title {
+h2 {
   font-family: "century gothic";
   color: black;
   font-size: 1.25rem;
@@ -753,7 +753,7 @@ figcaption.title {
   margin: 0px 30px 40px 30px;
   float: left;
 }
-figcaption.price {
+h3 {
   color: black;
 }
 .color {

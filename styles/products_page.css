@@ -719,10 +719,15 @@ div.image {
 #rating {
   color: var(--dark-blue);
   margin-left: 5px;
+  margin-right: 10px;
   font-weight: 600;
 }
 #review-link {
   color: #000;
+  text-decoration: none;
+}
+.review-wrapper {
+  display: flex;
 }
 #short-description {
   color: var(--dark-blue);
