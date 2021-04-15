@@ -1,0 +1,38 @@
+const resultsContainer = document.querySelector(".results");
+
+url = "http://7oiden.com/rainydays/wp-json/wc/store/products";
+
+async function fetchMovies() {
+  try {
+    const response = await fetch(url);
+    const results = await response.json();
+
+    console.log(results);
+
+    resultsContainer.innerHTML = "";
+
+    for (let i = 0; i < results.length; i++) {
+      console.log(results[i].id);
+
+      resultsContainer.innerHTML += `
+     <a href="details.html?id=${results[i].id}"
+     <div class="movie-card">
+     <hgroup>
+     <h2>${results[i].name}</h2>
+     <h3>Directed by <strong>${results[i].type}</strong></h3>
+     </hgroup>
+     <div class="rating-wrapper">
+     <img src="images/32px-Rotten_Tomatoes.svg">
+     <p class="rating">$${results[i].prices.price} </p>
+     </div>
+     </div></a>`;
+    }
+  } catch (error) {
+    console.log(error);
+    resultsContainer.innerHTML = displayError(
+      "An error has occured when trying to retrive the API"
+    );
+  }
+}
+
+fetchMovies();

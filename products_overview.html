@@ -275,34 +275,31 @@
       <div class="wrapper">
         <section class="products">
           <figure class="jacket">
-            <a href="products_page.html" id="selected">
-              <img
-                src="images\icons\favorite.svg"
-                alt="Favorites icon"
-                class="make-favorite"
-              />
-              <img
-                src="images\blue.jpg"
-                alt="Rocky Mountains rainjacket from Rainy Days in the color blue"
-                class="jacket-image"
-              />
-              <!-- <img src="images\icons\new.png" alt="New product" class="new" /> -->
-              <ul class="color">
-                <li>
-                  Avalible <br />
-                  colors:
-                </li>
-                <li>
-                  <img src="images\icons\color-blue.png" alt="color blue" />
-                </li>
-                <li>
-                  <img src="images\icons\color-red.png" alt="color red" />
-                </li>
-                <li>
-                  <img src="images\icons\color-yellow.png" alt="color yellow" />
-                </li>
-              </ul>
-              <ul class="rating">
+            <a id="selected">
+            <!-- <img
+              src="images\icons\favorite.svg"
+              alt="Favorites icon"
+              class="make-favorite"
+            /> -->
+            <div class="jacket-image"></div>
+            <!-- <img src="images\icons\new.png" alt="New product" class="new" /> -->
+            <ul class="color">
+              <li>
+                Avalible <br />
+                colors:
+              </li>
+              <li>
+                <img src="images\icons\color-blue.png" alt="color blue" />
+              </li>
+              <li>
+                <img src="images\icons\color-red.png" alt="color red" />
+              </li>
+              <li>
+                <img src="images\icons\color-yellow.png" alt="color yellow" />
+              </li>
+            </ul>
+            <div class="short-description"></div>
+            <!-- <ul class="rating">
                 <li>
                   <img src="images\icons\star.svg" alt="4.5 star rating" />
                 </li>
@@ -312,10 +309,10 @@
                 <li><img src="images\icons\star.svg" alt="star" /></li>
                 <li><img src="images\icons\star.svg" alt="star" /></li>
                 <li><img src="images\icons\star_half.svg" alt="star" /></li>
-              </ul>
-              <p>Rainy Days</p>
-              <figcaption class="title">Rocky Mountains</figcaption>
-              <figcaption class="price">$59.00</figcaption>
+              </ul> -->
+            <p class="brand"></p>
+            <figcaption class="title"></figcaption>
+            <figcaption class="price"></figcaption>
             </a>
           </figure>
           <figure class="jacket">
@@ -757,9 +754,7 @@
       <div class="bottom-wrapper">
         <div class="newsletter">
           <div class="label-container">
-            <label id="label" for="emails"
-              >Subscribe to our Newsletter:</label
-            >
+            <label id="label" for="emails">Subscribe to our Newsletter:</label>
           </div>
           <form method="get" class="newsletter">
             <input
@@ -866,5 +861,6 @@
     </footer>
     <script src="js/script.js"></script>
     <script src="js/header.js"></script>
+    <script src="js/products_overview.js"></script>
   </body>
 </html>

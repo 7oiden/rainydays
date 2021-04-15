@@ -35,8 +35,12 @@
       <div class="campaign">
         <ul class="campaign">
           <li><strong>Shop now:</strong> high quality rainjackets</li>
-          <li id="mobile-hide"><strong>Special offer:</strong> -20% on your first order</li>
-          <li id="mobile-hide"><strong>Always:</strong> Money back guarantee</li>
+          <li id="mobile-hide">
+            <strong>Special offer:</strong> -20% on your first order
+          </li>
+          <li id="mobile-hide">
+            <strong>Always:</strong> Money back guarantee
+          </li>
         </ul>
       </div>
       <div class="sticky">
@@ -277,11 +281,11 @@
           <div class="column-wrapper">
             <div class="left-column">
               <figure class="product-image">
-                <img
+                <!-- <img
                   id="jacket"
                   src="images\blue-large.jpg"
                   alt="product photo of a blue Rocky Mountains rainjacket"
-                />
+                /> -->
               </figure>
               <div class="tablet-wrapper">
                 <div class="small-image">
@@ -326,7 +330,10 @@
                       <li>
                         <div class="customer-review">
                           <figure>
-                            <img src="images\jordan.png" alt="image of customer" />
+                            <img
+                              src="images\jordan.png"
+                              alt="image of customer"
+                            />
                           </figure>
                           <div class="review-comment">
                             <div class="star-wrapper">
@@ -373,7 +380,10 @@
                       <li>
                         <div class="customer-review">
                           <figure>
-                            <img src="images\rachel.png" alt="image of customer"/>
+                            <img
+                              src="images\rachel.png"
+                              alt="image of customer"
+                            />
                           </figure>
                           <div class="review-comment">
                             <div class="star-wrapper">
@@ -422,7 +432,12 @@
                       </li>
                       <li>
                         <div class="customer-review">
-                          <figure><img src="images\marie.png" alt="image of customer" /></figure>
+                          <figure>
+                            <img
+                              src="images\marie.png"
+                              alt="image of customer"
+                            />
+                          </figure>
                           <div class="review-comment">
                             <div class="star-wrapper">
                               <figure>
@@ -470,7 +485,10 @@
                       <li class="customer-review">
                         <div class="customer-review">
                           <figure>
-                            <img src="images\louise.png" alt="image of customer" />
+                            <img
+                              src="images\louise.png"
+                              alt="image of customer"
+                            />
                           </figure>
                           <div class="review-comment">
                             <div class="star-wrapper">
@@ -524,23 +542,12 @@
             </div>
             <div class="right-column">
               <hgroup>
-                <h1>Rocky Mountains</h1>
-                <h2>by Rainydays</h2>
+                <h1 id="product-name"></h1>
+                <h2 id="product-brand"></h2>
               </hgroup>
-              <ul class="description">
-                <li>100% waterproof and windproof</li>
-                <li>Lightweight and packable (400g)</li>
-                <li>Breathable</li>
-              </ul>
+              <ul id="short-description"></ul>
               <h3>Product description:</h3>
-              <p class="description">
-                Nequi omnit quasit eost aut fugit ut estium susam fuga. Ficaepe
-                liatque porepera dolorporum que del et est et que et anis cum
-                nos volorpor aut a doluptatem dolupta temqui aut demolup
-                tibuscitem. Ita quia cori dolore plicide pore con ni ommolorrum
-                quae optatent quam dolorum facea sequam nam facipsum quo bearchi
-                citiunt esendae vel minus sunt.
-              </p>
+              <p class="description" id="description"></p>
               <div class="form-container">
                 <div>
                   <h4>Color:</h4>
@@ -595,10 +602,10 @@
               <div id="basket-container">
                 <div id="price-wrapper">
                   <div id="stock">
-                    <span id="circle"></span>
-                    <p>In stock</p>
+                    <span id="circle" class="green"></span>
+                    <p id="in-stock"></p>
                   </div>
-                  <h5>$ 49.00</h5>
+                  <h5 id="price"></h5>
                 </div>
                 <div class="add-basket">
                   <button id="basket-button">Add to basket</button>
@@ -622,9 +629,7 @@
       <div class="bottom-wrapper">
         <div class="newsletter">
           <div class="label-container">
-            <label id="label" for="emails"
-              >Subscribe to our Newsletter:</label
-            >
+            <label id="label" for="emails">Subscribe to our Newsletter:</label>
           </div>
           <form method="get" class="newsletter">
             <input

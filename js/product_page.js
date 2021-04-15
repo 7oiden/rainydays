@@ -13,11 +13,9 @@ function openReviews() {
 
 link.addEventListener("click", openReviews);
 
-
 reviews.onclick = function () {
   reviews.style.display = "none";
 };
-
 
 // function closeReviews() {
 //   if (openReviews() === true) {
@@ -41,3 +39,72 @@ function addToBasket() {
 }
 
 button.addEventListener("click", addToBasket);
+
+//new code
+
+const detailContainer = document.querySelector(".movie-details");
+
+const detailName = document.querySelector("#product-name");
+const detailBrand = document.querySelector("#product-brand");
+const detailShortDescription = document.querySelector("#short-description");
+const detailDescription = document.querySelector("#description");
+const detailPrice = document.querySelector("#price");
+const inStockCircle = document.querySelector("#circle");
+const inStock = document.querySelector("#in-stock");
+const detailImage = document.querySelector(".product-image");
+
+const queryString = document.location.search;
+
+const params = new URLSearchParams(queryString);
+
+const id = params.get("id");
+
+url =
+  "http://7oiden.com/rainydays/wp-json/wc/store/products/" + id + "/?_embed";
+
+console.log(url);
+
+async function fetchDetails() {
+  try {
+    const response = await fetch(url);
+    const details = await response.json();
+
+    console.log(details.categories[0].name);
+    document.title = details.name;
+
+    const images = details.images;
+
+    for (let i = 0; i < images.length; i++) {
+      const img = images[0].src;
+      console.log(img);
+
+      console.log(details);
+
+      createHtml(details, img);
+    }
+  } catch (error) {
+    console.log(error);
+    detailContainer.innerHTML = displayError(
+      "An error has occured when trying to retrive the API"
+    );
+  }
+}
+
+fetchDetails();
+
+function createHtml(details, img) {
+  detailName.innerHTML = `${details.name}`;
+  detailBrand.innerHTML = `${details.categories[0].name}`;
+  detailShortDescription.innerHTML = `${details.short_description}`;
+  detailDescription.innerHTML = `${details.description}`;
+  detailPrice.innerHTML = `$${details.prices.price}`;
+  detailImage.innerHTML = `<img src="${img}">`;
+  
+
+  if (details.is_in_stock === true) {
+    inStock.innerHTML = `In stock`;
+  } else {
+    inStock.innerHTML = `Out of stock`;
+    inStockCircle.classList.add("red");
+  }
+}
