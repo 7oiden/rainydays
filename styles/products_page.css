@@ -853,11 +853,7 @@ p.description {
   margin-top: 0;
   padding-top: 0;
 }
-div.add-basket {
-  width: 60%;
-  margin: 0 auto 0 auto;
-}
-.add-basket button {
+#basket-button {
   box-sizing: border-box;
   display: block;
   font-family: "montserrat";
@@ -878,10 +874,16 @@ div.add-basket {
   transition-duration: 0.5s;
   opacity: 1;
   z-index: 100;
+  width: 60%;
+  margin: 0 auto 0 auto;
 }
-.add-basket button:hover {
+#basket-button:hover {
   opacity: 0.75;
   box-shadow: none;
+}
+#basket-button:disabled {
+  background-color: #cccccc;
+  color: #666666;
 }
 /* input[type="submit"]:hover {
   opacity: 0.75;

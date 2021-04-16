@@ -4,46 +4,48 @@ const productPrice = document.querySelector(".price");
 const productImage = document.querySelector(".jacket-image");
 const productShortDescription = document.querySelector(".short-description");
 const productBrand = document.querySelector(".brand");
+const loadButton = document.querySelector(".load");
+
 // const productLink = document.querySelector("#selected");
 
 const productsUrl = "http://7oiden.com/rainydays/wp-json/wc/store/products/";
 
 const corsEnabledUrl = "https://noroffcors.herokuapp.com/" + productsUrl;
 
-// async function fetchProducts() {
-//   try {
-//     const response = await fetch(url);
-//     const results = await response.json();
+async function fetchProducts() {
+  try {
+    const response = await fetch(url);
+    const results = await response.json();
 
-//     console.log(results);
+    console.log(results);
 
-//     for (let i = 0; i < results.length; i++) {
-//       console.log(results[i].id);
+    for (let i = 0; i < results.length; i++) {
+      console.log(results[i].id);
 
-//       console.log(results[i]["categories"][0]["name"]);
+      console.log(results[i]["categories"][0]["name"]);
 
-//       //   productContainer.innerHTML += `
-//       //  <a href="details.html?id=${results[i].id}"
+      //   productContainer.innerHTML += `
+      //  <a href="details.html?id=${results[i].id}"
 
-//       // </a>`;
+      // </a>`;
 
-//       productName.innerHTML = `${results[i].name}`;
-//       productPrice.innerHTML = `$${results[i].prices.price}`;
-//       productImage.innerHTML = `<img src="${results[i]["images"][0]["src"]}" class="jacket-image" alt="">`;
+      productName.innerHTML = `${results[i].name}`;
+      productPrice.innerHTML = `$${results[i].prices.price}`;
+      productImage.innerHTML = `<img src="${results[i]["images"][0]["src"]}" class="jacket-image" alt="">`;
 
-//       productBrand.innerHTML = `${results[i]["categories"][0]["name"]}`;
+      productBrand.innerHTML = `${results[i]["categories"][0]["name"]}`;
 
-//       productShortDescription.innerHTML = `${results[i].short_description}`;
-//     }
-//   } catch (error) {
-//     console.log(error);
-//     productContainer.innerHTML = displayError(
-//       "An error has occured when trying to retrive the API"
-//     );
-//   }
-// }
+      productShortDescription.innerHTML = `${results[i].short_description}`;
+    }
+  } catch (error) {
+    console.log(error);
+    productContainer.innerHTML = displayError(
+      "An error has occured when trying to retrive the API"
+    );
+  }
+}
 
-// fetchProducts();
+fetchProducts();
 
 async function fetchProducts() {
   try {
@@ -60,6 +62,10 @@ async function fetchProducts() {
       let inStock = "In stock";
       let inStockColor = "green";
       let onSale = "";
+
+      if (results.length < 10) {
+        loadButton.disabled = true;
+      }
 
       if (results[i].is_in_stock === false) {
         inStock = "Out of stock";
@@ -90,18 +96,6 @@ async function fetchProducts() {
         </div>
        </a>
        `;
-
-      //   let inStockCircle = document.querySelector("#circle");
-      //   let inStock = document.querySelector("#in-stock");
-
-      //   console.log(results[i].is_in_stock);
-
-      //   if (results[i].is_in_stock === true) {
-      //     inStockCircle.classList.add("green");
-      //     inStock.innerHTML = "In stock";
-      //   } else {
-      //     inStockCircle.classList.add("red");
-      //   }
     }
   } catch (error) {
     console.log(error);

@@ -45,7 +45,6 @@ button.addEventListener("click", addToBasket);
 const detailContainer = document.querySelector(".product-card");
 const spinner = document.querySelector(".spinner");
 
-
 const detailName = document.querySelector("#product-name");
 const detailBrand = document.querySelector("#product-brand");
 const detailShortDescription = document.querySelector("#short-description");
@@ -56,6 +55,7 @@ const inStock = document.querySelector("#in-stock");
 const detailImage = document.querySelector(".product-image");
 const reviewCount = document.querySelector("#review-count");
 const breadcrumbName = document.querySelector(".current");
+const basketButton = document.querySelector("#basket-button");
 
 const queryString = document.location.search;
 
@@ -68,8 +68,6 @@ const detailsUrl =
 
 const corsFix = "https://noroffcors.herokuapp.com/" + detailsUrl;
 
-
-
 async function fetchDetails() {
   try {
     const response = await fetch(corsFix);
@@ -78,7 +76,6 @@ async function fetchDetails() {
     console.log(details.categories[0].name);
     document.title = details.name;
 
-
     const images = details.images;
 
     for (let i = 0; i < images.length; i++) {
@@ -86,8 +83,6 @@ async function fetchDetails() {
       console.log(img);
 
       console.log(details);
-
-    
 
       createHtml(details, img);
     }
@@ -100,7 +95,6 @@ async function fetchDetails() {
 }
 
 fetchDetails();
-
 
 function createHtml(details, img) {
   spinner.style.display = "none";
@@ -118,5 +112,6 @@ function createHtml(details, img) {
   } else {
     inStock.innerHTML = `Out of stock`;
     inStockCircle.classList.add("red");
+    basketButton.disabled = true;
   }
 }

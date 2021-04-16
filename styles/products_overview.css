@@ -872,6 +872,10 @@ button.load {
   cursor: pointer;
   border-radius: 5px;
 }
+button.load:disabled {
+  background-color: #cccccc;
+  color: #666666;
+}
 .load:hover {
   background-color: #172940bf;
   box-shadow: none;
