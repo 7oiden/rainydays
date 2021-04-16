@@ -6,7 +6,7 @@ const productShortDescription = document.querySelector(".short-description");
 const productBrand = document.querySelector(".brand");
 // const productLink = document.querySelector("#selected");
 
-url = "http://7oiden.com/rainydays/wp-json/wc/store/products?_embed";
+url = "http://7oiden.com/rainydays/wp-json/wc/store/products/";
 
 // async function fetchProducts() {
 //   try {
@@ -55,22 +55,20 @@ async function fetchProducts() {
     for (let i = 0; i < results.length; i++) {
       console.log(results[i].id);
 
-      let inStock = "In stock"
-      let inStockColor = "green"
-      let onSale = ""
+      let inStock = "In stock";
+      let inStockColor = "green";
+      let onSale = "";
 
       if (results[i].is_in_stock === false) {
-            inStock = "Out of stock"
-            inStockColor = "red"
+        inStock = "Out of stock";
+        inStockColor = "red";
       }
 
       if (results[i].on_sale === true) {
         onSale = "SALE";
       }
 
-     
-
-        productContainer.innerHTML += `
+      productContainer.innerHTML += `
        <a href="products_page.html?id=${results[i].id}" id="selected" class="jacket">
        <div>
        <div class="top-wrapper">
@@ -91,18 +89,17 @@ async function fetchProducts() {
        </a>
        `;
 
+      //   let inStockCircle = document.querySelector("#circle");
+      //   let inStock = document.querySelector("#in-stock");
 
-    //   let inStockCircle = document.querySelector("#circle");
-    //   let inStock = document.querySelector("#in-stock");
+      //   console.log(results[i].is_in_stock);
 
-    //   console.log(results[i].is_in_stock);
-
-    //   if (results[i].is_in_stock === true) {
-    //     inStockCircle.classList.add("green");
-    //     inStock.innerHTML = "In stock";
-    //   } else {
-    //     inStockCircle.classList.add("red");
-    //   }
+      //   if (results[i].is_in_stock === true) {
+      //     inStockCircle.classList.add("green");
+      //     inStock.innerHTML = "In stock";
+      //   } else {
+      //     inStockCircle.classList.add("red");
+      //   }
     }
   } catch (error) {
     console.log(error);
