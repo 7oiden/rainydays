@@ -42,7 +42,7 @@ button.addEventListener("click", addToBasket);
 
 //new code
 
-const detailContainer = document.querySelector(".movie-details");
+const detailContainer = document.querySelector(".product-card");
 
 const detailName = document.querySelector("#product-name");
 const detailBrand = document.querySelector("#product-brand");
@@ -109,8 +109,4 @@ function createHtml(details, img) {
     inStock.innerHTML = `Out of stock`;
     inStockCircle.classList.add("red");
   }
-}
-
-function displayError(message = "Unknown error") {
-  return `<div class="error">${message}</div>`;
 }

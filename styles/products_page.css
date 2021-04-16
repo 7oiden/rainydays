@@ -1235,6 +1235,24 @@ h6 {
   right: 520px;
   z-index: 999;
 }
+/* error message */
+.spinner {
+  border: 8px solid #5c73f240;
+  border-top: 8px solid #5c73f2;
+  margin: 50px 0;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s ease-in-out infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 /* footer
 --------------------*/
 .support-wrapper {

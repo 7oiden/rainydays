@@ -6,7 +6,9 @@ const productShortDescription = document.querySelector(".short-description");
 const productBrand = document.querySelector(".brand");
 // const productLink = document.querySelector("#selected");
 
-url = "http://7oiden.com/rainydays/wp-json/wc/store/products/";
+const productsUrl = "http://7oiden.com/rainydays/wp-json/wc/store/products/";
+
+const corsEnabledUrl = "https://noroffcors.herokuapp.com/" + productsUrl;
 
 // async function fetchProducts() {
 //   try {
@@ -45,7 +47,7 @@ url = "http://7oiden.com/rainydays/wp-json/wc/store/products/";
 
 async function fetchProducts() {
   try {
-    const response = await fetch(url);
+    const response = await fetch(corsEnabledUrl);
     const results = await response.json();
 
     console.log(results);
@@ -110,7 +112,3 @@ async function fetchProducts() {
 }
 
 fetchProducts();
-
-function displayError(message = "Unknown error") {
-  return `<div class="error">${message}</div>`;
-}
