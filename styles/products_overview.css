@@ -714,8 +714,8 @@ figure.bestseller:hover {
   text-decoration: none;
 }
 .top-wrapper {
-display: flex;
-justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 .sale {
   display: inline-block;

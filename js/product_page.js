@@ -55,15 +55,13 @@ const detailImage = document.querySelector(".product-image");
 const reviewCount = document.querySelector("#review-count");
 const breadcrumbName = document.querySelector(".current");
 
-
 const queryString = document.location.search;
 
 const params = new URLSearchParams(queryString);
 
 const id = params.get("id");
 
-url =
-  "http://7oiden.com/rainydays/wp-json/wc/store/products/" + id + "/?_embed";
+url = "http://7oiden.com/rainydays/wp-json/wc/store/products/" + id;
 
 console.log(url);
 
@@ -103,7 +101,7 @@ function createHtml(details, img) {
   detailPrice.innerHTML = `$${details.prices.price}`;
   detailImage.innerHTML = `<img src="${img}">`;
   reviewCount.innerHTML = `(${details.review_count} Ratings)`;
-  breadcrumbName.innerHTML = `${details.name}`
+  breadcrumbName.innerHTML = `${details.name}`;
 
   if (details.is_in_stock === true) {
     inStock.innerHTML = `In stock`;
@@ -111,4 +109,8 @@ function createHtml(details, img) {
     inStock.innerHTML = `Out of stock`;
     inStockCircle.classList.add("red");
   }
+}
+
+function displayError(message = "Unknown error") {
+  return `<div class="error">${message}</div>`;
 }

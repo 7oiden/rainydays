@@ -111,12 +111,6 @@ async function fetchProducts() {
 
 fetchProducts();
 
-{
-  /* <figcaption class="title">${productName.innerHTML}</figcaption>
-     <figcaption class="price">$${results[i].prices.price}</figcaption> */
+function displayError(message = "Unknown error") {
+  return `<div class="error">${message}</div>`;
 }
-
-// productLink.href = `products_page.html?id=${results[i].id}`;
-// productName.innerHTML = `${results[i].name}`;
-// productPrice.innerHTML = `$${results[i].prices.price}`;
-// productImage.innerHTML = `<img src="${results[i]["images"][0]["src"]}" class="jacket-image" alt="">`;
