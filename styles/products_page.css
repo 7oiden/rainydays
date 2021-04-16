@@ -1237,12 +1237,12 @@ h6 {
 }
 /* error message */
 .spinner {
-  border: 8px solid #5c73f240;
-  border-top: 8px solid #5c73f2;
-  margin: 50px 0;
+  border: 12px solid #17294040;
+  border-top: 12px solid #536175;
+  margin: 30px 30px;
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
   animation: spin 1s ease-in-out infinite;
 }
 @keyframes spin {

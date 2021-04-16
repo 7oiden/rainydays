@@ -43,6 +43,8 @@ button.addEventListener("click", addToBasket);
 //new code
 
 const detailContainer = document.querySelector(".product-card");
+const spinner = document.querySelector(".spinner");
+
 
 const detailName = document.querySelector("#product-name");
 const detailBrand = document.querySelector("#product-brand");
@@ -66,7 +68,7 @@ const detailsUrl =
 
 const corsFix = "https://noroffcors.herokuapp.com/" + detailsUrl;
 
-console.log(url);
+
 
 async function fetchDetails() {
   try {
@@ -76,6 +78,7 @@ async function fetchDetails() {
     console.log(details.categories[0].name);
     document.title = details.name;
 
+
     const images = details.images;
 
     for (let i = 0; i < images.length; i++) {
@@ -83,6 +86,8 @@ async function fetchDetails() {
       console.log(img);
 
       console.log(details);
+
+    
 
       createHtml(details, img);
     }
@@ -96,7 +101,9 @@ async function fetchDetails() {
 
 fetchDetails();
 
+
 function createHtml(details, img) {
+  spinner.style.display = "none";
   detailName.innerHTML = `${details.name}`;
   detailBrand.innerHTML = `${details.categories[0].name}`;
   detailShortDescription.innerHTML = `${details.short_description}`;
