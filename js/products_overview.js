@@ -55,17 +55,35 @@ async function fetchProducts() {
     for (let i = 0; i < results.length; i++) {
       console.log(results[i].id);
 
-      productContainer.innerHTML += `
+      let inStock = "In stock"
+      let inStockColor = "green"
+      let onSale = ""
+
+      if (results[i].is_in_stock === false) {
+            inStock = "Out of stock"
+            inStockColor = "red"
+      }
+
+      if (results[i].on_sale === true) {
+        onSale = "SALE";
+      }
+
+     
+
+        productContainer.innerHTML += `
        <a href="products_page.html?id=${results[i].id}" id="selected" class="jacket">
        <div>
-       <figure class="jacket-image"><img src="${results[i]["images"][0]["src"]}" class="jacket-image" alt=""></figure>  
+       <div class="top-wrapper">
+       <figure class="jacket-image"><img src="${results[i]["images"][0]["src"]}" class="jacket-image" alt=""></figure>
+       <span class=sale>${onSale}</span> 
+       </div> 
        <h2 class="title">${results[i].name}</h2>
        <p class="brand">${results[i]["categories"][0]["name"]}</p>
        <ul class="short-description">${results[i].short_description}</ul>
        <div class="end-wrapper">
        <div id="stock">
-       <span id="circle" class="green"></span>
-       <p id="in-stock"></p>
+       <span id="circle" class="${inStockColor}"></span>
+       <p id="in-stock">${inStock}</p>
         </div>    
        <h3 class="title">$${results[i].prices.price}</h3>
         </div>
@@ -73,14 +91,18 @@ async function fetchProducts() {
        </a>
        `;
 
-      const inStockCircle = document.querySelector("#circle");
-      //   const inStock = document.querySelector("#in-stock");
 
-      console.log(results[i].is_in_stock);
+    //   let inStockCircle = document.querySelector("#circle");
+    //   let inStock = document.querySelector("#in-stock");
 
-      if (results[i].is_in_stock === false) {
-        inStockCircle.classList.add("red");
-      }
+    //   console.log(results[i].is_in_stock);
+
+    //   if (results[i].is_in_stock === true) {
+    //     inStockCircle.classList.add("green");
+    //     inStock.innerHTML = "In stock";
+    //   } else {
+    //     inStockCircle.classList.add("red");
+    //   }
     }
   } catch (error) {
     console.log(error);
