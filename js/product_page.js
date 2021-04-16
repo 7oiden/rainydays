@@ -61,13 +61,16 @@ const params = new URLSearchParams(queryString);
 
 const id = params.get("id");
 
-url = "http://7oiden.com/rainydays/wp-json/wc/store/products/" + id;
+const detailsUrl =
+  "http://7oiden.com/rainydays/wp-json/wc/store/products/" + id;
+
+const corsFix = "https://noroffcors.herokuapp.com/" + detailsUrl;
 
 console.log(url);
 
 async function fetchDetails() {
   try {
-    const response = await fetch(url);
+    const response = await fetch(corsFix);
     const details = await response.json();
 
     console.log(details.categories[0].name);
