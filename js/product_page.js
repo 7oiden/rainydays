@@ -42,6 +42,8 @@ button.addEventListener("click", addToBasket);
 
 //new code
 
+const mainContainer = document.querySelector(".main-wrapper");
+
 const detailContainer = document.querySelector(".product-card");
 const spinner = document.querySelector(".spinner");
 
@@ -56,6 +58,10 @@ const detailImage = document.querySelector(".product-image");
 const reviewCount = document.querySelector("#review-count");
 const breadcrumbName = document.querySelector(".current");
 const basketButton = document.querySelector("#basket-button");
+
+const color1 = document.querySelector("#col1");
+const color2 = document.querySelector("#col2");
+const color3 = document.querySelector("#col3");
 
 const queryString = document.location.search;
 
@@ -73,22 +79,28 @@ async function fetchDetails() {
     const response = await fetch(corsFix);
     const details = await response.json();
 
-    console.log(details.categories[0].name);
     document.title = details.name;
 
-    const images = details.images;
+    console.log(details);
 
-    for (let i = 0; i < images.length; i++) {
-      const img = images[0].src;
-      console.log(img);
+    const colorTag = details.tags;
+    const image = details.images;
 
-      console.log(details);
-
-      createHtml(details, img);
+    for (let i = 0; i < colorTag.length; i++) {
+      color1.innerHTML = colorTag[0].name;
+      color2.innerHTML = colorTag[1].name;
+      color3.innerHTML = colorTag[2].name;
     }
+
+    for (let i = 0; i < image.length; i++) {
+      console.log(image[i].src);
+      detailImage.innerHTML = `<img src="${image[i].src}">`;
+    }
+
+    createHtml(details);
   } catch (error) {
     console.log(error);
-    detailContainer.innerHTML = displayError(
+    mainContainer.innerHTML = displayError(
       "An error has occured when trying to retrive the API"
     );
   }
@@ -96,14 +108,14 @@ async function fetchDetails() {
 
 fetchDetails();
 
-function createHtml(details, img) {
+function createHtml(details, tag) {
   spinner.style.display = "none";
   detailName.innerHTML = `${details.name}`;
+
   detailBrand.innerHTML = `${details.categories[0].name}`;
   detailShortDescription.innerHTML = `${details.short_description}`;
   detailDescription.innerHTML = `${details.description}`;
   detailPrice.innerHTML = `$${details.prices.price}`;
-  detailImage.innerHTML = `<img src="${img}">`;
   reviewCount.innerHTML = `(${details.review_count} Ratings)`;
   breadcrumbName.innerHTML = `${details.name}`;
 
@@ -115,3 +127,14 @@ function createHtml(details, img) {
     basketButton.disabled = true;
   }
 }
+
+//  const images = details.images;
+
+//  for (let i = 0; i < images.length; i++) {
+//    const img = images[0].src;
+//    console.log(img);
+
+//    console.log(details);
+
+//    createHtml(details, img);
+//  }

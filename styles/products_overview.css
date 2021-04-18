@@ -1004,6 +1004,7 @@ a > .chat:hover {
   content: "\2714";
   font-size: 2rem;
 }
+/* error message */
 .error {
   color: white;
   font-size: 1.125rem;
@@ -1015,7 +1016,6 @@ a > .chat:hover {
   padding: 30px;
   border-radius: 10px;
 }
-/* error message */
 .spinner {
   border: 12px solid #17294040;
   border-top: 12px solid #536175;

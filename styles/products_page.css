@@ -962,14 +962,14 @@ label > input[name="color"] + ::before {
   content: "";
   display: inline-block;
   vertical-align: bottom;
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 0.5rem;
+  height: 0.5rem;
   border-radius: 50%;
   border: 3px solid #e6e6e6;
   cursor: pointer;
   margin-right: 20px;
 }
-input[value="blue"] + ::before {
+/* input[value="blue"] + ::before {
   background-color: #536175;
 }
 input[value="red"] + ::before {
@@ -977,13 +977,14 @@ input[value="red"] + ::before {
 }
 input[value="yellow"] + ::before {
   background-color: #f2b705;
-}
+} */
 label > input[name="color"]:hover + ::before {
   opacity: 0.75;
   border-color: #c2c2c2;
 }
 label > input[name="color"]:checked + ::before {
   border-color: #000;
+  background-color: #000;
 }
 
 label > input[name="size"] {
@@ -1238,6 +1239,17 @@ h6 {
   z-index: 999;
 }
 /* error message */
+.error {
+  color: white;
+  font-size: 1.125rem;
+  padding: 1rem 2rem 1rem 2rem;
+  background-color: #be3e35;
+  text-align: center;
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 10px;
+}
 .spinner {
   border: 12px solid #17294040;
   border-top: 12px solid #536175;

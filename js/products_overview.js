@@ -14,41 +14,6 @@ const corsEnabledUrl = "https://noroffcors.herokuapp.com/" + productsUrl;
 
 async function fetchProducts() {
   try {
-    const response = await fetch(url);
-    const results = await response.json();
-
-    console.log(results);
-
-    for (let i = 0; i < results.length; i++) {
-      console.log(results[i].id);
-
-      console.log(results[i]["categories"][0]["name"]);
-
-      //   productContainer.innerHTML += `
-      //  <a href="details.html?id=${results[i].id}"
-
-      // </a>`;
-
-      productName.innerHTML = `${results[i].name}`;
-      productPrice.innerHTML = `$${results[i].prices.price}`;
-      productImage.innerHTML = `<img src="${results[i]["images"][0]["src"]}" class="jacket-image" alt="">`;
-
-      productBrand.innerHTML = `${results[i]["categories"][0]["name"]}`;
-
-      productShortDescription.innerHTML = `${results[i].short_description}`;
-    }
-  } catch (error) {
-    console.log(error);
-    productContainer.innerHTML = displayError(
-      "An error has occured when trying to retrive the API"
-    );
-  }
-}
-
-fetchProducts();
-
-async function fetchProducts() {
-  try {
     const response = await fetch(corsEnabledUrl);
     const results = await response.json();
 
@@ -57,7 +22,7 @@ async function fetchProducts() {
     productContainer.innerHTML = "";
 
     for (let i = 0; i < results.length; i++) {
-      console.log(results[i].id);
+      console.log(results[i].tags);
 
       let inStock = "In stock";
       let inStockColor = "green";
@@ -106,3 +71,7 @@ async function fetchProducts() {
 }
 
 fetchProducts();
+
+for (let i = 0; i < results[i].tags.length; i++) {
+  console.log(results[i].tags[i].name);
+}
