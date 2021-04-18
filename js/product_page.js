@@ -57,7 +57,7 @@ const ordinaryPrice = document.querySelector("#ordinary-price");
 const inStockCircle = document.querySelector("#circle");
 const inStock = document.querySelector("#in-stock");
 const detailImage = document.querySelector(".product-image");
-const rating = document.querySelector("#rating");
+// const rating = document.querySelector("#rating");
 
 const reviewCount = document.querySelector("#review-count");
 const breadcrumbName = document.querySelector(".current");
@@ -112,7 +112,7 @@ async function fetchDetails() {
 
 fetchDetails();
 
-function createHtml(details, tag) {
+function createHtml(details) {
   spinner.style.display = "none";
   detailName.innerHTML = `${details.name}`;
 
@@ -121,8 +121,8 @@ function createHtml(details, tag) {
   detailDescription.innerHTML = `${details.description}`;
   detailPrice.innerHTML = `$${details.prices.price}`;
   ordinaryPrice.innerHTML = `$${details.prices.regular_price}`;
-  rating.innerHTML = `${details.average_rating}`;
-  reviewCount.innerHTML = `(${details.review_count} Ratings)`;
+  // rating.innerHTML = `${details.average_rating}`;
+  reviewCount.innerHTML = `${details.review_count} Reviews`;
   breadcrumbName.innerHTML = `${details.name}`;
 
   if (details.is_in_stock === true) {

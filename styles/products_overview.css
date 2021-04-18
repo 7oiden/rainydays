@@ -666,17 +666,17 @@ section.products {
   grid-template-rows: auto auto auto auto;
   grid-template-columns: auto auto auto;
 }
-section.bestsellers {
+section.sales {
   width: 500px;
   background-image: url("../images/mountain_peak.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
-div.bestsellers {
+.product-sale {
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin: 0 auto 0 auto;
+  align-items: center;
 }
 .jacket {
   background-color: white;
@@ -695,7 +695,10 @@ div.bestsellers {
   display: block;
   border: 3px solid grey;
 }
-figure.bestseller {
+.jacket-sale {
+  margin-bottom: 70px;
+}
+/* figure.bestseller {
   box-sizing: content-box;
   border: 3px solid transparent;
   transition: border;
@@ -706,7 +709,7 @@ figure.bestseller:hover {
   box-sizing: content-box;
   border: 3px solid grey;
   opacity: 0.9;
-}
+} */
 #selected {
   display: block;
   width: 350px;
@@ -776,10 +779,16 @@ h2 {
 }
 h3 {
   font-size: 1.5rem;
-  color: black;
   margin-right: 30px;
   margin-top: 0;
+  padding: 3px 8px;
+  border-radius: 5px;
 }
+.price-color {
+  color: #b05625;
+  font-size: 1.75rem;
+}
+
 #circle {
   display: inline-block;
   width: 20px;
@@ -1122,9 +1131,10 @@ ul.footer {
   div.wrapper {
     flex-direction: column;
   }
-  section.bestsellers {
+  section.sales {
     order: 1;
     width: 100%;
+    margin-bottom: 30px;;
   }
   section.products {
     width: 100%;
@@ -1133,10 +1143,10 @@ ul.footer {
     grid-template-columns: auto auto auto;
     /*background-color: aqua;*/
   }
-  div.bestsellers {
+  .product-sale {
     width: 100%;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     /* background-color: mediumvioletred; */
   }
 }
