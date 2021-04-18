@@ -57,7 +57,6 @@ const ordinaryPrice = document.querySelector("#ordinary-price");
 const inStockCircle = document.querySelector("#circle");
 const inStock = document.querySelector("#in-stock");
 const detailImage = document.querySelector(".product-image");
-// const rating = document.querySelector("#rating");
 
 const reviewCount = document.querySelector("#review-count");
 const breadcrumbName = document.querySelector(".current");
@@ -121,7 +120,6 @@ function createHtml(details) {
   detailDescription.innerHTML = `${details.description}`;
   detailPrice.innerHTML = `$${details.prices.price}`;
   ordinaryPrice.innerHTML = `$${details.prices.regular_price}`;
-  // rating.innerHTML = `${details.average_rating}`;
   reviewCount.innerHTML = `${details.review_count} Reviews`;
   breadcrumbName.innerHTML = `${details.name}`;
 
@@ -135,16 +133,6 @@ function createHtml(details) {
 
   if (details.on_sale === true) {
     detailPrice.style.color = "#be3e35";
+    ordinaryPrice.style.display = "inline-block";
+  }
 }
-}
-
-//  const images = details.images;
-
-//  for (let i = 0; i < images.length; i++) {
-//    const img = images[0].src;
-//    console.log(img);
-
-//    console.log(details);
-
-//    createHtml(details, img);
-//  }

@@ -74,8 +74,6 @@ async function fetchProducts() {
        </a>`;
       }
 
-      // console.log(results[i].prices.sale_price);
-
       productContainer.innerHTML += `
        <a href="products_page.html?id=${results[i].id}" id="selected" class="jacket">
        <div>

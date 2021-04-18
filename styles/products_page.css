@@ -850,13 +850,14 @@ p.description {
 }
 #price-container {
   display: flex;
- 
+
   margin-bottom: 0;
 }
 #ordinary-price {
   text-decoration: line-through;
   display: inline-block;
   margin-left: 10px;
+  display: none;
 }
 #basket-container {
   margin-top: 0;
