@@ -33,7 +33,6 @@ async function fetchProducts() {
 
       let priceColor = "";
 
-
       if (results.length < 10) {
         loadButton.disabled = true;
       }
@@ -44,16 +43,18 @@ async function fetchProducts() {
       }
 
       if (results[i].on_sale === true) {
-        priceColor = "price-color"
+        priceColor = "price-color";
         onSale =
           "SALE" +
           " " +
-          (-100 +
-            (results[i].prices.sale_price / results[i].prices.regular_price) *
-              100) +
+          parseInt(
+            -100 +
+              (results[i].prices.sale_price / results[i].prices.regular_price) *
+                100
+          ) +
           "%";
 
-          saleContainer.innerHTML += `<a href="products_page.html?id=${results[i].id}" id="selected" class="jacket jacket-sale">
+        saleContainer.innerHTML += `<a href="products_page.html?id=${results[i].id}" id="selected" class="jacket jacket-sale">
        <div>
        <div class="top-wrapper">
        <figure class="jacket-image"><img src="${results[i]["images"][0]["src"]}" class="jacket-image" alt=""></figure>
@@ -72,11 +73,8 @@ async function fetchProducts() {
         </div>
        </a>`;
       }
-      
 
       // console.log(results[i].prices.sale_price);
-
-      
 
       productContainer.innerHTML += `
        <a href="products_page.html?id=${results[i].id}" id="selected" class="jacket">
@@ -98,9 +96,7 @@ async function fetchProducts() {
         </div>
        </a>
        `;
-
-    
-  }
+    }
   } catch (error) {
     console.log(error);
     productContainer.innerHTML = displayError(
