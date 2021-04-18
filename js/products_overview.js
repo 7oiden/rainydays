@@ -22,8 +22,6 @@ async function fetchProducts() {
     productContainer.innerHTML = "";
 
     for (let i = 0; i < results.length; i++) {
-      console.log(results[i].tags);
-
       let inStock = "In stock";
       let inStockColor = "green";
       let onSale = "";
@@ -38,8 +36,16 @@ async function fetchProducts() {
       }
 
       if (results[i].on_sale === true) {
-        onSale = "SALE";
+        onSale =
+          "SALE" +
+          " " +
+          (-100 +
+            (results[i].prices.sale_price / results[i].prices.regular_price) *
+              100) +
+          "%";
       }
+
+      console.log(results[i].prices.sale_price);
 
       productContainer.innerHTML += `
        <a href="products_page.html?id=${results[i].id}" id="selected" class="jacket">
@@ -71,7 +77,3 @@ async function fetchProducts() {
 }
 
 fetchProducts();
-
-for (let i = 0; i < results[i].tags.length; i++) {
-  console.log(results[i].tags[i].name);
-}

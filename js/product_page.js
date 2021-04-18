@@ -52,9 +52,13 @@ const detailBrand = document.querySelector("#product-brand");
 const detailShortDescription = document.querySelector("#short-description");
 const detailDescription = document.querySelector("#description");
 const detailPrice = document.querySelector("#price");
+const ordinaryPrice = document.querySelector("#ordinary-price");
+
 const inStockCircle = document.querySelector("#circle");
 const inStock = document.querySelector("#in-stock");
 const detailImage = document.querySelector(".product-image");
+const rating = document.querySelector("#rating");
+
 const reviewCount = document.querySelector("#review-count");
 const breadcrumbName = document.querySelector(".current");
 const basketButton = document.querySelector("#basket-button");
@@ -116,6 +120,8 @@ function createHtml(details, tag) {
   detailShortDescription.innerHTML = `${details.short_description}`;
   detailDescription.innerHTML = `${details.description}`;
   detailPrice.innerHTML = `$${details.prices.price}`;
+  ordinaryPrice.innerHTML = `$${details.prices.regular_price}`;
+  rating.innerHTML = `${details.average_rating}`;
   reviewCount.innerHTML = `(${details.review_count} Ratings)`;
   breadcrumbName.innerHTML = `${details.name}`;
 
@@ -126,6 +132,10 @@ function createHtml(details, tag) {
     inStockCircle.classList.add("red");
     basketButton.disabled = true;
   }
+
+  if (details.on_sale === true) {
+    detailPrice.style.color = "#be3e35";
+}
 }
 
 //  const images = details.images;
