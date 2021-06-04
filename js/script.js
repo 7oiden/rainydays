@@ -28,4 +28,37 @@ function validateEmails(emails) {
   return patternMatches;
 }
 
+//carousel
 
+const slider = document.querySelector(".slider");
+const leftArrow = document.querySelector(".arrow-left");
+const rigthArrow = document.querySelector(".arrow-right");
+const indicatorParents = document.querySelector(".control ul");
+
+let sectionIndex = 0;
+
+document
+  .querySelectorAll(".preview-image")
+  .forEach(function (indicator, index) {
+    indicator.addEventListener("click", function () {
+      sectionIndex = index;
+      document.querySelector(".selected").classList.remove("selected");
+      indicator.classList.add("selected");
+      slider.style.transform = "translate(" + sectionIndex * -25 + "%)";
+    });
+  });
+
+leftArrow.addEventListener("click", function () {
+  sectionIndex = sectionIndex > 0 ? sectionIndex - 1 : 0;
+  document.querySelector(".selected").classList.remove("selected");
+  indicatorParents.children[sectionIndex].classList.add("selected");
+  slider.style.transform = "translate(" + sectionIndex * -25 + "%)";
+});
+
+rigthArrow.addEventListener("click", function () {
+  console.log("hiy");
+  sectionIndex = sectionIndex < 3 ? sectionIndex + 1 : 3;
+  document.querySelector(".selected").classList.remove("selected");
+  indicatorParents.children[sectionIndex].classList.add("selected");
+  slider.style.transform = "translate(" + sectionIndex * -25 + "%)";
+});
