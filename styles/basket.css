@@ -331,13 +331,13 @@ div.breadcrumb {
 }
 .current {
   font-weight: bold;
-  color: #536175;
+  color: #172940;
 }
 .previous {
-  color: #536175;
+  color: #172940;
 }
 .angle {
-  color: #536175;
+  color: #172940;
   display: inline-block;
   margin: 0;
 }
@@ -696,11 +696,11 @@ ul.footer {
     width: 100%;
     min-height: 620px;
   }
-   section.sign-in {
+  section.sign-in {
     width: 50%;
     margin: 0;
     margin: 20px auto 0 auto;
-  } 
+  }
   /* footer 
 --------------------*/
   ul.footer {
@@ -813,6 +813,7 @@ ul.footer {
   /*main*/
   section.sign-in {
     width: 60%;
+  }
 }
 @media only screen and (max-width: 767px) {
   /* header 

@@ -2,20 +2,29 @@
 
 const link = document.querySelector("#review-link");
 const reviews = document.querySelector(".reviews");
+const fadeBackground = document.querySelector(".fading-background");
+const closer = document.querySelector("#close-reviews");
 
 function openReviews() {
+    reviews.style.display = "block";
+    fadeBackground.style.display = "block";
+    document.body.style.position = "fixed";
+    document.body.style.paddingRight = "17px";
+  }
+
+function closeReviews() {
   if (reviews.style.display === "block") {
     reviews.style.display = "none";
-  } else {
-    reviews.style.display = "block";
+    fadeBackground.style.display = "none";
+    document.body.style.position = "static";
+    document.body.style.paddingRight = 0;
   }
 }
 
 link.addEventListener("click", openReviews);
+closer.addEventListener("click", closeReviews);
 
-reviews.onclick = function () {
-  reviews.style.display = "none";
-};
+
 
 // function closeReviews() {
 //   if (openReviews() === true) {

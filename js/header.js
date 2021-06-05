@@ -3,12 +3,16 @@ const basketIcon = document.querySelector("#basket-icon");
 const fullBasket = document.querySelector(".preview-wrapper");
 const emptyBasket = document.querySelector(".empty-basket");
 const proceedButton = document.querySelector("#proceed-button");
+const fade = document.querySelector(".fading-background");
+
 
 function basketPreview() {
   if (basket.style.display === "block") {
     basket.style.display = "none";
+    fade.style.display = "none";
   } else {
     basket.style.display = "block";
+    fade.style.display = "block";
   }
   if (profile.style.display === "block") {
     profile.style.display = "none";
@@ -37,8 +41,10 @@ const profileIcon = document.querySelector("#profile-icon");
 function profilePreview() {
   if (profile.style.display === "block") {
     profile.style.display = "none";
+    fade.style.display = "none";
   } else {
     profile.style.display = "block";
+    fade.style.display = "block";
   }
 
   if (basket.style.display === "block") {
@@ -57,8 +63,10 @@ const favoritesIcon = document.querySelector("#favorites-icon");
 function favoritesPreview() {
   if (favorites.style.display === "block") {
     favorites.style.display = "none";
+    fade.style.display = "none";
   } else {
     favorites.style.display = "block";
+    fade.style.display = "block";
   }
 
   if (basket.style.display === "block") {
