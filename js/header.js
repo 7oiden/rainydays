@@ -4,7 +4,7 @@ const fullBasket = document.querySelector(".preview-wrapper");
 const emptyBasket = document.querySelector(".empty-basket");
 const proceedButton = document.querySelector("#proceed-button");
 const fade = document.querySelector(".fading-background");
-
+const htmlSelector = document.querySelectorAll("html");
 
 function basketPreview() {
   if (basket.style.display === "block") {
@@ -13,6 +13,9 @@ function basketPreview() {
   } else {
     basket.style.display = "block";
     fade.style.display = "block";
+    if (htmlSelector[0].className === "prod-page") {
+      reviews.style.display = "none";
+    }
   }
   if (profile.style.display === "block") {
     profile.style.display = "none";
@@ -45,6 +48,9 @@ function profilePreview() {
   } else {
     profile.style.display = "block";
     fade.style.display = "block";
+    if (htmlSelector[0].className === "prod-page") {
+      reviews.style.display = "none";
+    }
   }
 
   if (basket.style.display === "block") {
@@ -67,6 +73,9 @@ function favoritesPreview() {
   } else {
     favorites.style.display = "block";
     fade.style.display = "block";
+    if (htmlSelector[0].className === "prod-page") {
+      reviews.style.display = "none";
+    }
   }
 
   if (basket.style.display === "block") {

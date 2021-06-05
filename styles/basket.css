@@ -340,6 +340,7 @@ div.breadcrumb {
   color: #172940;
   display: inline-block;
   margin: 0;
+  padding-right: 1rem;
 }
 h6 {
   font-family: "century gothic";

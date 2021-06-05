@@ -1468,6 +1468,22 @@ ul.footer {
     top: 8px;
     right: 10px;
   }
+  .fading-background {
+    top: 300px;
+  }
+  .favorites,
+  .profile,
+  .basket {
+    width: 360px;
+    top: 50px;
+  }
+  #triangle-favorites {
+    left: 90px;
+  }
+  #triangle-profile {
+    left: 160px;
+  }
+  
   /* main 
 --------------------*/
   .new-arrivals-wrapper {
@@ -1479,14 +1495,6 @@ ul.footer {
   h5 {
     text-align: center;
   }
-  /* figure.news {
-    width: 90%;
-    margin: 0 auto 0 auto;
-  }
-  figure.news img {
-    width: 100%;
-    margin: 0;
-  } */
   /* carousel */
   .container {
     width: 600px;
@@ -1566,14 +1574,6 @@ ul.footer {
     margin: 0;
   }
   /* new styles */
-  .favorites,
-  .profile,
-  .basket {
-    position: absolute;
-    width: 360px;
-    left: -55px;
-    top: 50px;
-  }
   #triangle-favorites {
     left: 95px;
   }

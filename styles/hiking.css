@@ -674,12 +674,14 @@ div.breadcrumb {
   color: #172940;
   display: inline-block;
   margin: 0;
+  padding-right: 1rem;
 }
 /* main 
   --------------------*/
 main {
   width: 100%;
   padding-bottom: 40px;
+  position: relative;
 }
 h1 {
   font-family: "century gothic", verdana, sans-serif;
@@ -866,9 +868,9 @@ a > .chat:hover {
   position: absolute;
   z-index: 600;
   width: 100%;
-  height: 1171px;
+  height: 150%;
+  top: -200px;
   display: none;
-  top: 200px;
 }
 /* footer 
   --------------------*/
@@ -1070,6 +1072,19 @@ ul.footer {
     top: 8px;
     right: 10px;
   }
+
+  .favorites,
+  .profile,
+  .basket {
+    width: 360px;
+    top: 50px;
+  }
+  #triangle-favorites {
+    left: 90px;
+  }
+  #triangle-profile {
+    left: 160px;
+  }
   /* main 
   --------------------*/
   div.content-wrapper {
@@ -1083,6 +1098,9 @@ ul.footer {
     padding-right: 5%;
     background-color: #ffffff99;
     border-radius: 15px;
+  }
+  .fading-background {
+    top: 0;
   }
 }
 @media only screen and (max-width: 767px) {

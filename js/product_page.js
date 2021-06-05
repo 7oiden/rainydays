@@ -6,33 +6,21 @@ const fadeBackground = document.querySelector(".fading-background");
 const closer = document.querySelector("#close-reviews");
 
 function openReviews() {
-    reviews.style.display = "block";
-    fadeBackground.style.display = "block";
-    document.body.style.position = "fixed";
-    document.body.style.paddingRight = "17px";
-  }
+  reviews.style.display = "block";
+  fadeBackground.style.display = "block";
+  window.scroll(0, 0);
+}
 
 function closeReviews() {
   if (reviews.style.display === "block") {
     reviews.style.display = "none";
     fadeBackground.style.display = "none";
-    document.body.style.position = "static";
-    document.body.style.paddingRight = 0;
   }
 }
 
 link.addEventListener("click", openReviews);
 closer.addEventListener("click", closeReviews);
 
-
-
-// function closeReviews() {
-//   if (openReviews() === true) {
-//     reviews.style.display = "none";
-//   }
-// }
-
-// reviews.addEventListener("click", closeReviews);
 
 const button = document.querySelector("#basket-button");
 const counter = document.querySelector("#counter");
