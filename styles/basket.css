@@ -687,6 +687,9 @@ ul.footer {
   #search {
     min-width: 350px;
   }
+  div.menu-wrapper {
+    width: 80%;
+  }
   /*main*/
   .content-wrapper {
     flex-direction: column;
@@ -801,6 +804,9 @@ ul.footer {
   #mobile-home {
     display: inline;
   }
+  div.menu-wrapper {
+    width: 90%;
+  }
   /* new styles */
   .basket {
     top: 55px;
@@ -875,6 +881,12 @@ ul.footer {
   .breadcrumb span {
     padding-left: 5px;
     margin: 0;
+  }
+  .angle {
+    padding-left: 1rem;
+  }
+  div.menu-wrapper {
+    width: 70%;
   }
   /* new styles */
   .favorites,

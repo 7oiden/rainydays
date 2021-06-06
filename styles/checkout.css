@@ -260,7 +260,7 @@ div.payment {
 }
 button.shipping,
 button.payment {
-  width: 30%;
+  width: 50%;
   height: 70px;
   background-color: #f2f2f2;
   border: 2px solid #5361757d;
@@ -406,9 +406,13 @@ div.buttons {
   }
   aside.account {
     margin: 0 auto;
-    width: 50%;
+    width: 70%;
     margin-top: 0;
     margin-bottom: 40px;
+  }
+  button.shipping,
+  button.payment {
+    width: 60%;
   }
 }
 @media only screen and (max-width: 1023px) {
@@ -427,7 +431,8 @@ div.buttons {
   }
   #previous {
     width: 250px;
-    top: 190px;
+    top: 210px;
+    left: 5%;
     font-size: 1.125rem;
   }
   /* Main 

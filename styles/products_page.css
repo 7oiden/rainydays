@@ -1450,6 +1450,9 @@ ul.footer {
   #search {
     min-width: 350px;
   }
+  div.menu-wrapper {
+    width: 80%;
+  }
   /* main
 --------------------*/
   .product-image img {
@@ -1556,6 +1559,9 @@ ul.footer {
   }
   #mobile-home {
     display: inline;
+  }
+  div.menu-wrapper {
+    width: 90%;
   }
   /* new styles */
   .basket {
@@ -1684,6 +1690,10 @@ ul.footer {
   }
   .angle {
     font-size: 0.875rem;
+    padding-left: 1rem;
+  }
+  div.menu-wrapper {
+    width: 70%;
   }
   /* new styles */
   .favorites,

@@ -881,11 +881,6 @@ h1 {
   text-align: center;
   margin-top: 70px;
 }
-/* .price {
-  float: right;
-  font-size: 1.5rem;
-  font-weight: bold
-} */
 .button-container {
   width: 355px;
 }
@@ -1233,6 +1228,9 @@ ul.footer {
   #search {
     min-width: 350px;
   }
+  div.menu-wrapper {
+    width: 80%;
+  }
   /* footer
 --------------------*/
   ul.footer {
@@ -1311,6 +1309,9 @@ ul.footer {
   }
   #mobile-home {
     display: inline;
+  }
+  div.menu-wrapper {
+    width: 90%;
   }
   /* new styles */
   .basket {
@@ -1437,7 +1438,7 @@ ul.footer {
 --------------------*/
   h1 {
     margin-top: 20px;
-    margin-bottom: 0;
+    margin-bottom: 20px;
     text-decoration: none;
   }
   /* figure.jacket {
@@ -1523,5 +1524,13 @@ ul.footer {
   .footer li {
     padding: 5px;
     min-width: 100px;
+  }
+}
+@media only screen and (max-width: 870px) {
+  div.menu-wrapper {
+    width: 70%;
+  }
+  .angle {
+    padding-left: 1rem;
   }
 }
